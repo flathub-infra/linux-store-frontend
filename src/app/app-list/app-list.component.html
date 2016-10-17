@@ -1,27 +1,17 @@
 <h2>Apps</h2>
+<div *ngFor="let app of apps" (click)="gotoDetail(app.id)">
+	<div class="demo-card-event mdl-card mdl-shadow--2dp">
+		<div class="mdl-card__title mdl-card--expand">
+			<h4>{{app.name}}</h4>
+		</div>
+		<div class="mdl-card__media">
+			<img src="{{app.storeIconUrl}}" width="128" height="128" border="0" alt="" style="padding:0px;">
+		</div>
 
-<ul class="heroes">
-	<li *ngFor="let app of apps" (click)="onSelect(app)">
-		<span class="badge">{{app.id}}</span>
-		<span>{{app.name}}</span>
-		<button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple (click)="gotoDetail(app.id)" [class.selected]="isSelected(myProduct)">
-      View Details
-    </button>
-	</li>
-</ul>
-
- <mdl-card class="demo-card-event" mdl-shadow="2">
-    <mdl-card-title mdl-card-expand>
- <h4>
-       Unwind! Relax! Breathe!<br>
-       You deserve a holiday
-    </h4>
-    </mdl-card-title>
-    <mdl-card-actions mdl-card-border>
-      <button mdl-button mdl-colored mdl-ripple (click)="booknow()">
-      Book now
-      </button>
-      <mdl-layout-spacer></mdl-layout-spacer>
-      <mdl-icon>event</mdl-icon>
-    </mdl-card-actions>
-  </mdl-card>
+		<div class="mdl-card__actions mdl-card--border">
+			<h6>{{app.summary}}</h6>
+			<div class="mdl-layout-spacer"></div>
+			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" (click)="gotoDetail(app.id)">View</a>
+		</div>
+	</div>
+</div>
