@@ -8,11 +8,11 @@ import { FlathubApiService} from '../flathub-api.service';
 import { HeroApiService } from '../hero-api.service';*/
 
 @Component({
-  selector: 'app-apps',
-  templateUrl: './apps.component.html',
-  styleUrls: ['./apps.component.css']
+  selector: 'app-app-list',
+  templateUrl: './app-list.component.html',
+  styleUrls: ['./app-list.component.css']
 })
-export class AppsComponent implements OnInit {
+export class AppListComponent implements OnInit {
 
   apps: App[];
   selectedApp: App;
@@ -40,7 +40,7 @@ export class AppsComponent implements OnInit {
   }
 
   isSelected(app: App): boolean {
-   
+
     if (!app || !this.selectedApp) {
        console.log('isSelected' + false);
       return false;
