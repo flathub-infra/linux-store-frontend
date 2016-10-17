@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { AppListComponent } from './app-list/app-list.component';
 import { AppDetailsComponent } from './app-details/app-details.component';
 import { FlathubApiService } from './flathub-api.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppListComponent,
-    AppDetailsComponent
+    AppDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
