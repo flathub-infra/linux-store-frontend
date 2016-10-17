@@ -6,7 +6,7 @@ import { App } from '../shared/app.model';
 import { FlathubApiService } from '../flathub-api.service';
 
 @Component({
-  selector: 'app-app-details',
+  selector: 'flathub-app-details',
   templateUrl: './app-details.component.html',
   styleUrls: ['./app-details.component.css']
 })

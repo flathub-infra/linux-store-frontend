@@ -8,7 +8,7 @@ import { FlathubApiService} from '../flathub-api.service';
 import { HeroApiService } from '../hero-api.service';*/
 
 @Component({
-  selector: 'app-app-list',
+  selector: 'flathub-app-list',
   templateUrl: './app-list.component.html',
   styleUrls: ['./app-list.component.css']
 })
