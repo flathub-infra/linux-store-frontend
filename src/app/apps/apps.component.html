@@ -1,10 +1,11 @@
 <h2>Apps</h2>
 
 <ul class="heroes">
-  <li *ngFor="let app of apps" (click)="onSelect(app)">
-    <span class="badge">{{app.id}}</span>
-    <span>{{app.name}}</span>
-    <button (click)="gotoDetail(app.id)"
-    [class.selected]="isSelected(myProduct)">View Details</button>
-  </li>
+	<li *ngFor="let app of apps" (click)="onSelect(app)">
+		<span class="badge">{{app.id}}</span>
+		<span>{{app.name}}</span>
+		<button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple (click)="gotoDetail(app.id)" [class.selected]="isSelected(myProduct)">
+      View Details
+    </button>
+	</li>
 </ul>

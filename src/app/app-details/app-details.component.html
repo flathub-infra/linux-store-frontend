@@ -1,7 +1,8 @@
 <div *ngIf="app">
-  <h2>{{app.name}} details!</h2>
-  <div><label>id: </label>{{app.id}}</div>
-  <div><label>name: </label>{{app.name}}</div>
-   
-  <button (click)="goBack()">Back</button>
+	<h2>{{app.name}} details!</h2>
+	<div><label>id: </label>{{app.id}}</div>
+	<div><label>name: </label>{{app.name}}</div>
+	<button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple (click)="goBack()">
+      Back
+  </button>
 </div>

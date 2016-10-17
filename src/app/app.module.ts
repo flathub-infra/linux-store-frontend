@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import './rxjs-extensions';
 
+import { MdlModule } from 'angular2-mdl';
+
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { AppsComponent } from './apps/apps.component';
@@ -21,6 +23,7 @@ import { FlathubApiService } from './flathub-api.service';
     BrowserModule,
     FormsModule,
     HttpModule,
+    MdlModule,
     routing
   ],
   providers: [
