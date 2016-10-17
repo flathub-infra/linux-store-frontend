@@ -9,7 +9,7 @@ export const APPS: App[] = [
         license: 'GPL-2.0+',
         publisherName: 'GNOME',
         homepageUrl: 'http://www.gedit.org',
-        storeIconUrl: 'org.gnome.gedit.png',
+        storeIconUrl: 'assets/apps/org.gnome.gedit/images/org.gnome.gedit-256x256.png',
         flatpakRepoUrl: 'https://sdk.gnome.org/repo-apps/',
         flatpakRepoBranch: 'stable',
         flatpakRefUrl: 'org.gnome.gedit.flatpakref'
@@ -22,7 +22,7 @@ export const APPS: App[] = [
         license: 'GPL-3.0+ and GPL-2.0+ and LGPL-3.0+ and LGPL-2.0+ and MIT',
         publisherName: 'GNOME',
         homepageUrl: 'https://wiki.gnome.org/Apps/Builder',
-        storeIconUrl: 'org.gnome.Builder.png',
+        storeIconUrl: 'assets/apps/org.gnome.Builder/images/org.gnome.Builder-256x256.png',
         flatpakRepoUrl: 'https://sdk.gnome.org/repo-apps/',
         flatpakRepoBranch: 'stable',
         flatpakRefUrl: 'org.gnome.Builder.flatpakref'
