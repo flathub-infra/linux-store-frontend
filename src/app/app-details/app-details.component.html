@@ -1,8 +1,28 @@
-<div *ngIf="app">
-	<h2>{{app.name}} details!</h2>
-	<div><label>id: </label>{{app.id}}</div>
-	<div><label>name: </label>{{app.name}}</div>
-	<button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple (click)="goBack()">
-      Back
-  </button>
+<div class="content-grid">
+
+	<div *ngIf="app">
+
+		<!--	<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--12-col mdl-typography--display-2">{{app.name}}</div>
+		</div>-->
+
+
+
+		<div class="mdl-grid">
+			<div class="mdl-card mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+			<div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+				<div class="mdl-card__supporting-text">
+					<h4>{{app.name}}</h4>
+					Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor
+					eu fugiat consectetur elit cillum esse.
+				</div>
+				<div class="mdl-card__actions">
+					<a href="#" class="mdl-button">Read our features</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
 </div>

@@ -1,7 +1,7 @@
 <div class="content-grid">
 
 	<div class="mdl-grid">
-		<div class="mdl-cell mdl-cell--12-col">Apps</div>
+		<div class="mdl-cell mdl-cell--12-col mdl-typography--display-2">Applications</div>
 	</div>
 
 	<div class="mdl-grid">
@@ -10,7 +10,6 @@
 		<div class="mdl-card mdl-shadow--2dp demo-card-square" *ngFor="let app of apps" (click)="gotoDetail(app.id)">
 			<div class="mdl-card__title mdl-card--expand mdl-card__media">
 				<h2 class="mdl-card__title-text">{{app.name}}</h2>
-				<!--<img src="{{app.storeIconUrl}}" width="128" height="128" border="0" alt="" style="padding:0px;">-->
 				<img src="{{app.storeIconUrl}}">
 			</div>
 			<div class="mdl-card__supporting-text">
@@ -24,20 +23,3 @@
 	</div>
 
 </div>
-
-<!--<div *ngFor="let app of apps" (click)="gotoDetail(app.id)">
-	<div class="demo-card-event mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title mdl-card--expand">
-			<h4>{{app.name}}</h4>
-		</div>
-		<div class="mdl-card__media">
-			<img src="{{app.storeIconUrl}}" width="128" height="128" border="0" alt="" style="padding:0px;">
-		</div>
-
-		<div class="mdl-card__actions mdl-card--border">
-			<h6>{{app.summary}}</h6>
-			<div class="mdl-layout-spacer"></div>
-			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" (click)="gotoDetail(app.id)">View</a>
-		</div>
-	</div>
-</div>-->
