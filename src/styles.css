@@ -9,6 +9,12 @@
 body {
     padding: 20px;
     background: rgb(238, 238, 238);
-    /*position: relative; */
   }
+
+.content-grid{
+  width: 800px;
+  padding-left: 1%;
+}
+
+
 
