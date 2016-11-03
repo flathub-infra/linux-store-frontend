@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { Http, Headers, RequestOptions, ResponseContentType } from '@angular/http';
+import { Observable } from 'rxjs';
 
 import { App } from '../shared/app.model';
 import { FlathubApiService } from '../flathub-api.service';
@@ -16,6 +18,7 @@ export class AppDetailsComponent implements OnInit {
   app: App;
 
   constructor(
+    private http: Http,
     private flathubApiService: FlathubApiService,
     private route: ActivatedRoute,
     private location: Location
@@ -38,4 +41,16 @@ export class AppDetailsComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+  install() {
+
+
+    /*var blob = new Blob(["Hello, world!"], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "hello world.txt");
+
+
+    let blob: Blob = res.blob();
+    window['saveAs'](blob, 'test.pdf');*/
+  }
+
 }
