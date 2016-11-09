@@ -42,6 +42,6 @@ export const APPS: App[] = [
         storeIconUrl: 'assets/apps/org.gnome.Builder/images/org.gnome.Builder-256x256.png',
         flatpakRepoUrl: 'https://sdk.gnome.org/repo-apps/',
         flatpakRepoBranch: 'stable',
-        flatpakRefUrl: 'org.gnome.Builder.flatpakref'
+        flatpakRefUrl: 'assets/apps/org.gnome.Builder/org.gnome.Builder.flatpakref'
     }
 ];
