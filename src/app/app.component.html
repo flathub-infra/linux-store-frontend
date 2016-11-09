@@ -2,7 +2,9 @@
 	<mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
 		<mdl-layout-header>
 			<mdl-layout-header-row>
-				<mdl-layout-title>{{title}}</mdl-layout-title>
+				<mdl-layout-title>
+          <a class="mdl-navigation__link" routerLink="/apps" routerLinkActive="active">{{title}}</a>
+        </mdl-layout-title>
 				<mdl-layout-spacer></mdl-layout-spacer>
 				<!-- Navigation. We hide it in small screens. -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only">
