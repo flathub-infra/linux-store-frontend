@@ -1,2 +1,33 @@
-<h1>{{title}}</h1>
-<router-outlet></router-outlet>
+<div class="demo-container" mdl-shadow="2">
+	<mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+		<mdl-layout-header>
+			<mdl-layout-header-row>
+				<mdl-layout-title>
+          <a class="mdl-navigation__link" routerLink="/apps" routerLinkActive="active">{{title}}</a>
+        </mdl-layout-title>
+				<mdl-layout-spacer></mdl-layout-spacer>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link">Link 1</a>
+					<a class="mdl-navigation__link">Link 2</a>
+					<a class="mdl-navigation__link">Link 3</a>
+				</nav>
+			</mdl-layout-header-row>
+		</mdl-layout-header>
+		<mdl-layout-drawer>
+			<mdl-layout-title>{{title}}</mdl-layout-title>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link">Link</a>
+				<a class="mdl-navigation__link">Link</a>
+				<a class="mdl-navigation__link">Link</a>
+			</nav>
+		</mdl-layout-drawer>
+
+		<mdl-layout-content>
+			<!-- Your content goes here -->
+			<router-outlet></router-outlet>
+			<flathub-footer></flathub-footer>
+		</mdl-layout-content>
+
+	</mdl-layout>
+</div>

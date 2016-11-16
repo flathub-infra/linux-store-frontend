@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.17",
+    "version": "1.0.0-beta.19-3",
     "name": "flathub-store-frontend"
   },
   "apps": [
@@ -12,7 +12,7 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "flathub",
       "mobile": false,
       "styles": [
         "styles.css"
