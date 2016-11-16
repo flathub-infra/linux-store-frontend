@@ -2,11 +2,11 @@
 
 	<div *ngIf="app" class="mdl-grid">
 
-		<div class="mdl-cell mdl-cell--4-col">
-			<img src="{{app.storeIconUrl}}" border="0" alt="">
+		<div class="mdl-cell mdl-cell--2-col">
+			<span class="app-icon-helper"></span><img class="app-icon" src="{{app.storeIconUrl}}" border="0" alt="">
 		</div>
 
-		<div class="mdl-cell mdl-cell--8-col">
+		<div class="mdl-cell mdl-cell--10-col">
 
 			<div class="mdl-grid">
 
@@ -28,24 +28,24 @@
 
 		<div class="mdl-cell mdl-cell--12-col">
 			<div *ngIf="reviews" class="mdl-grid">
-				<mdl-card mdl-shadow="2" *ngFor="let review of reviews">
+				<mdl-card class="review-card" mdl-shadow="2" *ngFor="let review of reviews">
 					<mdl-card-title>
-						<div class="mdl-grid">
-							<h2 class="mdl-cell mdl-cell--12-col" mdl-card-title-text>{{review.user_display}}</h2>
-							<p class="mdl-cell mdl-cell--12-col"> {{review.summary}}</p>
-						</div>
+						<h2 mdl-card-title-text>{{review.user_display}}</h2>
 					</mdl-card-title>
+					<mdl-card-supporting-text>
+						<strong>{{review.summary}}</strong>
+					</mdl-card-supporting-text>
 					<mdl-card-supporting-text>
 						{{review.description}}
 					</mdl-card-supporting-text>
-          <mdl-card-menu>
-					<button mdl-button mdl-button-type="icon" mdl-ripple>
+					<mdl-card-menu>
+						<button mdl-button mdl-button-type="icon" mdl-ripple>
             <mdl-icon>thumb_down</mdl-icon>
           </button>
-					<button mdl-button mdl-button-type="icon" mdl-ripple>
+						<button mdl-button mdl-button-type="icon" mdl-ripple>
             <mdl-icon>thumb_up</mdl-icon>
           </button>
-					<button mdl-button mdl-button-type="icon" mdl-ripple>
+						<button mdl-button mdl-button-type="icon" mdl-ripple>
             <mdl-icon>feedback</mdl-icon>
           </button>
 					</mdl-card-menu>

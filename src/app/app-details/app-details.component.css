@@ -215,3 +215,22 @@
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+.app-icon-helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.app-icon{
+   width: 100px;
+   height: 100px;
+   vertical-align: middle;
+}
+
+.review-card{
+    float: left;
+    position: relative;
+    width: 80%;
+    margin:10px;
+}
