@@ -5,7 +5,7 @@ import { AppDetailsComponent } from './app-details.component';
 
 describe('Component: AppDetails', () => {
   it('should create an instance', () => {
-    let component = new AppDetailsComponent();
+    let component = AppDetailsComponent;
     expect(component).toBeTruthy();
   });
 });
