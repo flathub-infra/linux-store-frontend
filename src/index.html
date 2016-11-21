@@ -1,14 +1,54 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>FlathubStoreFrontend</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+	<meta charset="utf-8">
+	<title>Flatpack Store Proof of Concept</title>
+	<base href="/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- fontawesome.io -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Loading screen CSS -->
+	<style>
+		app-root > .loading {
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+			position: relative;
+			top: 20vh;
+		}
+
+		app-root > .loading .fa-spinner {
+			font-size: 48px;
+			color: rgb(124, 77, 255);
+		}
+
+		app-root .text-container {
+			text-align: center;
+			display: inline-block;
+			padding: 0 -1em;
+			color: rgb(124, 77, 255);
+			font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0;
+		}
+	</style>
+
 </head>
+
 <body>
-  <app-root>Loading...</app-root>
+	<app-root>
+		<div class="loading">
+			<p><i class="fa fa-spinner fa-spin"></i></p>
+			<div class="text-container">
+				<h4>Loading apps ...</h4>
+			</div>
+		</div>
 </body>
+
 </html>
