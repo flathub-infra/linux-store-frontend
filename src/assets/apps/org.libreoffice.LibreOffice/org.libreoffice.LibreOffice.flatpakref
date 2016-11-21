@@ -1,0 +1,11 @@
+[Flatpak Ref]
+Title=LibreOffice
+Name=org.libreoffice.LibreOffice
+Branch=stable
+Url=http://download.documentfoundation.org/libreoffice/flatpak/repository
+IsRuntime=false
+GPGKey=
+Homepage=http://www.libreoffice.org
+Comment=
+Description=
+Icon=
