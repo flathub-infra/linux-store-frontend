@@ -7,14 +7,21 @@
 
 
 body {
-    padding: 20px;
     background: rgb(238, 238, 238);
   }
 
 .content-grid{
-  width: 800px;
+  width: 100%;
   padding-left: 1%;
 }
 
+
+.ellipsis {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 

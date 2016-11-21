@@ -218,13 +218,13 @@
 
 .app-icon-helper{
     display: inline-block;
-    height: 100%;
+    height: 10%;
     vertical-align: middle;
 }
 
 .app-icon{
-   width: 100px;
-   height: 100px;
+  /* width: 128px;
+   height: 128px;*/
    vertical-align: middle;
 }
 
