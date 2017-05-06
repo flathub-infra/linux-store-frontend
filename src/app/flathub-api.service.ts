@@ -15,9 +15,10 @@ export class FlathubApiService {
   }
 
   getApps(): Promise<App[]> {
-    return new Promise<App[]>(resolve =>
+    /*return new Promise<App[]>(resolve =>
       setTimeout(resolve, 400)) // delay 0,4 seconds
-      .then(() => this.getAppsFast());
+      .then(() => this.getAppsFast());*/
+      return Promise.resolve(APPS);
   }
 
   getApp(id: string): Promise<App> {
