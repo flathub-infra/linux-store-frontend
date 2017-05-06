@@ -4,9 +4,6 @@ import { Router } from '@angular/router';
 import { App } from '../shared/app.model';
 import { FlathubApiService} from '../flathub-api.service';
 
-/*import { HeroService } from '../hero.service';
-import { HeroApiService } from '../hero-api.service';*/
-
 @Component({
   selector: 'flathub-app-list',
   templateUrl: './app-list.component.html',
@@ -48,5 +45,4 @@ export class AppListComponent implements OnInit {
      console.log('isSelected' + (app.id === this.selectedApp.id));
     return app.id === this.selectedApp.id;
   }
-
 }

@@ -5,14 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import './rxjs-extensions';
 
-import { MdlModule } from 'angular2-mdl';
+import { MdlModule } from '@angular-mdl/core';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { AppListComponent } from './app-list/app-list.component';
 import { AppDetailsComponent } from './app-details/app-details.component';
-import { FlathubApiService } from './flathub-api.service';
 import { FooterComponent } from './footer/footer.component';
+import { FlathubApiService } from './flathub-api.service';
 
 @NgModule({
   declarations: [
