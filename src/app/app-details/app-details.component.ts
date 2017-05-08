@@ -53,10 +53,6 @@ export class AppDetailsComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
   onSelect(review: Review): void {
     console.log('SelectedReview = ' + review.app_id);
     this.selectedReview = review;

@@ -1,60 +1,64 @@
 <div class="content-grid">
 
-	<div *ngIf="app" class="mdl-grid">
+  <div *ngIf="app" class="mdl-grid">
 
-		<div class="mdl-cell mdl-cell--2-col">
-			<span class="app-icon-helper"></span>
-        <img class="app-icon" src="{{app.storeIconUrl}}" border="0" alt="">
-		</div>
+    <div class="mdl-cell mdl-cell--2-col">
+      <span class="app-icon-helper"></span>
+      <img class="app-icon" src="{{app.storeIconUrl}}" border="0" alt="">
+    </div>
 
-		<div class="mdl-cell mdl-cell--10-col">
+    <div class="mdl-cell mdl-cell--10-col">
 
-			<div class="mdl-grid">
+      <div class="mdl-grid">
 
-				<p class="mdl-cell mdl-cell--12-col mdl-typography--display-2">{{app.name}}</p>
-				<p class="mdl-cell mdl-cell--12-col mdl-typography--subhead">{{app.summary}}</p>
+        <button routerLink="/apps" routerLinkActive="active" mdl-button mdl-colored="primary"  mdl-ripple>
+          APPS LIST
+        </button>
 
-				<button (click)="install()" mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
+        <p class="mdl-cell mdl-cell--12-col mdl-typography--display-2">{{app.name}}</p>
+        <p class="mdl-cell mdl-cell--12-col mdl-typography--subhead">{{app.summary}}</p>
+
+        <button (click)="install()" mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
           Install
         </button>
 
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<div class="mdl-cell mdl-cell--12-col">
-			<!--<p class="mdl-cell mdl-cell--12-col mdl-typography--body-1"></p>-->
-			<div class="mdl-cell mdl-cell--12-col mdl-typography--body-1" [innerHTML]="app.description">
-			</div>
-		</div>
+    <div class="mdl-cell mdl-cell--12-col">
+      <!--<p class="mdl-cell mdl-cell--12-col mdl-typography--body-1"></p>-->
+      <div class="mdl-cell mdl-cell--12-col mdl-typography--body-1" [innerHTML]="app.description">
+      </div>
+    </div>
 
-		<div class="mdl-cell mdl-cell--12-col">
-			<div *ngIf="reviews" class="mdl-grid">
-				<mdl-card class="review-card" mdl-shadow="2" *ngFor="let review of reviews">
-					<mdl-card-title>
-						<h2 mdl-card-title-text>{{review.user_display}}</h2>
-					</mdl-card-title>
-					<mdl-card-supporting-text>
-						<strong>{{review.summary}}</strong>
-					</mdl-card-supporting-text>
-					<mdl-card-supporting-text>
-						{{review.description}}
-					</mdl-card-supporting-text>
-					<mdl-card-menu>
-						<button mdl-button mdl-button-type="icon" mdl-ripple>
+    <div class="mdl-cell mdl-cell--12-col">
+      <div *ngIf="reviews" class="mdl-grid">
+        <mdl-card class="review-card" mdl-shadow="2" *ngFor="let review of reviews">
+          <mdl-card-title>
+            <h2 mdl-card-title-text>{{review.user_display}}</h2>
+          </mdl-card-title>
+          <mdl-card-supporting-text>
+            <strong>{{review.summary}}</strong>
+          </mdl-card-supporting-text>
+          <mdl-card-supporting-text>
+            {{review.description}}
+          </mdl-card-supporting-text>
+          <mdl-card-menu>
+            <button mdl-button mdl-button-type="icon" mdl-ripple>
             <mdl-icon>thumb_down</mdl-icon>
           </button>
-						<button mdl-button mdl-button-type="icon" mdl-ripple>
+            <button mdl-button mdl-button-type="icon" mdl-ripple>
             <mdl-icon>thumb_up</mdl-icon>
           </button>
-						<button mdl-button mdl-button-type="icon" mdl-ripple>
+            <button mdl-button mdl-button-type="icon" mdl-ripple>
             <mdl-icon>feedback</mdl-icon>
           </button>
-					</mdl-card-menu>
-				</mdl-card>
-			</div>
-		</div>
+          </mdl-card-menu>
+        </mdl-card>
+      </div>
+    </div>
 
 
 
 
-	</div>
+  </div>
