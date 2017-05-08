@@ -1,6 +1,6 @@
 import { FlathubStoreFrontendPage } from './app.po';
 
-describe('flathub-store-frontend App', function() {
+describe('flathub-store-frontend App', () => {
   let page: FlathubStoreFrontendPage;
 
   beforeEach(() => {
