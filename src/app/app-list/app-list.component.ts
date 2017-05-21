@@ -13,6 +13,7 @@ export class AppListComponent implements OnInit {
 
   apps: App[];
   selectedApp: App;
+  errorMessage: string;
 
   constructor(
     private router: Router,
@@ -20,7 +21,13 @@ export class AppListComponent implements OnInit {
   }
 
   getApps(): void {
-    this.flathubApiService.getApps().then(apps => this.apps = apps);
+    this.flathubApiService.getApps()
+      .then(
+        apps => this.apps = apps,
+        error => this.errorMessage = <any> error);
+
+    console.log('getApps');
+
   }
 
   ngOnInit() {
@@ -28,12 +35,12 @@ export class AppListComponent implements OnInit {
   }
 
   onSelect(app: App): void {
-    console.log('SelectedApp = ' + app.id);
+    console.log('SelectedApp = ' + app.flatpakAppId);
     this.selectedApp = app;
   }
 
-  gotoDetail(id: string): void {
-    this.router.navigate(['apps/details', id]);
+  gotoDetail(flatpakAppId: string): void {
+    this.router.navigate(['apps/details',flatpakAppId]);
   }
 
   isSelected(app: App): boolean {
@@ -42,7 +49,7 @@ export class AppListComponent implements OnInit {
        console.log('isSelected' + false);
       return false;
     }
-     console.log('isSelected' + (app.id === this.selectedApp.id));
-    return app.id === this.selectedApp.id;
+     console.log('isSelected' + (app.flatpakAppId === this.selectedApp.flatpakAppId));
+    return app.flatpakAppId === this.selectedApp.flatpakAppId;
   }
 }

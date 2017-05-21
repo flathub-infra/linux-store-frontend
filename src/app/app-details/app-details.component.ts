@@ -78,7 +78,7 @@ export class AppDetailsComponent implements OnInit {
 
     // Create the Xhr request object
     let xhr = new XMLHttpRequest();
-    let url = this.app.flatpakRefUrl;
+    let url = this.app.downloadFlatpakRefUrl;
 
     xhr.open('GET', url, true);
     xhr.responseType = 'blob';
@@ -93,7 +93,7 @@ export class AppDetailsComponent implements OnInit {
       // If we get an HTTP status OK (200), save the file using fileSaver
       if (xhr.readyState === 4 && xhr.status === 200) {
         var blob = new Blob([this.response], { type: 'application/vnd.flatpak.ref' });
-        var filename: string = self.app.flatpakRefUrl.substring(url.lastIndexOf('/') + 1);
+        var filename: string = url.substring(url.lastIndexOf('/') + 1);
         saveAs(blob, filename);
       }
     };

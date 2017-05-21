@@ -6,13 +6,13 @@
 
 	<div class="mdl-grid">
 
-		<mdl-card class="app-card" mdl-shadow="2" *ngFor="let app of apps" (click)="gotoDetail(app.id)">
+		<mdl-card class="app-card" mdl-shadow="2" *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
 			<mdl-card-title>
-        <img class="app-card-icon" src="{{app.storeIconUrl}}" border="0" alt="">
+      <img class="app-card-icon" src="{{app.iconUrl}}" border="0" alt="">
 			</mdl-card-title>
 			<mdl-card-supporting-text>
 				<h2 mdl-card-title-text class="app-card-name ellipsis">{{app.name}}</h2>
-				<p class="app-card-publisher ellipsis">{{app.publisherName}} </p>
+			<!--	<p class="app-card-publisher ellipsis">{{app.publisherName}} </p> -->
         <p class="app-card-summary ellipsis">{{app.summary}}</p>
 			</mdl-card-supporting-text>
 		</mdl-card>
