@@ -7,10 +7,10 @@ import { saveAs } from "file-saver";
 
 import { App } from '../shared/app.model';
 import { Review } from '../shared/review.model';
-import { FlathubApiService } from '../flathub-api.service';
+import { LinuxStoreApiService } from '../linux-store-api.service';
 
 @Component({
-  selector: 'flathub-app-details',
+  selector: 'linux-store-app-details',
   templateUrl: './app-details.component.html',
   styleUrls: ['./app-details.component.css']
 })
@@ -26,18 +26,18 @@ export class AppDetailsComponent implements OnInit {
 
   constructor(
     private http: Http,
-    private flathubApiService: FlathubApiService,
+    private linuxStoreApiService: LinuxStoreApiService,
     private route: ActivatedRoute,
     private location: Location
   ) { }
 
   getApp(id: string): void {
-    this.flathubApiService.getApp(id).then(app => this.app = app);
+    this.linuxStoreApiService.getApp(id).then(app => this.app = app);
   }
 
   getReviews(id: string): void {
     let app_id: string = id.concat('.desktop');
-    this.flathubApiService.getReviews(app_id)
+    this.linuxStoreApiService.getReviews(app_id)
       .then(reviews => this.reviews = reviews);
   }
 

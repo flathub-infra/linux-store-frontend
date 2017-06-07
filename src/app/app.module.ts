@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { AppListComponent } from './app-list/app-list.component';
 import { AppDetailsComponent } from './app-details/app-details.component';
 import { FooterComponent } from './footer/footer.component';
-import { FlathubApiService } from './flathub-api.service';
+import { LinuxStoreApiService } from './linux-store-api.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { FlathubApiService } from './flathub-api.service';
     routing
   ],
   providers: [
-    FlathubApiService
+    LinuxStoreApiService
   ],
   bootstrap: [AppComponent]
 })

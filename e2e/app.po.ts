@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class FlathubStoreFrontendPage {
+export class LinuxStoreFrontendPage {
   navigateTo() {
     return browser.get('/');
   }
