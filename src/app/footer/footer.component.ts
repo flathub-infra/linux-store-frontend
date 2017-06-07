@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'flathub-footer',
+  selector: 'linux-store-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })

@@ -1,10 +1,10 @@
-import { FlathubStoreFrontendPage } from './app.po';
+import { LinuxStoreFrontendPage } from './app.po';
 
-describe('flathub-store-frontend App', () => {
-  let page: FlathubStoreFrontendPage;
+describe('linux-store-frontend App', () => {
+  let page: LinuxStoreFrontendPage;
 
   beforeEach(() => {
-    page = new FlathubStoreFrontendPage();
+    page = new LinuxStoreFrontendPage();
   });
 
   it('should display message saying app works', () => {

@@ -22,14 +22,16 @@ body {
   padding-left: 1%;
 }
 
-.flathub-title{
-background-image: url("http://flathub.org/img/logo-afab9d06.svg");
+.linux-store-title{
+background-image: url("/assets/images/tux.svg");
+background-size: 32px 32px;
+background-repeat: no-repeat;
 background-origin: padding-box;
 background-position: 6px 50%;
 background-position-x: 6px;
 background-position-y: 50%;
 background-repeat: no-repeat;
-background-size: auto auto;
+//background-size: auto auto;
 box-sizing: border-box;
 color: rgb(255, 255, 255);
 display: block;

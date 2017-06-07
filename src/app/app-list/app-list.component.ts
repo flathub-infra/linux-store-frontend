@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { App } from '../shared/app.model';
-import { FlathubApiService} from '../flathub-api.service';
+import { LinuxStoreApiService} from '../linux-store-api.service';
 
 @Component({
-  selector: 'flathub-app-list',
+  selector: 'linux-store-app-list',
   templateUrl: './app-list.component.html',
   styleUrls: ['./app-list.component.css']
 })
@@ -17,11 +17,11 @@ export class AppListComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private flathubApiService: FlathubApiService) {
+    private linuxStoreApiService: LinuxStoreApiService) {
   }
 
   getApps(): void {
-    this.flathubApiService.getApps()
+    this.linuxStoreApiService.getApps()
       .then(
         apps => this.apps = apps,
         error => this.errorMessage = <any> error);

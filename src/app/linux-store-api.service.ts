@@ -11,7 +11,7 @@ import { Review } from './shared/review.model';
 import { REVIEWS } from './shared/mock-reviews';
 
 @Injectable()
-export class FlathubApiService {
+export class LinuxStoreApiService {
 
   private baseUrl = environment.apiUrl;  // URL to web api
   private headers = new Headers({'Content-Type': 'application/json'});
