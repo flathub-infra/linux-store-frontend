@@ -1,10 +1,10 @@
 {
   "/main-store/": {
-    "target": "http://localhost",
+    "target": "http://45.55.104.129",
     "secure": false
   },
-  "/api/": {
-    "target": "http://localhost:8080",
+  "/api/v1/apps": {
+    "target": "http://45.55.104.129",
     "secure": false
   }
 }
