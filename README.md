@@ -4,6 +4,8 @@ This is a simple web application to browse and install applications present in F
 
 The web app obtains data calling a remote REST API implemented in [linux-store-backend](https://github.com/jgarciao/linux-store-backend) 
 
+See demo at http://45.55.104.129/apps
+
 **Note: at this time this is just a personal proof-of-concept not endorsed by Flathub or other projects**
 
 ## Running this app locally
