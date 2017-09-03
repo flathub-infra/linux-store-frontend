@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { AppMaterialModule } from './app-material/app-material.module';
+import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
 
 import './rxjs-extensions';
 
@@ -28,7 +28,7 @@ import { LinuxStoreApiService } from './linux-store-api.service';
     HttpModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    AppMaterialModule,
+    LinuxStoreAngularMaterialModule,
     routing
   ],
   providers: [LinuxStoreApiService],

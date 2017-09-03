@@ -31,4 +31,4 @@ const MATERIAL_MODULES = [
   ],
   exports: MATERIAL_MODULES,
 })
-export class AppMaterialModule { }
+export class LinuxStoreAngularMaterialModule { }
