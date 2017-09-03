@@ -10,9 +10,9 @@ import './rxjs-extensions';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
-import { AppListComponent } from './app-list/app-list.component';
-import { AppDetailsComponent } from './app-details/app-details.component';
-import { FooterComponent } from './footer/footer.component';
+import { AppListComponent } from './pages/app-list/app-list.component';
+import { AppDetailsComponent } from './pages/app-details/app-details.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { LinuxStoreApiService } from './linux-store-api.service';
 
 @NgModule({
