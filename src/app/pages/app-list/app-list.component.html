@@ -1,29 +1,34 @@
-<md-sidenav-container fxFlex>
+<md-sidenav-container fxFlex class="app-list-content">
 
   <!-- sidenav -->
-  <md-sidenav align="start" mode="side" opened="true" #sidenav class="mat-elevation-z6">
+  <md-sidenav align="start" mode="side" opened="false" class="mat-elevation-z6">
     Categories
   </md-sidenav>
 
   <div class="flex-container" fxLayout='row' fxLayoutAlign="start stretch">
+    <h1 fxFlexOffset="5">Applications</h1>
+  </div>
 
-    <!-- <div fxFlex="30" class="one">Hola</div> -->
+  <div class="flex-container" fxLayout='row' fxLayoutAlign="start stretch">
+
+    <!-- <div fxFlex="30" class="one">Hello</div> -->
 
     <!-- main content -->
-    <md-grid-list cols="10" gutterSize="2" rowHeight="3:4" fxFlex="90" fxFlexOffset="5">
-      <md-grid-tile *ngFor="let app of apps">
+
+    <md-grid-list cols="{{numCols}}" gutterSize="12" rowHeight="6:7" fxFlex="90" fxFlexOffset="5" (window:resize)="onResize($event)">
+      <md-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
         <img class="app-tile-icon" src="{{app.iconUrl}}" border="0" alt="icon of the app {{app.name}}">
         <md-grid-tile-footer>
-          <h3 md-line>{{app.name}}</h3>
-          <span md-line>{{app.summary}}</span>
-          <button md-icon-button (click)="gotoDetail(app.flatpakAppId)">
-        <md-icon>info</md-icon>
-      </button>
+          <h3 mdLine>{{app.name}}</h3>
+          <span mdLine>{{app.summary}}</span>
+          <!-- <button md-icon-button (click)="gotoDetail(app.flatpakAppId)">
+           <md-icon>file_download</md-icon>
+          </button> -->
         </md-grid-tile-footer>
       </md-grid-tile>
     </md-grid-list>
 
-    <!-- <div fxFlex class="three">Adeu</div> -->
+    <!-- <div fxFlex class="three">Bye</div> -->
 
   </div>
 

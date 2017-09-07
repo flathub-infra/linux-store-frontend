@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 @import 'app/shared/footer/footer-theme.scss';
+@import 'app/pages/app-list/app-list-theme.scss';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -23,5 +24,6 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include footer-theme($linux-store-theme);
+@include app-list-theme($linux-store-theme);
 
 @include angular-material-theme($linux-store-theme);
