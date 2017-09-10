@@ -1,9 +1,10 @@
 <section class="app flex-container" fxLayout="column" fxLayoutAlign="start stretch">
   <md-toolbar color="primary" class="mat-elevation-z10">
-    <span>
-      <md-icon>shop</md-icon>
-      <span>{{title}}</span>
-    </span>
+    <!-- <span>
+      <a routerLink="/apps"><md-icon>shop</md-icon></a>
+      <a routerLink="/apps">{{title}}</a>
+    </span> -->
+    <a class="linux-store-header-title" routerLink="/apps" routerLinkActive="active">{{title}}</a>
   </md-toolbar>
   <router-outlet></router-outlet>
   <store-footer></store-footer>
