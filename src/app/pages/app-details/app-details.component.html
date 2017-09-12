@@ -1,3 +1,60 @@
-<p>
-  app-details works!
-</p>
+<div fxLayout="row" fxLayoutAlign="start stretch">
+
+  <store-app-sidebar fxFlex="15"></store-app-sidebar>
+
+  <!-- main content -->
+  <div fxFlex="65">
+    <div *ngIf="app" fxLayout="column" fxLayoutAlign="start stretch">
+
+      <store-app-details-main fxFlexOffset="5" [app]="app" (install)="onInstall(app)"></store-app-details-main>
+      <store-app-details-description [app]="app"></store-app-details-description>
+
+
+      <div fxLayout="row" fxLayoutAlign="start stretch">
+          <div fxFlex="5">
+
+          </div>
+          <div fxFlex="70">
+            <h3>Installation instructions</h3>
+              <md-card>
+
+                  <md-tab-group>
+                    <md-tab label="Click to download">
+                      <div>
+                        <md-list dense>
+                          <md-list-item> Pepper </md-list-item>
+                          <md-list-item> Salt </md-list-item>
+                          <md-list-item> Paprika </md-list-item>
+                        </md-list>
+                      </div>
+                    </md-tab>
+                    <md-tab label="Command line"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id convallis felis. Vivamus mattis a metus id condimentum.
+                      Mauris massa sapien, consectetur nec nisi in, bibendum auctor purus. Curabitur id eros vel turpis egestas rhoncus
+                      sed a mauris. Donec auctor molestie orci, sed malesuada lectus convallis dignissim. Pellentesque in pellentesque
+                      lorem. Donec finibus luctus porttitor. Pellentesque sapien massa, fermentum at turpis tincidunt, vulputate condimentum
+                      lacus. Etiam sed augue vestibulum, dapibus nisi nec, elementum nibh. Quisque elementum pharetra molestie. Nunc
+                      cursus libero volutpat, venenatis risus nec, ultricies neque. Morbi sed iaculis ante. Nullam mollis fermentum
+                      odio at suscipit. Duis placerat lorem a urna venenatis blandit. Donec porttitor tristique erat in viverra. Ut
+                      cursus sagittis sem, quis pretium mauris egestas sollicitudin. Nunc tempor orci sed arcu dignissim, et porttitor
+                      purus euismod. Curabitur lacinia ullamcorper felis, vitae lobortis turpis maximus ut. Vivamus vitae scelerisque
+                      neque, quis facilisis odio. Morbi eu lacus vel nisl malesuada aliquam sit amet non dui. Morbi tincidunt est a
+                      metus maximus fermentum. Phasellus et sem maximus elit fringilla interdum. Nullam lacinia ipsum et libero laoreet
+                      eleifend. Duis consectetur eleifend lectus nec consectetur. Etiam tristique interdum tellus, nec pharetra mauris
+                      auctor consequat. Integer dictum pretium nisi id mollis. Mauris tempor erat vel tortor accumsan varius. Nam consectetur
+                      felis eu nisi pharetra, volutpat facilisis tellus rhoncus. Sed vestibulum metus felis, vel mattis lacus placerat
+                      vitae. Quisque quis tortor nec augue volutpat fringilla. </md-tab>
+                  </md-tab-group>
+                </md-card>
+          </div>
+          <div fxFlex="25"></div>
+        </div>
+
+
+
+      <store-app-details-extra-info></store-app-details-extra-info>
+      <store-app-details-reviews></store-app-details-reviews>
+    </div>
+  </div>
+
+  <store-app-card-list-vert fxFlex="20"></store-app-card-list-vert>
+</div>

@@ -9,10 +9,14 @@ import { MdGridListModule } from '@angular/material';
 import { MdDialogModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
 import { MdButtonModule } from '@angular/material';
+import { MdButtonToggleModule } from '@angular/material';
 import { MdInputModule } from '@angular/material';
+import { MdExpansionModule } from '@angular/material';
+import { MdListModule } from '@angular/material';
 
 const MATERIAL_MODULES = [
   MdButtonModule,
+  MdButtonToggleModule,
   MdCardModule,
   MdDialogModule,
   MdGridListModule,
@@ -22,6 +26,8 @@ const MATERIAL_MODULES = [
   MdSidenavModule,
   MdTabsModule,
   MdToolbarModule,
+  MdExpansionModule,
+  MdListModule,
 ];
 
 @NgModule({

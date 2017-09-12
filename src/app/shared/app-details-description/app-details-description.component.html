@@ -1,0 +1,11 @@
+<div fxLayout="row" fxLayoutAlign="start stretch">
+  <div fxFlex="5"></div>
+  <div fxFlex="70">
+    <h3>Description</h3>
+    <md-card>
+      <div *ngIf="app" [innerHTML]="app.description"></div>
+    </md-card>
+
+  </div>
+  <div fxFlex="25"></div>
+</div>

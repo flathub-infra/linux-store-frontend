@@ -14,13 +14,25 @@ import { AppListComponent } from './pages/app-list/app-list.component';
 import { AppDetailsComponent } from './pages/app-details/app-details.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LinuxStoreApiService } from './linux-store-api.service';
+import { AppSidebarComponent } from './shared/app-sidebar/app-sidebar.component';
+import { AppCardListVertComponent } from './shared/app-card-list-vert/app-card-list-vert.component';
+import { AppDetailsMainComponent } from './shared/app-details-main/app-details-main.component';
+import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
+import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
+import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppListComponent,
     AppDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    AppSidebarComponent,
+    AppCardListVertComponent,
+    AppDetailsMainComponent,
+    AppDetailsDescriptionComponent,
+    AppDetailsExtraInfoComponent,
+    AppDetailsReviewsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,45 @@
+<div *ngIf="app" fxLayout="column" fxLayoutAlign="start stretch">
+
+  <div fxLayout="row" fxLayoutAlign="start stretch">
+    <div fxFlex="10">
+      <img class="" src="{{app.iconUrl}}" border="0" alt="">
+    </div>
+    <div fxFlex="80" fxFlexOffset="5">
+      <h2>{{app.name}}</h2>
+      <p>{{app.summary}}</p>
+      <button md-raised-button color="primary" (click)="onInstall()">INSTALL</button>
+    </div>
+    <div fxFlex="10"></div>
+  </div>
+
+  <!-- <div fxLayout="row" fxLayoutAlign="start stretch">
+    <div fxFlex="10">
+      <button md-raised-button color="primary" (click)="onInstall()">INSTALL</button>
+    </div>
+
+    <div fxFlex="70">
+       <md-expansion-panel>
+        <md-expansion-panel-header>
+          <md-panel-title>
+            Personal data
+          </md-panel-title>
+          <md-panel-description>
+            Type your name and age
+          </md-panel-description>
+        </md-expansion-panel-header>
+
+        <md-form-field>
+          <input mdInput placeholder="First name">
+        </md-form-field>
+
+        <md-form-field>
+          <input mdInput placeholder="Age">
+        </md-form-field>
+      </md-expansion-panel>
+    </div>
+
+    <div fxFlex="20"></div>
+
+  </div> -->
+
+</div>
