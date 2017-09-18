@@ -20,7 +20,8 @@
       "prefix": "store",
       "styles": [
         "styles.scss",
-        "linux-store-theme.scss"
+        "linux-store-theme.scss",
+        "fonts.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
