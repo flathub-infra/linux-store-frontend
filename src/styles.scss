@@ -1,24 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-//@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-
-// some basic resets
-/* body {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-} */
-
-
+.app{
+    height: 100vh;    // emmet h100vh
+}
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Sans Pro', 'Source Sans', sans-serif;
-    font-size: 13pt;
-    font-weight: 400;
-    font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.5em;
 }
 
 h1,
@@ -27,8 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", "Source Sans", sans-serif;
-  margin-top: 1.5em; }
+  margin-top: 1.5em !important; }
   h1:first-child,
   h2:first-child,
   h3:first-child,
@@ -43,28 +34,3 @@ h6 {
   h5.voffset,
   h6.voffset {
     margin-top: 3em; }
-
-h1 {
-  font-size: 200%;
-  font-weight: 300; }
-
-h2 {
-  font-size: 180%;
-  font-weight: 300; }
-
-h3 {
-  font-size: 130%;
-  font-weight: 800;
-  //color: #808080;
-}
-
-h4 {
-  font-size: 120%;
-  font-weight: 600;
-  //color: #808080;
-}
-
-
-.app{
-    height: 100vh;    // emmet h100vh
-}

@@ -1,0 +1,91 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+@import '../../app/shared/navbar/navbar-theme.scss';
+@import '../../app/shared/footer/footer-theme.scss';
+@import '../../app/pages/app-list/app-list-theme.scss';
+
+
+
+// Define a custom typography config that overrides the font-family
+// as well as the `headlines`, `body-1`, etc levels:
+//   display-4, display-3, display-2 and display-1 - Large, one-off headers, usually at the
+//     top of the page (e.g. a hero header).
+//   headline - Section heading corresponding to the <h1> tag.
+//   title - Section heading corresponding to the <h2> tag.
+//   subheading-2 - Section heading corresponding to the <h3> tag.
+//   subheading-1 - Section heading corresponding to the <h4> tag.
+//   body-1 - Base body text.
+//   body-2 - Bolder body text.
+//   caption - Smaller body and hint text.
+//   button - Buttons and anchors.
+//
+// Each typographic level is defined by the mat-typography-level function,
+// which requires a font-size, line-height, and font-weight
+//
+// https://material.angular.io/guide/typography
+$custom-typography: mat-typography-config(
+  $font-family: 'Source Sans Pro, Source Sans, sans-serif',
+  $headline: mat-typography-level(200%, 1.1, 300),
+  $title: mat-typography-level(180%, 1.1, 300),
+  $subheading-2: mat-typography-level(130%, 1.1, 800),
+  $subheading-1: mat-typography-level(120%, 1.1, 600),
+  $body-1: mat-typography-level(13pt, 1.8, 400),
+  $body-2: mat-typography-level(13pt, 1.8, 400)
+);
+
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+@include mat-base-typography($custom-typography);
+
+// Override typography for a specific Angular Material components.
+@include mat-checkbox-typography($custom-typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+
+
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+//@include mat-core();
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+//$linux-store-primary: mat-palette($mat-indigo);
+
+$mat-flathub: (
+  100: #79A1D0,
+  500: #4a86cf,
+  700: #0C64CF,
+  contrast: (
+    100: $black-87-opacity,
+    500: white,
+    700: white,
+  )
+);
+
+
+$linux-store-primary: mat-palette($mat-flathub);
+
+$linux-store-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$linux-store-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $linux-store-warn);
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include navbar-theme($linux-store-theme);
+@include footer-theme($linux-store-theme);
+@include app-list-theme($linux-store-theme);
+
+@include angular-material-theme($linux-store-theme);

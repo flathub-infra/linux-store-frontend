@@ -20,8 +20,8 @@
       "prefix": "store",
       "styles": [
         "styles.scss",
-        "linux-store-theme.scss",
-        "fonts.scss"
+        "themes/flathub/flathub-theme.scss",
+        "themes/flathub/flathub-fonts.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
