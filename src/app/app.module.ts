@@ -21,6 +21,7 @@ import { AppDetailsDescriptionComponent } from './shared/app-details-description
 import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HomeComponent } from './pages/home/home.component';
     AppDetailsDescriptionComponent,
     AppDetailsExtraInfoComponent,
     AppDetailsReviewsComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

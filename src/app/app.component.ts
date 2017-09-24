@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  //title = 'Linux Store (proof of concept)';
-  title = 'Fhdemo';
+  showShadow = false;
 }
