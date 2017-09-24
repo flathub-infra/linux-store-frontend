@@ -13,6 +13,7 @@ import { MdButtonToggleModule } from '@angular/material';
 import { MdInputModule } from '@angular/material';
 import { MdExpansionModule } from '@angular/material';
 import { MdListModule } from '@angular/material';
+import { MdTooltipModule } from '@angular/material';
 
 const MATERIAL_MODULES = [
   MdButtonModule,
@@ -28,6 +29,7 @@ const MATERIAL_MODULES = [
   MdToolbarModule,
   MdExpansionModule,
   MdListModule,
+  MdTooltipModule
 ];
 
 @NgModule({

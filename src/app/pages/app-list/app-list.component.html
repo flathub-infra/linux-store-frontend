@@ -18,12 +18,9 @@
     <md-grid-list cols="{{numCols}}" gutterSize="12" rowHeight="6:7" fxFlex="90" fxFlexOffset="5" (window:resize)="onResize($event)">
       <md-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
         <img class="app-tile-icon" src="{{app.iconUrl}}" border="0" alt="icon of the app {{app.name}}">
-        <md-grid-tile-footer>
+        <md-grid-tile-footer mdTooltip="{{app.name}}  -  {{app.summary}}">
           <p class="app-name" mdLine>{{app.name}}</p>
           <span class="app-summary" mdLine>{{app.summary}}</span>
-          <!-- <button md-icon-button (click)="gotoDetail(app.flatpakAppId)">
-           <md-icon>file_download</md-icon>
-          </button> -->
         </md-grid-tile-footer>
       </md-grid-tile>
     </md-grid-list>
