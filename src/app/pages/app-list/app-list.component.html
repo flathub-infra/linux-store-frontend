@@ -19,8 +19,8 @@
       <md-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
         <img class="app-tile-icon" src="{{app.iconUrl}}" border="0" alt="icon of the app {{app.name}}">
         <md-grid-tile-footer>
-          <h3 mdLine>{{app.name}}</h3>
-          <span mdLine>{{app.summary}}</span>
+          <p class="app-name" mdLine>{{app.name}}</p>
+          <span class="app-summary" mdLine>{{app.summary}}</span>
           <!-- <button md-icon-button (click)="gotoDetail(app.flatpakAppId)">
            <md-icon>file_download</md-icon>
           </button> -->
