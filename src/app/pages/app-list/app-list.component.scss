@@ -1,6 +1,6 @@
-.app-list-container{
-  background: rgb(238, 238, 238);
-}
+// .app-list-container{
+//   background: rgb(238, 238, 238);
+// }
 
 .app-list{
   min-height: 800px;
@@ -21,6 +21,17 @@ md-grid-tile{
   box-sizing: border-box;
   background: #FFFFFF !important;
   cursor: pointer;
+}
+
+md-grid-tile .app-name{
+  font-size: 80%;
+  font-weight: 600;
+  line-height: 1.4;
+}
+md-grid-tile .app-summary{
+  font-size: 70%;
+  font-weight: normal;
+  line-height: 1;
 }
 
 md-grid-tile:hover{

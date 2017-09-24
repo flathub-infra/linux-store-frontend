@@ -20,6 +20,8 @@ import { AppDetailsMainComponent } from './shared/app-details-main/app-details-m
 import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
 import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-det
     AppDetailsMainComponent,
     AppDetailsDescriptionComponent,
     AppDetailsExtraInfoComponent,
-    AppDetailsReviewsComponent
+    AppDetailsReviewsComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

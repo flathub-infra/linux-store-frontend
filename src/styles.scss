@@ -1,15 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 
-//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
-
-// some basic resets
-body {
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, sans-serif;
-}
-
 .app{
     height: 100vh;    // emmet h100vh
 }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em !important; }
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    margin-top: 0.3em; }
+  h1.voffset,
+  h2.voffset,
+  h3.voffset,
+  h4.voffset,
+  h5.voffset,
+  h6.voffset {
+    margin-top: 3em; }
