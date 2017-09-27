@@ -30,7 +30,9 @@ $custom-typography: mat-typography-config(
   $subheading-2: mat-typography-level(130%, 1.1, 800),
   $subheading-1: mat-typography-level(120%, 1.1, 600),
   $body-1: mat-typography-level(13pt, 1.8, 400),
-  $body-2: mat-typography-level(13pt, 1.8, 400)
+  $body-2: mat-typography-level(13pt, 1.8, 400),
+  $caption: mat-typography-level(12px, 1.8, bold),
+  $button: mat-typography-level(14px, 1.1, 500)
 );
 
 // Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
@@ -89,3 +91,4 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 @include app-list-theme($linux-store-theme);
 
 @include angular-material-theme($linux-store-theme);
+

@@ -22,6 +22,7 @@ import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/ap
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     AppDetailsExtraInfoComponent,
     AppDetailsReviewsComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    AppDetailsInstallInstructionsComponent
   ],
   imports: [
     BrowserModule,
