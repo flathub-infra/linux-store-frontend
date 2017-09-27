@@ -1,31 +1,5 @@
-<div class="demo-container" mdl-shadow="2">
-	<mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
-		<mdl-layout-header>
-			<mdl-layout-header-row>
-				<mdl-layout-title>
-					<a class="linux-store-title" routerLink="/apps" routerLinkActive="active">{{title}}</a>
-				</mdl-layout-title>
-				<mdl-layout-spacer></mdl-layout-spacer>
-				<!-- Navigation. We hide it in small screens. -->
-				<nav class="mdl-navigation mdl-layout--large-screen-only">
-          <button mdl-button mdl-button-type="raised" mdl-colored="accent">Publish your app</button>
-				</nav>
-			</mdl-layout-header-row>
-		</mdl-layout-header>
-	<!-- 	<mdl-layout-drawer>
-    <mdl-layout-title>{{title}}</mdl-layout-title>
-    <nav class="mdl-navigation">
-      <button mdl-button mdl-button-type="raised" mdl-colored="accent">Publish your app</button>
-    <a class="mdl-navigation__link">Link</a>
-      <a class="mdl-navigation__link">Link</a>
-    </nav>
-  </mdl-layout-drawer> -->
-
-		<mdl-layout-content>
-			<!-- Your content goes here -->
-			<router-outlet></router-outlet>
-			<linux-store-footer></linux-store-footer>
-		</mdl-layout-content>
-
-	</mdl-layout>
-</div>
+<section class="app flex-container mat-app-background mat-typography" fxLayout="column" fxLayoutAlign="start stretch">
+  <store-navbar [class.mat-elevation-z6]="showShadow"></store-navbar>
+  <router-outlet></router-outlet>
+  <store-footer fxFlex="5"></store-footer>
+</section>

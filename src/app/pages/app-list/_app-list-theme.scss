@@ -1,0 +1,12 @@
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin app-list-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  // Use mat-color to extract individual colors from a palette as necessary.
+  md-grid-tile-footer{
+    background: rgba(mat-color($primary), 0.7) !important;
+  }
+
+}

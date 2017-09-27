@@ -1,0 +1,38 @@
+md-toolbar {
+  z-index: 10;
+}
+
+md-toolbar-row{
+    justify-content: space-between;
+}
+
+
+.linux-store-header-title{
+  background-image: url("/assets/flathub/flathub-logo.svg");
+  //background-size: 32px 32px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  //box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  //display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  //height: 50px;
+  //line-height: 20px;
+  //margin-bottom: 0px;
+  //margin-left: 2%;
+  //margin-right: 12px;
+  //margin-top: 0px;
+  padding-bottom: 15px;
+  padding-left: 34px;
+  padding-right: 15px;
+  padding-top: 15px;
+  text-decoration: none;
+  text-decoration-line: none;
+  //text-decoration-style: solid;
+  text-transform: uppercase;
+  }

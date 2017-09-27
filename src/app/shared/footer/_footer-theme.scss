@@ -1,0 +1,18 @@
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin footer-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  // Use mat-color to extract individual colors from a palette as necessary.
+  .store-footer{
+    //background-color: mat-color($primary);
+    background-color: black;
+    border-color: mat-color($accent, A400);
+  }
+
+  .store-footer a {
+    color:mat-color($primary, default-contrast);
+  }
+
+}

@@ -1,71 +1,67 @@
-/* Material Design Lite */
-//@import url("https://code.getmdl.io/1.3.0/material.light_blue-indigo.min.css");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/* You can add global styles to this file, and also import other style files */
 
-@import "~@angular-mdl/core/scss/color-definitions";
-
-$color-primary: "74, 134, 207";
-$color-primary-dark: $palette-blue-700;
-$color-accent: $palette-indigo-A200;
-$color-primary-contrast: $color-dark-contrast;
-$color-accent-contrast: $color-dark-contrast;
-
-@import '~@angular-mdl/core/scss/material-design-lite';
+.app{
+    height: 100vh;    // emmet h100vh
+}
 
 body {
-    background: rgb(238, 238, 238);
-  }
-
-.content-grid{
-  width: 100%;
-  padding-left: 1%;
+  padding: 0;
+  margin: 0;
 }
 
-.linux-store-title{
-background-image: url("/assets/images/tux.svg");
-background-size: 32px 32px;
-background-repeat: no-repeat;
-background-origin: padding-box;
-background-position: 6px 50%;
-background-position-x: 6px;
-background-position-y: 50%;
-background-repeat: no-repeat;
-//background-size: auto auto;
-box-sizing: border-box;
-color: rgb(255, 255, 255);
-display: block;
-font-size: 12.1333px;
-font-style: normal;
-font-weight: 700;
-height: 50px;
-line-height: 20px;
-margin-bottom: 0px;
-margin-left: 12px;
-margin-right: 12px;
-margin-top: 0px;
-padding-bottom: 15px;
-padding-left: 42px;
-padding-right: 15px;
-padding-top: 15px;
-
-text-decoration: none;
-
-text-decoration-line: none;
-text-decoration-style: solid;
-text-transform: uppercase;
-/*
-transition-delay: 0s;
-transition-duration: 0.35s;
-transition-property: all;
-transition-timing-function: ease;
-*/
+p {
+  margin-bottom: 1.5em;
 }
 
-.ellipsis {
-  text-overflow: ellipsis;
 
-  /* Required for text-overflow to do anything */
-  white-space: nowrap;
-  overflow: hidden;
-}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em !important; }
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    margin-top: 0.3em; }
+  h1.voffset,
+  h2.voffset,
+  h3.voffset,
+  h4.voffset,
+  h5.voffset,
+  h6.voffset {
+    margin-top: 3em; }
+
+
+    pre {
+      margin: 2em 0;
+    }
+
+    pre {
+      display: block;
+      padding: 9.5px;
+      margin: 0 0 10px;
+      font-size: 13px !important;
+      line-height: 1.42857143;
+      word-break: break-all;
+      word-wrap: break-word;
+      color: #333333;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: auto;
+    }
+
+    code, kbd, pre, samp {
+      font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+    }
+
+    code, kbd, pre, samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }

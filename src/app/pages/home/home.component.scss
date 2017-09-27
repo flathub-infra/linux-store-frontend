@@ -1,0 +1,76 @@
+.header-container{
+  background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
+  color: white;
+  height: 700px;
+  padding: 200px 15px;
+}
+
+header .header-content h1 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 250%;
+    background-color: rgba(74, 134, 207, 0.8);
+}
+
+header .header-content p {
+  margin-bottom: 50px;
+  font-size: 110%;
+  font-weight: 300;
+  //background-color: #4a86cf;
+}
+
+header .header-content a {
+  color: white;
+  font-weight: bold;
+  transition: all 200ms;
+  opacity: 0.8;
+}
+
+section{
+  padding: 100px 15px;
+}
+
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", "Source Sans", sans-serif;
+  font-weight: 300;
+  color: inherit;
+}
+
+h1 {
+  margin: 0.67em 0;
+}
+
+/* body {
+  font-style: normal;
+} */
+
+
+a:active, a:visited {
+  color: #4a86cf;
+}
+
+a {
+  color: #4a86cf;
+  transition: color .35s;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover{
+  cursor: auto;
+  text-decoration: underline;
+}
+
+/*
+* {
+  box-sizing: border-box;
+} */
+
+
