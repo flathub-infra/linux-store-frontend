@@ -1,8 +1,23 @@
 .store-footer {
   margin-top: 40px;
   padding: 12px;
-  font-size: 12px;
 }
+
+.store-footer a {
+      padding: 0;
+      -webkit-transition: all .35s;
+      -moz-transition: all .35s;
+      transition: all .35s;
+      font-weight: bold;
+      color: #808080;
+      text-decoration: none;
+      background-color: transparent;
+      font-size: 80%;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
 .store-footer-list {
   align-items: center;
@@ -15,22 +30,19 @@
   display: flex;
   flex: 1;
   justify-content: flex-end;
+
+  p{
+    font-weight: bold;
+    color: #808080;
+    background-color: transparent;
+    font-size: 80%;
+  }
 }
 
 .store-footer-links ul {
   list-style: none;
   margin: 0 40px;
   padding: 0;
-
-  a {
-    font-size: 16px;
-    padding: 0;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 @media screen and (max-width: 884px){
