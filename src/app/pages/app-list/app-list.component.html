@@ -1,9 +1,9 @@
-<md-sidenav-container fxFlex class="app-list-container">
+<mat-sidenav-container fxFlex class="app-list-container">
 
   <!-- sidenav -->
-  <md-sidenav align="start" mode="side" opened="false" class="mat-elevation-z6">
+  <mat-sidenav align="start" mode="side" opened="false" class="mat-elevation-z6">
     Categories
-  </md-sidenav>
+  </mat-sidenav>
 
   <div class="flex-container" fxLayout='row' fxLayoutAlign="start stretch">
     <h1 fxFlexOffset="5">Applications</h1>
@@ -15,19 +15,19 @@
 
     <!-- main content -->
 
-    <md-grid-list cols="{{numCols}}" gutterSize="12" rowHeight="6:7" fxFlex="90" fxFlexOffset="5" (window:resize)="onResize($event)">
-      <md-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
+    <mat-grid-list cols="{{numCols}}" gutterSize="12" rowHeight="6:7" fxFlex="90" fxFlexOffset="5" (window:resize)="onResize($event)">
+      <mat-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
         <img class="app-tile-icon" src="{{app.iconUrl}}" border="0" alt="icon of the app {{app.name}}">
-        <md-grid-tile-footer mdTooltip="{{app.name}}  -  {{app.summary}}">
-          <p class="app-name" mdLine>{{app.name}}</p>
-          <span class="app-summary" mdLine>{{app.summary}}</span>
-        </md-grid-tile-footer>
-      </md-grid-tile>
-    </md-grid-list>
+        <mat-grid-tile-footer matTooltip="{{app.name}}  -  {{app.summary}}">
+          <p class="app-name" matLine>{{app.name}}</p>
+          <span class="app-summary" matLine>{{app.summary}}</span>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
 
     <!-- <div fxFlex class="three">Bye</div> -->
 
   </div>
 
 
-</md-sidenav-container>
+</mat-sidenav-container>
