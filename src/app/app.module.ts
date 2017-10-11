@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
@@ -49,7 +50,10 @@ import { AppDetailsInstallInstructionsComponent } from './shared/app-details-ins
     LinuxStoreAngularMaterialModule,
     routing
   ],
-  providers: [LinuxStoreApiService],
+  providers: [
+    LinuxStoreApiService,
+    { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,35 +1,35 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdMenuModule } from '@angular/material';
-import { MdToolbarModule } from '@angular/material';
-import { MdSidenavModule } from '@angular/material';
-import { MdTabsModule } from '@angular/material';
-import { MdIconModule } from '@angular/material';
-import { MdGridListModule } from '@angular/material';
-import { MdDialogModule } from '@angular/material';
-import { MdCardModule } from '@angular/material';
-import { MdButtonModule } from '@angular/material';
-import { MdButtonToggleModule } from '@angular/material';
-import { MdInputModule } from '@angular/material';
-import { MdExpansionModule } from '@angular/material';
-import { MdListModule } from '@angular/material';
-import { MdTooltipModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material';
+import { MatIconModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material';
+import { MatButtonToggleModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
+import { MatExpansionModule } from '@angular/material';
+import { MatListModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material';
 
 const MATERIAL_MODULES = [
-  MdButtonModule,
-  MdButtonToggleModule,
-  MdCardModule,
-  MdDialogModule,
-  MdGridListModule,
-  MdIconModule,
-  MdInputModule,
-  MdMenuModule,
-  MdSidenavModule,
-  MdTabsModule,
-  MdToolbarModule,
-  MdExpansionModule,
-  MdListModule,
-  MdTooltipModule
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatDialogModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+  MatSidenavModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatExpansionModule,
+  MatListModule,
+  MatTooltipModule
 ];
 
 @NgModule({
