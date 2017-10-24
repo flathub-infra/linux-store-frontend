@@ -1,0 +1,23 @@
+
+.toolbar-desktop{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.toolbar-mobile{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.flex-fill-remaining-space {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+
+mat-icon.open-in-new{
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+}
+

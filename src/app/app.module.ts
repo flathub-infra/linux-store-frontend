@@ -24,6 +24,7 @@ import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-det
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
+import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AppDetailsInstallInstructionsComponent } from './shared/app-details-ins
     AppDetailsReviewsComponent,
     HomeComponent,
     NavbarComponent,
-    AppDetailsInstallInstructionsComponent
+    AppDetailsInstallInstructionsComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
