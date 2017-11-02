@@ -1,8 +1,13 @@
 .header-container{
   background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
   color: white;
-  //height: 700px;
-  padding: 200px 15px;
+
+}
+.header-desktop{
+  padding: 8% 30%;
+}
+.header-mobile{
+  padding: 8% 5%;
 }
 
 header .header-content h1 {
@@ -16,7 +21,6 @@ header .header-content p {
   margin-bottom: 50px;
   font-size: 110%;
   font-weight: 300;
-  //background-color: #4a86cf;
 }
 
 header .header-content a {
@@ -26,8 +30,11 @@ header .header-content a {
   opacity: 0.8;
 }
 
-section{
-  padding: 100px 15px;
+.section-desktop{
+  padding: 8% 30%;
+}
+.section-mobile{
+  padding: 8% 5%;
 }
 
 p {
@@ -35,7 +42,6 @@ p {
   line-height: 1.5;
   margin: 0 0 10px;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", "Source Sans", sans-serif;
@@ -46,11 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin: 0.67em 0;
 }
-
-/* body {
-  font-style: normal;
-} */
-
 
 a:active, a:visited {
   color: #4a86cf;
@@ -68,9 +69,5 @@ a:hover{
   text-decoration: underline;
 }
 
-/*
-* {
-  box-sizing: border-box;
-} */
 
 
