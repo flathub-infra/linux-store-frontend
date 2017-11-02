@@ -1,11 +1,11 @@
-// .app-list-container{
-//   background: rgb(238, 238, 238);
-// }
 
-.app-list{
-  min-height: 800px;
-  -moz-min-height: 800px;
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  mat-sidenav-container{
+    height: calc(200vh - 87px - 150px);
+  }
 }
+
 
 mat-sidenav {
   width: 100px;
