@@ -1,3 +1,12 @@
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
+  margin-bottom: 64px;
+}
+
 
 .toolbar-desktop{
   display: flex;
