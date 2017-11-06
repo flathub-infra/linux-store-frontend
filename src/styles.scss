@@ -67,3 +67,117 @@ h6 {
       font-family: monospace, monospace;
       font-size: 1em;
     }
+
+
+    .store-content-container{
+      padding: 200px 30%;
+    }
+
+
+  /* Material Design Adaptive Breakpoints by @eyecatchup     */
+  /* https://gist.github.com/eyecatchup/9e847b05f15efccc1a29 */
+  /*
+    Below you'll find CSS media queries based on the breakpoint guidance
+    published by the Material Design team. You can choose to use, customise
+    or remove these breakpoints based on your needs.
+
+    http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoints
+   */
+
+  /* mobile-small */
+  @media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* mobile-large */
+  @media all and (min-width: 361px) and (orientation: portrait) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+  }
+  /* mobile-small-landscape */
+  @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* mobile-large-landscape */
+  @media all and (min-width: 481px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* tablet-small-landscape */
+  @media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* tablet-large-landscape */
+  @media all and (min-width: 961px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* tablet-small */
+  @media all and (min-width: 600px) and (orientation: portrait) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* tablet-large */
+  @media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* desktop-x-small-landscape */
+  @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* desktop-x-small */
+  @media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* desktop-small-landscape */
+  @media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+  }
+  /* desktop-small */
+  @media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {
+    .store-content-container{
+      padding: 200px 5%;
+    }
+   }
+  /* desktop-medium-landscape */
+  @media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) {
+    .store-content-container{
+      padding: 200px 20%;
+    }
+   }
+  /* desktop-medium */
+  @media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) {
+    .store-content-container{
+      padding:200px 20%;
+    }
+   }
+  /* desktop-large */
+  @media all and (min-width: 1281px) and (max-width: 1600px) {
+    .store-content-container{
+      padding: 200px 20%;
+    }
+  }
+  /* desktop-xlarge */
+  @media all and (min-width: 1601px) and (max-width: 1920px) {
+    .store-content-container{
+      padding: 200px 30%;
+    }
+  }
+
