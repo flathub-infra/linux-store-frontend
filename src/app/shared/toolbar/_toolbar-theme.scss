@@ -1,17 +1,14 @@
 @mixin toolbar-theme($theme) {
-  /* $primary: map-get($theme, primary);
+  $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
-  store-navbar {
-    color: mat-color($primary, default-contrast);
+  .fixed-toolbar-spacer{
+    //background-color: mat-color($primary);
+  }
 
-    .store-toolbar {
-      background: mat-color($primary);
-    }
-  } */
 }
 
 
