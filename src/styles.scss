@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 .app{
-    height: 100vh;    // emmet h100vh
+  height: 100vh;    // emmet h100vh
 }
 
 body {
@@ -31,153 +31,95 @@ h6 {
   h5:first-child,
   h6:first-child {
     margin-top: 0.3em; }
-  h1.voffset,
-  h2.voffset,
-  h3.voffset,
-  h4.voffset,
-  h5.voffset,
-  h6.voffset {
-    margin-top: 3em; }
+    h1.voffset,
+    h2.voffset,
+    h3.voffset,
+    h4.voffset,
+    h5.voffset,
+    h6.voffset {
+      margin-top: 3em; }
 
 
-    pre {
-      margin: 2em 0;
-    }
+      pre {
+        margin: 2em 0;
+      }
 
-    pre {
-      display: block;
-      padding: 9.5px;
-      margin: 0 0 10px;
-      font-size: 13px !important;
-      line-height: 1.42857143;
-      word-break: break-all;
-      word-wrap: break-word;
-      color: #333333;
-      background-color: #f5f5f5;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      overflow: auto;
-    }
+      pre {
+        display: block;
+        padding: 9.5px;
+        margin: 0 0 10px;
+        font-size: 13px !important;
+        line-height: 1.42857143;
+        word-break: break-all;
+        word-wrap: break-word;
+        color: #333333;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: auto;
+      }
 
-    code, kbd, pre, samp {
-      font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
-    }
+      code, kbd, pre, samp {
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+      }
 
-    code, kbd, pre, samp {
-      font-family: monospace, monospace;
-      font-size: 1em;
-    }
-
-
-    .store-content-container{
-      padding: 200px 30%;
-    }
+      code, kbd, pre, samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
 
 
-  /* Material Design Adaptive Breakpoints by @eyecatchup     */
-  /* https://gist.github.com/eyecatchup/9e847b05f15efccc1a29 */
-  /*
-    Below you'll find CSS media queries based on the breakpoint guidance
-    published by the Material Design team. You can choose to use, customise
-    or remove these breakpoints based on your needs.
 
-    http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoints
-   */
 
-  /* mobile-small */
-  @media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* mobile-large */
-  @media all and (min-width: 361px) and (orientation: portrait) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-  }
-  /* mobile-small-landscape */
-  @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* mobile-large-landscape */
-  @media all and (min-width: 481px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* tablet-small-landscape */
-  @media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* tablet-large-landscape */
-  @media all and (min-width: 961px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* tablet-small */
-  @media all and (min-width: 600px) and (orientation: portrait) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* tablet-large */
-  @media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* desktop-x-small-landscape */
-  @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* desktop-x-small */
-  @media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* desktop-small-landscape */
-  @media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-  }
-  /* desktop-small */
-  @media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {
-    .store-content-container{
-      padding: 200px 5%;
-    }
-   }
-  /* desktop-medium-landscape */
-  @media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) {
-    .store-content-container{
-      padding: 200px 20%;
-    }
-   }
-  /* desktop-medium */
-  @media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) {
-    .store-content-container{
-      padding:200px 20%;
-    }
-   }
-  /* desktop-large */
-  @media all and (min-width: 1281px) and (max-width: 1600px) {
-    .store-content-container{
-      padding: 200px 20%;
-    }
-  }
-  /* desktop-xlarge */
-  @media all and (min-width: 1601px) and (max-width: 1920px) {
-    .store-content-container{
-      padding: 200px 30%;
-    }
-  }
+      /* Material Design Adaptive Breakpoints by @eyecatchup     */
+      /* https://gist.github.com/eyecatchup/9e847b05f15efccc1a29 */
+      /*
+      Below you'll find CSS media queries based on the breakpoint guidance
+      published by the Material Design team. You can choose to use, customise
+      or remove these breakpoints based on your needs.
+
+      http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoints
+      */
+
+      .store-content-container{
+        padding-left:  5%;
+        padding-right: 5%;
+      }
+
+      /* desktop-medium */
+      @media all and (min-width: 841px) and (max-width: 1280px) {
+        .store-content-container{
+          padding-left: 20%;
+          padding-right: 20%;
+        }
+      }
+      /* desktop-large */
+      @media all and (min-width: 1281px) and (max-width: 1440px) {
+        .store-content-container{
+          padding-left: 22%;
+          padding-right: 22%;
+        }
+      }
+      /* desktop-large-2 */
+      @media all and (min-width: 1441px) and (max-width: 1600px) {
+        .store-content-container{
+          padding-left: 24%;
+          padding-right: 24%;
+        }
+      }
+      /* desktop-large-3 */
+      @media all and (min-width: 1601px) and (max-width: 1920px) {
+        .store-content-container{
+          padding-left: 30%;
+          padding-right: 30%;
+        }
+      }
+
+      /* desktop-xlarge */
+      @media all and (min-width: 1920px) {
+        .store-content-container{
+          padding-left: 32%;
+          padding-right: 32%;
+        }
+      }
 

@@ -1,13 +1,8 @@
 .header-container{
   background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
   color: white;
+  padding-top: 100px;
 
-}
-.header-desktop{
-  padding: 8% 30%;
-}
-.header-mobile{
-  padding: 8% 5%;
 }
 
 header .header-content h1 {
@@ -30,11 +25,8 @@ header .header-content a {
   opacity: 0.8;
 }
 
-.section-desktop{
-  padding: 8% 30%;
-}
-.section-mobile{
-  padding: 8% 5%;
+section{
+  padding-top: 100px;
 }
 
 p {
