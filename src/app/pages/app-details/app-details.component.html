@@ -1,17 +1,11 @@
-<div fxLayout="row" fxLayoutAlign="start stretch">
-
-  <store-app-sidebar fxFlex="15" fxFlex.lt-sm="1"></store-app-sidebar>
-
-  <!-- main content -->
-  <div fxFlex="65" fxFlex.lt-sm="98">
-    <div *ngIf="app" fxLayout="column" fxLayoutAlign="start stretch">
-      <store-app-details-main fxFlexOffset="5" [app]="app" (install)="onInstall(app)"></store-app-details-main>
-      <store-app-details-description [app]="app"></store-app-details-description>
-      <store-app-details-install-instructions [app]="app"></store-app-details-install-instructions>
-      <store-app-details-extra-info></store-app-details-extra-info>
-      <store-app-details-reviews></store-app-details-reviews>
-    </div>
+<div>
+    <section class="store-content-container">
+        <div *ngIf="app" fxLayout="column" fxLayoutAlign="start stretch">
+            <store-app-details-main [app]="app" (install)="onInstall(app)"></store-app-details-main>
+            <store-app-details-description [app]="app"></store-app-details-description>
+            <store-app-details-install-instructions [app]="app"></store-app-details-install-instructions>
+            <store-app-details-extra-info></store-app-details-extra-info>
+            <store-app-details-reviews></store-app-details-reviews>
+          </div>
+    </section>
   </div>
-
-  <store-app-card-list-vert fxFlex="20" fxFlex.lt-sm="1"></store-app-card-list-vert>
-</div>
