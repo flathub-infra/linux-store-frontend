@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { App } from '../../shared/app.model';
@@ -10,6 +11,8 @@ import { LinuxStoreApiService } from '../../linux-store-api.service';
   styleUrls: ['./app-list.component.scss']
 })
 export class AppListComponent implements OnInit {
+
+  @ViewChild('applist', {read: ElementRef}) private elementView: ElementRef;
 
   apps: App[];
   selectedApp: App;
@@ -24,15 +27,17 @@ export class AppListComponent implements OnInit {
 
   ngOnInit() {
     this.getApps();
-    this.updateNumCols(innerWidth);
+    this.updateNumCols();
+    this.apps.length
   }
 
   onResize(event) {
-    this.updateNumCols(event.target.innerWidth);
+    this.updateNumCols();
   }
 
-  updateNumCols(width: number) {
-    this.numCols = Math.max(2, Math.floor(width / this.columnWidth));
+  updateNumCols() {
+    var width: number = this.elementView.nativeElement.clientWidth;
+    this.numCols = Math.max(1, Math.floor(width / this.columnWidth));
   }
 
   getApps(): void {

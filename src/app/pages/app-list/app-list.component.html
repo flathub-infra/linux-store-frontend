@@ -1,33 +1,31 @@
-<mat-sidenav-container fxFlex class="app-list-container">
+<div>
+  <!-- header -->
+  <header class="store-content-container">
+    <div class="header-content">
+      <h1>Flatpak Applications</h1>
 
-  <!-- sidenav -->
-  <mat-sidenav align="start" mode="side" opened="false" class="mat-elevation-z6">
-    Categories
-  </mat-sidenav>
+      <p>
+        This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them. Read more about
+        Flatpak on the
+        <a href="http://flatpak.org">Flatpak website.</a>
+      </p>
+    </div>
+  </header>
 
-  <div class="flex-container" fxLayout='row' fxLayoutAlign="start stretch">
-    <h1 fxFlexOffset="5">Applications</h1>
-  </div>
+  <!-- main content -->
+  <section class="store-content-container">
+    <div>
+      <p>Currently {{apps.length}} apps and growing!</p>
+      <mat-grid-list #applist cols="{{numCols}}" gutterSize="12" rowHeight="6:7" (window:resize)="onResize($event)">
+        <mat-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
+          <img class="app-tile-icon" src="{{app.iconUrl}}" border="0" alt="icon of the app {{app.name}}">
+          <mat-grid-tile-footer matTooltip="{{app.name}}  -  {{app.summary}}">
+            <p class="app-name" matLine>{{app.name}}</p>
+            <span class="app-summary" matLine>{{app.summary}}</span>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </section>
 
-  <div class="flex-container app-list" fxLayout='row' fxLayoutAlign="start stretch">
-
-    <!-- <div fxFlex="30" class="one">Hello</div> -->
-
-    <!-- main content -->
-
-    <mat-grid-list cols="{{numCols}}" gutterSize="12" rowHeight="6:7" fxFlex="90" fxFlexOffset="5" (window:resize)="onResize($event)">
-      <mat-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
-        <img class="app-tile-icon" src="{{app.iconUrl}}" border="0" alt="icon of the app {{app.name}}">
-        <mat-grid-tile-footer matTooltip="{{app.name}}  -  {{app.summary}}">
-          <p class="app-name" matLine>{{app.name}}</p>
-          <span class="app-summary" matLine>{{app.summary}}</span>
-        </mat-grid-tile-footer>
-      </mat-grid-tile>
-    </mat-grid-list>
-
-    <!-- <div fxFlex class="three">Bye</div> -->
-
-  </div>
-
-
-</mat-sidenav-container>
+</div>

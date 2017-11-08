@@ -1,14 +1,6 @@
 
-/*This will work for firefox*/
-@-moz-document url-prefix() {
-  mat-sidenav-container{
-    height: calc(200vh - 87px - 150px);
-  }
-}
-
-
-mat-sidenav {
-  width: 100px;
+header{
+  padding-bottom: 0px;
 }
 
 .app-tile-icon{
