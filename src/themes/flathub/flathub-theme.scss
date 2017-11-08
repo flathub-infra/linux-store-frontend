@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 @import '../../app/shared/navbar/navbar-theme.scss';
+@import '../../app/shared/toolbar/toolbar-theme.scss';
 @import '../../app/shared/footer/footer-theme.scss';
 @import '../../app/pages/app-list/app-list-theme.scss';
 
@@ -87,6 +88,7 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include navbar-theme($linux-store-theme);
+@include toolbar-theme($linux-store-theme);
 @include footer-theme($linux-store-theme);
 @include app-list-theme($linux-store-theme);
 

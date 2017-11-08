@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Flatpak Store Proof of Concept</title>
@@ -13,43 +14,102 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> -->
 
   <!-- fontawesome.io -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Loading screen CSS -->
-	<style>
-		app-root > .loading {
-			margin: 0 auto;
-			text-align: center;
-			display: block;
-			position: relative;
-			top: 20vh;
-		}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		app-root > .loading .fa-spinner {
-			font-size: 48px;
-			color: rgb(124, 77, 255);
-		}
+  <!-- App Shell CSS -->
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-		app-root .text-container {
-			text-align: center;
-			display: inline-block;
-			padding: 0 -1em;
-			color: rgb(124, 77, 255);
-			font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-			font-size: 14px;
-			font-weight: 500;
-			text-transform: uppercase;
-			letter-spacing: 0;
-		}
-	</style>
+    app-root>.loading {
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      position: relative;
+      top: 20vh;
+    }
+
+    app-root>.loading .fa-spinner {
+      font-size: 70px;
+      color: #4a86cf;
+    }
+
+    app-root .text-container {
+      text-align: center;
+      display: inline-block;
+      padding: 0 -1em;
+      color: #4a86cf;
+      font-family: "Source Sans Pro", "Source Sans", "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    app-root .topnav {
+      background-color: #4a86cf;
+      height: 64px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 16px;
+    }
+
+    app-root .topnav .store-button {
+      color: white;
+      box-sizing: border-box;
+      position: relative;
+      font-family: "Source Sans Pro", "Source Sans", "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: 90%;
+      user-select: none;
+      cursor: pointer;
+      outline: 0;
+      border: none;
+      -webkit-tap-highlight-color: transparent;
+      display: inline-block;
+      white-space: nowrap;
+      text-decoration: none;
+      vertical-align: baseline;
+      margin: 0;
+      min-width: 88px;
+      line-height: 36px;
+      padding: 16px 16px;
+      border-radius: 2px;
+    }
+
+    app-root .topnav .store-button .store-button-wrapper>* {
+      vertical-align: middle;
+    }
+  </style>
 </head>
 
 <body>
-	<app-root>
-		<div class="loading">
-			<p><i class="fa fa-spinner fa-spin"></i></p>
-			<div class="text-container">
-				<h4>Loading apps ...</h4>
-			</div>
-		</div>
+  <app-root>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="store-button" aria-label="Flathub">
+        <span class="store-button-wrapper">
+          <img src="http://flathub.org/img/logo.svg">
+          <span>FLATHUB</span>
+        </span>
+      </a>
+    </div>
+    <div class="loading">
+      <div>
+        <i class="fa fa-spinner fa-spin"></i>
+      </div>
+      <div class="text-container">
+        <h4>Loading ...</h4>
+      </div>
+    </div>
+  </app-root>
 </body>
+
 </html>

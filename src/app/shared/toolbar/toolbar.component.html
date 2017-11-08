@@ -1,0 +1,46 @@
+<mat-toolbar class="fixed-toolbar" color="primary">
+
+  <a mat-button class="store-logo-button" routerLink="/" aria-label="Flathub">
+      <img class="store-logo"
+        src="../../../assets/themes/flathub/flathub-logo.svg"
+        alt="flathub">
+      <span>FLATHUB</span>
+    </a>
+
+  <div fxHide fxShow.gt-sm class="toolbar-content">
+    <a mat-button routerLink="home">Using Flathub</a>
+    <a mat-button routerLink="apps">Applications</a>
+    <a mat-button href="http://flatpak.org">Flatpak <mat-icon class="open-in-new">open_in_new</mat-icon></a>
+
+    <span class="flex-fill-remaining-space"></span>
+
+    <a mat-button href="https://github.com/flathub/flathub/wiki/Submission-Guidelines" aria-label="Publish your app in flathub">
+      Publish your app <mat-icon class="open-in-new">open_in_new</mat-icon>
+    </a>
+  </div>
+
+  <div fxShow fxHide.gt-sm class="toolbar-content">
+
+    <span class="flex-fill-remaining-space"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" xPosition="after">
+          <mat-icon>more_vert</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="home">
+          <span>Using Flathub</span>
+      </button>
+      <button mat-menu-item routerLink="apps">
+          <span>Applications</span>
+      </button>
+      <a mat-menu-item href="http://flatpak.org">Flatpak
+        <mat-icon class="open-in-new"> open_in_new</mat-icon></a>
+      <a mat-menu-item href="https://github.com/flathub/flathub/wiki/Submission-Guidelines" aria-label="Publish your app in flathub">Publish yor app
+          <mat-icon class="open-in-new">open_in_new</mat-icon></a>
+    </mat-menu>
+
+  </div>
+
+</mat-toolbar>
+<div class="fixed-toolbar-spacer"></div>

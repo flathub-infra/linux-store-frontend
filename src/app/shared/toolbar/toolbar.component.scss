@@ -1,0 +1,32 @@
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.fixed-toolbar-spacer{
+  height: 56px;
+}
+
+.fixed-toolbar-spacer-gt-sm{
+  height: 64px;
+}
+
+.toolbar-content{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.flex-fill-remaining-space {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+
+mat-icon.open-in-new{
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+}
+
