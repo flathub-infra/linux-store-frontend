@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+
 
 import { App } from '../../shared/app.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
@@ -26,9 +27,18 @@ export class AppListComponent implements OnInit {
   }
 
   ngOnInit() {
+
     this.getApps();
     this.updateNumCols();
-  }
+
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0)
+    });
+}
+
 
   onResize(event) {
     this.updateNumCols();

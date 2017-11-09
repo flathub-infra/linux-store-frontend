@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Http, BrowserXhr, Headers, RequestOptions, ResponseContentType } from '@angular/http';
@@ -27,6 +28,7 @@ export class AppDetailsComponent implements OnInit {
   constructor(
     private http: Http,
     private linuxStoreApiService: LinuxStoreApiService,
+    private router: Router,
     private route: ActivatedRoute,
     private location: Location
   ) { }
@@ -41,17 +43,24 @@ export class AppDetailsComponent implements OnInit {
       .then(reviews => this.reviews = reviews);
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
 
     this.route.params.forEach((params: Params) => {
 
-      let id: string = params['id'];
-      console.log('id=' + id);
-      this.getApp(id);
-      this.getReviews(id);
+            let id: string = params['id'];
+            console.log('id=' + id);
+            this.getApp(id);
+            this.getReviews(id);
 
+          });
+
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0)
     });
-  }
+}
 
   onSelect(review: Review): void {
     console.log('SelectedReview = ' + review.app_id);
