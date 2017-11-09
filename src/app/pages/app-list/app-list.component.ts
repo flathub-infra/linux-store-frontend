@@ -28,7 +28,6 @@ export class AppListComponent implements OnInit {
   ngOnInit() {
     this.getApps();
     this.updateNumCols();
-    this.apps.length
   }
 
   onResize(event) {
