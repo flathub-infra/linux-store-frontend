@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Rx'
 
 import { environment } from './../environments/environment';
 
+import { EMPTYAPPS } from './shared/empty-apps';
 import { APPS } from './shared/mock-apps';
 import { App } from './shared/app.model';
 import { Review } from './shared/review.model';
@@ -19,6 +20,10 @@ export class LinuxStoreApiService {
   private apps: Promise<App[]>;
 
   constructor(private http: Http) { }
+
+  getEmptyApps(): Promise<App[]> {
+    return Promise.resolve(EMPTYAPPS);
+  }
 
   getMockApps(): Promise<App[]> {
     return Promise.resolve(APPS);

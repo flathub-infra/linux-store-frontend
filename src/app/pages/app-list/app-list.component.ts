@@ -1,9 +1,10 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 
 import { App } from '../../shared/app.model';
+//import { EMPTYAPPS } from '../../shared/empty-apps';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 
 @Component({
@@ -13,9 +14,10 @@ import { LinuxStoreApiService } from '../../linux-store-api.service';
 })
 export class AppListComponent implements OnInit {
 
-  @ViewChild('applist', {read: ElementRef}) private elementView: ElementRef;
+  @ViewChild('applist', { read: ElementRef }) private elementView: ElementRef;
 
   apps: App[];
+  emptyApps: App[];
   selectedApp: App;
   errorMessage: string;
   numCols: number;
@@ -28,16 +30,17 @@ export class AppListComponent implements OnInit {
 
   ngOnInit() {
 
+    this.getEmptyApps();
     this.getApps();
     this.updateNumCols();
 
     this.router.events.subscribe((evt) => {
-        if (!(evt instanceof NavigationEnd)) {
-            return;
-        }
-        window.scrollTo(0, 0)
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
     });
-}
+  }
 
 
   onResize(event) {
@@ -48,6 +51,14 @@ export class AppListComponent implements OnInit {
     var width: number = this.elementView.nativeElement.clientWidth;
     this.numCols = Math.max(1, Math.floor(width / this.columnWidth));
   }
+
+  getEmptyApps(): void {
+    this.linuxStoreApiService.getEmptyApps()
+      .then(
+      apps => this.emptyApps = apps,
+      error => this.errorMessage = <any>error);
+  }
+
 
   getApps(): void {
     this.linuxStoreApiService.getApps()
