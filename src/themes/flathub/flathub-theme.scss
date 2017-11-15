@@ -94,3 +94,19 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 
 @include angular-material-theme($linux-store-theme);
 
+p, li{
+  a {
+    color: #4a86cf;
+    transition: color .35s;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:active, a:visited {
+    color: #4a86cf;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
