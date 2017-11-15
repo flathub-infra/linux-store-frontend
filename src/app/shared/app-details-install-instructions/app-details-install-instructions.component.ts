@@ -16,7 +16,7 @@ export class AppDetailsInstallInstructionsComponent implements OnInit {
   }
 
   public getDownloadFlatpakRefUrl() {
-    return window.location.href + this.app.downloadFlatpakRefUrl;
+    return window.location.origin + this.app.downloadFlatpakRefUrl;
   }
 
 }
