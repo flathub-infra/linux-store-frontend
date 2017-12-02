@@ -1,7 +1,7 @@
 {
   "name": "linux-store-frontend",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "0.4.0",
+  "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
