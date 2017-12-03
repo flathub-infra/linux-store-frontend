@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Headers, Response, Http } from '@angular/http';
-import 'rxjs/add/operator/toPromise';
-import { Observable } from 'rxjs/Rx'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from "rxjs/Observable";
+import { catchError, map, tap } from 'rxjs/operators';
+import "rxjs/add/operator/map";
+import "rxjs/add/observable/of";
+
 
 import { environment } from './../environments/environment';
 
@@ -15,67 +18,67 @@ import { REVIEWS } from './shared/mock-reviews';
 export class LinuxStoreApiService {
 
   private baseUrl = environment.apiUrl;  // URL to web api
-  private headers = new Headers({'Content-Type': 'application/json'});
+  //private headers = new Headers({ 'Content-Type': 'application/json' });
 
-  private apps: Promise<App[]>;
+  private apps: Observable<App[]>;
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getEmptyApps(): Promise<App[]> {
-    return Promise.resolve(EMPTYAPPS);
+  getEmptyApps(): Observable<App[]> {
+    return Observable.of(EMPTYAPPS);
   }
 
-  getMockApps(): Promise<App[]> {
-    return Promise.resolve(APPS);
+  getMockApps(): Observable<App[]> {
+    return Observable.of(APPS);
   }
 
   private extractData(res: Response) {
     let body = res.json();
-    return body || { };
+    return body || {};
   }
 
-  getApps(): Promise<App[]> {
+  getApps(): Observable<App[]> {
 
-    if(!this.apps){
-
-      this.apps = this.http
-        .get(this.baseUrl, {headers: this.headers})
-        .toPromise()
-        .then(this.extractData)
-        .catch(this.handleError);
+    if (!this.apps) {
+      this.apps = this.http.get<App[]>(this.baseUrl).pipe(
+        catchError(this.handleError('getApps', []))
+      );
     }
-
     return this.apps;
-
   }
 
-  private handleError (error: Response | any) {
-  // In a real world app, we might use a remote logging infrastructure
-  let errMsg: string;
-  if (error instanceof Response) {
-    const body = error.json() || '';
-    const err = body.error || JSON.stringify(body);
-    errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-  } else {
-    errMsg = error.message ? error.message : error.toString();
-  }
-  console.error(errMsg);
-  return Promise.reject(errMsg);
-}
+  /**
+  * Handle Http operation that failed.
+  * Let the app continue.
+  * @param operation - name of the operation that failed
+  * @param result - optional value to return as the observable result
+  */
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
 
-  getApp(flatpakAppId: string): Promise<App> {
+      // TODO: send the error to remote logging infrastructure
+      console.error(error); // log to console instead
+
+      // TODO: better job of transforming error for user consumption
+      //this.log(`${operation} failed: ${error.message}`);
+
+      // Let the app keep running by returning an empty result.
+      return Observable.of(result as T);
+    };
+  }
+
+  getApp(flatpakAppId: string): Observable<App> {
     return this.getApps()
-      .then(apps => apps.find(app => app.flatpakAppId === flatpakAppId));
+    .map(apps => apps.find(app => app.flatpakAppId === flatpakAppId));
   }
 
-  getAllReviews(): Promise<Review[]> {
-    return Promise.resolve(REVIEWS);
+  getAllReviews(): Observable<Review[]> {
+    return Observable.of(REVIEWS);
   }
 
-  getReviews(app_id: string): Promise<Review[]> {
+  getReviews(app_id: string): Observable<Review[]> {
     return this.getAllReviews()
-      .then(reviews => reviews.filter(review => review.app_id === app_id));
+    .map(reviews => reviews.filter(review => review.app_id === app_id));
   }
-
 
 }

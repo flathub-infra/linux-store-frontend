@@ -2,8 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Http, BrowserXhr, Headers, RequestOptions, ResponseContentType } from '@angular/http';
-import { Observable } from 'rxjs';
 import { saveAs } from "file-saver";
 
 import { App } from '../../shared/app.model';
@@ -26,21 +24,22 @@ export class AppDetailsComponent implements OnInit {
   public pending: boolean = false;
 
   constructor(
-    private http: Http,
     private linuxStoreApiService: LinuxStoreApiService,
     private router: Router,
     private route: ActivatedRoute,
     private location: Location
-  ) { }
+  ) {}
 
   getApp(id: string): void {
-    this.linuxStoreApiService.getApp(id).then(app => this.app = app);
+    this.linuxStoreApiService.getApp(id)
+    .subscribe(apps => { this.app = apps; });
+
   }
 
   getReviews(id: string): void {
     let app_id: string = id.concat('.desktop');
     this.linuxStoreApiService.getReviews(app_id)
-      .then(reviews => this.reviews = reviews);
+      .subscribe(reviews => { this.reviews = reviews; });
   }
 
   ngOnInit() {
@@ -48,7 +47,7 @@ export class AppDetailsComponent implements OnInit {
     this.route.params.forEach((params: Params) => {
 
             let id: string = params['id'];
-            console.log('id=' + id);
+
             this.getApp(id);
             this.getReviews(id);
 
@@ -63,12 +62,10 @@ export class AppDetailsComponent implements OnInit {
 }
 
   onSelect(review: Review): void {
-    console.log('SelectedReview = ' + review.app_id);
     this.selectedReview = review;
   }
 
   isSelected(review: Review): boolean {
-    console.log('review selected:' + review.app_id);
     return review.app_id === this.selectedReview.app_id;
   }
 
