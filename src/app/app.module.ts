@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
@@ -52,7 +51,6 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
   ],
   providers: [
     LinuxStoreApiService,
-    { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },
   ],
   bootstrap: [AppComponent]
 })
