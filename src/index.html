@@ -9,15 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   <link rel="icon" type="image/png" href="/assets/themes/flathub/favicon-32x32.png">
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> -->
-
-  <!-- fontawesome.io -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- App Shell CSS -->
   <style>
+
     body {
       padding: 0;
       margin: 0;
@@ -31,17 +27,114 @@
       display: block;
       position: relative;
       top: 20vh;
+      left: calc(50% - 70px);
     }
 
-    app-root>.loading .fa-spinner {
-      font-size: 70px;
-      color: #4a86cf;
+    app-root>.loading .mat-progress-spinner {
+      display: block;
+      position: relative;
+    }
+
+    app-root>.loading .mat-progress-spinner svg {
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 0;
+      left: 0;
+      transform-origin: center;
+      overflow: visible;
+    }
+
+    app-root>.loading .mat-progress-spinner.mat-progress-spinner-indeterminate-animation circle {
+      transition-property: stroke;
+      animation-duration: 4s;
+      animation-timing-function: cubic-bezier(.35, 0, .25, 1);
+      animation-iteration-count: infinite;
+    }
+
+    app-root>.loading .mat-progress-spinner circle,
+    .mat-spinner circle {
+      stroke: #4a86cf;
+      ;
+    }
+
+    app-root>.loading .mat-progress-spinner circle {
+      fill: transparent;
+      transform-origin: center;
+      transition: stroke-dashoffset 225ms linear
+    }
+
+    @keyframes mat-progress-spinner-stroke-rotate-100 {
+      0% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(0)
+      }
+      12.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(0)
+      }
+      12.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(72.5deg)
+      }
+      25% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(72.5deg)
+      }
+      25.1% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(270deg)
+      }
+      37.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(270deg)
+      }
+      37.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(161.5deg)
+      }
+      50% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(161.5deg)
+      }
+      50.01% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(180deg)
+      }
+      62.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(180deg)
+      }
+      62.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(251.5deg)
+      }
+      75% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(251.5deg)
+      }
+      75.01% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(90deg)
+      }
+      87.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(90deg)
+      }
+      87.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(341.5deg)
+      }
+      100% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(341.5deg)
+      }
     }
 
     app-root .text-container {
-      text-align: center;
-      display: inline-block;
-      padding: 0 -1em;
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px;
       color: #4a86cf;
       font-family: "Source Sans Pro", "Source Sans", "Roboto", "Helvetica", "Arial", sans-serif;
       font-size: 14px;
@@ -49,6 +142,7 @@
       text-transform: uppercase;
       letter-spacing: 0;
     }
+
 
     app-root .topnav {
       background-color: #4a86cf;
@@ -88,6 +182,7 @@
     app-root .topnav .store-button .store-button-wrapper>* {
       vertical-align: middle;
     }
+
   </style>
 </head>
 
@@ -102,9 +197,14 @@
       </a>
     </div>
     <div class="loading">
-      <div>
-        <i class="fa fa-spinner fa-spin"></i>
-      </div>
+
+      <mat-spinner class="mat-spinner mat-progress-spinner mat-primary mat-progress-spinner-indeterminate-animation" role="progressbar"
+        style="width: 100px; height: 100px;">
+        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="width: 100px; height: 100px;" viewBox="0 0 100 100">
+          <circle cx="50%" cy="50%" r="45" style="animation-name: mat-progress-spinner-stroke-rotate-100; stroke-dasharray: 282.743px; stroke-width: 10%;"></circle>
+        </svg>
+      </mat-spinner>
+
       <div class="text-container">
         <h4>Loading ...</h4>
       </div>
