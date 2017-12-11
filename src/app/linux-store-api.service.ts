@@ -20,7 +20,8 @@ export class LinuxStoreApiService {
   private baseUrl = environment.apiUrl;  // URL to web api
   //private headers = new Headers({ 'Content-Type': 'application/json' });
 
-  private apps: Observable<App[]>;
+  //private apps: Observable<App[]>;
+  private apps: App[];
 
   constructor(private http: HttpClient) { }
 
@@ -39,12 +40,16 @@ export class LinuxStoreApiService {
 
   getApps(): Observable<App[]> {
 
-    if (!this.apps) {
-      this.apps = this.http.get<App[]>(this.baseUrl).pipe(
-        catchError(this.handleError('getApps', []))
+    if(this.apps != null){
+      return Observable.of(this.apps);
+    }
+    else{
+      return this.http.get<App[]>(this.baseUrl)
+      .pipe(
+          tap( apps => { this.apps = apps;}),
+          catchError(this.handleError('getApps', []))
       );
     }
-    return this.apps;
   }
 
   /**
