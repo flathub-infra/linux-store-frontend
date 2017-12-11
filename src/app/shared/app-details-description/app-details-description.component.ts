@@ -1,7 +1,9 @@
 import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
-import { Gallery, GalleryItem } from 'ng-gallery';
+import { Gallery, GalleryItem, GalleryConfig } from 'ng-gallery';
 
 import { App } from '../../shared/app.model';
+import { Screenshot } from '../screenshot.model';
+import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
 
 
 @Component({
@@ -9,80 +11,64 @@ import { App } from '../../shared/app.model';
   templateUrl: './app-details-description.component.html',
   styleUrls: ['./app-details-description.component.scss']
 })
-export class AppDetailsDescriptionComponent implements AfterViewInit {
+export class AppDetailsDescriptionComponent implements OnChanges {
 
   @Input() app: App;
+
+  galleryConfig: GalleryConfig = {
+    "gestures": true,
+    "style": {
+      "width": "900px",
+      "height": "460px",
+      //"background": "#121519"
+      "background": "#BCBCB6"
+    },
+    "navigation": {},
+    "loader": {
+      "icon": "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='135' height='140' fill='%23fff'%3E%3Crect width='15' height='120' y='10' rx='6'%3E%3Canimate attributeName='height' begin='0.5s' dur='1s' values='120;110;100;90;80;70;60;50;40;140;120' calcMode='linear' repeatCount='indefinite'/%3E%3Canimate attributeName='y' begin='0.5s' dur='1s' values='10;15;20;25;30;35;40;45;50;0;10' calcMode='linear' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='15' height='120' x='30' y='10' rx='6'%3E%3Canimate attributeName='height' begin='0.25s' dur='1s' values='120;110;100;90;80;70;60;50;40;140;120' calcMode='linear' repeatCount='indefinite'/%3E%3Canimate attributeName='y' begin='0.25s' dur='1s' values='10;15;20;25;30;35;40;45;50;0;10' calcMode='linear' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='15' height='140' x='60' rx='6'%3E%3Canimate attributeName='height' begin='0s' dur='1s' values='120;110;100;90;80;70;60;50;40;140;120' calcMode='linear' repeatCount='indefinite'/%3E%3Canimate attributeName='y' begin='0s' dur='1s' values='10;15;20;25;30;35;40;45;50;0;10' calcMode='linear' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='15' height='120' x='90' y='10' rx='6'%3E%3Canimate attributeName='height' begin='0.25s' dur='1s' values='120;110;100;90;80;70;60;50;40;140;120' calcMode='linear' repeatCount='indefinite'/%3E%3Canimate attributeName='y' begin='0.25s' dur='1s' values='10;15;20;25;30;35;40;45;50;0;10' calcMode='linear' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='15' height='120' x='120' y='10' rx='6'%3E%3Canimate attributeName='height' begin='0.5s' dur='1s' values='120;110;100;90;80;70;60;50;40;140;120' calcMode='linear' repeatCount='indefinite'/%3E%3Canimate attributeName='y' begin='0.5s' dur='1s' values='10;15;20;25;30;35;40;45;50;0;10' calcMode='linear' repeatCount='indefinite'/%3E%3C/rect%3E%3C/svg%3E"
+    },
+    "description": null,
+    "player": {
+      "autoplay": false,
+      "interval": 3000,
+      "progress": true,
+      "position": "bottom"
+    },
+    "thumbnails": {
+      "width": 90,
+      "height": 70,
+      "position": "bottom"
+    },
+    "lightbox": {
+      "backdropClass": "g-backdrop",
+      "panelClass": "g-overlay",
+      "hasBackdrop": true
+    },
+    "imageSize": "cover"
+  }
 
   constructor(public gallery: Gallery) {
   }
 
-ngAfterViewInit() {
+  ngOnChanges(){
 
-              const images: GalleryItem[] = [
-                {
-                  src: 'https://flathub.org/repo/screenshots/org.gnome.Builder-stable/624x351/org.gnome.Builder-3582853b1ad4a82da236a964983cef7c.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png'
-                },
-                {
-                  src: 'https://flathub.org/repo/screenshots/org.gnome.Builder-stable/624x351/org.gnome.Builder-19b4818c4fda40f94d8e6ccc1379dc6d.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png'
-                },
-                {
-                  src: 'https://flathub.org/repo/screenshots/org.gnome.Builder-stable/624x351/org.gnome.Builder-e8478cf3a7b4c87b6d793fa51c9af497.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png'
-                }
-              ];
+    console.log("init gallery");
 
-              const images2: GalleryItem[] = [
-                {
-                  src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png'
-                },
-                {
-                  src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png'
-                },
-                {
-                  src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png'
-                },
-                {
-                  src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-fec44e9e37f37de124cda149099818bf.png',
-                  thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-fec44e9e37f37de124cda149099818bf.png'
-                }
-              ];
+    this.gallery.setConfig(this.galleryConfig);
 
-              const images3: GalleryItem[] = [];
+    let items: GalleryItem[] = [];
 
+        for (let screenshot of this.app.screenshots) {
 
-              this.gallery.load(images2);
+          let item: GalleryItem = { src: "", thumbnail: "", text: "" };
+          item.src = screenshot.imgDesktopUrl;
+          item.thumbnail = screenshot.thumbUrl;
+          item.text = this.app.name;
+          items.push(item);
+        }
 
-
-      // setTimeout(() => {
-
-      //   const images: GalleryItem[] = [
-      //     {
-      //       src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png',
-      //       thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png'
-      //     },
-      //     {
-      //       src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png',
-      //       thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png'
-      //     },
-      //     {
-      //       src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png',
-      //       thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png'
-      //     },
-      //     {
-      //       src: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-fec44e9e37f37de124cda149099818bf.png',
-      //       thumbnail: 'https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-fec44e9e37f37de124cda149099818bf.png'
-      //     }
-      //   ];
-
-      //   this.gallery.load(images);
-      // }, 0);
-
-
+        this.gallery.reset();
+        this.gallery.load(items);
   }
 
 }

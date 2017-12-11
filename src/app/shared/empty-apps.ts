@@ -12,6 +12,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -24,6 +25,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -36,6 +38,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -48,6 +51,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -60,6 +64,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -72,6 +77,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -84,6 +90,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -96,6 +103,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -108,6 +116,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -120,6 +129,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -132,6 +142,7 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   },
   {
     flatpakAppId: '',
@@ -144,5 +155,6 @@ export const EMPTYAPPS: App[] = [
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
     currentRelease: '',
+    screenshots:[]
   }
 ];
