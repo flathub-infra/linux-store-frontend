@@ -1,17 +1,15 @@
-import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Gallery, GalleryItem, GalleryConfig } from 'ng-gallery';
 
 import { App } from '../../shared/app.model';
 import { Screenshot } from '../screenshot.model';
-import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
-
 
 @Component({
   selector: 'store-app-details-description',
   templateUrl: './app-details-description.component.html',
   styleUrls: ['./app-details-description.component.scss']
 })
-export class AppDetailsDescriptionComponent implements OnChanges {
+export class AppDetailsDescriptionComponent implements OnInit {
 
   @Input() app: App;
 
@@ -45,30 +43,30 @@ export class AppDetailsDescriptionComponent implements OnChanges {
       "hasBackdrop": true
     },
     "imageSize": "cover"
-  }
+  };
 
   constructor(public gallery: Gallery) {
   }
 
-  ngOnChanges(){
-
-    console.log("init gallery");
-
-    this.gallery.setConfig(this.galleryConfig);
+  ngOnInit() {
 
     let items: GalleryItem[] = [];
 
-        for (let screenshot of this.app.screenshots) {
+    this.gallery.setConfig(this.galleryConfig);
 
-          let item: GalleryItem = { src: "", thumbnail: "", text: "" };
-          item.src = screenshot.imgDesktopUrl;
-          item.thumbnail = screenshot.thumbUrl;
-          item.text = this.app.name;
-          items.push(item);
-        }
+    if (this.app && this.app.screenshots) {
+      for (let screenshot of this.app.screenshots) {
+        let item: GalleryItem = { src: "", thumbnail: "", text: "" };
+        item.src = screenshot.imgDesktopUrl;
+        item.thumbnail = screenshot.thumbUrl;
+        item.text = this.app.name;
+        items.push(item);
+      }
+    }
 
-        this.gallery.reset();
-        this.gallery.load(items);
+    this.gallery.reset();
+    this.gallery.load(items);
+
   }
 
 }
