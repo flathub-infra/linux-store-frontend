@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
+import { GalleryModule } from 'ng-gallery';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
@@ -22,6 +23,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
+
+
 
 @NgModule({
   declarations: [
@@ -45,6 +48,7 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    GalleryModule.forRoot(),
     FlexLayoutModule,
     LinuxStoreAngularMaterialModule,
     routing

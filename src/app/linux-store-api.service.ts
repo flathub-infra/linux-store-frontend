@@ -20,7 +20,8 @@ export class LinuxStoreApiService {
   private baseUrl = environment.apiUrl;  // URL to web api
   //private headers = new Headers({ 'Content-Type': 'application/json' });
 
-  private apps: Observable<App[]>;
+  //private apps: Observable<App[]>;
+  private apps: App[];
 
   constructor(private http: HttpClient) { }
 
@@ -39,12 +40,19 @@ export class LinuxStoreApiService {
 
   getApps(): Observable<App[]> {
 
-    if (!this.apps) {
-      this.apps = this.http.get<App[]>(this.baseUrl).pipe(
+    if (this.apps != null) {
+      return Observable.of(this.apps);
+    }
+    else {
+
+      let request = '/apps';
+
+      return this.http.get<App[]>(this.baseUrl.concat(request))
+      .pipe(
+        tap(apps => { this.apps = apps; }),
         catchError(this.handleError('getApps', []))
       );
     }
-    return this.apps;
   }
 
   /**
@@ -67,16 +75,26 @@ export class LinuxStoreApiService {
     };
   }
 
-  getApp(flatpakAppId: string): Observable<App> {
+  getAppOLD(flatpakAppId: string): Observable<App> {
     return this.getApps()
     .map(apps => apps.find(app => app.flatpakAppId === flatpakAppId));
   }
 
-  getAllReviews(): Observable<Review[]> {
+  getApp(flatpakAppId: string): Observable<App> {
+
+    let request = '/apps/'.concat(flatpakAppId);
+
+    return this.http.get<App>(this.baseUrl.concat(request))
+    .pipe(
+      catchError(this.handleError('getApp', null))
+    );
+  }
+
+  getAllReviews(): Observable < Review[] > {
     return Observable.of(REVIEWS);
   }
 
-  getReviews(app_id: string): Observable<Review[]> {
+  getReviews(app_id: string): Observable < Review[] > {
     return this.getAllReviews()
     .map(reviews => reviews.filter(review => review.app_id === app_id));
   }

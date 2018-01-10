@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
+    "start:prod": "ng serve --prod --aot --proxy-config proxy.conf.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -27,6 +28,8 @@
     "@types/file-saver": "0.0.1",
     "core-js": "^2.4.1",
     "file-saver": "^1.3.3",
+    "hammerjs": "^2.0.8",
+    "ng-gallery": "^1.0.0",
     "rxjs": "5.5.2",
     "zone.js": "^0.8.14"
   },
