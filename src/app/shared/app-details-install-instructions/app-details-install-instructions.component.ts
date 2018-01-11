@@ -15,8 +15,4 @@ export class AppDetailsInstallInstructionsComponent implements OnInit {
   ngOnInit() {
   }
 
-  public getDownloadFlatpakRefUrl() {
-    return window.location.origin + this.app.downloadFlatpakRefUrl;
-  }
-
 }
