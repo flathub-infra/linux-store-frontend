@@ -4,8 +4,16 @@ header{
 }
 
 .app-tile-icon{
-  width: 70%;
-  margin-bottom: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 10em;
+  img{
+    width: 128px;
+    //max-width: 128px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 mat-grid-tile{

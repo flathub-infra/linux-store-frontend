@@ -19,7 +19,7 @@ export class AppListComponent implements OnInit {
   selectedApp: App;
   errorMessage: string;
   numCols: number;
-  columnWidth: number = 160;
+  columnWidth: number = 170;
 
   constructor(
     private router: Router,

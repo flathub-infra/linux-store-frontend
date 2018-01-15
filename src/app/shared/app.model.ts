@@ -6,7 +6,8 @@ export class App {
       summary: string;
       description: string;
       projectLicense: string;
-      iconUrl: string;
+      iconDesktopUrl: string;
+      iconMobileUrl: string;
       homepageUrl: string;
       bugtrackerUrl: string;
       downloadFlatpakRefUrl: string;
