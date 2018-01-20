@@ -5,6 +5,6 @@
     <button mat-raised-button color="primary" (click)="onInstall()">INSTALL</button>
   </div>
   <div fxFlex="20">
-    <img class="app-details-main-logo" ngClass.lt-sm="app-details-main-logo-lt-sm" src="{{app.iconDesktopUrl}}" border="0" alt="{{app.name}}">
+    <img *ngIf="app.iconDesktopUrl" class="app-details-main-logo" ngClass.lt-sm="app-details-main-logo-lt-sm" src="{{app.iconDesktopUrl}}" border="0" alt="{{app.name}}">
   </div>
 </div>
