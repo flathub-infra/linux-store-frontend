@@ -20,6 +20,7 @@ export class AppListComponent implements OnInit {
   errorMessage: string;
   numCols: number;
   columnWidth: number = 170;
+  minCols: number = 2;
 
   constructor(
     private router: Router,
@@ -47,7 +48,7 @@ export class AppListComponent implements OnInit {
 
     updateNumCols() {
       var width: number = this.elementView.nativeElement.clientWidth;
-      this.numCols = Math.max(1, Math.floor(width / this.columnWidth));
+      this.numCols = Math.max(this.minCols, Math.floor(width / this.columnWidth));
     }
 
     getEmptyApps(): void {
