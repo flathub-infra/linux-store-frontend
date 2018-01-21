@@ -7,6 +7,8 @@ import { saveAs } from "file-saver";
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
+import { GoogleAnalyticsEventsService } from '../../google-analytics-events.service';
+
 
 @Component({
   selector: 'store-app-details',
@@ -25,6 +27,7 @@ export class AppDetailsComponent implements OnInit {
 
   constructor(
     private linuxStoreApiService: LinuxStoreApiService,
+    private googleAnalyticsEventsService: GoogleAnalyticsEventsService,
     private router: Router,
     private route: ActivatedRoute,
     private location: Location
@@ -74,6 +77,9 @@ export class AppDetailsComponent implements OnInit {
   // Answer by spock: http://stackoverflow.com/users/435743/spock
 
   onInstall(app: App){
+
+    // Track event
+    this.googleAnalyticsEventsService.emitEvent("App", "Install", app.flatpakAppId);
 
     // Xhr creates new context so we need to create reference to this
     let self = this;

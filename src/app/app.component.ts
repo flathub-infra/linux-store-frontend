@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd} from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+
+declare let ga: Function;
 
 @Component({
   selector: 'app-root',
@@ -9,14 +11,13 @@ import { Router, NavigationEnd} from '@angular/router';
 export class AppComponent {
   showShadow = false;
 
-
-  constructor(private router: Router) {
+  constructor(public router: Router) {
     this.router.events.subscribe(event => {
-     if (event instanceof NavigationEnd) {
-       (<any>window).ga('set', 'page', event.urlAfterRedirects);
-       (<any>window).ga('send', 'pageview');
-     }
-   });
- }
+      if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    });
+  }
 
 }
