@@ -18,9 +18,6 @@
       <p *ngIf="!apps">Loading apps ...</p>
       <mat-grid-list *ngIf="!apps" cols="{{numCols}}" gutterSize="12" rowHeight="6:7" (window:resize)="onResize($event)">
         <mat-grid-tile *ngFor="let app of emptyApps" (click)="gotoDetail(app.flatpakAppId)">
-          <picture class="app-tile-icon">
-           <img src="{{app.iconMobileUrl}}" border="0" alt="">
-          </picture>
           <mat-grid-tile-footer matTooltip="{{app.name}}  -  {{app.summary}}">
             <p class="app-name" matLine>{{app.name}}</p>
             <span class="app-summary" matLine>{{app.summary}}</span>
@@ -32,8 +29,8 @@
       <p *ngIf="apps">Currently {{(apps)?.length}} apps and growing!</p>
       <mat-grid-list #applist cols="{{numCols}}" gutterSize="12" rowHeight="6:7" (window:resize)="onResize($event)">
         <mat-grid-tile *ngFor="let app of apps" (click)="gotoDetail(app.flatpakAppId)">
-            <picture *ngIf="app.iconDesktopUrl" class="app-tile-icon" ngClass.gt-sm="app-tile-icon-desktop">
-                <img src="{{app.iconMobileUrl}}" src.gt-sm="{{app.iconDesktopUrl}}"  border="0" alt="icon of the app {{app.name}}">
+            <picture class="app-tile-icon" ngClass.gt-sm="app-tile-icon-desktop">
+                <img src="{{app.iconDesktopUrl}}"  border="0" alt="">
             </picture>
           <mat-grid-tile-footer matTooltip="{{app.name}}  -  {{app.summary}}">
             <p class="app-name" matLine>{{app.name}}</p>
