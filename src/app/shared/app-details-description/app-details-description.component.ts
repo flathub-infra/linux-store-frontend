@@ -52,9 +52,14 @@ export class AppDetailsDescriptionComponent implements OnInit {
 
     let items: GalleryItem[] = [];
 
-    this.gallery.setConfig(this.galleryConfig);
-
     if (this.app && this.app.screenshots) {
+
+      if(this.app.screenshots.length == 1){
+        this.galleryConfig.loader = null;
+        this.galleryConfig.navigation = null;
+        this.galleryConfig.thumbnails = null;
+      }
+
       for (let screenshot of this.app.screenshots) {
         let item: GalleryItem = { src: "", thumbnail: "", text: "" };
         item.src = screenshot.imgDesktopUrl;
@@ -64,6 +69,7 @@ export class AppDetailsDescriptionComponent implements OnInit {
       }
     }
 
+    this.gallery.setConfig(this.galleryConfig);
     this.gallery.reset();
     this.gallery.load(items);
 
