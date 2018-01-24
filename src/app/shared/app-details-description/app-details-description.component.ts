@@ -16,9 +16,7 @@ export class AppDetailsDescriptionComponent implements OnInit {
   galleryConfig: GalleryConfig = {
     "gestures": true,
     "style": {
-      "width": "900px",
-      "height": "460px",
-      //"background": "#121519"
+      "width": "100%",
       "background": "#BCBCB6"
     },
     "navigation": {},
@@ -42,8 +40,9 @@ export class AppDetailsDescriptionComponent implements OnInit {
       "panelClass": "g-overlay",
       "hasBackdrop": true
     },
-    "imageSize": "cover"
+    "imageSize": "contain"
   };
+
 
   constructor(public gallery: Gallery) {
   }
