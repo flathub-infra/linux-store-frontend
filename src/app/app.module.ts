@@ -24,6 +24,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 
@@ -42,7 +43,8 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
     HomeComponent,
     NavbarComponent,
     AppDetailsInstallInstructionsComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

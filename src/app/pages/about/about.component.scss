@@ -1,0 +1,51 @@
+.header-container{
+  background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
+  color: white;
+  padding-top: 100px;
+
+}
+
+header .header-content h1 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 250%;
+    background-color: rgba(74, 134, 207, 0.8);
+}
+
+header .header-content p {
+  margin-bottom: 50px;
+  font-size: 110%;
+  font-weight: 300;
+}
+
+header .header-content a {
+  color: white;
+  font-weight: bold;
+  transition: all 200ms;
+  opacity: 0.8;
+}
+
+section{
+  padding-top: 100px;
+}
+
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", "Source Sans", sans-serif;
+  font-weight: 300;
+  color: inherit;
+}
+
+h1 {
+  margin: 0.67em 0;
+}
+
+
+
+
+

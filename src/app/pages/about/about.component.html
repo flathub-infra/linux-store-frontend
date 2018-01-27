@@ -1,0 +1,55 @@
+<div fxLayout="column" fxLayoutAlign="start stretch">
+
+  <!-- header -->
+  <header fxFlex class="header-container store-content-container">
+    <div class="header-content">
+      <h1>About Flathub</h1>
+
+      <p>
+        Flathub is a build and distribution service for Flatpak applications. Its goal is to act as a central hub for making desktop
+        applications available to users.
+      </p>
+
+      <p>
+        To download desktop applications on a modern Linux-based system,
+        <a href="https://dl.flathub.org/repo/flathub.flatpakrepo">download</a> the repository file and add it to your system with GNOME Software or the Flatpak command line.
+      </p>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <section fxFlex class="store-content-container">
+    <p>
+      To download and install applications from Flathub, you will need to install Flatpak (if you haven't already) and then add
+      the repository in one of two ways:
+    </p>
+    <h2 id="using">Using Flathub in GNOME Software</h2>
+    <p>
+      If you are on Arch, Debian Stretch (or later), Endless OS, Fedora 25 (or later), Mageia 6 (or later), or OpenSUSE Tumbleweed,
+      you can
+      <a href="https://dl.flathub.org/repo/flathub.flatpakrepo">download</a> the repository file and use GNOME Software to install it.
+    </p>
+    <h2 id="using">Using Flathub on the Command Line</h2>
+    <p>
+      From the command line, run:
+    </p>
+    <pre><span class="unselectable">$ </span>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    </pre>
+    <p>
+      You can then browse and install applications in the normal manner. See the Flatpak
+      <a href="http://flatpak.org/command-line.html">command line tutorial</a> for more information on this.
+    </p>
+    <h2>Submitting apps</h2>
+    <p>
+      If you develop a Linux application and would like to make it available via Flathub, we would appreciate your contribution.
+      Follow the instructions at
+      <a href="https://github.com/flathub/flathub/wiki/Submission-Guidelines">submission guidelines</a> to submit your app.
+    </p>
+    <h2>Reporting issues</h2>
+    <p>
+      Security or legal issues can be reported to the
+      <a href="mailto:flathub@lists.freedesktop.org">Flathub maintainers</a>.
+    </p>
+  </section>
+
+</div>
