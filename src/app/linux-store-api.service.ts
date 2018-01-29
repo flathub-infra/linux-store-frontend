@@ -9,6 +9,10 @@ import "rxjs/add/observable/of";
 import { environment } from './../environments/environment';
 
 import { EMPTYAPPS } from './shared/empty-apps';
+import { RECENTLYUPDATEDAPPS } from './shared/recently-updated-apps';
+import { POPULARAPPS } from './shared/popular-apps';
+import { EDITORSCHOICEAPPS } from './shared/editors-choice-apps';
+import { EDITORSCHOICEGAMES } from './shared/editors-choice-games';
 import { APPS } from './shared/mock-apps';
 import { App } from './shared/app.model';
 import { Review } from './shared/review.model';
@@ -53,6 +57,23 @@ export class LinuxStoreApiService {
         catchError(this.handleError('getApps', []))
       );
     }
+  }
+
+  getAppsByCollectionId(collectionId:string): Observable<App[]> {
+
+    if(collectionId === 'recently-updated'){
+      return Observable.of(RECENTLYUPDATEDAPPS);
+    }else if(collectionId === 'popular'){
+      return Observable.of(POPULARAPPS);
+    }
+    else if(collectionId === 'editors-choice-apps'){
+      return Observable.of(EDITORSCHOICEAPPS);
+    }
+    else if(collectionId === 'editors-choice-games'){
+      return Observable.of(EDITORSCHOICEGAMES);
+    }
+    else return this.getApps();
+
   }
 
   /**
