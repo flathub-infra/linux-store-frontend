@@ -1,0 +1,102 @@
+import { App } from './app.model';
+
+export const RECENTLYUPDATEDAPPS: App[] = [
+  {
+    flatpakAppId: "org.quetoo.Quetoo",
+    name: "Quetoo",
+    summary: "A Free, standalone first person shooter video game",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "/repo/appstream/x86_64/icons/128x128/org.quetoo.Quetoo.png",
+    iconMobileUrl: "/repo/appstream/x86_64/icons/64x64/org.quetoo.Quetoo.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    flatpakAppId: "com.uploadedlobster.peek",
+    name: "Peek",
+    summary: "Simple screen recorder with an easy to use interface",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "/repo/appstream/x86_64/icons/128x128/com.uploadedlobster.peek.png",
+    iconMobileUrl: "/repo/appstream/x86_64/icons/64x64/com.uploadedlobster.peek.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    flatpakAppId: "org.libreoffice.LibreOffice",
+    name: "LibreOffice",
+    summary: "The LibreOffice productivity suite",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "/repo/appstream/x86_64/icons/128x128/org.libreoffice.LibreOffice.png",
+    iconMobileUrl: "/repo/appstream/x86_64/icons/64x64/org.libreoffice.LibreOffice.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    flatpakAppId: "io.webtorrent.WebTorrent",
+    name: "WebTorrent",
+    summary: "Streaming torrent app",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "/repo/appstream/x86_64/icons/128x128/io.webtorrent.WebTorrent.png",
+    iconMobileUrl: "/repo/appstream/x86_64/icons/64x64/io.webtorrent.WebTorrent.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    flatpakAppId: "com.skype.Client",
+    name: "Skype",
+    summary: "Call and message skype users, with video chat support",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "https://lh3.googleusercontent.com/QfAEt_ya6-n8w_TD9-PsghFC2DMSO7fLGNZB4cQ3RtbBbHFkXJE_gxOc3l32-j6LXg=w128",
+    iconMobileUrl: "https://lh3.googleusercontent.com/QfAEt_ya6-n8w_TD9-PsghFC2DMSO7fLGNZB4cQ3RtbBbHFkXJE_gxOc3l32-j6LXg=w128",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    flatpakAppId: "org.signal.Signal",
+    name: "Signal",
+    summary: "Private messenger for the desktop",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "/repo/appstream/x86_64/icons/128x128/org.signal.Signal.png",
+    iconMobileUrl: "/repo/appstream/x86_64/icons/64x64/org.signal.Signal.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    flatpakAppId: "com.scoutshonour.Digital",
+    name: "Digital: A Love Story",
+    summary: "A computer mistery/romance set five minutes into the future of 1988",
+    description: '',
+    projectLicense: '',
+    iconDesktopUrl: "/repo/appstream/x86_64/icons/128x128/com.scoutshonour.Digital.png",
+    iconMobileUrl: "/repo/appstream/x86_64/icons/64x64/com.scoutshonour.Digital.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  }
+];
