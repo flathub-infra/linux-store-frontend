@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayoutAlign="start baseline">
+  <h2 fxFlex>{{collectionTitle}}</h2>
+  <button mat-raised-button color="primary" (click)="onSeeMore()">See more</button>
+</div>
+<div>
+  <mat-grid-list #applist cols="{{numCols}}" gutterSize="12" rowHeight="6:7" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let app of appsToShow" (click)="gotoDetail(app.flatpakAppId)">
+      <picture class="app-tile-icon" ngClass.gt-sm="app-tile-icon-desktop">
+        <img src="{{app.iconDesktopUrl}}" border="0" alt="">
+      </picture>
+      <mat-grid-tile-footer matTooltip="{{app.name}}  -  {{app.summary}}">
+        <p class="app-name" matLine>{{app.name}}</p>
+        <span class="app-summary" matLine>{{app.summary}}</span>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
