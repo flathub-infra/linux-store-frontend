@@ -2,8 +2,7 @@
   //background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
   //color: white;
   //background: white;
-  padding-top: 50px;
-
+  padding-top: 40px;
 }
 
 header .header-content h1 {
@@ -14,9 +13,10 @@ header .header-content h1 {
 }
 
 header .header-content p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 110%;
   font-weight: 300;
+  max-width: 700px;
 }
 
 header .header-content a {
@@ -27,7 +27,7 @@ header .header-content a {
 }
 
 section{
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 p {
