@@ -86,6 +86,20 @@ export const POPULARAPPS: App[] = [
     screenshots: []
   },
   {
+    "flatpakAppId": "org.telegram.desktop",
+    "name": "Telegram Desktop",
+    "summary": "Telegram Desktop messenger",
+    description: '',
+    projectLicense: '',
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.telegram.desktop.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.telegram.desktop.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
     flatpakAppId: "com.github.wwmm.pulseeffects",
     name: "PulseEffects",
     summary: "Audio Effects for PulseAudio Applications",

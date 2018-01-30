@@ -2,6 +2,20 @@ import { App } from './app.model';
 
 export const RECENTLYUPDATEDAPPS: App[] = [
   {
+    "flatpakAppId": "org.freedesktop.Bustle",
+    "name": "Bustle",
+    "summary": "Draw sequence diagrams of D-Bus activity",
+    description: '',
+    projectLicense: '',
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.freedesktop.Bustle.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.freedesktop.Bustle.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
     flatpakAppId: "org.quetoo.Quetoo",
     name: "Quetoo",
     summary: "A Free, standalone first person shooter video game",

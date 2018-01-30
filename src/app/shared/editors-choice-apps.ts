@@ -1,7 +1,20 @@
 import { App } from './app.model';
 
 export const EDITORSCHOICEAPPS: App[] = [
-
+  {
+    "flatpakAppId": "org.kde.kdenlive",
+    "name": "Kdenlive",
+    "summary": "Video Editor",
+    description: '',
+    projectLicense: '',
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.kdenlive.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.kdenlive.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
   {
     flatpakAppId: "org.gimp.GIMP",
     name: "GNU Image Manipulation Program",
@@ -29,7 +42,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     downloadFlatpakRefUrl: '',
     currentRelease: '',
     screenshots: []
-},
+  },
   {
     flatpakAppId: "com.visualstudio.code",
     name: "Visual Studio Code",
@@ -71,19 +84,33 @@ export const EDITORSCHOICEAPPS: App[] = [
     downloadFlatpakRefUrl: '',
     currentRelease: '',
     screenshots: []
-},
-{
-  "flatpakAppId": "com.google.AndroidStudio",
-  "name": "Android Studio",
-  "summary": "Integrated development environment for Google's Android platform",
-  description: '',
+  },
+  {
+    "flatpakAppId": "com.google.AndroidStudio",
+    "name": "Android Studio",
+    "summary": "Integrated development environment for Google's Android platform",
+    description: '',
     projectLicense: '',
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.google.AndroidStudio.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.google.AndroidStudio.png",
-  homepageUrl: '',
-  bugtrackerUrl: '',
-  downloadFlatpakRefUrl: '',
-  currentRelease: '',
-  screenshots: []
-},
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.google.AndroidStudio.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.google.AndroidStudio.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    "flatpakAppId": "org.gnome.Lollypop",
+    "name": "Lollypop",
+    "summary": "Play and organize your music collection",
+    description: '',
+    projectLicense: '',
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Lollypop.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
 ];

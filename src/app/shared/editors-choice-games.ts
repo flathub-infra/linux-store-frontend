@@ -86,5 +86,33 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentRelease: '',
     screenshots: []
   },
+  {
+    "flatpakAppId": "ca._0ldsk00l.Nestopia",
+    "name": "Nestopia",
+    "summary": "A Nintendo Entertainment System emulator",
+    description: '',
+    projectLicense: '',
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/ca._0ldsk00l.Nestopia.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/ca._0ldsk00l.Nestopia.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
+  {
+    "flatpakAppId": "net.sourceforge.mars-game",
+    "name": "M.A.R.S. - A ridiculous shooter",
+    "summary": "2D space shooter with awesome visual effects",
+    description: '',
+    projectLicense: '',
+    "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.sourceforge.mars-game.png",
+    "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.sourceforge.mars-game.png",
+    homepageUrl: '',
+    bugtrackerUrl: '',
+    downloadFlatpakRefUrl: '',
+    currentRelease: '',
+    screenshots: []
+  },
 
 ];
