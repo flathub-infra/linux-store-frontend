@@ -1,0 +1,39 @@
+.app-tile-icon{
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 6em;
+  img{
+    width: 64px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.app-tile-icon-desktop{
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 20em;
+  img{
+    width: 128px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.app-name{
+  font-size: 80%;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.app-summary{
+  font-size: 70%;
+  font-weight: normal;
+  line-height: 1;
+}
+
+mat-grid-tile-footer{
+  height: 22% !important;
+}

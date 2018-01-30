@@ -17,8 +17,8 @@ export class AppCollectionTeaserComponent implements OnInit, OnChanges {
   @Input() collectionList: App[];
 
   appsToShow: App[];
-  numCols: number = 1;
-  columnWidth: number = 170;
+  numCols: number = 2;
+  columnWidth: number = 190;
   minCols: number = 2;
 
   @Output('seemore')
@@ -52,6 +52,7 @@ export class AppCollectionTeaserComponent implements OnInit, OnChanges {
   updateNumCols(){
     var componentWidth: number = this.elementView.nativeElement.clientWidth;
     this.numCols = Math.max(this.minCols, Math.floor(componentWidth / this.columnWidth));
+    //console.log("updateNumCols:" + this.numCols + " componentWidth:" + componentWidth);
   }
 
   updateAppsToShow() {

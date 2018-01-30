@@ -26,6 +26,7 @@ import { AppDetailsInstallInstructionsComponent } from './shared/app-details-ins
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AppCollectionTeaserComponent } from './shared/app-collection-teaser/app-collection-teaser.component';
+import { AppCardComponent } from './shared/app-card/app-card.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { AppCollectionTeaserComponent } from './shared/app-collection-teaser/app
     AppDetailsInstallInstructionsComponent,
     ToolbarComponent,
     AboutComponent,
-    AppCollectionTeaserComponent
+    AppCollectionTeaserComponent,
+    AppCardComponent
   ],
   imports: [
     BrowserModule,
