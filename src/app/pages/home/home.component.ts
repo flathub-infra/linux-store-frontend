@@ -69,6 +69,13 @@ export class HomeComponent implements OnInit {
 
   }
 
+  onShowAppDetails(app: App) {
+    this.router.navigate(['apps/details', app.flatpakAppId]);
+  }
+
+  onShowCollection(collectionId: string) {
+    this.router.navigate(['apps']);
+  }
 
 
 }
