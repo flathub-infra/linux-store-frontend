@@ -3,9 +3,6 @@
   <button mat-raised-button color="primary" (click)="onSeeMore()">See more</button>
 </div>
 <div>
-  <mat-grid-list #applist cols="{{numCols}}" gutterSize="12" rowHeight="6:7" (window:resize)="onResize($event)">
-      <mat-grid-tile *ngFor="let app of appsToShow">
-          <store-app-card  [app]="app"></store-app-card>
-      </mat-grid-tile>
-  </mat-grid-list>
+  <store-app-card-list [apps]="collectionList" [rows]="1"
+   [minCols]="2" [colWidth]="180" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
 </div>
