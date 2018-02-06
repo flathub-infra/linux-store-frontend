@@ -15,7 +15,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LinuxStoreApiService } from './linux-store-api.service';
 import { GoogleAnalyticsEventsService } from './google-analytics-events.service';
 import { AppSidebarComponent } from './shared/app-sidebar/app-sidebar.component';
-import { AppCardListVertComponent } from './shared/app-card-list-vert/app-card-list-vert.component';
 import { AppDetailsMainComponent } from './shared/app-details-main/app-details-main.component';
 import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
 import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
@@ -36,7 +35,6 @@ import { AppCardListComponent } from './shared/app-card-list/app-card-list.compo
     AppDetailsComponent,
     FooterComponent,
     AppSidebarComponent,
-    AppCardListVertComponent,
     AppDetailsMainComponent,
     AppDetailsDescriptionComponent,
     AppDetailsExtraInfoComponent,
