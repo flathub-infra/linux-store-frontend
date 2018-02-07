@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ElementRef, ViewChild } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { App } from '../../shared/app.model';
@@ -12,15 +11,7 @@ import { LinuxStoreApiService } from '../../linux-store-api.service';
 })
 export class AppListComponent implements OnInit {
 
-  @ViewChild('applist', { read: ElementRef }) private elementView: ElementRef;
-
   apps: App[];
-  emptyApps: App[];
-  selectedApp: App;
-  errorMessage: string;
-  numCols: number;
-  columnWidth: number = 190;
-  minCols: number = 2;
 
   constructor(
     private router: Router,
@@ -29,9 +20,7 @@ export class AppListComponent implements OnInit {
 
     ngOnInit() {
 
-      this.getEmptyApps();
       this.getApps();
-      this.updateNumCols();
 
       this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
@@ -41,23 +30,6 @@ export class AppListComponent implements OnInit {
       });
     }
 
-
-    onResize(event) {
-      this.updateNumCols();
-    }
-
-    updateNumCols() {
-      var width: number = this.elementView.nativeElement.clientWidth;
-      this.numCols = Math.max(this.minCols, Math.floor(width / this.columnWidth));
-    }
-
-    getEmptyApps(): void {
-
-      this.linuxStoreApiService.getEmptyApps()
-      .subscribe(apps => { this.emptyApps = apps; });
-
-    }
-
     getApps(): void {
 
       this.linuxStoreApiService.getApps()
@@ -65,18 +37,8 @@ export class AppListComponent implements OnInit {
 
     }
 
-    onSelect(app: App): void {
-      this.selectedApp = app;
+    onShowAppDetails(app: App) {
+      this.router.navigate(['apps/details', app.flatpakAppId]);
     }
 
-    gotoDetail(flatpakAppId: string): void {
-      this.router.navigate(['apps/details', flatpakAppId]);
-    }
-
-    isSelected(app: App): boolean {
-      if (!app || !this.selectedApp) {
-        return false;
-      }
-      return app.flatpakAppId === this.selectedApp.flatpakAppId;
-    }
   }

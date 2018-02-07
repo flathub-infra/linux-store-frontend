@@ -18,16 +18,36 @@ import { App } from './shared/app.model';
 import { Review } from './shared/review.model';
 import { REVIEWS } from './shared/mock-reviews';
 
+interface HashTable<T> {
+  [key: string]: T;
+}
+
 @Injectable()
 export class LinuxStoreApiService {
 
   private baseUrl = environment.apiUrl;  // URL to web api
-  //private headers = new Headers({ 'Content-Type': 'application/json' });
-
-  //private apps: Observable<App[]>;
-  private apps: App[];
+  private appListCache: HashTable<App[]> = {};
+  private appDetailsCache: HashTable<App> = {};
 
   constructor(private http: HttpClient) { }
+
+
+  getApp(flatpakAppId: string): Observable<App> {
+
+    let request = '/apps/'.concat(flatpakAppId);
+
+    if (this.appDetailsCache[request] == null) {
+      return this.http.get<App>(this.baseUrl.concat(request))
+        .pipe(
+        tap(app => { this.appDetailsCache[request] = app; }),
+        catchError(this.handleError('getApp', null))
+        );
+    }
+    else {
+      return Observable.of(this.appDetailsCache[request]);
+    }
+  }
+
 
   getEmptyApps(): Observable<App[]> {
     return Observable.of(EMPTYAPPS);
@@ -37,43 +57,65 @@ export class LinuxStoreApiService {
     return Observable.of(APPS);
   }
 
-  private extractData(res: Response) {
-    let body = res.json();
-    return body || {};
-  }
-
   getApps(): Observable<App[]> {
 
-    if (this.apps != null) {
-      return Observable.of(this.apps);
+    let request = '/apps';
+
+    if (this.appListCache[request] == null) {
+      return this.http.get<App[]>(this.baseUrl.concat(request))
+        .pipe(
+        tap(apps => { this.appListCache[request] = apps; }),
+        catchError(this.handleError('getApps', []))
+        );
+
     }
     else {
-
-      let request = '/apps';
-
-      return this.http.get<App[]>(this.baseUrl.concat(request))
-      .pipe(
-        tap(apps => { this.apps = apps; }),
-        catchError(this.handleError('getApps', []))
-      );
+      return Observable.of(this.appListCache[request]);
     }
   }
 
-  getAppsByCollectionId(collectionId:string): Observable<App[]> {
+  getAppsByCategory(categoryName: string): Observable<App[]> {
 
-    if(collectionId === 'recently-updated'){
+    let request = '/apps/category/'.concat(categoryName);
+
+    if (this.appListCache[request] == null) {
+      return this.http.get<App[]>(this.baseUrl.concat(request))
+        .pipe(
+        tap(apps => { this.appListCache[request] = apps; }),
+        catchError(this.handleError('getApps', []))
+        );
+
+    }
+    else {
+      return Observable.of(this.appListCache[request]);
+    }
+
+  }
+
+
+  getAppsByCollectionId(collectionId: string): Observable<App[]> {
+
+    if (collectionId === 'recently-updated') {
       return Observable.of(RECENTLYUPDATEDAPPS);
-    }else if(collectionId === 'popular'){
+    } else if (collectionId === 'popular') {
       return Observable.of(POPULARAPPS);
     }
-    else if(collectionId === 'editors-choice-apps'){
+    else if (collectionId === 'editors-choice-apps') {
       return Observable.of(EDITORSCHOICEAPPS);
     }
-    else if(collectionId === 'editors-choice-games'){
+    else if (collectionId === 'editors-choice-games') {
       return Observable.of(EDITORSCHOICEGAMES);
     }
     else return this.getApps();
+  }
 
+  getAllReviews(): Observable<Review[]> {
+    return Observable.of(REVIEWS);
+  }
+
+  getReviews(app_id: string): Observable<Review[]> {
+    return this.getAllReviews()
+      .map(reviews => reviews.filter(review => review.app_id === app_id));
   }
 
   /**
@@ -94,30 +136,6 @@ export class LinuxStoreApiService {
       // Let the app keep running by returning an empty result.
       return Observable.of(result as T);
     };
-  }
-
-  getAppOLD(flatpakAppId: string): Observable<App> {
-    return this.getApps()
-    .map(apps => apps.find(app => app.flatpakAppId === flatpakAppId));
-  }
-
-  getApp(flatpakAppId: string): Observable<App> {
-
-    let request = '/apps/'.concat(flatpakAppId);
-
-    return this.http.get<App>(this.baseUrl.concat(request))
-    .pipe(
-      catchError(this.handleError('getApp', null))
-    );
-  }
-
-  getAllReviews(): Observable < Review[] > {
-    return Observable.of(REVIEWS);
-  }
-
-  getReviews(app_id: string): Observable < Review[] > {
-    return this.getAllReviews()
-    .map(reviews => reviews.filter(review => review.app_id === app_id));
   }
 
 }
