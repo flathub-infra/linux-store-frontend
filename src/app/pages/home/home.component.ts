@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { App } from '../../shared/app.model';
+import { Collection } from '../../shared/collection.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 
 @Component({
@@ -11,23 +12,7 @@ import { LinuxStoreApiService } from '../../linux-store-api.service';
 })
 export class HomeComponent implements OnInit {
 
-
-  recentlyUpdatedCollectionId: string = "recently-updated";
-  recentlyUpdatedCollectionTitle: string = "New & Updated Apps";
-  recentlyUpdatedCollectionList: App[];
-
-  popularCollectionId: string = "popular";
-  popularCollectionTitle: string = "Popular Apps & Games";
-  popularCollectionList: App[];
-
-  editorsChoiceAppsCollectionId: string = "editors-choice-apps";
-  editorsChoiceAppsCollectionTitle: string = "Editor's Choice Apps";
-  editorsChoiceAppsCollectionList: App[];
-
-  editorsChoiceGamesCollectionId: string = "editors-choice-games";
-  editorsChoiceGamesCollectionTitle: string = "Editor's Choice Games";
-  editorsChoiceGamesCollectionList: App[];
-
+  featuredCollections: Collection[];
   numCols: number;
   columnWidth: number = 170;
   minCols: number = 2;
@@ -47,26 +32,19 @@ export class HomeComponent implements OnInit {
       window.scrollTo(0, 0)
     });
 
-    this.linuxStoreApiService.getAppsByCollectionId(this.recentlyUpdatedCollectionId)
-      .subscribe(apps => {
-        this.recentlyUpdatedCollectionList = apps;
+    this.linuxStoreApiService.getFeaturedCollections()
+      .subscribe(collections => {
+        this.featuredCollections = collections;
       });
+  }
 
-    this.linuxStoreApiService.getAppsByCollectionId(this.popularCollectionId)
+  getAppsByCollectionId(collectionId: string): App[] {
+    var collectionApps: App[];
+    this.linuxStoreApiService.getAppsByCollectionId(collectionId)
       .subscribe(apps => {
-        this.popularCollectionList = apps;
+        collectionApps = apps;
       });
-
-    this.linuxStoreApiService.getAppsByCollectionId(this.editorsChoiceAppsCollectionId)
-      .subscribe(apps => {
-        this.editorsChoiceAppsCollectionList = apps;
-      });
-
-    this.linuxStoreApiService.getAppsByCollectionId(this.editorsChoiceGamesCollectionId)
-      .subscribe(apps => {
-        this.editorsChoiceGamesCollectionList = apps;
-      });
-
+    return collectionApps;
   }
 
   onShowAppDetails(app: App) {
@@ -74,7 +52,7 @@ export class HomeComponent implements OnInit {
   }
 
   onShowCollection(collectionId: string) {
-    this.router.navigate(['apps']);
+    this.router.navigate(['apps/collection', collectionId]);
   }
 
 

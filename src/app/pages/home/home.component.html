@@ -19,17 +19,12 @@
   <!-- main content -->
   <section fxFlex class="store-content-container">
 
-    <store-app-collection-teaser [collectionId]="this.popularCollectionId" [collectionTitle]="this.popularCollectionTitle" [collectionList]="this.popularCollectionList"
-      (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)"></store-app-collection-teaser>
+    <div *ngIf="featuredCollections">
 
-    <store-app-collection-teaser [collectionId]="this.recentlyUpdatedCollectionId" [collectionTitle]="this.recentlyUpdatedCollectionTitle"
-      [collectionList]="this.recentlyUpdatedCollectionList" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)"></store-app-collection-teaser>
-
-    <store-app-collection-teaser [collectionId]="this.editorsChoiceAppsCollectionId" [collectionTitle]="this.editorsChoiceAppsCollectionTitle"
-      [collectionList]="this.editorsChoiceAppsCollectionList" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)"></store-app-collection-teaser>
-
-    <store-app-collection-teaser [collectionId]="this.editorsChoiceGamesCollectionId" [collectionTitle]="this.editorsChoiceGamesCollectionTitle"
-      [collectionList]="this.editorsChoiceGamesCollectionList" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)"></store-app-collection-teaser>
+      <store-app-collection-teaser *ngFor="let collection of featuredCollections" [collectionId]="collection.id" [collectionTitle]="collection.name"
+        [collectionList]="getAppsByCollectionId(collection.id)" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)">
+      </store-app-collection-teaser>
+    </div>
 
   </section>
 
