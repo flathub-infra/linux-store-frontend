@@ -13,13 +13,18 @@ import { RECENTLYUPDATEDAPPS } from './shared/recently-updated-apps';
 import { POPULARAPPS } from './shared/popular-apps';
 import { EDITORSCHOICEAPPS } from './shared/editors-choice-apps';
 import { EDITORSCHOICEGAMES } from './shared/editors-choice-games';
+import { CATEGORIES } from './shared/categories';
 import { APPS } from './shared/mock-apps';
 import { App } from './shared/app.model';
+import { Collection } from './shared/collection.model';
+import { FEATUREDCOLLECTIONS } from './shared/featured-collections';
+import { Category } from './shared/category.model';
 import { Review } from './shared/review.model';
 import { REVIEWS } from './shared/mock-reviews';
 
 interface HashTable<T> {
   [key: string]: T;
+
 }
 
 @Injectable()
@@ -74,20 +79,27 @@ export class LinuxStoreApiService {
     }
   }
 
-  getAppsByCategory(categoryName: string): Observable<App[]> {
+  getAppsByCategory(categoryId: string): Observable<App[]> {
 
-    let request = '/apps/category/'.concat(categoryName);
-
-    if (this.appListCache[request] == null) {
-      return this.http.get<App[]>(this.baseUrl.concat(request))
-        .pipe(
-        tap(apps => { this.appListCache[request] = apps; }),
-        catchError(this.handleError('getApps', []))
-        );
-
+    if (categoryId === 'All') {
+      return this.getApps();
     }
     else {
-      return Observable.of(this.appListCache[request]);
+
+      let request = '/apps/category/'.concat(categoryId);
+
+      if (this.appListCache[request] == null) {
+        return this.http.get<App[]>(this.baseUrl.concat(request))
+          .pipe(
+          tap(apps => { this.appListCache[request] = apps; }),
+          catchError(this.handleError('getApps', []))
+          );
+
+      }
+      else {
+        return Observable.of(this.appListCache[request]);
+      }
+
     }
 
   }
@@ -108,6 +120,25 @@ export class LinuxStoreApiService {
     }
     else return this.getApps();
   }
+
+  getCategory(categoryId: string): Observable<Category> {
+    return this.getCategories()
+      .map(category => category.find(category => category.id === categoryId));
+  }
+
+  getCategories(): Observable<Category[]> {
+    return Observable.of(CATEGORIES);
+  }
+
+  getCollection(collectionId: string): Observable<Collection> {
+    return this.getFeaturedCollections()
+      .map(collection => collection.find(collection => collection.id === collectionId));
+  }
+
+  getFeaturedCollections(): Observable<Collection[]> {
+    return Observable.of(FEATUREDCOLLECTIONS);
+  }
+
 
   getAllReviews(): Observable<Review[]> {
     return Observable.of(REVIEWS);
