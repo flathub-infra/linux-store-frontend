@@ -1,25 +1,50 @@
-<div>
-  <!-- header -->
-  <header class="store-content-container">
-    <div class="header-content">
-      <h1>Flatpak Applications</h1>
-
-      <p>
-        This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them. Read more about
-        Flatpak on the
-        <a href="http://flatpak.org">Flatpak website.</a>
-      </p>
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer mode="side" opened="true" disableClose>
+    <div class="docs-component-viewer-nav">
+      <div class="docs-component-viewer-nav-content">
+        <nav>
+          <h3>DISCOVER</h3>
+          <ul *ngIf="featuredCollections">
+            <li *ngFor="let collection of featuredCollections">
+              <a [routerLink]="'/apps/collection/' + collection.id" routerLinkActive="selected-item">{{collection.shortname}}</a>
+            </li>
+          </ul>
+          <hr/>
+        </nav>
+        <nav>
+          <h3>CATEGORIES</h3>
+          <ul>
+            <li>
+              <a [routerLink]="'/apps/category/All'" routerLinkActive="selected-item">ALL</a>
+            </li>
+            <li *ngFor="let category of categories; let last = last;">
+              <a [routerLink]="'/apps/category/' + category.id" routerLinkActive="selected-item">
+                {{category.name}}
+              </a>
+            </li>
+          </ul>
+          <!-- <hr *ngIf="!last" /> -->
+        </nav>
+      </div>
     </div>
-  </header>
+  </mat-drawer>
+  <mat-drawer-content class="drawer-content">
+    <section class="store-content-container22">
 
-  <!-- main content -->
-  <section class="store-content-container">
+      <div *ngIf="!apps && featuredCollections">
+        <store-app-collection-teaser *ngFor="let collection of featuredCollections" [collectionId]="collection.id" [collectionTitle]="collection.name"
+          [collectionList]="getAppsByCollectionId(collection.id)" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)">
+        </store-app-collection-teaser>
+      </div>
 
-    <div>
-      <p *ngIf="apps">Currently {{(apps)?.length}} apps and growing!</p>
-      <store-app-card-list [apps]="apps" [minCols]="2" [colWidth]="180" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
-    </div>
+      <div *ngIf="apps">
+        <h1>{{getTitle()}}</h1>
+        <p *ngIf="apps">{{(apps)?.length}} results</p>
+        <div>
+          <store-app-card-list [apps]="apps" [minCols]="2" [colWidth]="180" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
+        </div>
+      </div>
 
-  </section>
-
-</div>
+    </section>
+  </mat-drawer-content>
+</mat-drawer-container>

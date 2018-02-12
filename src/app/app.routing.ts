@@ -20,6 +20,14 @@ const appRoutes: Routes = [
     component: AppListComponent
   },
   {
+    path: 'apps/category/:categoryId',
+    component: AppListComponent
+  },
+  {
+    path: 'apps/collection/:collectionId',
+    component: AppListComponent
+  },
+  {
     path: 'apps/details/:id',
     component: AppDetailsComponent
   },
