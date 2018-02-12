@@ -6,19 +6,13 @@
   </a>
 
   <div fxHide fxShow.gt-sm class="toolbar-content">
-    <a mat-button routerLink="home">Using Flathub</a>
-    <a mat-button routerLink="apps">Applications</a>
-    <a mat-button href="http://flatpak.org">Flatpak
-      <mat-icon class="open-in-new">open_in_new</mat-icon>
-    </a>
-
+    <a mat-button routerLink="apps">APPLICATIONS</a>
+    <a mat-button routerLink="about">ABOUT</a>
+    <a mat-button href="https://blog.flathub.org">BLOG</a>
     <span class="flex-fill-remaining-space"></span>
-
     <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">
-      Publish your app
-      <mat-icon class="open-in-new">open_in_new</mat-icon>
+      PUBLISH YOUR APP
     </a>
-    <a mat-button routerLink="about">About</a>
   </div>
 
   <div fxShow fxHide.gt-sm class="toolbar-content">
@@ -30,21 +24,17 @@
     </button>
 
     <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="home">
-        <span>Using Flathub</span>
-      </button>
+
       <button mat-menu-item routerLink="apps">
-        <span>Applications</span>
+        <span>APPLICATIONS</span>
       </button>
-      <a mat-menu-item href="http://flatpak.org">Flatpak
-        <mat-icon class="open-in-new"> open_in_new</mat-icon>
-      </a>
-      <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">Publish yor app
-        <mat-icon class="open-in-new">open_in_new</mat-icon>
-      </a>
       <button mat-menu-item routerLink="about">
-        <span>About</span>
+        <span>ABOUT</span>
       </button>
+      <a mat-menu-item href="https://blog.flathub.org">BLOG</a>
+      <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">PUBLISH YOUR APP
+      </a>
+
     </mat-menu>
 
   </div>

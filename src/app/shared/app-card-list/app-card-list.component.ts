@@ -37,6 +37,7 @@ export class AppCardListComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit() {
+    //console.log("AppCardList onInit");
     if (!this.minCols) this.minCols = 2;
     if (!this.colWidth) this.colWidth = 190;
     this.updateNumCols();
@@ -48,6 +49,7 @@ export class AppCardListComponent implements OnInit, OnChanges {
   }
 
   onResize(event) {
+    //console.log("AppCardList onResize");
     this.updateNumCols();
     this.updateAppsToShow();
   }
@@ -57,13 +59,16 @@ export class AppCardListComponent implements OnInit, OnChanges {
   }
 
   updateNumCols() {
+
     if (!this.cols) {
       var componentWidth: number = this.elementView.nativeElement.clientWidth;
+      //console.log("AppCardList componentWidth:" + componentWidth);
       this.calculatedNumCols = Math.max(this.minCols, Math.floor(componentWidth / this.colWidth));
     }
     else {
       this.calculatedNumCols = this.cols;
     }
+    //console.log("AppCardList updatedNumCols:" + this.calculatedNumCols);
   }
 
   updateAppsToShow() {
