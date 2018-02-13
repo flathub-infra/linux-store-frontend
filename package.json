@@ -35,7 +35,7 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "^1.6.5",
+    "@angular/cli": "1.6.8",
     "@angular/compiler-cli": "5.2.1",
     "@angular/language-service": "5.2.1",
     "@types/google.analytics": "0.0.36",
