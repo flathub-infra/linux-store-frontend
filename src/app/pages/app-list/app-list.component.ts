@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
@@ -19,6 +18,13 @@ export class AppListComponent implements OnInit {
   selectedCategory: Category;
   selectedCollection: Collection;
   featuredCollections: Collection[];
+  requireOpenedDrawerToshowAppsByParams: boolean = true;
+  showDefaultInfo: boolean = false;
+  showAppsByCategory: boolean = false;
+
+  paramCategoryId: string;
+  paramCollectionId: string;
+
 
   constructor(
     private router: Router,
@@ -31,20 +37,13 @@ export class AppListComponent implements OnInit {
     this.getCategories();
     this.getFeaturedCollections();
 
-    this.route.params.forEach((params: Params) => {
-
-      var categoryId: string = params['categoryId'];
-      var collectionId: string = params['collectionId'];
-
-      if (collectionId) {
-        this.showAppsByCollectionId(collectionId);
+    this.route.paramMap.subscribe(
+      params => {
+        this.paramCategoryId = params.get('categoryId');
+        this.paramCollectionId = params.get('collectionId');
+        if (!this.requireOpenedDrawerToshowAppsByParams) this.showAppsByParams();
       }
-      else if (categoryId) {
-        this.showAppsByCategoryId(categoryId);
-      }
-
-
-    });
+    );
 
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
@@ -54,15 +53,20 @@ export class AppListComponent implements OnInit {
     });
   }
 
+
+
   getTitle(): string {
 
-    var title: string = "All applications";
+    var title: string = "";
 
     if (this.selectedCollection) {
       title = this.selectedCollection.name;
     }
     else if (this.selectedCategory) {
       title = this.selectedCategory.name;
+    }
+    else {
+      title = "All applications";
     }
 
     return title;
@@ -80,6 +84,20 @@ export class AppListComponent implements OnInit {
       });
   }
 
+  showAppsByParams() {
+
+    if (this.paramCollectionId) {
+      this.showAppsByCollectionId(this.paramCollectionId);
+      this.showDefaultInfo = false;
+    }
+    else if (this.paramCategoryId) {
+      this.showAppsByCategoryId(this.paramCategoryId);
+      this.showDefaultInfo = false;
+    }
+    else {
+      this.showDefaultInfo = true;
+    }
+  }
 
   showAppsByCollectionId(collectionId: string): void {
 
@@ -111,6 +129,11 @@ export class AppListComponent implements OnInit {
         collectionApps = apps;
       });
     return collectionApps;
+  }
+
+  onOpenedChange(event) {
+    this.requireOpenedDrawerToshowAppsByParams = false;
+    this.showAppsByParams();
   }
 
   onShowAppDetails(app: App) {

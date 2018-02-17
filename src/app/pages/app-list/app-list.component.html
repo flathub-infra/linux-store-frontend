@@ -1,5 +1,5 @@
 <mat-drawer-container class="drawer-container" autosize>
-  <mat-drawer mode="side" opened="true" disableClose>
+  <mat-drawer mode="side" opened="true" (openedChange)="onOpenedChange($event)">
     <div class="docs-component-viewer-nav">
       <div class="docs-component-viewer-nav-content">
         <nav>
@@ -29,16 +29,16 @@
     </div>
   </mat-drawer>
   <mat-drawer-content class="drawer-content">
-    <section class="store-content-container22">
+    <section>
 
-      <div *ngIf="!apps && featuredCollections">
+      <div *ngIf="showDefaultInfo && featuredCollections">
         <store-app-collection-teaser *ngFor="let collection of featuredCollections" [collectionId]="collection.id" [collectionTitle]="collection.name"
           [collectionList]="getAppsByCollectionId(collection.id)" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)">
         </store-app-collection-teaser>
       </div>
 
-      <div *ngIf="apps">
-        <h1>{{getTitle()}}</h1>
+      <div *ngIf="!showDefaultInfo && apps">
+        <h2>{{getTitle()}}</h2>
         <p *ngIf="apps">{{(apps)?.length}} results</p>
         <div>
           <store-app-card-list [apps]="apps" [minCols]="2" [colWidth]="180" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
