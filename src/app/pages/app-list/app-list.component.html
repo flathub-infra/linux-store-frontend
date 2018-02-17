@@ -1,12 +1,15 @@
-<mat-drawer-container class="drawer-container" autosize>
-  <mat-drawer mode="side" opened="true" (openedChange)="onOpenedChange($event)">
+<mat-drawer-container class="drawer-container">
+  <mat-drawer #drawer [opened]="!isSmallScreen()"
+  [mode]="isSmallScreen() ? 'over' : 'side'"
+  [disableClose]="!isSmallScreen()"
+  (openedChange)="onOpenedChange($event)">
     <div class="docs-component-viewer-nav">
       <div class="docs-component-viewer-nav-content">
         <nav>
           <h3>DISCOVER</h3>
           <ul *ngIf="featuredCollections">
             <li *ngFor="let collection of featuredCollections">
-              <a [routerLink]="'/apps/collection/' + collection.id" routerLinkActive="selected-item">{{collection.shortname}}</a>
+              <a (click)="onDrawerLinkClick()" [routerLink]="'/apps/collection/' + collection.id" routerLinkActive="selected-item">{{collection.shortname}}</a>
             </li>
           </ul>
           <hr/>
@@ -18,7 +21,7 @@
               <a [routerLink]="'/apps/category/All'" routerLinkActive="selected-item">ALL</a>
             </li>
             <li *ngFor="let category of categories; let last = last;">
-              <a [routerLink]="'/apps/category/' + category.id" routerLinkActive="selected-item">
+              <a (click)="onDrawerLinkClick()" [routerLink]="'/apps/category/' + category.id" routerLinkActive="selected-item">
                 {{category.name}}
               </a>
             </li>
@@ -29,6 +32,8 @@
     </div>
   </mat-drawer>
   <mat-drawer-content class="drawer-content">
+    <button *ngIf="isSmallScreen()" mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+
     <section>
 
       <div *ngIf="showDefaultInfo && featuredCollections">

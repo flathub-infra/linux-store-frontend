@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { ElementRef, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 import { Category } from '../../shared/category.model';
+import { debug } from 'util';
 
 @Component({
   selector: 'linux-store-app-list',
@@ -13,15 +16,15 @@ import { Category } from '../../shared/category.model';
 })
 export class AppListComponent implements OnInit {
 
+  @ViewChild('drawer') drawer;
+
   apps: App[];
   categories: Category[];
   selectedCategory: Category;
   selectedCollection: Collection;
   featuredCollections: Collection[];
-  requireOpenedDrawerToshowAppsByParams: boolean = true;
   showDefaultInfo: boolean = false;
   showAppsByCategory: boolean = false;
-
   paramCategoryId: string;
   paramCollectionId: string;
 
@@ -29,6 +32,7 @@ export class AppListComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
+    private breakpointObserver: BreakpointObserver,
     private linuxStoreApiService: LinuxStoreApiService) {
   }
 
@@ -41,7 +45,7 @@ export class AppListComponent implements OnInit {
       params => {
         this.paramCategoryId = params.get('categoryId');
         this.paramCollectionId = params.get('collectionId');
-        if (!this.requireOpenedDrawerToshowAppsByParams) this.showAppsByParams();
+        if (this.isSmallScreen()) this.showAppsByParams();
       }
     );
 
@@ -53,7 +57,9 @@ export class AppListComponent implements OnInit {
     });
   }
 
-
+  isSmallScreen(): boolean{
+    return this.breakpointObserver.isMatched('(max-width: 599px)');
+  }
 
   getTitle(): string {
 
@@ -132,7 +138,6 @@ export class AppListComponent implements OnInit {
   }
 
   onOpenedChange(event) {
-    this.requireOpenedDrawerToshowAppsByParams = false;
     this.showAppsByParams();
   }
 
@@ -144,5 +149,8 @@ export class AppListComponent implements OnInit {
     this.router.navigate(['apps/collection', collectionId]);
   }
 
+  onDrawerLinkClick(){
+    if(this.isSmallScreen()) this.drawer.close();
+  }
 
 }
