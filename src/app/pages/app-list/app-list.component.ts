@@ -45,7 +45,7 @@ export class AppListComponent implements OnInit {
       params => {
         this.paramCategoryId = params.get('categoryId');
         this.paramCollectionId = params.get('collectionId');
-        if (this.isSmallScreen()) this.showAppsByParams();
+        if (this.isSmallScreen() || this.drawer.opened) this.showAppsByParams();
       }
     );
 
