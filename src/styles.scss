@@ -125,3 +125,49 @@ h6 {
         }
       }
 
+
+
+      .store-content-container-narrow{
+        padding-left:  5%;
+        padding-right: 5%;
+      }
+
+       /* desktop-medium */
+       @media all and (min-width: 841px) and (max-width: 1280px) {
+        .store-content-container-narrow{
+          padding-left: 20%;
+          padding-right: 20%;
+        }
+      }
+      /* desktop-large */
+      @media all and (min-width: 1281px) and (max-width: 1440px) {
+        .store-content-container-narrow{
+          padding-left: 22%;
+          padding-right: 22%;
+        }
+      }
+      /* desktop-large-2 */
+      @media all and (min-width: 1441px) and (max-width: 1600px) {
+        .store-content-container-narrow{
+          padding-left: 24%;
+          padding-right: 24%;
+        }
+      }
+      /* desktop-large-3 */
+      @media all and (min-width: 1601px) and (max-width: 1920px) {
+        .store-content-container-narrow{
+          padding-left: 30%;
+          padding-right: 30%;
+        }
+      }
+
+      /* desktop-xlarge */
+      @media all and (min-width: 1920px) {
+        .store-content-container-narrow{
+          padding-left: 32%;
+          padding-right: 32%;
+        }
+      }
+
+
+
