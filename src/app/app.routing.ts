@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { SetupComponent } from './pages/setup/setup.component';
+import { TermsComponent } from './pages/terms/terms.component';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { CodeOfConductComponent} from './pages/code-of-conduct/code-of-conduct.component';
 import { AppListComponent } from './pages/app-list/app-list.component';
 import { AppDetailsComponent } from './pages/app-details/app-details.component';
 
@@ -14,6 +18,22 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'setup',
+    component: SetupComponent
+  },
+  {
+    path: 'terms',
+    component: TermsComponent
+  },
+  {
+    path: 'privacy',
+    component: PrivacyComponent
+  },
+  {
+    path: 'conduct',
+    component: CodeOfConductComponent
   },
   {
     path: 'apps',
