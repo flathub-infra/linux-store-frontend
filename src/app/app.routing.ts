@@ -48,7 +48,7 @@ const appRoutes: Routes = [
     component: AppListComponent
   },
   {
-    path: 'apps/details/:id',
+    path: 'apps/details/:appId',
     component: AppDetailsComponent
   },
   {
