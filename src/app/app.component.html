@@ -1,5 +1,5 @@
 <section class="app mat-typography">
-  <store-toolbar></store-toolbar>
+  <store-toolbar (search)="onSearch($event)"></store-toolbar>
   <router-outlet></router-outlet>
   <store-footer></store-footer>
 </section>

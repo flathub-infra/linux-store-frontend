@@ -9,7 +9,14 @@
     <a mat-button routerLink="apps">APPLICATIONS</a>
     <a mat-button routerLink="about">ABOUT</a>
     <a mat-button href="https://blog.flathub.org">BLOG</a>
+
     <span class="flex-fill-remaining-space"></span>
+    <div class="search-box-container">
+        <button mat-icon-button class="search-box-button" (click)="onSearch(searchBox.value)"><mat-icon>search</mat-icon></button>
+      <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
+      />
+    </div>
+
     <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">
       PUBLISH YOUR APP
     </a>

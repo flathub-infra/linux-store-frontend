@@ -44,8 +44,8 @@ export class LinuxStoreApiService {
     if (this.appDetailsCache[request] == null) {
       return this.http.get<App>(this.baseUrl.concat(request))
         .pipe(
-        tap(app => { this.appDetailsCache[request] = app; }),
-        catchError(this.handleError('getApp', null))
+          tap(app => { this.appDetailsCache[request] = app; }),
+          catchError(this.handleError('getApp', null))
         );
     }
     else {
@@ -69,8 +69,8 @@ export class LinuxStoreApiService {
     if (this.appListCache[request] == null) {
       return this.http.get<App[]>(this.baseUrl.concat(request))
         .pipe(
-        tap(apps => { this.appListCache[request] = apps; }),
-        catchError(this.handleError('getApps', []))
+          tap(apps => { this.appListCache[request] = apps; }),
+          catchError(this.handleError('getApps', []))
         );
 
     }
@@ -91,8 +91,8 @@ export class LinuxStoreApiService {
       if (this.appListCache[request] == null) {
         return this.http.get<App[]>(this.baseUrl.concat(request))
           .pipe(
-          tap(apps => { this.appListCache[request] = apps; }),
-          catchError(this.handleError('getApps', []))
+            tap(apps => { this.appListCache[request] = apps; }),
+            catchError(this.handleError('getApps', []))
           );
 
       }
@@ -102,6 +102,18 @@ export class LinuxStoreApiService {
 
     }
 
+  }
+
+  getAppsByKeyword(keyword: string): Observable<App[]> {
+
+    if (keyword.trim() == null || keyword.trim().length < 2) {
+      return Observable.of(new Array<App>());
+    }
+    else {
+      return this.getApps()
+        .map(apps => apps.filter(app => (app.name.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
+          || (app.summary.toLowerCase().indexOf(keyword.toLowerCase()) != -1)));
+    }
   }
 
 

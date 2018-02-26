@@ -27,6 +27,7 @@ export class AppListComponent implements OnInit {
   showAppsByCategory: boolean = false;
   paramCategoryId: string;
   paramCollectionId: string;
+  paramSearchKeyword: string;
 
 
   constructor(
@@ -45,6 +46,7 @@ export class AppListComponent implements OnInit {
       params => {
         this.paramCategoryId = params.get('categoryId');
         this.paramCollectionId = params.get('collectionId');
+        this.paramSearchKeyword = params.get('searchKeyword');
         if (this.isSmallScreen() || this.drawer.opened) this.showAppsByParams();
       }
     );
@@ -92,7 +94,11 @@ export class AppListComponent implements OnInit {
 
   showAppsByParams() {
 
-    if (this.paramCollectionId) {
+    if (this.paramSearchKeyword){
+      this.showAppsSearchKeyword(this.paramSearchKeyword);
+      this.showDefaultInfo = false;
+    }
+    else if (this.paramCollectionId) {
       this.showAppsByCollectionId(this.paramCollectionId);
       this.showDefaultInfo = false;
     }
@@ -103,6 +109,20 @@ export class AppListComponent implements OnInit {
     else {
       this.showDefaultInfo = true;
     }
+  }
+
+  showAppsSearchKeyword(searchKeyword: string): void {
+
+    var searchCollection = new Collection();
+    searchCollection.id = "search";
+    searchCollection.name = "Search";
+    searchCollection.shortname = "Search";
+    searchCollection.summary = "Search apps with keyword " + searchKeyword;
+
+    this.selectedCollection = searchCollection;
+
+    this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
+      .subscribe(apps => { this.apps = apps; });
   }
 
   showAppsByCollectionId(collectionId: string): void {

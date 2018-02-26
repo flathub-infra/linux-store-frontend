@@ -48,6 +48,10 @@ const appRoutes: Routes = [
     component: AppListComponent
   },
   {
+    path: 'apps/search/:searchKeyword',
+    component: AppListComponent
+  },
+  {
     path: 'apps/details/:appId',
     component: AppDetailsComponent
   },
