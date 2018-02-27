@@ -1,12 +1,14 @@
-# Linux Store Frontend  (proof of concept)
+# Linux Store Frontend
 
-This is a simple web application to browse and install applications present in Flatpak repositories, like Flathub and others.
+This is a web application to browse and install applications present in Flatpak repositories, like Flathub and others.
 
 The web app obtains data calling a remote REST API implemented in [linux-store-backend](https://github.com/jgarciao/linux-store-backend) 
 
-See demo at http://45.55.104.129/apps
+This app began as a proof of concept but it's likely to be used for the official Flathub website in the near future. See a demo at https://beta.flathub.org
 
-**Note: at this time this is just a personal proof-of-concept not endorsed by Flathub or other projects**
+There is also a development version at http://45.55.104.129
+
+
 
 ## Running this app locally
 
