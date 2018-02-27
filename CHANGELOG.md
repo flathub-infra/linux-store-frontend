@@ -1,11 +1,27 @@
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/jgarciao/linux-store-frontend/compare/0.4.0...0.5.0) (2018-02-27)
+
+
+### Highlights
+
+* First version that was used by Flathub (around mid-January 2018) in https://beta.flathub.org
+
+### Features
+
+* Show screenshots in app details
+* Add initial Google Analytics support
+* Show a nice spinner while the webapp is loading
+* Cache remote api calls to improve speed and use less data 
+* Update main dependencies: angular (5.2.4), angular-material (5.2.1), angular-cli (1.6.8)
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/jgarciao/linux-store-frontend/compare/0.3.0...0.4.0) (2017-05-08)
 
 
 ### Highlights
 
-* First version that can be published and replace the current flathub.org websiste 
+* First version that could replace the current flathub.org websiste 
 
 ### Features
 
