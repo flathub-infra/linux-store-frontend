@@ -26,4 +26,8 @@ export class ToolbarComponent implements OnInit {
     this.showSearchInput = !this.showSearchInput;
   }
 
+  onCloseSearch(){
+    this.showSearchInput = false;
+  }
+
 }

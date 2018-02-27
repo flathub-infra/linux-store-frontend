@@ -27,7 +27,7 @@
 
   <div fxShow fxHide.gt-sm class="toolbar-content">
 
-    <button mat-icon-button [matMenuTriggerFor]="menu" xPosition="after">
+    <button *ngIf="!showSearchInput" mat-icon-button [matMenuTriggerFor]="menu" xPosition="after">
       <mat-icon>more_vert</mat-icon>
     </button>
 
@@ -53,14 +53,22 @@
     <div *ngIf="showSearchInput" class="search-box-container flex-fill-remaining-space">
       <mat-icon class="search-box-icon">search</mat-icon>
 
-      <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
+      <input #searchBox id="search-box" class="search-box-mobile" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
       />
     </div>
 
-    <button mat-icon-button (click)="onTogleSearch()">
+    <button *ngIf="showSearchInput" mat-icon-button (click)="onCloseSearch()">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <button *ngIf="!showSearchInput" mat-icon-button (click)="onTogleSearch()">
       <mat-icon>search</mat-icon>
     </button>
+
+
 
   </div>
 
 </mat-toolbar>
+<!-- Do not remove: this div fills the space under the toolbar so content doesn't hide -->
+<div class="fixed-toolbar-spacer"></div>
