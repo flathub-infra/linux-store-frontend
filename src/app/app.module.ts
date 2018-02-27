@@ -20,7 +20,6 @@ import { AppDetailsDescriptionComponent } from './shared/app-details-description
 import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -44,7 +43,6 @@ import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.
     AppDetailsExtraInfoComponent,
     AppDetailsReviewsComponent,
     HomeComponent,
-    NavbarComponent,
     AppDetailsInstallInstructionsComponent,
     ToolbarComponent,
     AboutComponent,
