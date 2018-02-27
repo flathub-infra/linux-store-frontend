@@ -11,12 +11,19 @@ export class ToolbarComponent implements OnInit {
   @Output('search')
   search: EventEmitter<string> = new EventEmitter<string>();
 
+  showSearchInput: boolean = false;
+
   constructor() { }
 
   ngOnInit() { }
 
   onSearch(searchTerm: string): void {
+    this.showSearchInput = false;
     this.search.emit(searchTerm);
+  }
+
+  onTogleSearch(){
+    this.showSearchInput = !this.showSearchInput;
   }
 
 }

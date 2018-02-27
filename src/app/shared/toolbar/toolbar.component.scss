@@ -16,18 +16,16 @@
 .search-box{
   border: none;
   outline:none;
-  height: 20px;
-  width: 100px;
-  padding-right: 5px;
+  height: 100%;
+  width: 70%;
+  //padding-right: 5px;
   top: 25%;
   transform: translateY(-25%);
 }
-.search-box-button{
-  width: 20px;
+
+.search-box-icon{
+  padding-left: 2px;
   color: grey;
-  padding-right: 1px;
-  top: 35%;
-  transform: translateY(-35%);
 }
 
 .fixed-toolbar-spacer{

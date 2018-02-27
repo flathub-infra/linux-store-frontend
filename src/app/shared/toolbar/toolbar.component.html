@@ -1,18 +1,21 @@
 <mat-toolbar class="fixed-toolbar" color="primary">
 
-  <a mat-button class="store-logo-button" routerLink="/" aria-label="Flathub">
-    <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo.svg" alt="flathub">
-    <span>FLATHUB</span>
-  </a>
+
 
   <div fxHide fxShow.gt-sm class="toolbar-content">
+
+    <a mat-button class="store-logo-button" routerLink="/" aria-label="Flathub">
+      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo.svg" alt="flathub">
+      <span>FLATHUB</span>
+    </a>
+
     <a mat-button routerLink="apps">APPLICATIONS</a>
     <a mat-button routerLink="about">ABOUT</a>
     <a mat-button href="https://blog.flathub.org">BLOG</a>
 
     <span class="flex-fill-remaining-space"></span>
     <div class="search-box-container">
-        <button mat-icon-button class="search-box-button" (click)="onSearch(searchBox.value)"><mat-icon>search</mat-icon></button>
+      <mat-icon class="search-box-icon">search</mat-icon>
       <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
       />
     </div>
@@ -23,8 +26,6 @@
   </div>
 
   <div fxShow fxHide.gt-sm class="toolbar-content">
-
-    <span class="flex-fill-remaining-space"></span>
 
     <button mat-icon-button [matMenuTriggerFor]="menu" xPosition="after">
       <mat-icon>more_vert</mat-icon>
@@ -44,7 +45,22 @@
 
     </mat-menu>
 
+    <a *ngIf="!showSearchInput" mat-button class="store-logo-button flex-fill-remaining-space" routerLink="/" aria-label="Flathub">
+      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo.svg" alt="flathub">
+      <span>FLATHUB</span>
+    </a>
+
+    <div *ngIf="showSearchInput" class="search-box-container flex-fill-remaining-space">
+      <mat-icon class="search-box-icon">search</mat-icon>
+
+      <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
+      />
+    </div>
+
+    <button mat-icon-button (click)="onTogleSearch()">
+      <mat-icon>search</mat-icon>
+    </button>
+
   </div>
 
 </mat-toolbar>
-<div class="fixed-toolbar-spacer"></div>
