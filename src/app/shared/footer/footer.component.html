@@ -1,31 +1,36 @@
-<footer class="store-footer">
-  <div class="store-footer-list">
+<footer class="store-footer store-content-container-narrow">
+  <nav fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-around start">
+    <ul fxFlex>
+      <li class="store-footer-list-header"><strong>Applications</strong></li>
+      <li><a routerLink="apps/collection/popular">Popular</a></li>
+      <li><a routerLink="apps/collection/recently-updated">New & Updated</a></li>
+      <li><a routerLink="apps/collection/editors-choice-apps">Editor's Choice</a></li>
+      <li><a routerLink="apps/collection/editors-choice-games">Editor's Choice Games</a></li>
+      <li><a routerLink="apps">Browse Apps</a></li>
+    </ul>
+    <ul fxFlex>
+      <li class="store-footer-list-header"><strong>Community</strong></li>
+      <li><a>Participate</a></li>
+      <li><a routerLink="conduct">Code of conduct</a></li>
+    </ul>
+    <ul fxFlex>
+      <li class="store-footer-list-header"><strong>Developers</strong></li>
+      <li><a href="https://github.com/flathub/flathub/wiki/App-Submission">Publish your app</a></li>
+      <li><a href="http://docs.flatpak.org">Documentation</a></li>
+      <li><a href="https://github.com/flathub/">Example build files</a></li>
+    </ul>
+    <ul fxFlex>
+      <li class="store-footer-list-header"><strong>Flathub</strong></li>
+      <li><a routerLink="about">About Flathub</a></li>
+      <li><a href="https://blog.flathub.org">Blog</a></li>
+      <li><a>FAQ</a></li>
+      <li><a routerLink="terms">Terms Of Service</a></li>
+      <li><a routerLink="privacy">Privacy Policy</a></li>
+      <li><a href="https://status.flathub.org">Status</a></li>
+    </ul>
+  </nav>
 
-    <div class="store-footer-links">
-      <ul>
-        <li>
-          <a routerLink="home">HOME</a>
-        </li>
-        <li>
-          <a routerLink="apps">APPLICATIONS</a>
-        </li>
-        <li>
-          <a href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">PUBLISH YOUR APP
-            <mat-icon class="open-in-new">open_in_new</mat-icon>
-          </a>
-        </li>
-        <li>
-          <a href="http://flatpak.org">FLATPAK
-            <mat-icon class="open-in-new">open_in_new</mat-icon>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="store-footer-copyright">
-      <p>Powered by
-        <a href="https://github.com/jgarciao/linux-store-frontend">Linux Store Frontend</a>
-      </p>
-    </div>
+  <div  class="store-footer-copyright">
+    <p>Powered by <a href="https://github.com/jgarciao/linux-store-frontend">Linux Store Frontend</a></p>
   </div>
 </footer>

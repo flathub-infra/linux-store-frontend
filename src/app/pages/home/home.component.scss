@@ -1,32 +1,33 @@
 .header-container{
-  background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
-  color: white;
-  padding-top: 100px;
-
+  //background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
+  //color: white;
+  //background: white;
+  padding-top: 40px;
 }
 
 header .header-content h1 {
     margin-top: 0;
     margin-bottom: 1em;
     font-size: 250%;
-    background-color: rgba(74, 134, 207, 0.8);
+    //background-color: rgba(74, 134, 207, 0.8);
 }
 
 header .header-content p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 110%;
   font-weight: 300;
+  max-width: 700px;
 }
 
 header .header-content a {
-  color: white;
+  //color: white;
   font-weight: bold;
   transition: all 200ms;
   opacity: 0.8;
 }
 
 section{
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 p {
@@ -44,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin: 0.67em 0;
 }
-
 
 
 

@@ -15,16 +15,20 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LinuxStoreApiService } from './linux-store-api.service';
 import { GoogleAnalyticsEventsService } from './google-analytics-events.service';
 import { AppSidebarComponent } from './shared/app-sidebar/app-sidebar.component';
-import { AppCardListVertComponent } from './shared/app-card-list-vert/app-card-list-vert.component';
 import { AppDetailsMainComponent } from './shared/app-details-main/app-details-main.component';
 import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
 import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
-
+import { AboutComponent } from './pages/about/about.component';
+import { AppCollectionTeaserComponent } from './shared/app-collection-teaser/app-collection-teaser.component';
+import { AppCardListComponent } from './shared/app-card-list/app-card-list.component';
+import { SetupComponent } from './pages/setup/setup.component';
+import { TermsComponent } from './pages/terms/terms.component';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
 
 
 @NgModule({
@@ -34,15 +38,20 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
     AppDetailsComponent,
     FooterComponent,
     AppSidebarComponent,
-    AppCardListVertComponent,
     AppDetailsMainComponent,
     AppDetailsDescriptionComponent,
     AppDetailsExtraInfoComponent,
     AppDetailsReviewsComponent,
     HomeComponent,
-    NavbarComponent,
     AppDetailsInstallInstructionsComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    AboutComponent,
+    AppCollectionTeaserComponent,
+    AppCardListComponent,
+    SetupComponent,
+    TermsComponent,
+    PrivacyComponent,
+    CodeOfConductComponent
   ],
   imports: [
     BrowserModule,

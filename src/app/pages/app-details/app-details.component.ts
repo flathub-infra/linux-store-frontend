@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
 import { saveAs } from "file-saver";
 
@@ -20,6 +20,8 @@ export class AppDetailsComponent implements OnInit {
   @Input()
   app: App;
 
+  paramAppId: string;
+
   reviews: Review[];
   selectedReview: Review;
 
@@ -31,11 +33,29 @@ export class AppDetailsComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private location: Location
-  ) {}
+  ) { }
+
+  ngOnInit() {
+
+    this.route.paramMap.subscribe(
+      params => {
+        this.paramAppId = params.get('appId');
+        this.getApp( this.paramAppId);
+      }
+    );
+
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 
   getApp(id: string): void {
+
     this.linuxStoreApiService.getApp(id)
-    .subscribe(apps => { this.app = apps; });
+      .subscribe(app => { this.app = app; });
 
   }
 
@@ -44,25 +64,6 @@ export class AppDetailsComponent implements OnInit {
     this.linuxStoreApiService.getReviews(app_id)
       .subscribe(reviews => { this.reviews = reviews; });
   }
-
-  ngOnInit() {
-
-    this.route.params.forEach((params: Params) => {
-
-            let id: string = params['id'];
-
-            this.getApp(id);
-            this.getReviews(id);
-
-          });
-
-    this.router.events.subscribe((evt) => {
-        if (!(evt instanceof NavigationEnd)) {
-            return;
-        }
-        window.scrollTo(0, 0)
-    });
-}
 
   onSelect(review: Review): void {
     this.selectedReview = review;
@@ -76,7 +77,7 @@ export class AppDetailsComponent implements OnInit {
   // Question: http://stackoverflow.com/questions/35368633/angular-2-download-pdf-from-api-and-display-it-in-view
   // Answer by spock: http://stackoverflow.com/users/435743/spock
 
-  onInstall(app: App){
+  onInstall(app: App) {
 
     // Track event
     this.googleAnalyticsEventsService.emitEvent("App", "Install", app.flatpakAppId);

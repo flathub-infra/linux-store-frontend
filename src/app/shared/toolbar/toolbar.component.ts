@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'store-toolbar',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
+  @Output('search')
+  search: EventEmitter<string> = new EventEmitter<string>();
+
+  showSearchInput: boolean = false;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  onSearch(searchTerm: string): void {
+    this.showSearchInput = false;
+    this.search.emit(searchTerm);
+  }
+
+  onTogleSearch(){
+    this.showSearchInput = !this.showSearchInput;
+  }
+
+  onCloseSearch(){
+    this.showSearchInput = false;
   }
 
 }

@@ -1,6 +1,5 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
-@import '../../app/shared/navbar/navbar-theme.scss';
 @import '../../app/shared/toolbar/toolbar-theme.scss';
 @import '../../app/shared/footer/footer-theme.scss';
 @import '../../app/pages/app-list/app-list-theme.scss';
@@ -28,7 +27,7 @@ $custom-typography: mat-typography-config(
   $font-family: 'Source Sans Pro, Source Sans, sans-serif',
   $headline: mat-typography-level(200%, 1.1, 300),
   $title: mat-typography-level(180%, 1.1, 300),
-  $subheading-2: mat-typography-level(130%, 1.1, 800),
+  $subheading-2: mat-typography-level(110%, 1.0, 300),
   $subheading-1: mat-typography-level(120%, 1.1, 600),
   $body-1: mat-typography-level(13pt, 1.8, 400),
   $body-2: mat-typography-level(13pt, 1.8, 400),
@@ -87,7 +86,6 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include navbar-theme($linux-store-theme);
 @include toolbar-theme($linux-store-theme);
 @include footer-theme($linux-store-theme);
 @include app-list-theme($linux-store-theme);

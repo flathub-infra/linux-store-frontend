@@ -5,6 +5,40 @@
   z-index: 5;
 }
 
+.search-box-container{
+  border: none;
+  border-radius: 100px;
+  background-color: #fafafa;
+  padding-left: 5px;
+  width: 160px;
+  height: 30px;
+}
+
+.search-box{
+  border: none;
+  background-color: #fafafa;
+  outline:none;
+  height: 90%;
+  width: 70%;
+  top: 25%;
+  transform: translateY(-25%);
+}
+
+.search-box-mobile{
+  border: none;
+  background-color: #fafafa;
+  outline:none;
+  height: 90%;
+  width: 70%;
+  top: 30%;
+  transform: translateY(-30%);
+}
+
+.search-box-icon{
+  padding-left: 2px;
+  color: grey;
+}
+
 .fixed-toolbar-spacer{
   height: 56px;
 }
