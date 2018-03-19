@@ -37,7 +37,7 @@ I've been tryin to make this app themable (still a work in progress) using the f
 
 ## TODO
 * ~~Migrate from angular-mdl to angular-material2 using angular-flex-layout~~
-* Search apps by name, keywords, categories, ...
+* Search apps by ~~name~~, keywords, ~~categories~~, ...
 * Search & install themes
 * Search & install runtimes
 * Pagination
