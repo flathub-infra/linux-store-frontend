@@ -13,6 +13,8 @@ export class AppDetailsDescriptionComponent implements OnInit {
 
   @Input() app: App;
 
+  showCurrentReleaseInfo: boolean = false;
+
   galleryConfig: GalleryConfig = {
     "gestures": true,
     "style": {
@@ -48,6 +50,11 @@ export class AppDetailsDescriptionComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    if(this.app && this.app.currentReleaseVersion && this.app.currentReleaseVersion.length > 0 &&
+       this.app.currentReleaseDescription && this.app.currentReleaseDescription.length > 0){
+       this.showCurrentReleaseInfo = true;
+    }
 
     let items: GalleryItem[] = [];
 
