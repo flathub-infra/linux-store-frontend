@@ -5,7 +5,7 @@
     <div *ngIf="app" [innerHTML]="app.description"></div>
   </mat-card>
   <h3 *ngIf="this.showCurrentReleaseInfo">Changes in version {{app.currentReleaseVersion}}</h3>
-  <mat-card>
+  <mat-card *ngIf="this.showCurrentReleaseInfo">
     <div *ngIf="this.showCurrentReleaseInfo" [innerHTML]="app.currentReleaseDescription"></div>
   </mat-card>
 </div>
