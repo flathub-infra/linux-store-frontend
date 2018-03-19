@@ -1,0 +1,180 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Flathub - A build and distribution service for Flatpak applications</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> --><link rel="icon" type="image/png" href="/assets/themes/flathub/favicon-32x32.png"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- App Shell CSS --><style>body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    app-root>.loading {
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      position: relative;
+      top: 20vh;
+      left: calc(50% - 70px);
+    }
+
+    app-root>.loading .mat-progress-spinner {
+      display: block;
+      position: relative;
+    }
+
+    app-root>.loading .mat-progress-spinner svg {
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 0;
+      left: 0;
+      transform-origin: center;
+      overflow: visible;
+    }
+
+    app-root>.loading .mat-progress-spinner.mat-progress-spinner-indeterminate-animation circle {
+      transition-property: stroke;
+      animation-duration: 4s;
+      animation-timing-function: cubic-bezier(.35, 0, .25, 1);
+      animation-iteration-count: infinite;
+    }
+
+    app-root>.loading .mat-progress-spinner circle,
+    .mat-spinner circle {
+      stroke: #4a86cf;
+      ;
+    }
+
+    app-root>.loading .mat-progress-spinner circle {
+      fill: transparent;
+      transform-origin: center;
+      transition: stroke-dashoffset 225ms linear
+    }
+
+    @keyframes mat-progress-spinner-stroke-rotate-100 {
+      0% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(0)
+      }
+      12.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(0)
+      }
+      12.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(72.5deg)
+      }
+      25% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(72.5deg)
+      }
+      25.1% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(270deg)
+      }
+      37.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(270deg)
+      }
+      37.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(161.5deg)
+      }
+      50% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(161.5deg)
+      }
+      50.01% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(180deg)
+      }
+      62.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(180deg)
+      }
+      62.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(251.5deg)
+      }
+      75% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(251.5deg)
+      }
+      75.01% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotate(90deg)
+      }
+      87.5% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotate(90deg)
+      }
+      87.51% {
+        stroke-dashoffset: 56.54867px;
+        transform: rotateX(180deg) rotate(341.5deg)
+      }
+      100% {
+        stroke-dashoffset: 268.60617px;
+        transform: rotateX(180deg) rotate(341.5deg)
+      }
+    }
+
+    app-root .text-container {
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      color: #4a86cf;
+      font-family: "Source Sans Pro", "Source Sans", "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+
+    app-root .topnav {
+      background-color: #4a86cf;
+      height: 64px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 16px;
+    }
+
+    app-root .topnav .store-button {
+      color: white;
+      box-sizing: border-box;
+      position: relative;
+      font-family: "Source Sans Pro", "Source Sans", "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: 90%;
+      user-select: none;
+      cursor: pointer;
+      outline: 0;
+      border: none;
+      -webkit-tap-highlight-color: transparent;
+      display: inline-block;
+      white-space: nowrap;
+      text-decoration: none;
+      vertical-align: baseline;
+      margin: 0;
+      min-width: 88px;
+      line-height: 36px;
+      padding: 16px 16px;
+      border-radius: 2px;
+    }
+
+    app-root .topnav .store-button .store-button-wrapper>* {
+      vertical-align: middle;
+    }</style><link href="styles.1b3d109ed36b61bfe731.bundle.css" rel="stylesheet"/></head><body><app-root><div class="topnav" id="myTopnav"><a href="/" class="store-button" aria-label="Flathub"><span class="store-button-wrapper"><img src="/assets/themes/flathub/flathub-logo.svg"> <span>FLATHUB</span></span></a></div><div class="loading"><mat-spinner class="mat-spinner mat-progress-spinner mat-primary mat-progress-spinner-indeterminate-animation" role="progressbar" style="width: 100px; height: 100px;"><svg focusable="false" preserveAspectRatio="xMidYMid meet" style="width: 100px; height: 100px;" viewBox="0 0 100 100"><circle cx="50%" cy="50%" r="45" style="animation-name: mat-progress-spinner-stroke-rotate-100; stroke-dasharray: 282.743px; stroke-width: 10%;"></circle></svg></mat-spinner><div class="text-container"><h4>Loading ...</h4></div></div></app-root><app-root></app-root><script>(function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-112768736-1', 'auto');// add your tracking ID here.</script><script type="text/javascript" src="inline.91d438b6e22d6df6a021.bundle.js"></script><script type="text/javascript" src="polyfills.b89f6da3f94d82c339a7.bundle.js"></script><script type="text/javascript" src="scripts.03e042f1f102bf0e2ed8.bundle.js"></script><script type="text/javascript" src="main.d5891af67af7a0746597.bundle.js"></script></body></html>
