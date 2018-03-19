@@ -120,7 +120,7 @@ export class LinuxStoreApiService {
   getAppsByCollectionId(collectionId: string): Observable<App[]> {
 
     if (collectionId === 'recently-updated') {
-      return Observable.of(RECENTLYUPDATEDAPPS);
+      return this.getRecentlyUpdatedApps();
     } else if (collectionId === 'popular') {
       return Observable.of(POPULARAPPS);
     }
@@ -131,6 +131,25 @@ export class LinuxStoreApiService {
       return Observable.of(EDITORSCHOICEGAMES);
     }
     else return this.getApps();
+  }
+
+
+  getRecentlyUpdatedApps(): Observable<App[]> {
+
+    let request = '/apps/collection/'.concat('recently-updated');
+
+    if (this.appListCache[request] == null) {
+      return this.http.get<App[]>(this.baseUrl.concat(request))
+        .pipe(
+          tap(apps => { this.appListCache[request] = apps; }),
+          catchError(this.handleError('getApps', []))
+        );
+
+    }
+    else {
+      return Observable.of(this.appListCache[request]);
+    }
+
   }
 
   getCategory(categoryId: string): Observable<Category> {
