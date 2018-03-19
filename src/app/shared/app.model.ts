@@ -6,11 +6,14 @@ export class App {
       summary: string;
       description: string;
       projectLicense: string;
-      iconDesktopUrl: string;
-      iconMobileUrl: string;
       homepageUrl: string;
       bugtrackerUrl: string;
+      iconDesktopUrl: string;
+      iconMobileUrl: string;
       downloadFlatpakRefUrl: string;
-      currentRelease: string;
+      currentReleaseVersion: string;
+      currentReleaseDate: Date;
+      currentReleaseDescription: string;
+      inStoreSinceDate: Date;
       screenshots: Screenshot[];
     }

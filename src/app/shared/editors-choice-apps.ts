@@ -12,7 +12,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -26,7 +29,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -40,7 +46,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -54,7 +63,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -68,7 +80,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -82,7 +97,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -96,7 +114,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
   {
@@ -110,7 +131,10 @@ export const EDITORSCHOICEAPPS: App[] = [
     homepageUrl: '',
     bugtrackerUrl: '',
     downloadFlatpakRefUrl: '',
-    currentRelease: '',
+    currentReleaseVersion: '',
+    currentReleaseDate: null,
+    currentReleaseDescription: '',
+    inStoreSinceDate: null,
     screenshots: []
   },
 ];
