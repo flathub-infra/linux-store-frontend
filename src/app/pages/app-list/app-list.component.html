@@ -18,7 +18,7 @@
           <h3>CATEGORIES</h3>
           <ul>
             <li>
-              <a [routerLink]="'/apps/category/All'" routerLinkActive="selected-item">ALL</a>
+              <a [routerLink]="'/apps/category/All'" routerLinkActive="selected-item">All</a>
             </li>
             <li *ngFor="let category of categories; let last = last;">
               <a (click)="onDrawerLinkClick()" [routerLink]="'/apps/category/' + category.id" routerLinkActive="selected-item">
