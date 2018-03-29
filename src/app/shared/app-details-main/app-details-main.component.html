@@ -1,10 +1,10 @@
 <div *ngIf="app" fxLayout="row" fxLayoutAlign="start stretch">
+  <div fxFlex="20">
+    <img *ngIf="app.iconDesktopUrl" class="app-details-main-logo" ngClass.lt-sm="app-details-main-logo-lt-sm" src="{{app.iconDesktopUrl}}" border="0" alt="{{app.name}}">
+  </div>
   <div fxFlex="80">
     <h2>{{app.name}}</h2>
     <p>{{app.summary}}</p>
     <button mat-raised-button color="primary" (click)="onInstall()">INSTALL</button>
-  </div>
-  <div fxFlex="20">
-    <img *ngIf="app.iconDesktopUrl" class="app-details-main-logo" ngClass.lt-sm="app-details-main-logo-lt-sm" src="{{app.iconDesktopUrl}}" border="0" alt="{{app.name}}">
   </div>
 </div>
