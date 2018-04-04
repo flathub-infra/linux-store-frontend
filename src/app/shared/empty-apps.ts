@@ -16,7 +16,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -33,7 +38,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -50,7 +60,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -67,7 +82,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -84,7 +104,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -101,7 +126,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -118,7 +148,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -135,7 +170,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -152,7 +192,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -169,7 +214,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -186,7 +236,12 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: '',
@@ -203,6 +258,11 @@ export const EMPTYAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots:[]
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   }
 ];

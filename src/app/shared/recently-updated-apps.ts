@@ -16,7 +16,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.quetoo.Quetoo",
@@ -33,7 +38,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.uploadedlobster.peek",
@@ -50,7 +60,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.libreoffice.LibreOffice",
@@ -67,7 +82,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "io.webtorrent.WebTorrent",
@@ -84,7 +104,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.skype.Client",
@@ -101,7 +126,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.signal.Signal",
@@ -118,7 +148,12 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.scoutshonour.Digital",
@@ -135,6 +170,11 @@ export const RECENTLYUPDATEDAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   }
 ];

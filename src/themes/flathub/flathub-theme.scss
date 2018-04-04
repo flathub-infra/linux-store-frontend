@@ -92,7 +92,7 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 
 @include angular-material-theme($linux-store-theme);
 
-p, li{
+p, li, h6{
   a {
     color: #4a86cf;
     transition: color .35s;

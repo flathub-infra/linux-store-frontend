@@ -1,36 +1,16 @@
 <div>
-  <h3>Install instructions</h3>
+  <h3>Install and run on the command line</h3>
 
-    <h5>Click to download</h5>
-    <ol>
-      <li>If you don't have it already, you'll need to
-        <a href="http://flatpak.org/getting.html">get Flatpak.</a>
-      </li>
-      <li>For Flatpak versions &lt; 0.10.0 it is also recommended to add the flathub repository first. You can
-        <a href="https://dl.flathub.org/repo/flathub.flatpakrepo">download</a> the repository file and use your distribution's software manager (GNOME Software, KDE Discover,
-        ...) to install it.</li>
-      <li>Click on the INSTALL button.</li>
-      <li>Your distibution's software manager will open automatically and will install the app.</li>
-      <li>Once installed, applications can be launched from the usual place in your desktop. </li>
-    </ol>
-    <p>Click to download is available on Arch, Debian Stretch (or later), Endless OS, Fedora 25 (or later), Mageia 6 (or later),
-      and OpenSUSE Tumbleweed.</p>
-    <h5>Command line</h5>
-    <ol>
-      <li>If you don't have it already, you'll need to
-        <a href="http://flatpak.org/getting.html">get Flatpak.</a>
-      </li>
-      <li>Run this on the command line:
-        <pre># Only needed first time you use flathub
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  <pre>
+#First <a href="https://flatpak.org/setup/">setup Flatpak and add the Flathub repository</a> in your computer
 
+#Install the app (add --user for per-user installation)
 flatpak install flathub {{this.app.flatpakAppId}}
+
+#Run
+flatpak run {{this.app.flatpakAppId}}
+
+#Uninstall the app
+flatpak uninstall {{this.app.flatpakAppId}}
 </pre>
-      </li>
-      <li>Once installed, applications can be launched from the usual place in your desktop. </li>
-    </ol>
-    <p>These command line instructions require Flatpak 0.6.13 or newer. For more information on how to update and manage your
-      applications, see the
-      <a href="http://flatpak.org/command-line.html">command line tutorial.</a>
-    </p>
 </div>

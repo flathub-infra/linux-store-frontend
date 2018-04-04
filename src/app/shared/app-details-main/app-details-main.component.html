@@ -2,9 +2,12 @@
   <div fxFlex="20">
     <img *ngIf="app.iconDesktopUrl" class="app-details-main-logo" ngClass.lt-sm="app-details-main-logo-lt-sm" src="{{app.iconDesktopUrl}}" border="0" alt="{{app.name}}">
   </div>
-  <div fxFlex="80">
+  <div fxFlex="5">
+  </div>
+  <div fxFlex="75">
     <h2>{{app.name}}</h2>
     <p>{{app.summary}}</p>
     <button mat-raised-button color="primary" (click)="onInstall()">INSTALL</button>
   </div>
 </div>
+<h6>Make sure to follow the <a href="https://flatpak.org/setup/">setup guide</a> before installing</h6>

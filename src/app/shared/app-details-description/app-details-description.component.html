@@ -1,7 +1,6 @@
 <div>
   <gallery></gallery>
-  <h3>Description</h3>
-  <div *ngIf="app" [innerHTML]="app.description"></div>
+  <div *ngIf="app" class="app-details-description" [innerHTML]="app.description"></div>
   <h3 *ngIf="this.showCurrentReleaseInfo">Changes in version {{app.currentReleaseVersion}}</h3>
-  <div *ngIf="this.showCurrentReleaseInfo" [innerHTML]="app.currentReleaseDescription"></div>
+  <div *ngIf="this.showCurrentReleaseInfo" class="app-details-description" [innerHTML]="app.currentReleaseDescription"></div>
 </div>

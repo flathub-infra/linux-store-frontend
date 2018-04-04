@@ -16,7 +16,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
 
   {
@@ -34,7 +39,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.libretro.RetroArch",
@@ -51,7 +61,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.gnome.Games",
@@ -68,7 +83,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.jagex.RuneScape",
@@ -85,7 +105,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "ws.openarena.OpenArena",
@@ -102,7 +127,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     "flatpakAppId": "ca._0ldsk00l.Nestopia",
@@ -119,7 +149,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     "flatpakAppId": "net.sourceforge.mars-game",
@@ -136,7 +171,12 @@ export const EDITORSCHOICEGAMES: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
 
 ];

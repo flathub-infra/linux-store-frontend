@@ -16,7 +16,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.skype.Client",
@@ -33,7 +38,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.discordapp.Discord",
@@ -50,7 +60,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.valvesoftware.Steam",
@@ -67,7 +82,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.libretro.RetroArch",
@@ -84,7 +104,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "de.haeckerfelix.gradio",
@@ -101,7 +126,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     "flatpakAppId": "org.telegram.desktop",
@@ -118,7 +148,12 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.github.wwmm.pulseeffects",
@@ -135,6 +170,11 @@ export const POPULARAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+   screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
 ];

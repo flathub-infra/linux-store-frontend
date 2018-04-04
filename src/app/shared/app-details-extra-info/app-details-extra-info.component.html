@@ -1,3 +1,76 @@
-<p>
 
-</p>
+<div *ngIf="app" class="button-bar" fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start center" fxLayoutGap="15px">
+  <a fxFlex *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">
+    <mat-icon>home</mat-icon><span>Website</span></a>
+  <a fxFlex *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}">
+    <mat-icon>favorite border</mat-icon>Donate</a>
+  <a fxFlex *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">
+    <mat-icon>help</mat-icon>Help</a>
+  <a fxFlex *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">
+    <mat-icon>report problem</mat-icon>Bugtracker</a>
+  <a fxFlex *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">
+    <mat-icon>translate</mat-icon>Translations</a>
+  <div fxFlex="nogrow"></div>
+</div>
+<h3>Additional information</h3>
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch" fxLayoutGap="15px">
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">Updated</div>
+    <div>
+      <span>{{app.currentReleaseDate | date: 'dd/MM/yyyy'}} </span>
+    </div>
+  </div>
+
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">Version</div>
+    <div>
+      <span>{{app.currentReleaseVersion}}</span>
+    </div>
+  </div>
+
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">Category</div>
+    <div>
+      <span>{{this.categoriesList}}</span>
+    </div>
+  </div>
+</div>
+
+
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">License</div>
+    <div>
+      <span>{{app.projectLicense}}</span>
+    </div>
+  </div>
+</div>
+
+
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">Developer</div>
+    <div>
+      <span>{{app.developerName}}</span>
+    </div>
+  </div>
+</div>
+
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">Published in Flathub by</div>
+    <div>
+      <p>
+        <a href="{{this.buildRepoContributorsUrl}}">Maintainers &amp; contributors</a>
+      </p>
+    </div>
+  </div>
+  <div fxFlex class="app-info-item">
+    <div class="dev-name-title">Publishing info &amp; bugtracker</div>
+    <div>
+      <p>
+        <a href="{{this.buildRepoUrl}}">Build repository</a>
+      </p>
+    </div>
+  </div>
+</div>

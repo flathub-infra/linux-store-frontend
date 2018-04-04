@@ -16,7 +16,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "org.gimp.GIMP",
@@ -33,7 +38,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.slack.Slack",
@@ -50,7 +60,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.visualstudio.code",
@@ -67,7 +82,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     flatpakAppId: "com.spotify.Client",
@@ -84,7 +104,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     "flatpakAppId": "org.videolan.VLC",
@@ -101,7 +126,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     "flatpakAppId": "com.google.AndroidStudio",
@@ -118,7 +148,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
   {
     "flatpakAppId": "org.gnome.Lollypop",
@@ -135,6 +170,11 @@ export const EDITORSCHOICEAPPS: App[] = [
     currentReleaseDate: null,
     currentReleaseDescription: '',
     inStoreSinceDate: null,
-    screenshots: []
+    screenshots: [],
+    developerName: '',
+    helpUrl: '',
+    donationUrl: '',
+    translateUrl: '',
+    categories: []
   },
 ];
