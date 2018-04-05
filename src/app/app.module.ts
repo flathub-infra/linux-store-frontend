@@ -26,7 +26,6 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AppCollectionTeaserComponent } from './shared/app-collection-teaser/app-collection-teaser.component';
 import { AppCardListComponent } from './shared/app-card-list/app-card-list.component';
-import { SetupComponent } from './pages/setup/setup.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
@@ -49,7 +48,6 @@ import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.
     AboutComponent,
     AppCollectionTeaserComponent,
     AppCardListComponent,
-    SetupComponent,
     TermsComponent,
     PrivacyComponent,
     CodeOfConductComponent
