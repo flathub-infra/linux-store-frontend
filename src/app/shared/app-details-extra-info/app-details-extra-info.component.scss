@@ -1,8 +1,23 @@
-.dev-name-title{
+.app-links-button-bar {
+  padding-bottom: 25px;
+}
+
+.app-info-item{
+  padding-bottom: 20px;
+}
+
+.app-info-item-title{
   color: rgba(0, 0, 0, 0.54) !important;
   font-size: 13px;
   line-height: 16px;
 }
+
+.app-info-item-value{
+  color:black;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 
 .button-row {
   display: flex;
@@ -11,11 +26,6 @@
   padding-bottom: 50px;
 }
 
-.button-bar {
-  padding-bottom: 50px;
-}
 
-.app-info-item{
-  padding-bottom: 20px;
-}
+
 

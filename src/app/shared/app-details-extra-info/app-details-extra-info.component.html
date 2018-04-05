@@ -1,71 +1,59 @@
-
-<div *ngIf="app" class="button-bar" fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start center" fxLayoutGap="15px">
-  <a fxFlex *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">Website</a>
-  <a fxFlex *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}">Donate</a>
-  <a fxFlex *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">Help</a>
-  <a fxFlex *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">Issues</a>
-  <a fxFlex *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">Translations</a>
-  <div fxFlex="nogrow"></div>
+<div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start" fxLayoutGap="15px">
+  <a fxFlex="nogrow" *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">Website</a>
+  <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}">Donate</a>
+  <a fxFlex="nogrow" *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">Help</a>
+  <a fxFlex="nogrow" *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">Issues</a>
+  <a fxFlex="nogrow" *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">Translations</a>
 </div>
 <h3>Additional information</h3>
-<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch" fxLayoutGap="15px">
+
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
   <div fxFlex class="app-info-item">
-    <div class="dev-name-title">Updated</div>
+    <div class="app-info-item-title">Updated</div>
     <div>
-      <span>{{app.currentReleaseDate | date: 'dd/MM/yyyy'}} </span>
+      <span class="app-info-item-value">{{(app.currentReleaseDate | date: 'longDate') || '-'}} </span>
     </div>
   </div>
 
   <div fxFlex class="app-info-item">
-    <div class="dev-name-title">Version</div>
+    <div class="app-info-item-title">Version</div>
     <div>
-      <span>{{app.currentReleaseVersion}}</span>
+      <span class="app-info-item-value">{{(app.currentReleaseVersion || '-')}}</span>
     </div>
   </div>
 
   <div fxFlex class="app-info-item">
-    <div class="dev-name-title">Category</div>
+    <div class="app-info-item-title">Category</div>
     <div>
-      <span>{{this.categoriesList}}</span>
+      <span class="app-info-item-value">{{(this.mainCategory.name || '-')}}</span>
     </div>
   </div>
+
 </div>
 
 
-<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
   <div fxFlex class="app-info-item">
-    <div class="dev-name-title">License</div>
+    <div class="app-info-item-title">License</div>
     <div>
-      <span>{{app.projectLicense}}</span>
+      <span class="app-info-item-value">{{(this.license || '-')}}</span>
     </div>
   </div>
-</div>
 
-
-<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
   <div fxFlex class="app-info-item">
-    <div class="dev-name-title">Developer</div>
+    <div class="app-info-item-title">Developer</div>
     <div>
-      <span>{{app.developerName}}</span>
+      <span class="app-info-item-value">{{(app.developerName || '-')}}</span>
     </div>
   </div>
-</div>
 
-<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
   <div fxFlex class="app-info-item">
-    <div class="dev-name-title">Published in Flathub by</div>
+    <div class="app-info-item-title">Publisher</div>
     <div>
-      <p>
-        <a href="{{this.buildRepoContributorsUrl}}">Maintainers &amp; contributors</a>
+      <p class="app-info-item-value">
+        <a href="{{this.buildRepoContributorsUrl}}">Flathub maintainers</a>
       </p>
     </div>
   </div>
-  <div fxFlex class="app-info-item">
-    <div class="dev-name-title">Publishing info &amp; bugtracker</div>
-    <div>
-      <p>
-        <a href="{{this.buildRepoUrl}}">Build repository</a>
-      </p>
-    </div>
-  </div>
+
 </div>
