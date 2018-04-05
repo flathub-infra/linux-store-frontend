@@ -1,16 +1,8 @@
 <div>
-  <h3>Install and run on the command line</h3>
-
-  <pre>
-#First <a href="https://flatpak.org/setup/">setup Flatpak and add the Flathub repository</a> in your computer
-
-#Install the app (add --user for per-user installation)
-flatpak install flathub {{this.app.flatpakAppId}}
-
-#Run
-flatpak run {{this.app.flatpakAppId}}
-
-#Uninstall the app
-flatpak uninstall {{this.app.flatpakAppId}}
-</pre>
+  <h3>Command line instructions</h3>
+  <h5>Install:</h5>
+  <pre>$ flatpak install flathub {{this.app.flatpakAppId}}</pre>
+  <h5>Run:</h5>
+  <pre>$ flatpak run {{this.app.flatpakAppId}}</pre>
+  <h6>Make sure to follow the <a href="https://flatpak.org/setup/">setup guide</a> before installing</h6>
 </div>
