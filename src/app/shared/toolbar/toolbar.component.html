@@ -5,24 +5,23 @@
   <div fxHide fxShow.gt-sm class="toolbar-content">
 
     <a mat-button class="store-logo-button" routerLink="/" aria-label="Flathub">
-      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo.svg" alt="flathub">
-      <span>FLATHUB</span>
+      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.svg" alt="flathub">
     </a>
 
     <a mat-button routerLink="apps">APPLICATIONS</a>
-    <a mat-button routerLink="about">ABOUT</a>
-    <a mat-button href="https://blog.flathub.org">BLOG</a>
 
     <span class="flex-fill-remaining-space"></span>
+
     <div class="search-box-container">
       <mat-icon class="search-box-icon">search</mat-icon>
       <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
       />
     </div>
 
-    <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">
-      PUBLISH YOUR APP
+    <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish an app in Flathub">
+      PUBLISH
     </a>
+    <a mat-button routerLink="about">ABOUT</a>
   </div>
 
   <div fxShow fxHide.gt-sm class="toolbar-content">
@@ -36,18 +35,16 @@
       <button mat-menu-item routerLink="apps">
         <span>APPLICATIONS</span>
       </button>
+      <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">PUBLISH
+      </a>
       <button mat-menu-item routerLink="about">
         <span>ABOUT</span>
       </button>
-      <a mat-menu-item href="https://blog.flathub.org">BLOG</a>
-      <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">PUBLISH YOUR APP
-      </a>
 
     </mat-menu>
 
     <a *ngIf="!showSearchInput" mat-button class="store-logo-button flex-fill-remaining-space" routerLink="/" aria-label="Flathub">
-      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo.svg" alt="flathub">
-      <span>FLATHUB</span>
+      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.svg" alt="flathub">
     </a>
 
     <div *ngIf="showSearchInput" class="search-box-container flex-fill-remaining-space">
