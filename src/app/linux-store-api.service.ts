@@ -112,7 +112,9 @@ export class LinuxStoreApiService {
     else {
       return this.getApps()
         .map(apps => apps.filter(app => (app.name.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
-          || (app.summary.toLowerCase().indexOf(keyword.toLowerCase()) != -1)));
+          || (app.summary.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
+          || (app.flatpakAppId.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
+        ));
     }
   }
 
