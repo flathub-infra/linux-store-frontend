@@ -4,13 +4,15 @@
 
   <div fxHide fxShow.gt-sm class="toolbar-content">
 
-    <a mat-button class="store-logo-button" routerLink="/" aria-label="Flathub">
-      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.svg" alt="flathub">
+    <a class="store-logo-button" routerLink="/" aria-label="Flathub">
+      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.png" alt="flathub">
     </a>
 
-    <a mat-button routerLink="apps">APPLICATIONS</a>
+    <div><a mat-button routerLink="apps">APPLICATIONS</a></div>
+
 
     <span class="flex-fill-remaining-space"></span>
+
 
     <div class="search-box-container">
       <mat-icon class="search-box-icon">search</mat-icon>
@@ -18,10 +20,12 @@
       />
     </div>
 
+    <div>
     <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish an app in Flathub">
       PUBLISH
     </a>
     <a mat-button routerLink="about">ABOUT</a>
+  </div>
   </div>
 
   <div fxShow fxHide.gt-sm class="toolbar-content">
@@ -44,7 +48,7 @@
     </mat-menu>
 
     <a *ngIf="!showSearchInput" mat-button class="store-logo-button flex-fill-remaining-space" routerLink="/" aria-label="Flathub">
-      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.svg" alt="flathub">
+      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.png" alt="flathub">
     </a>
 
     <div *ngIf="showSearchInput" class="search-box-container flex-fill-remaining-space">
