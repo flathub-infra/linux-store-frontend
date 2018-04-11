@@ -108,3 +108,30 @@ p, li, h6{
   }
 }
 
+/* BUTTONS */
+
+.mat-button {
+  margin: 2px;
+}
+
+.mat-raised-button {
+  box-shadow: none !important; /* FIXME: figure out how to avoid the override */
+}
+
+/* APP TILES */
+.mat-grid-tile, 
+.mat-grid-tile[_ngcontent-c10],
+.mat-grid-tile[_ngcontent-c11],
+.mat-grid-tile[_ngcontent-c12] {
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,.1);
+  &:hover, &:active, &:focus {
+    border: 1px solid rgba(0,0,0,.38);
+  }
+}
+  /* work around double scrollbar */
+  .drawer-content {
+    overflow: visible !important;
+  }
+
