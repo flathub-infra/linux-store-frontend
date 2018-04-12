@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
   },
   {
     "id": "Development",
-    "name": "Development"
+    "name": "Developer Tools"
   },
   {
     "id": "Education",
@@ -15,19 +15,19 @@ export const CATEGORIES: Category[] = [
   },
   {
     "id": "Game",
-    "name": "Game"
+    "name": "Games"
   },
   {
     "id": "Graphics",
-    "name": "Graphics"
+    "name": "Graphics & Photography"
   },
   {
     "id": "Network",
-    "name": "Network"
+    "name": "Communication & News"
   },
   {
     "id": "Office",
-    "name": "Office"
+    "name": "Productivity"
   },
   {
     "id": "Science",
@@ -39,6 +39,6 @@ export const CATEGORIES: Category[] = [
   },
   {
     "id": "Utility",
-    "name": "Utility"
+    "name": "Utilities"
   },
 ];
