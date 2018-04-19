@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { PageEvent } from '@angular/material/paginator';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
@@ -19,6 +20,7 @@ export class AppListComponent implements OnInit {
   @ViewChild('drawer') drawer;
 
   apps: App[];
+  appsToShow: App[];
   categories: Category[];
   selectedCategory: Category;
   selectedCollection: Collection;
@@ -28,6 +30,7 @@ export class AppListComponent implements OnInit {
   paramCategoryId: string;
   paramCollectionId: string;
   paramSearchKeyword: string;
+  pageSize: number = 25;
 
 
   constructor(
@@ -122,7 +125,7 @@ export class AppListComponent implements OnInit {
     this.selectedCollection = searchCollection;
 
     this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
-      .subscribe(apps => { this.apps = apps; });
+      .subscribe(apps => { this.updateApps(apps); });
   }
 
   showAppsByCollectionId(collectionId: string): void {
@@ -131,12 +134,12 @@ export class AppListComponent implements OnInit {
       .subscribe(collection => { this.selectedCollection = collection; });
 
     this.linuxStoreApiService.getAppsByCollectionId(collectionId)
-      .subscribe(apps => { this.apps = apps; });
+      .subscribe(apps => { this.updateApps(apps); });
   }
 
   showAllApps(): void {
     this.linuxStoreApiService.getApps()
-      .subscribe(apps => { this.apps = apps; });
+      .subscribe(apps => { this.updateApps(apps); });
   }
 
   showAppsByCategoryId(categoryId: string): void {
@@ -145,7 +148,7 @@ export class AppListComponent implements OnInit {
       .subscribe(category => { this.selectedCategory = category; });
 
     this.linuxStoreApiService.getAppsByCategory(categoryId)
-      .subscribe(apps => { this.apps = apps; });
+      .subscribe(apps => { this.updateApps(apps); });
   }
 
   getAppsByCollectionId(collectionId: string): App[] {
@@ -173,4 +176,23 @@ export class AppListComponent implements OnInit {
     if(this.isSmallScreen()) this.drawer.close();
   }
 
+  updateApps(apps: App[]) {
+    this.apps = apps;
+    this.changePage();
+  }
+
+  changePage(pageEvent?: PageEvent) {
+    if (pageEvent) {
+      this.pageSize = pageEvent.pageSize;
+    } else {
+      pageEvent = new PageEvent();
+      pageEvent.length = this.apps.length;
+      pageEvent.pageIndex = 0;
+      pageEvent.pageSize = this.pageSize;
+    }
+    const start = pageEvent.pageIndex * pageEvent.pageSize;
+    const end = Math.min(start + pageEvent.pageSize, this.apps.length);
+    const tmpApps = this.apps.slice(start, end);
+    this.appsToShow = tmpApps;
+  }
 }
