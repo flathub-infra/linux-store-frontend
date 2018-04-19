@@ -48,10 +48,10 @@
         <div>
           <store-app-card-list [apps]="appsToShow" [minCols]="2" [colWidth]="200" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
         </div>
+        <mat-paginator [length]="apps ? apps.length : 0" [pageSize]="pageSize" [pageSizeOptions]="[5, 10, 25, 50, 100]" (page)="changePage($event)">
+        </mat-paginator>
       </div>
 
     </section>
   </mat-drawer-content>
 </mat-drawer-container>
-<mat-paginator [length]="apps ? apps.length : 0" [pageSize]="pageSize" [pageSizeOptions]="[5, 10, 25, 50, 100]" (page)="changePage($event)">
-</mat-paginator>
