@@ -4,9 +4,7 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": [
-      "file-saver"
-  ]
+    "types": []
   },
   "exclude": [
     "test.ts",
