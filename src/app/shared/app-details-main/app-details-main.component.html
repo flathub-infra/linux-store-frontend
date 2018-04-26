@@ -7,8 +7,10 @@
   <div fxFlex="75">
     <h2>{{app.name}}</h2>
     <p class="app-details-main-summary">{{app.summary}}</p>
-    <button mat-raised-button color="primary" (click)="onInstall()">INSTALL</button>
+    <a href="{{app.downloadFlatpakRefUrl}}" mat-raised-button
+       color="primary" (click)="onInstall(); $event.preventDefault()">
+       INSTALL
+    </a>
     <h6 class="app-details-main-installhint">Make sure to follow the <a href="https://flatpak.org/setup/">setup guide</a> before installing</h6>
   </div>
 </div>
-
