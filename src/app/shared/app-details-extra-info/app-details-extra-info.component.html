@@ -5,6 +5,7 @@
   <a fxFlex="nogrow" *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">Issues</a>
   <a fxFlex="nogrow" *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">Translations</a>
 </div>
+
 <h3>Additional information</h3>
 
 <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
@@ -28,9 +29,7 @@
       <span class="app-info-item-value app-info-item-value-text">{{(this.mainCategory.name || '-')}}</span>
     </div>
   </div>
-
 </div>
-
 
 <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
   <div fxFlex class="app-info-item">
@@ -53,5 +52,4 @@
         <a class="app-info-item-value" href="{{this.buildRepoContributorsUrl}}">Flathub maintainers</a>
     </div>
   </div>
-
 </div>
