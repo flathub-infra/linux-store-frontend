@@ -90,7 +90,7 @@ export class LinuxStoreApiService {
 
   getAppsByKeyword(keyword: string): Observable<App[]> {
     if (keyword.trim() == null || keyword.trim().length < 2) {
-      return of(new Array<App>());
+      return of([]);
     } else {
       return this.getApps()
         .pipe(

@@ -8,8 +8,6 @@ This app began as a proof of concept but it's likely to be used for the official
 
 There is also a development version at http://45.55.104.129
 
-
-
 ## Running this app locally
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
@@ -22,11 +20,10 @@ Steps to run this app locally:
   * ```npm install ```
 * Run `npm start` for a dev server calling the remote linux-store-backend. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-
 ## Hacking linux-store-frontend
 
 linux-store-frontend is developed using:
-* [Angular 4](https://angular.io/): web framework. Checkout Angular's [Quickstart](https://angular.io/guide/quickstart), [Tour of Heroes](https://angular.io/tutorial) and [Building Beautiful Web Apps With Angular Material](https://www.barbarianmeetscoding.com/blog/2017/01/31/building-beautiful-web-apps-with-angular-material-part-i/) if you are not familiar with Angular
+* [Angular 5](https://angular.io/): web framework. Checkout Angular's [Quickstart](https://angular.io/guide/quickstart), [Tour of Heroes](https://angular.io/tutorial) and [Building Beautiful Web Apps With Angular Material](https://www.barbarianmeetscoding.com/blog/2017/01/31/building-beautiful-web-apps-with-angular-material-part-i/) if you are not familiar with Angular
 * [Angular Material](https://material.angular.io/): Material Design components for Angular
 * [Angular Flex Layout](https://github.com/angular/flex-layout): HTML UI layout for Angular applications; using Flexbox and a Responsive API 
 
