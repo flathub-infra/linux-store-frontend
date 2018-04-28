@@ -13,7 +13,7 @@ export class AppDetailsExtraInfoComponent implements OnInit {
 
   @Input() app: App;
 
-  flathubGithubUrl: string = "https://github.com/flathub";
+  flathubGithubUrl = 'https://github.com/flathub';
   buildRepoUrl: string;
   buildRepoContributorsUrl: string;
   categoriesList: string;
@@ -25,42 +25,37 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.buildRepoUrl = this.flathubGithubUrl + "/" + this.app.flatpakAppId;
-    this.buildRepoContributorsUrl = this.buildRepoUrl + "/graphs/contributors/";
+    this.buildRepoUrl = `${this.flathubGithubUrl}/${this.app.flatpakAppId}`;
+    this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
 
-    if (this.app){
+    if (this.app) {
 
-      if(this.app.projectLicense){
+      if (this.app.projectLicense) {
 
-        if(this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
-         this.license = "Proprietary";
-        }
-        else {
-          this.license = "Free";
+        if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
+         this.license = 'Proprietary';
+        } else {
+          this.license = 'Free';
         }
       }
 
-      if (this.app.categories){
-        for (let category of this.app.categories) {
+      if (this.app.categories) {
+        for (const category of this.app.categories) {
           this.setMainCategory(category.name);
         }
       }
-
     }
-
   }
 
-
   setMainCategory(categoryId: string): void {
-
-    var tempCategory: Category;
+    let tempCategory: Category;
 
     this.linuxStoreApiService.getCategory(categoryId)
       .subscribe(category => { tempCategory = category; });
 
-      if(tempCategory){
-        this.mainCategory = tempCategory;
-      }
+    if (tempCategory) {
+      this.mainCategory = tempCategory;
+    }
   }
 
 }

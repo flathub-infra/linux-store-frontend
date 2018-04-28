@@ -13,7 +13,7 @@ export class AppDetailsDescriptionComponent implements OnInit {
 
   @Input() app: App;
 
-  showCurrentReleaseInfo: boolean = false;
+  showCurrentReleaseInfo = false;
 
   galleryConfig: GalleryConfig = {
     "gestures": true,
@@ -51,23 +51,23 @@ export class AppDetailsDescriptionComponent implements OnInit {
 
   ngOnInit() {
 
-    if(this.app && this.app.currentReleaseVersion && this.app.currentReleaseVersion.length > 0 &&
-       this.app.currentReleaseDescription && this.app.currentReleaseDescription.length > 0){
+    if (this.app && this.app.currentReleaseVersion && this.app.currentReleaseVersion.length > 0 &&
+       this.app.currentReleaseDescription && this.app.currentReleaseDescription.length > 0) {
        this.showCurrentReleaseInfo = true;
     }
 
-    let items: GalleryItem[] = [];
+    const items: GalleryItem[] = [];
 
     if (this.app && this.app.screenshots) {
 
-      if(this.app.screenshots.length == 1){
+      if (this.app.screenshots.length === 1) {
         this.galleryConfig.loader = null;
         this.galleryConfig.navigation = null;
         this.galleryConfig.thumbnails = null;
       }
 
-      for (let screenshot of this.app.screenshots) {
-        let item: GalleryItem = { src: "", thumbnail: "", text: "" };
+      for (const screenshot of this.app.screenshots) {
+        const item: GalleryItem = { src: '', thumbnail: '', text: '' };
         item.src = screenshot.imgDesktopUrl;
         item.thumbnail = screenshot.thumbUrl;
         item.text = this.app.name;
@@ -78,7 +78,6 @@ export class AppDetailsDescriptionComponent implements OnInit {
     this.gallery.setConfig(this.galleryConfig);
     this.gallery.reset();
     this.gallery.load(items);
-
   }
 
 }

@@ -14,14 +14,13 @@ export class HomeComponent implements OnInit {
 
   featuredCollections: Collection[];
   numCols: number;
-  columnWidth: number = 170;
-  minCols: number = 2;
+  columnWidth = 170;
+  minCols = 2;
 
   constructor(
     private router: Router,
     private linuxStoreApiService: LinuxStoreApiService) {
   }
-
 
   ngOnInit() {
 
@@ -29,7 +28,7 @@ export class HomeComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
 
     this.linuxStoreApiService.getFeaturedCollections()
@@ -39,7 +38,7 @@ export class HomeComponent implements OnInit {
   }
 
   getAppsByCollectionId(collectionId: string): App[] {
-    var collectionApps: App[];
+    let collectionApps: App[];
     this.linuxStoreApiService.getAppsByCollectionId(collectionId)
       .subscribe(apps => {
         collectionApps = apps;
@@ -54,6 +53,5 @@ export class HomeComponent implements OnInit {
   onShowCollection(collectionId: string) {
     this.router.navigate(['apps/collection', collectionId]);
   }
-
 
 }
