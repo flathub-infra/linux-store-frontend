@@ -27,7 +27,7 @@ export class AppCollectionTeaserComponent implements OnInit {
     this.showAppDetails.emit(app);
   }
 
-  onSeeMore():void{
+  onSeeMore(): void {
     this.showCollection.emit(this.collectionId);
   }
 

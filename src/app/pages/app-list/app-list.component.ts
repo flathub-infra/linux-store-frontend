@@ -60,7 +60,7 @@ export class AppListComponent implements OnInit {
     });
   }
 
-  isSmallScreen(): boolean{
+  isSmallScreen(): boolean {
     return this.breakpointObserver.isMatched('(max-width: 599px)');
   }
 
@@ -91,7 +91,7 @@ export class AppListComponent implements OnInit {
   }
 
   showAppsByParams() {
-    if (this.paramSearchKeyword){
+    if (this.paramSearchKeyword) {
       this.showAppsSearchKeyword(this.paramSearchKeyword);
       this.showDefaultInfo = false;
     } else if (this.paramCollectionId) {
