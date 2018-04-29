@@ -2,7 +2,6 @@
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/jgarciao/linux-store-frontend/compare/0.4.0...0.5.0) (2018-02-27)
 
-
 ### Highlights
 
 * First version that was used by Flathub (around mid-January 2018) in https://beta.flathub.org
@@ -17,7 +16,6 @@
 
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/jgarciao/linux-store-frontend/compare/0.3.0...0.4.0) (2017-05-08)
-
 
 ### Highlights
 
