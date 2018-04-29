@@ -1,0 +1,16 @@
+sudo: true
+dist: trusty
+language: node_js
+
+node_js:
+  - 8
+
+addons:
+  chrome: stable
+  firefox: latest
+
+before_script:
+  - npm install
+
+script:
+  - npm run build
