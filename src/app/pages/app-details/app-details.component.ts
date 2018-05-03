@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
-import { saveAs } from "file-saver";
+import { saveAs } from 'file-saver';
 
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
@@ -17,15 +17,14 @@ import { GoogleAnalyticsEventsService } from '../../google-analytics-events.serv
 })
 export class AppDetailsComponent implements OnInit {
 
-  @Input()
-  app: App;
+  @Input() app: App;
 
   paramAppId: string;
 
   reviews: Review[];
   selectedReview: Review;
 
-  public pending: boolean = false;
+  public pending = false;
 
   constructor(
     private linuxStoreApiService: LinuxStoreApiService,
@@ -36,11 +35,10 @@ export class AppDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.route.paramMap.subscribe(
       params => {
         this.paramAppId = params.get('appId');
-        this.getApp( this.paramAppId);
+        this.getApp(this.paramAppId);
       }
     );
 
@@ -48,19 +46,17 @@ export class AppDetailsComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
   }
 
   getApp(id: string): void {
-
     this.linuxStoreApiService.getApp(id)
       .subscribe(app => { this.app = app; });
-
   }
 
   getReviews(id: string): void {
-    let app_id: string = id.concat('.desktop');
+    const app_id: string = id.concat('.desktop');
     this.linuxStoreApiService.getReviews(app_id)
       .subscribe(reviews => { this.reviews = reviews; });
   }
@@ -76,21 +72,19 @@ export class AppDetailsComponent implements OnInit {
   // This method has been adapted from Stack Overflow
   // Question: http://stackoverflow.com/questions/35368633/angular-2-download-pdf-from-api-and-display-it-in-view
   // Answer by spock: http://stackoverflow.com/users/435743/spock
-
   onInstall(app: App) {
-
     // Track event
-    this.googleAnalyticsEventsService.emitEvent("App", "Install", app.flatpakAppId);
+    this.googleAnalyticsEventsService.emitEvent('App', 'Install', app.flatpakAppId);
 
     // Xhr creates new context so we need to create reference to this
-    let self = this;
+    const self = this;
 
     // Status flag used in the template.
     this.pending = true;
 
     // Create the Xhr request object
-    let xhr = new XMLHttpRequest();
-    let url = this.app.downloadFlatpakRefUrl;
+    const xhr = new XMLHttpRequest();
+    const url = this.app.downloadFlatpakRefUrl;
 
     xhr.open('GET', url, true);
     xhr.responseType = 'blob';
@@ -98,14 +92,13 @@ export class AppDetailsComponent implements OnInit {
     // Xhr callback when we get a result back
     // We are not using arrow function because we need the 'this' context
     xhr.onreadystatechange = function () {
-
       // We use setTimeout to trigger change detection in Zones
       setTimeout(() => { self.pending = false; }, 0);
 
       // If we get an HTTP status OK (200), save the file using fileSaver
       if (xhr.readyState === 4 && xhr.status === 200) {
-        var blob = new Blob([this.response], { type: 'application/vnd.flatpak.ref' });
-        var filename: string = url.substring(url.lastIndexOf('/') + 1);
+        const blob = new Blob([this.response], { type: 'application/vnd.flatpak.ref' });
+        const filename: string = url.substring(url.lastIndexOf('/') + 1);
         saveAs(blob, filename);
       }
     };
@@ -114,6 +107,4 @@ export class AppDetailsComponent implements OnInit {
     xhr.send();
   }
 
-
 }
-

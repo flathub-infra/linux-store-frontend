@@ -4,7 +4,6 @@
   color: #808080;
 }
 
-
 .store-footer ul {
   list-style: none;
 }
@@ -34,13 +33,14 @@
   }
 }
 
-.store-footer-copyright{
-  p{
+.store-footer-copyright {
+  p {
     font-weight: bold;
     color: #808080;
     background-color: transparent;
     font-size: 80%;
     text-align: center;
+    margin-bottom: 0;
   }
 
   a {
@@ -59,13 +59,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from "rxjs/Observable";
+import { Observable } from 'rxjs/Observable';
 import { catchError, map, tap } from 'rxjs/operators';
-import "rxjs/add/operator/map";
-import "rxjs/add/observable/of";
-
+import { of } from 'rxjs/observable/of';
 
 import { environment } from './../environments/environment';
 
@@ -36,150 +34,133 @@ export class LinuxStoreApiService {
 
   constructor(private http: HttpClient) { }
 
-
   getApp(flatpakAppId: string): Observable<App> {
-
-    let request = '/apps/'.concat(flatpakAppId);
+    const request = `/apps/${flatpakAppId}`;
 
     if (this.appDetailsCache[request] == null) {
-      return this.http.get<App>(this.baseUrl.concat(request))
+      return this.http.get<App>(`${this.baseUrl}${request}`)
         .pipe(
           tap(app => { this.appDetailsCache[request] = app; }),
           catchError(this.handleError('getApp', null))
         );
-    }
-    else {
-      return Observable.of(this.appDetailsCache[request]);
+    } else {
+      return of(this.appDetailsCache[request]);
     }
   }
 
-
   getEmptyApps(): Observable<App[]> {
-    return Observable.of(EMPTYAPPS);
+    return of(EMPTYAPPS);
   }
 
   getMockApps(): Observable<App[]> {
-    return Observable.of(APPS);
+    return of(APPS);
   }
 
   getApps(): Observable<App[]> {
-
-    let request = '/apps';
+    const request = '/apps';
 
     if (this.appListCache[request] == null) {
-      return this.http.get<App[]>(this.baseUrl.concat(request))
+      return this.http.get<App[]>(`${this.baseUrl}${request}`)
         .pipe(
           tap(apps => { this.appListCache[request] = apps; }),
           catchError(this.handleError('getApps', []))
         );
-
-    }
-    else {
-      return Observable.of(this.appListCache[request]);
+    } else {
+      return of(this.appListCache[request]);
     }
   }
 
   getAppsByCategory(categoryId: string): Observable<App[]> {
-
     if (categoryId === 'All') {
       return this.getApps();
-    }
-    else {
-
-      let request = '/apps/category/'.concat(categoryId);
+    } else {
+      const request = `/apps/category/${categoryId}`;
 
       if (this.appListCache[request] == null) {
-        return this.http.get<App[]>(this.baseUrl.concat(request))
+        return this.http.get<App[]>(`${this.baseUrl}${request}`)
           .pipe(
             tap(apps => { this.appListCache[request] = apps; }),
             catchError(this.handleError('getApps', []))
           );
-
+      } else {
+        return of(this.appListCache[request]);
       }
-      else {
-        return Observable.of(this.appListCache[request]);
-      }
-
     }
-
   }
 
   getAppsByKeyword(keyword: string): Observable<App[]> {
-
     if (keyword.trim() == null || keyword.trim().length < 2) {
-      return Observable.of(new Array<App>());
-    }
-    else {
+      return of([]);
+    } else {
       return this.getApps()
-        .map(apps => apps.filter(app => (app.name.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
-          || (app.summary.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
-          || (app.flatpakAppId.toLowerCase().indexOf(keyword.toLowerCase()) != -1)
-        ));
+        .pipe(
+          map(apps => apps.filter(app => (app.name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1)
+            || (app.summary.toLowerCase().indexOf(keyword.toLowerCase()) !== -1)
+            || (app.flatpakAppId.toLowerCase().indexOf(keyword.toLowerCase()) !== -1)
+          ))
+        );
     }
   }
 
-
   getAppsByCollectionId(collectionId: string): Observable<App[]> {
-
     if (collectionId === 'recently-updated') {
       return this.getRecentlyUpdatedApps();
     } else if (collectionId === 'popular') {
-      return Observable.of(POPULARAPPS);
+      return of(POPULARAPPS);
+    } else if (collectionId === 'editors-choice-apps') {
+      return of(EDITORSCHOICEAPPS);
+    } else if (collectionId === 'editors-choice-games') {
+      return of(EDITORSCHOICEGAMES);
+    } else {
+      return this.getApps();
     }
-    else if (collectionId === 'editors-choice-apps') {
-      return Observable.of(EDITORSCHOICEAPPS);
-    }
-    else if (collectionId === 'editors-choice-games') {
-      return Observable.of(EDITORSCHOICEGAMES);
-    }
-    else return this.getApps();
   }
 
-
   getRecentlyUpdatedApps(): Observable<App[]> {
-
-    let request = '/apps/collection/'.concat('recently-updated');
+    const request = '/apps/collection/recently-updated';
 
     if (this.appListCache[request] == null) {
-      return this.http.get<App[]>(this.baseUrl.concat(request))
+      return this.http.get<App[]>(`${this.baseUrl}${request}`)
         .pipe(
           tap(apps => { this.appListCache[request] = apps; }),
           catchError(this.handleError('getApps', []))
         );
-
+    } else {
+      return of(this.appListCache[request]);
     }
-    else {
-      return Observable.of(this.appListCache[request]);
-    }
-
   }
 
   getCategory(categoryId: string): Observable<Category> {
     return this.getCategories()
-      .map(category => category.find(category => category.id === categoryId));
+      .pipe(
+        map(category => category.find(category => category.id === categoryId))
+      );
   }
 
   getCategories(): Observable<Category[]> {
-    return Observable.of(CATEGORIES);
+    return of(CATEGORIES);
   }
 
   getCollection(collectionId: string): Observable<Collection> {
     return this.getFeaturedCollections()
-      .map(collection => collection.find(collection => collection.id === collectionId));
+      .pipe(
+        map(collection => collection.find(collection => collection.id === collectionId))
+      );
   }
 
   getFeaturedCollections(): Observable<Collection[]> {
-    return Observable.of(FEATUREDCOLLECTIONS);
+    return of(FEATUREDCOLLECTIONS);
   }
 
-
   getAllReviews(): Observable<Review[]> {
-    return Observable.of(REVIEWS);
+    return of(REVIEWS);
   }
 
   getReviews(app_id: string): Observable<Review[]> {
     return this.getAllReviews()
-      .map(reviews => reviews.filter(review => review.app_id === app_id));
+      .pipe(
+        map(reviews => reviews.filter(review => review.app_id === app_id))
+      );
   }
 
   /**
@@ -195,10 +176,10 @@ export class LinuxStoreApiService {
       console.error(error); // log to console instead
 
       // TODO: better job of transforming error for user consumption
-      //this.log(`${operation} failed: ${error.message}`);
+      // this.log(`${operation} failed: ${error.message}`);
 
       // Let the app keep running by returning an empty result.
-      return Observable.of(result as T);
+      return of(result as T);
     };
   }
 

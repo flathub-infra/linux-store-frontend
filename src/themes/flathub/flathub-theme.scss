@@ -71,7 +71,6 @@ $mat-flathub: (
   )
 );
 
-
 $linux-store-primary: mat-palette($mat-flathub);
 
 $linux-store-accent:  mat-palette($mat-pink, A200, A100, A400);
@@ -82,7 +81,6 @@ $linux-store-warn:    mat-palette($mat-red);
 // Create the theme object (a Sass map containing all of the palettes).
 $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $linux-store-warn);
 
-
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -92,7 +90,7 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 
 @include angular-material-theme($linux-store-theme);
 
-.store-link-container{
+.store-link-container {
   a {
     color: #4a86cf;
     transition: color .35s;
@@ -103,13 +101,13 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
   a:active, a:visited {
     color: #4a86cf;
   }
-  a:hover{
+
+  a:hover {
     text-decoration: underline;
   }
 }
 
-
-p, li, h6{
+p, li, h6 {
   a {
     color: #4a86cf;
     transition: color .35s;
@@ -120,8 +118,8 @@ p, li, h6{
   a:active, a:visited {
     color: #4a86cf;
   }
-  a:hover{
+
+  a:hover {
     text-decoration: underline;
   }
 }
-
