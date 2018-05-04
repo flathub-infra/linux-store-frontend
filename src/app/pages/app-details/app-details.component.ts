@@ -16,15 +16,14 @@ import { GoogleAnalyticsEventsService } from '../../google-analytics-events.serv
 })
 export class AppDetailsComponent implements OnInit {
 
-  @Input()
-  app: App;
+  @Input() app: App;
 
   paramAppId: string;
 
   reviews: Review[];
   selectedReview: Review;
 
-  public pending: boolean = false;
+  public pending = false;
 
   constructor(
     private linuxStoreApiService: LinuxStoreApiService,
@@ -35,11 +34,10 @@ export class AppDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.route.paramMap.subscribe(
       params => {
         this.paramAppId = params.get('appId');
-        this.getApp( this.paramAppId);
+        this.getApp(this.paramAppId);
       }
     );
 
@@ -47,19 +45,17 @@ export class AppDetailsComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
   }
 
   getApp(id: string): void {
-
     this.linuxStoreApiService.getApp(id)
       .subscribe(app => { this.app = app; });
-
   }
 
   getReviews(id: string): void {
-    let app_id: string = id.concat('.desktop');
+    const app_id: string = id.concat('.desktop');
     this.linuxStoreApiService.getReviews(app_id)
       .subscribe(reviews => { this.reviews = reviews; });
   }
@@ -74,9 +70,7 @@ export class AppDetailsComponent implements OnInit {
 
   onInstall(app: App) {
     // Track instal event
-    this.googleAnalyticsEventsService.emitEvent("App", "Install", app.flatpakAppId);
+    this.googleAnalyticsEventsService.emitEvent('App', 'Install', app.flatpakAppId);
   }
 
-
 }
-
