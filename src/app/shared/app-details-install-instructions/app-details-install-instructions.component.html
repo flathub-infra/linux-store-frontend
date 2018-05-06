@@ -22,11 +22,20 @@
         <a href="http://flatpak.org/getting.html">get Flatpak.</a>
       </li>
       <li>Run this on the command line:
-        <pre># Only needed first time you use flathub
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-flatpak install flathub {{this.app.flatpakAppId}}
-</pre>
+        <div class="pre">
+          <span># Only needed first time you use flathub</span>
+          <br />
+          <span id="install-flathub">flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</span>
+          <button class="copy" mat-icon-button matTooltip="copy" (click)="copy('install-flathub')">
+            <mat-icon>content_copy</mat-icon>
+          </button>
+        </div>
+        <div class="pre">
+          <span id="install">flatpak install flathub {{this.app.flatpakAppId}}</span>
+          <button class="copy" mat-icon-button matTooltip="copy" (click)="copy('install')">
+            <mat-icon>content_copy</mat-icon>
+          </button>
+        </div>
       </li>
       <li>Once installed, applications can be launched from the usual place in your desktop. </li>
     </ol>
