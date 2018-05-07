@@ -26,16 +26,11 @@ export class AppComponent {
   }
 
   onSearch(searchTerm: string) {
-
     if (typeof searchTerm === 'string' && searchTerm && searchTerm.trim() && searchTerm.trim().length > 2) {
-
       // Track search event
       this.googleAnalyticsEventsService.emitEvent('Search', 'SearchFromToolbar', searchTerm);
-
       this.router.navigate(['apps/search', searchTerm]);
-
     }
-
   }
 
 }
