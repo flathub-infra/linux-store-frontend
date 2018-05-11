@@ -23,8 +23,8 @@ export class AppListComponent implements OnInit {
   selectedCategory: Category;
   selectedCollection: Collection;
   featuredCollections: Collection[];
-  showDefaultInfo: boolean = false;
-  showAppsByCategory: boolean = false;
+  showDefaultInfo = false;
+  showAppsByCategory = false;
   paramCategoryId: string;
   paramCollectionId: string;
   paramSearchKeyword: string;
@@ -38,7 +38,6 @@ export class AppListComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.getCategories();
     this.getFeaturedCollections();
 
@@ -47,7 +46,9 @@ export class AppListComponent implements OnInit {
         this.paramCategoryId = params.get('categoryId');
         this.paramCollectionId = params.get('collectionId');
         this.paramSearchKeyword = params.get('searchKeyword');
-        if (this.isSmallScreen() || this.drawer.opened) this.showAppsByParams();
+        if (this.isSmallScreen() || this.drawer.opened) {
+          this.showAppsByParams();
+        }
       }
     );
 
@@ -55,26 +56,23 @@ export class AppListComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
   }
 
-  isSmallScreen(): boolean{
+  isSmallScreen(): boolean {
     return this.breakpointObserver.isMatched('(max-width: 599px)');
   }
 
   getTitle(): string {
-
-    var title: string = "";
+    let title = '';
 
     if (this.selectedCollection) {
       title = this.selectedCollection.name;
-    }
-    else if (this.selectedCategory) {
+    } else if (this.selectedCategory) {
       title = this.selectedCategory.name;
-    }
-    else {
-      title = "All applications";
+    } else {
+      title = 'All applications';
     }
 
     return title;
@@ -93,31 +91,26 @@ export class AppListComponent implements OnInit {
   }
 
   showAppsByParams() {
-
-    if (this.paramSearchKeyword){
+    if (this.paramSearchKeyword) {
       this.showAppsSearchKeyword(this.paramSearchKeyword);
       this.showDefaultInfo = false;
-    }
-    else if (this.paramCollectionId) {
+    } else if (this.paramCollectionId) {
       this.showAppsByCollectionId(this.paramCollectionId);
       this.showDefaultInfo = false;
-    }
-    else if (this.paramCategoryId) {
+    } else if (this.paramCategoryId) {
       this.showAppsByCategoryId(this.paramCategoryId);
       this.showDefaultInfo = false;
-    }
-    else {
+    } else {
       this.showDefaultInfo = true;
     }
   }
 
   showAppsSearchKeyword(searchKeyword: string): void {
-
-    var searchCollection = new Collection();
-    searchCollection.id = "search";
-    searchCollection.name = "Search";
-    searchCollection.shortname = "Search";
-    searchCollection.summary = "Search apps with keyword " + searchKeyword;
+    const searchCollection = new Collection();
+    searchCollection.id = 'search';
+    searchCollection.name = 'Search';
+    searchCollection.shortname = 'Search';
+    searchCollection.summary = `Search apps with keyword ${searchKeyword}`;
 
     this.selectedCollection = searchCollection;
 
@@ -126,7 +119,6 @@ export class AppListComponent implements OnInit {
   }
 
   showAppsByCollectionId(collectionId: string): void {
-
     this.linuxStoreApiService.getCollection(collectionId)
       .subscribe(collection => { this.selectedCollection = collection; });
 
@@ -140,7 +132,6 @@ export class AppListComponent implements OnInit {
   }
 
   showAppsByCategoryId(categoryId: string): void {
-
     this.linuxStoreApiService.getCategory(categoryId)
       .subscribe(category => { this.selectedCategory = category; });
 
@@ -149,7 +140,7 @@ export class AppListComponent implements OnInit {
   }
 
   getAppsByCollectionId(collectionId: string): App[] {
-    var collectionApps: App[];
+    let collectionApps: App[];
     this.linuxStoreApiService.getAppsByCollectionId(collectionId)
       .subscribe(apps => {
         collectionApps = apps;
@@ -169,8 +160,10 @@ export class AppListComponent implements OnInit {
     this.router.navigate(['apps/collection', collectionId]);
   }
 
-  onDrawerLinkClick(){
-    if(this.isSmallScreen()) this.drawer.close();
+  onDrawerLinkClick() {
+    if (this.isSmallScreen()) {
+      this.drawer.close();
+    }
   }
 
 }

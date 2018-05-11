@@ -11,10 +11,9 @@ export class AppDetailsMainComponent implements OnInit {
 
   @Input() app: App;
 
-  @Output('install')
-  install: EventEmitter<App> = new EventEmitter<App>();
+  @Output('install') install: EventEmitter<App> = new EventEmitter<App>();
 
-  showInstallInstructions: boolean = false;
+  showInstallInstructions = false;
 
   constructor() { }
 

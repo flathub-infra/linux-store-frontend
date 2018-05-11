@@ -10,9 +10,41 @@ export class AppDetailsInstallInstructionsComponent implements OnInit {
 
   @Input() app: App;
 
+  installInstructions: string = '';
+  runInstructions: string = '';
+
   constructor() { }
 
   ngOnInit() {
+
+    if(this.app){
+        this.installInstructions = 'flatpak install flathub ' +  this.app.flatpakAppId;
+        this.runInstructions = 'flatpak run ' +  this.app.flatpakAppId;
+    }
+  }
+
+  copy(command: string) {
+    const element: HTMLElement = document.getElementById(command);
+
+    try {
+      const selection = window.getSelection();
+      const range = document.createRange();
+
+      range.selectNodeContents(element);
+
+      selection.removeAllRanges();
+      selection.addRange(range);
+    } catch (error) {
+      console.warn('Could not select range. Your browser may not be supported.');
+    }
+    try {
+      const status = document.execCommand('Copy');
+      if (!status) {
+        throw new Error();
+      }
+    } catch (error) {
+      console.warn('Could not copy text. Your browser may not be supported.', error);
+    }
   }
 
 }

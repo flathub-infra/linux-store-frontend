@@ -8,10 +8,9 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  @Output('search')
-  search: EventEmitter<string> = new EventEmitter<string>();
+  @Output('search') search: EventEmitter<string> = new EventEmitter<string>();
 
-  showSearchInput: boolean = false;
+  showSearchInput = false;
 
   constructor() { }
 
@@ -22,11 +21,11 @@ export class ToolbarComponent implements OnInit {
     this.search.emit(searchTerm);
   }
 
-  onTogleSearch(){
+  onTogleSearch() {
     this.showSearchInput = !this.showSearchInput;
   }
 
-  onCloseSearch(){
+  onCloseSearch() {
     this.showSearchInput = false;
   }
 
