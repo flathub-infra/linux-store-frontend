@@ -1,56 +1,8 @@
 <div>
-<<<<<<< HEAD
   <h3>Command line instructions</h3>
   <h5 class="install-instructions-header">Install:</h5>
   <h6 class="install-instructions-hint">Make sure to follow the <a href="https://flatpak.org/setup/">setup guide</a> before installing</h6>
-  <pre>$ flatpak install flathub {{this.app.flatpakAppId}}</pre>
+  <store-pre [text]="installInstructions" [enableCopyToClipboard]="true"></store-pre>
   <h5>Run:</h5>
-  <pre>$ flatpak run {{this.app.flatpakAppId}}</pre>
-=======
-  <h3>Install instructions</h3>
-
-  <mat-card>
-    <h5>Click to download</h5>
-    <ol>
-      <li>If you don't have it already, you'll need to
-        <a href="http://flatpak.org/getting.html">get Flatpak.</a>
-      </li>
-      <li>For Flatpak versions &lt; 0.10.0 it is also recommended to add the flathub repository first. You can
-        <a href="https://dl.flathub.org/repo/flathub.flatpakrepo">download</a> the repository file and use your distribution's software manager (GNOME Software, KDE Discover,
-        ...) to install it.</li>
-      <li>Click on the INSTALL button.</li>
-      <li>Your distibution's software manager will open automatically and will install the app.</li>
-      <li>Once installed, applications can be launched from the usual place in your desktop. </li>
-    </ol>
-    <p>Click to download is available on Arch, Debian Stretch (or later), Endless OS, Fedora 25 (or later), Mageia 6 (or later),
-      and OpenSUSE Tumbleweed.</p>
-    <h5>Command line</h5>
-    <ol>
-      <li>If you don't have it already, you'll need to
-        <a href="http://flatpak.org/getting.html">get Flatpak.</a>
-      </li>
-      <li>Run this on the command line:
-        <div class="pre">
-          <span># Only needed first time you use flathub</span>
-          <br />
-          <span id="install-flathub">flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</span>
-          <button class="copy" mat-icon-button matTooltip="copy" (click)="copy('install-flathub')">
-            <mat-icon>content_copy</mat-icon>
-          </button>
-        </div>
-        <div class="pre">
-          <span id="install">flatpak install flathub {{this.app.flatpakAppId}}</span>
-          <button class="copy" mat-icon-button matTooltip="copy" (click)="copy('install')">
-            <mat-icon>content_copy</mat-icon>
-          </button>
-        </div>
-      </li>
-      <li>Once installed, applications can be launched from the usual place in your desktop. </li>
-    </ol>
-    <p>These command line instructions require Flatpak 0.6.13 or newer. For more information on how to update and manage your
-      applications, see the
-      <a href="http://flatpak.org/command-line.html">command line tutorial.</a>
-    </p>
-  </mat-card>
->>>>>>> 6360257... Add copy button to installation.
+  <store-pre [text]="runInstructions"></store-pre>
 </div>
