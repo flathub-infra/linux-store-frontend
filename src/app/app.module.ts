@@ -29,6 +29,7 @@ import { AppCardListComponent } from './shared/app-card-list/app-card-list.compo
 import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
+import { PreComponent } from './shared/pre/pre.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.
     AppCardListComponent,
     TermsComponent,
     PrivacyComponent,
-    CodeOfConductComponent
+    CodeOfConductComponent,
+    PreComponent
   ],
   imports: [
     BrowserModule,

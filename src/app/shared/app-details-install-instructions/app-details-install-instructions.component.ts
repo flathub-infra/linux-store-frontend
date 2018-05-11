@@ -10,9 +10,17 @@ export class AppDetailsInstallInstructionsComponent implements OnInit {
 
   @Input() app: App;
 
+  installInstructions: string = '';
+  runInstructions: string = '';
+
   constructor() { }
 
   ngOnInit() {
+
+    if(this.app){
+        this.installInstructions = 'flatpak install flathub ' +  this.app.flatpakAppId;
+        this.runInstructions = 'flatpak run ' +  this.app.flatpakAppId;
+    }
   }
 
 }
