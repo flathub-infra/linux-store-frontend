@@ -29,6 +29,15 @@ mat-grid-tile {
   box-sizing: border-box;
   background: #FFFFFF !important;
   cursor: pointer;
+  overflow: visible;
+
+  .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4081 !important;
+    color: white !important;
+  }
 }
 
 mat-grid-tile .app-name {
@@ -49,3 +58,4 @@ mat-grid-tile:hover {
 mat-grid-tile-footer {
   height: 22% !important;
 }
+
