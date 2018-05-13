@@ -1,6 +1,6 @@
 {
   "name": "linux-store-frontend",
-  "version": "0.6.3",
+  "version": "0.7.0-alpha.1",
   "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
@@ -11,8 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:docker": "ng build --prod && docker build -t jgarciao/linux-store-frontend:latest .",
-    "postinstall": "node ./scripts/workaround-angular-cli-issue-9340.js"
+    "build:docker": "ng build --prod && docker build -t jgarciao/linux-store-frontend:latest ."
   },
   "private": true,
   "dependencies": {
