@@ -1,3 +1,10 @@
+:host {
+  height: 64px;
+  @media (max-width: 599px) {
+    height: 56px;
+  }
+}
+
 .fixed-toolbar {
   position: fixed;
   top: 0;
