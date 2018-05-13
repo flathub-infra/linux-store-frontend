@@ -4,7 +4,6 @@
   <header fxFlex class="header-container store-content-container">
     <div class="header-content">
       <h1>Apps for Linux, right here</h1>
-
       <p>
         Welcome to Flathub, the home of hundreds of apps which can be easily installed on any Linux distribution. Browse the apps
         online, from your app center or the command line.
@@ -18,14 +17,11 @@
 
   <!-- main content -->
   <section fxFlex class="store-content-container">
-
     <div *ngIf="featuredCollections">
-
       <store-app-collection-teaser *ngFor="let collection of featuredCollections" [collectionId]="collection.id" [collectionTitle]="collection.name"
         [collectionList]="getAppsByCollectionId(collection.id)" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)">
       </store-app-collection-teaser>
     </div>
-
   </section>
 
 </div>
