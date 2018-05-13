@@ -31,16 +31,21 @@ export class LinuxStoreApiService {
   private baseUrl = environment.apiUrl;  // URL to web api
   private appListCache: HashTable<App[]> = {};
   private appDetailsCache: HashTable<App> = {};
+  private performingRequest: HashTable<boolean> = {};
 
   constructor(private http: HttpClient) { }
 
   getApp(flatpakAppId: string): Observable<App> {
     const request = `/apps/${flatpakAppId}`;
 
-    if (this.appDetailsCache[request] == null) {
+    if (this.appDetailsCache[request] == null && !this.performingRequest[request]) {
+      this.performingRequest[request] = true;
       return this.http.get<App>(`${this.baseUrl}${request}`)
         .pipe(
-          tap(app => { this.appDetailsCache[request] = app; }),
+          tap(app => {
+            this.appDetailsCache[request] = app;
+            this.performingRequest[request] = false;
+          }),
           catchError(this.handleError('getApp', null))
         );
     } else {
@@ -59,10 +64,14 @@ export class LinuxStoreApiService {
   getApps(): Observable<App[]> {
     const request = '/apps';
 
-    if (this.appListCache[request] == null) {
+    if (this.appListCache[request] == null && !this.performingRequest[request]) {
+      this.performingRequest[request] = true;
       return this.http.get<App[]>(`${this.baseUrl}${request}`)
         .pipe(
-          tap(apps => { this.appListCache[request] = apps; }),
+          tap(apps => {
+            this.appListCache[request] = apps;
+            this.performingRequest[request] = false;
+          }),
           catchError(this.handleError('getApps', []))
         );
     } else {
@@ -76,10 +85,14 @@ export class LinuxStoreApiService {
     } else {
       const request = `/apps/category/${categoryId}`;
 
-      if (this.appListCache[request] == null) {
+      if (this.appListCache[request] == null && !this.performingRequest[request]) {
+        this.performingRequest[request] = true;
         return this.http.get<App[]>(`${this.baseUrl}${request}`)
           .pipe(
-            tap(apps => { this.appListCache[request] = apps; }),
+            tap(apps => {
+              this.appListCache[request] = apps;
+              this.performingRequest[request] = false;
+            }),
             catchError(this.handleError('getApps', []))
           );
       } else {
@@ -119,10 +132,14 @@ export class LinuxStoreApiService {
   getRecentlyUpdatedApps(): Observable<App[]> {
     const request = '/apps/collection/recently-updated';
 
-    if (this.appListCache[request] == null) {
+    if (this.appListCache[request] == null && !this.performingRequest[request]) {
+      this.performingRequest[request] = true;
       return this.http.get<App[]>(`${this.baseUrl}${request}`)
         .pipe(
-          tap(apps => { this.appListCache[request] = apps; }),
+          tap(apps => {
+            this.appListCache[request] = apps;
+            this.performingRequest[request] = false;
+          }),
           catchError(this.handleError('getApps', []))
         );
     } else {
