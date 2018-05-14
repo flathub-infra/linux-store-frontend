@@ -1,21 +1,27 @@
 .header-container {
-  //background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat  top left;
+  //background: #4a86cf url("/assets/themes/flathub/tiles.svg") no-repeat top left;
   //color: white;
   //background: white;
   padding-top: 40px;
 }
 
-header .header-content h1 {
+header .header-content {
+  h1 {
     margin-top: 0;
     margin-bottom: 1em;
     font-size: 250%;
-}
+  }
 
-header .header-content p {
-  margin-bottom: 40px;
-  font-size: 110%;
-  font-weight: 300;
-  max-width: 700px;
+  p {
+    margin-bottom: 40px;
+    font-size: 110%;
+    font-weight: 300;
+    max-width: 700px;
+  }
+
+  .mat-raised-button {
+    margin-right: 10px;
+  }
 }
 
 section {
