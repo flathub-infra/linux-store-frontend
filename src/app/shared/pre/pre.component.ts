@@ -39,9 +39,12 @@ export class PreComponent implements OnInit {
     try {
       const status = document.execCommand('Copy');
       if (status) {
+        this.tooltip.disabled = false;
         this.tooltip.show();
-      }
-      else {
+        setTimeout(() => {
+          this.tooltip.disabled = true;
+        }, 2000);
+      } else {
         throw new Error();
       }
     } catch (error) {
