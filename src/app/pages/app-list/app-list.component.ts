@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
@@ -34,7 +35,14 @@ export class AppListComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private breakpointObserver: BreakpointObserver,
-    private linuxStoreApiService: LinuxStoreApiService) {
+    private linuxStoreApiService: LinuxStoreApiService,
+    private titleService: Title,
+    private metaService: Meta) {
+
+    this.titleService.setTitle("Applications | Flathub");
+    this.metaService.updateTag({ name: 'description', content: 'Browse and install popular linux applications and games with just one click' });
+    this.metaService.updateTag({ name: 'keywords', content: 'popular,linux,apps,games,audio,video,developer tools,graphics,photography,communication,news,productivity,science,settings,utilities' });
+
   }
 
   ngOnInit() {
