@@ -19,7 +19,7 @@ export class AppDetailsDescriptionComponent implements OnInit {
     "gestures": true,
     "style": {
       "width": "100%",
-      "background": "#BCBCB6"
+      "background": "transparent"
     },
     "navigation": {},
     "loader": {
