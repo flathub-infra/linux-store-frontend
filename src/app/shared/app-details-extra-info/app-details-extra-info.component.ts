@@ -25,15 +25,16 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.buildRepoUrl = `${this.flathubGithubUrl}/${this.app.flatpakAppId}`;
-    this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
 
     if (this.app) {
+
+      this.buildRepoUrl = `${this.flathubGithubUrl}/${this.app.flatpakAppId}`;
+      this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
 
       if (this.app.projectLicense) {
 
         if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
-         this.license = 'Proprietary';
+          this.license = 'Proprietary';
         } else {
           this.license = 'Free';
         }

@@ -1,4 +1,5 @@
-<div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start" fxLayoutGap="15px">
+<div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start"
+  fxLayoutGap="15px">
   <a fxFlex="nogrow" *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">Website</a>
   <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}">Donate</a>
   <a fxFlex="nogrow" *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">Help</a>
@@ -26,7 +27,8 @@
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Category</div>
     <div>
-      <span class="app-info-item-value app-info-item-value-text">{{(this.mainCategory.name || '-')}}</span>
+      <span *ngIf="this.mainCategory" class="app-info-item-value app-info-item-value-text">{{(this.mainCategory.name || '-')}}</span>
+      <span *ngIf="!this.mainCategory" class="app-info-item-value app-info-item-value-text">-</span>
     </div>
   </div>
 </div>
@@ -49,7 +51,8 @@
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Publisher</div>
     <div class="store-link-container">
-        <a class="app-info-item-value" href="{{this.buildRepoContributorsUrl}}">Flathub maintainers</a>
+      <a *ngIf="this.buildRepoContributorsUrl" class="app-info-item-value" href="{{this.buildRepoContributorsUrl}}">Flathub maintainers</a>
+      <span *ngIf="!this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-text">-</span>
     </div>
   </div>
 </div>
