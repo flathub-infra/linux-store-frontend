@@ -84,22 +84,13 @@ export class AppCardListComponent implements OnInit, OnChanges {
     }
   }
 
-  public showBadge(app: App, type: string) {
+  public showNewBadge(app: App): boolean {
     const now: Date = new Date();
-    let then: Date;
-    switch (type) {
-      case 'new':
-        then = new Date(app.inStoreSinceDate);
-        break;
-      case 'updated':
-        then = new Date(app.currentReleaseDate);
-        break;
-      default:
-        return false;
-    }
+    const then: Date = new Date(app.inStoreSinceDate);
     const milliseconds = Math.abs(now.getTime() - then.getTime());
     const millisecondsInDay = 1000 * 3600 * 24;
     const days = Math.ceil(milliseconds / millisecondsInDay);
+    console.log(app);
     if (days < 7) {
       return true;
     } else {
