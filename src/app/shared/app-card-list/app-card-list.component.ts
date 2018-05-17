@@ -90,7 +90,6 @@ export class AppCardListComponent implements OnInit, OnChanges {
     const milliseconds = Math.abs(now.getTime() - then.getTime());
     const millisecondsInDay = 1000 * 3600 * 24;
     const days = Math.ceil(milliseconds / millisecondsInDay);
-    console.log(app);
     if (days < 7) {
       return true;
     } else {
