@@ -19,11 +19,10 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private linuxStoreApiService: LinuxStoreApiService) {
-  }
+    private linuxStoreApiService: LinuxStoreApiService
+  ) { }
 
   ngOnInit() {
-
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;

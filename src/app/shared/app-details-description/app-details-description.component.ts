@@ -28,7 +28,6 @@ export class AppDetailsDescriptionComponent implements OnInit {
         this.items = this.app.screenshots.map(item => new ImageItem(item.imgDesktopUrl, item.thumbUrl));
       }
     }
-
   }
 
 }

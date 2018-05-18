@@ -8,7 +8,6 @@ import { Review } from '../../shared/review.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 import { GoogleAnalyticsEventsService } from '../../google-analytics-events.service';
 
-
 @Component({
   selector: 'store-app-details',
   templateUrl: './app-details.component.html',

@@ -15,7 +15,8 @@ export class AppComponent {
 
   constructor(
     public router: Router,
-    private googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
+    private googleAnalyticsEventsService: GoogleAnalyticsEventsService
+  ) {
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
