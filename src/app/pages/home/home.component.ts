@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;

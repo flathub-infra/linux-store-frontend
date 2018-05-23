@@ -21,8 +21,8 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   mainCategory: Category;
 
   constructor(
-    private linuxStoreApiService: LinuxStoreApiService) {
-  }
+    private linuxStoreApiService: LinuxStoreApiService
+  ) { }
 
   ngOnInit() {
 

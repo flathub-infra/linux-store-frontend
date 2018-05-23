@@ -34,8 +34,6 @@ export class AppCardListComponent implements OnInit, OnChanges {
   @Output('showAppDetails')
   showAppDetails: EventEmitter<App> = new EventEmitter<App>();
 
-  constructor() { }
-
   ngOnInit() {
     // console.log("AppCardList onInit");
     if (!this.minCols) {
