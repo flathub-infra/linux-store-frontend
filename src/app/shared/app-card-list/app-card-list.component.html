@@ -2,7 +2,7 @@
   <a *ngFor="let app of appsToShow" href="/apps/details/{{app.flatpakAppId}}"
         (click)="onAppDetails(app); $event.preventDefault()">
     <mat-grid-tile>
-      <mat-icon class="badge" *ngIf="showNewBadge(app)" color="accent" matTooltip="New!" matTooltipPosition="left">
+      <mat-icon class="badge" *ngIf="showNewBadge(app)" color="primary" matTooltip="New!" matTooltipPosition="left">
         new_releases
       </mat-icon>
       <picture class="app-tile-icon" ngClass.gt-sm="app-tile-icon-desktop">
