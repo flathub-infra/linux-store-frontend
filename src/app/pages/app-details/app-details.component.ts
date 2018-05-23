@@ -41,12 +41,12 @@ export class AppDetailsComponent implements OnInit {
     if (this.app) {
       this.titleService.setTitle(this.app.name + ' | Apps on Flathub');
       this.metaService.updateTag({ name: 'description', content: this.app.summary });
-      this.metaService.updateTag({ name: 'keywords', content: 'install,flatpak,' + this.app.name + ' ,linux,ubuntu,fedora' });
+      this.metaService.updateTag({ name: 'keywords', content: 'install,flatpak,' + this.app.name + ',linux,ubuntu,fedora' });
     }
     else {
       this.titleService.setTitle('App not found | Apps on Flathub');
       this.metaService.updateTag({ name: 'description', content: 'App not found' });
-      this.metaService.addTag({ name: 'keywords', content: '' });
+      this.metaService.updateTag({ name: 'keywords', content: '' });
     }
 
   }
