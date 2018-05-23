@@ -1,25 +1,19 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { MatTooltip } from '@angular/material';
-import { debug } from 'util';
 
 @Component({
   selector: 'store-pre',
   templateUrl: './pre.component.html',
   styleUrls: ['./pre.component.scss']
 })
-export class PreComponent implements OnInit {
+export class PreComponent {
 
   @Input() text: string = '';
   @Input() enableCopyToClipboard: boolean = true;
 
   @ViewChild('textElement', { read: ElementRef }) private textElementView: ElementRef;
   @ViewChild('textElement') tooltip: MatTooltip;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   onCopy() {
 

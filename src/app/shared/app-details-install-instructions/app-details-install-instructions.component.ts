@@ -10,14 +10,11 @@ export class AppDetailsInstallInstructionsComponent implements OnInit {
 
   @Input() app: App;
 
-  installInstructions: string = '';
-  runInstructions: string = '';
-
-  constructor() { }
+  installInstructions = '';
+  runInstructions = '';
 
   ngOnInit() {
-
-    if(this.app){
+    if (this.app) {
         this.installInstructions = 'flatpak install flathub ' +  this.app.flatpakAppId;
         this.runInstructions = 'flatpak run ' +  this.app.flatpakAppId;
     }
@@ -37,6 +34,7 @@ export class AppDetailsInstallInstructionsComponent implements OnInit {
     } catch (error) {
       console.warn('Could not select range. Your browser may not be supported.');
     }
+
     try {
       const status = document.execCommand('Copy');
       if (!status) {

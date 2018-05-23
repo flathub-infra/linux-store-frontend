@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { App } from '../../shared/app.model';
 
@@ -7,7 +7,7 @@ import { App } from '../../shared/app.model';
   templateUrl: './app-collection-teaser.component.html',
   styleUrls: ['./app-collection-teaser.component.scss']
 })
-export class AppCollectionTeaserComponent implements OnInit {
+export class AppCollectionTeaserComponent {
 
   @Input() collectionId: string;
   @Input() collectionTitle: string;
@@ -18,10 +18,6 @@ export class AppCollectionTeaserComponent implements OnInit {
 
   @Output('showCollection')
   showCollection: EventEmitter<string> = new EventEmitter<string>();
-
-  constructor() { }
-
-  ngOnInit() { }
 
   onShowAppDetails(app: App): void {
     this.showAppDetails.emit(app);

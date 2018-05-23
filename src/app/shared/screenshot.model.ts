@@ -1,5 +1,5 @@
-    export class Screenshot {
-      thumbUrl: string;
-      imgMobileUrl: string;
-      imgDesktopUrl: string;
-    }
+export class Screenshot {
+  thumbUrl: string;
+  imgMobileUrl: string;
+  imgDesktopUrl: string;
+}
