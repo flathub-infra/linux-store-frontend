@@ -20,8 +20,7 @@ export class AppComponent {
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        ga('set', 'page', event.urlAfterRedirects);
-        ga('send', 'pageview');
+        this.googleAnalyticsEventsService.emitPageView(event.urlAfterRedirects);
       }
     });
   }
