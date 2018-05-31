@@ -5,66 +5,76 @@ const { uniq, difference } = require('lodash');
 const fs = require('fs');
 const readline = require('readline');
 const stream = require('stream');
-const url = require('url');
+const URL = require('url').URL;
 
 async function main() {
-  
-  
+
   // Launching Puppeteer
-  const browser = await puppeteer.launch();
-  
+  //const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+
   console.log(`Started browser!`);
-  
+
   // Creating a new Tap/Page
   const page = await browser.newPage();
-  
-  // Reading the sitemap file
-  var instream = fs.createReadStream(join(process.cwd(), 'dist', 'sitemap'));
-  var outstream = new stream;
-  var rl = readline.createInterface(instream, outstream);
-  
-  rl.on('line', function(line) {
-    // process line here
-    console.log(`Processing ${line}`);
 
-    // Requesting the first page in PAGES array
-    //await page.goto(`${line}`);
 
-    var currentURL  = new URL(`${line}`);
 
-    
-    // // Defining the html file name that will be created
-    // const file = join(process.cwd(), 'dist', (p || 'index') + '.html');
-    
-    // const dir = dirname(file);
-    
-    // console.log(`Writing to dir  ${dir}`);
-    
-    // // Test if the directory exist, if not create the directory
-    // if (!(await exists(dir)))
-    // await mkdir(dir);
-    
-    // // Write the rendered html file
-    // await writeFile(file, result);
-    
-    // console.log(`Writed ${file}`);
-    
-    
+  var pages = [];
+
+  fs.readFileSync(join(process.cwd(), 'src/assets', 'sitemap.txt')).toString().split("\n").forEach(function (line, index, arr) {
+    if (index === arr.length - 1 && line === "") { return; }
+    console.log(index + " " + line);
+    pages.push(line);
   });
-  
-  rl.on('close', function() {
-    // do something on finish here
+  console.log("end. pages.lenght:" + pages.length);
+
+
+  console.log("out of readFIle");
+
+  for (let i = 0; i < pages.length; i++) {
+
+    console.log('Processing page:' + pages[i]);
     
-    // Closes Chromium
-    browser.close();
-  });
-  
+    // Render the page and getting the html with Chromium
+    //await page.goto(value);
+    //await page.goto(pages[i], { waitUntil: "load" });
+    //await page.goto(pages[i], {waitUntil: 'networkidle0'});
+    await page.goto(pages[i], {waitUntil: 'networkidle2'});
+    //const result = await page.evaluate(() => document.documentElement.outerHTML);
+    const result = await page.content();
+
+    // Defining the html file name that will be created
+    var currentURL = new URL(`${pages[i]}`);
+    const file = join(process.cwd(), 'dist-prerender', currentURL.pathname);
+    //const dir = dirname(file);
+
+    //console.log(`Writing to dir  ${dir}`);
+
+    // Test if the directory exist, if not create the directory
+    //if (!(await exists(dir)))
+    //  await mkdir(dir);
+
+    // Write the rendered html file
+    console.log('writing file: ' + file);
+    await writeFile(file, result);
+
+    console.log(`Writed ${file}`);
+
+
+  }
+
+  // Closes Chromium  
+  await browser.close();
+
+  await console.log('Bye!');
+
 }
 
 // Run the main asyn function
 main()
-.then(() => console.log('All right!'))
-.catch(err => {
-  console.error('Err', err);
-  process.exit(1);
-});
+  .then(() => console.log('All right!'))
+  .catch(err => {
+    console.error('Err', err);
+    process.exit(1);
+  });
