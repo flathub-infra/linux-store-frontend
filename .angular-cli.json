@@ -9,7 +9,9 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "robots.txt"
+        "robots.txt",
+        "sitemap.txt",
+        "sitemap-dev.txt"
       ],
       "index": "index.html",
       "main": "main.ts",
