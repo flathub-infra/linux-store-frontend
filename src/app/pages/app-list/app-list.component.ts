@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../../seo.service';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 import { Category } from '../../shared/category.model';
-import { debug } from 'util';
 
 @Component({
   selector: 'linux-store-app-list',
@@ -36,13 +35,7 @@ export class AppListComponent implements OnInit {
     private route: ActivatedRoute,
     private breakpointObserver: BreakpointObserver,
     private linuxStoreApiService: LinuxStoreApiService,
-    private titleService: Title,
-    private metaService: Meta) {
-
-    this.titleService.setTitle("Applications | Flathub");
-    this.metaService.updateTag({ name: 'description', content: 'Browse and install popular linux applications and games with just one click' });
-    this.metaService.updateTag({ name: 'keywords', content: 'popular,linux,apps,games,audio,video,developer tools,graphics,photography,communication,news,productivity,science,settings,utilities' });
-
+    private seoService: SeoService) {
   }
 
   ngOnInit() {
@@ -122,26 +115,45 @@ export class AppListComponent implements OnInit {
 
     this.selectedCollection = searchCollection;
 
+    this.seoService.setPageMetadata('Search applications with keyword ' + searchKeyword,
+      'Search applications in Flathub with the keyworkd ' + searchKeyword);
+
     this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
       .subscribe(apps => { this.apps = apps; });
   }
 
   showAppsByCollectionId(collectionId: string): void {
+
     this.linuxStoreApiService.getCollection(collectionId)
       .subscribe(collection => { this.selectedCollection = collection; });
+
+    if (this.selectedCollection) {
+      this.seoService.setPageMetadata(this.selectedCollection.name, this.selectedCollection.name);
+    }
 
     this.linuxStoreApiService.getAppsByCollectionId(collectionId)
       .subscribe(apps => { this.apps = apps; });
   }
 
   showAllApps(): void {
+
+    this.seoService.setPageMetadata('All applications', 'All applications in Flathub');
+
     this.linuxStoreApiService.getApps()
       .subscribe(apps => { this.apps = apps; });
   }
 
   showAppsByCategoryId(categoryId: string): void {
+
     this.linuxStoreApiService.getCategory(categoryId)
       .subscribe(category => { this.selectedCategory = category; });
+
+    if (this.selectedCategory) {
+      this.seoService.setPageMetadata(this.selectedCategory.name, this.selectedCategory.name);
+    }
+    else if(categoryId = 'All'){
+      this.seoService.setPageMetadata('All applications', 'All applications in Flathub');
+    }
 
     this.linuxStoreApiService.getAppsByCategory(categoryId)
       .subscribe(apps => { this.apps = apps; });

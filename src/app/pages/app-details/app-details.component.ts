@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
-import { Title, Meta } from '@angular/platform-browser';
+import { SeoService } from '../../seo.service';
 
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
@@ -32,25 +32,25 @@ export class AppDetailsComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private location: Location,
-    private titleService: Title,
-    private metaService: Meta) {
+    private seoService: SeoService) {
+
 
   }
 
-  setTitleAndMetaTags() {
+  setPageMetadata() {
 
     if (this.app) {
-      this.titleService.setTitle(this.app.name + ' | Apps on Flathub');
-      this.metaService.updateTag({ name: 'description', content: this.app.summary });
-      this.metaService.updateTag({ name: 'keywords', content: 'install,flatpak,' + this.app.name + ',linux,ubuntu,fedora' });
+      this.seoService.setPageMetadata(
+        this.app.name,
+        this.app.summary,
+        this.app.iconDesktopUrl);
     }
     else {
-      this.titleService.setTitle('App not found | Apps on Flathub');
-      this.metaService.updateTag({ name: 'description', content: 'App not found' });
-      this.metaService.updateTag({ name: 'keywords', content: '' });
+      this.seoService.setPageMetadata('App not found', 'App not found');
     }
 
   }
+
 
   ngOnInit() {
     this.route.paramMap.subscribe(
@@ -70,7 +70,7 @@ export class AppDetailsComponent implements OnInit {
 
   getApp(id: string): void {
     this.linuxStoreApiService.getApp(id)
-      .subscribe(app => { this.app = app; this.setTitleAndMetaTags(); });
+      .subscribe(app => { this.app = app; this.setPageMetadata();});
   }
 
   getReviews(id: string): void {
