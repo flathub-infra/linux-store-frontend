@@ -1,7 +1,7 @@
-https://flathub.org/index.html
+https://flathub.org
 https://flathub.org/home
 https://flathub.org/about
-https://flathub.org/apps/index.html
+https://flathub.org/apps
 https://flathub.org/apps/collection/popular
 https://flathub.org/apps/collection/recently-updated
 https://flathub.org/apps/collection/editors-choice-apps

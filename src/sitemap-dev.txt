@@ -1,7 +1,7 @@
-http://45.55.104.129/index.html
+http://45.55.104.129
 http://45.55.104.129/home
 http://45.55.104.129/about
-http://45.55.104.129/apps/index.html
+http://45.55.104.129/apps
 http://45.55.104.129/apps/collection/popular
 http://45.55.104.129/apps/collection/recently-updated
 http://45.55.104.129/apps/collection/editors-choice-apps
