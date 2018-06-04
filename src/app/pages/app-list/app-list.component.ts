@@ -111,12 +111,12 @@ export class AppListComponent implements OnInit {
     searchCollection.id = 'search';
     searchCollection.name = 'Search';
     searchCollection.shortname = 'Search';
-    searchCollection.summary = `Search apps with keyword ${searchKeyword}`;
+    searchCollection.summary = 'Search apps by keyword';
 
     this.selectedCollection = searchCollection;
 
-    this.seoService.setPageMetadata('Search applications with keyword ' + searchKeyword,
-      'Search applications in Flathub with the keyworkd ' + searchKeyword);
+    this.seoService.setPageMetadata('Search results',
+      'Search applications in Flathub by keyword');
 
     this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
       .subscribe(apps => { this.apps = apps; });
@@ -151,7 +151,7 @@ export class AppListComponent implements OnInit {
     if (this.selectedCategory) {
       this.seoService.setPageMetadata(this.selectedCategory.name, this.selectedCategory.name);
     }
-    else if(categoryId = 'All'){
+    else if (categoryId = 'All') {
       this.seoService.setPageMetadata('All applications', 'All applications in Flathub');
     }
 
