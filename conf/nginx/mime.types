@@ -89,6 +89,11 @@ types {
     font/opentype                         otf;
 
 
+  # Flatpak
+    application/vnd.flatpak.ref           flatpakref;
+    application/vnd.flatpak.repo          flatpakrepo;
+
+
   # Other
 
     application/java-archive              ear jar war;

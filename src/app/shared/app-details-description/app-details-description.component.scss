@@ -1,5 +1,12 @@
 gallery {
-  margin-top:2vh;
+  margin: 2vh 0;
+  height: 500px;
+  background: #BCBCB6;
+
+  ::ng-deep image-item div {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .app-details-description {

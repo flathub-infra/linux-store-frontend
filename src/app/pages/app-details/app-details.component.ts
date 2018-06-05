@@ -2,13 +2,12 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
-import { saveAs } from 'file-saver';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 import { GoogleAnalyticsEventsService } from '../../google-analytics-events.service';
-
 
 @Component({
   selector: 'store-app-details',
@@ -31,8 +30,26 @@ export class AppDetailsComponent implements OnInit {
     private googleAnalyticsEventsService: GoogleAnalyticsEventsService,
     private router: Router,
     private route: ActivatedRoute,
-    private location: Location
-  ) { }
+    private location: Location,
+    private titleService: Title,
+    private metaService: Meta) {
+
+  }
+
+  setTitleAndMetaTags() {
+
+    if (this.app) {
+      this.titleService.setTitle(this.app.name + ' | Apps on Flathub');
+      this.metaService.updateTag({ name: 'description', content: this.app.summary });
+      this.metaService.updateTag({ name: 'keywords', content: 'install,flatpak,' + this.app.name + ',linux,ubuntu,fedora' });
+    }
+    else {
+      this.titleService.setTitle('App not found | Apps on Flathub');
+      this.metaService.updateTag({ name: 'description', content: 'App not found' });
+      this.metaService.updateTag({ name: 'keywords', content: '' });
+    }
+
+  }
 
   ngOnInit() {
     this.route.paramMap.subscribe(
@@ -52,7 +69,7 @@ export class AppDetailsComponent implements OnInit {
 
   getApp(id: string): void {
     this.linuxStoreApiService.getApp(id)
-      .subscribe(app => { this.app = app; });
+      .subscribe(app => { this.app = app; this.setTitleAndMetaTags(); });
   }
 
   getReviews(id: string): void {
@@ -69,42 +86,9 @@ export class AppDetailsComponent implements OnInit {
     return review.app_id === this.selectedReview.app_id;
   }
 
-  // This method has been adapted from Stack Overflow
-  // Question: http://stackoverflow.com/questions/35368633/angular-2-download-pdf-from-api-and-display-it-in-view
-  // Answer by spock: http://stackoverflow.com/users/435743/spock
   onInstall(app: App) {
-    // Track event
+    // Track instal event
     this.googleAnalyticsEventsService.emitEvent('App', 'Install', app.flatpakAppId);
-
-    // Xhr creates new context so we need to create reference to this
-    const self = this;
-
-    // Status flag used in the template.
-    this.pending = true;
-
-    // Create the Xhr request object
-    const xhr = new XMLHttpRequest();
-    const url = this.app.downloadFlatpakRefUrl;
-
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob';
-
-    // Xhr callback when we get a result back
-    // We are not using arrow function because we need the 'this' context
-    xhr.onreadystatechange = function () {
-      // We use setTimeout to trigger change detection in Zones
-      setTimeout(() => { self.pending = false; }, 0);
-
-      // If we get an HTTP status OK (200), save the file using fileSaver
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        const blob = new Blob([this.response], { type: 'application/vnd.flatpak.ref' });
-        const filename: string = url.substring(url.lastIndexOf('/') + 1);
-        saveAs(blob, filename);
-      }
-    };
-
-    // Start the Ajax request
-    xhr.send();
   }
 
 }

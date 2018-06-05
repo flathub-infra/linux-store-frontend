@@ -34,8 +34,6 @@ export class AppCardListComponent implements OnInit, OnChanges {
   @Output('showAppDetails')
   showAppDetails: EventEmitter<App> = new EventEmitter<App>();
 
-  constructor() { }
-
   ngOnInit() {
     // console.log("AppCardList onInit");
     if (!this.minCols) {
@@ -84,4 +82,16 @@ export class AppCardListComponent implements OnInit, OnChanges {
     }
   }
 
+  public showNewBadge(app: App): boolean {
+    const now: Date = new Date();
+    const then: Date = new Date(app.inStoreSinceDate);
+    const milliseconds = Math.abs(now.getTime() - then.getTime());
+    const millisecondsInDay = 1000 * 3600 * 24;
+    const days = Math.ceil(milliseconds / millisecondsInDay);
+    if (days < 7) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

@@ -1,19 +1,19 @@
 # Linux Store Frontend
 
-This is a web application to browse and install applications present in Flatpak repositories, like Flathub and others.
+This is a web application to browse and install applications present in Flatpak repositories. It began as a personal proof of concept but its used in https://flathub.org since April 2018.
 
 The web app obtains data calling a remote REST API implemented in [linux-store-backend](https://github.com/jgarciao/linux-store-backend) 
 
-This app began as a proof of concept but it's likely to be used for the official Flathub website in the near future. See a demo at https://beta.flathub.org
-
-There is also a development version at http://45.55.104.129
+There is a [development server](http://45.55.104.129) were we test new stuff.
 
 ## Running this app locally
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
 
 Steps to run this app locally:
-* Install Node.js LTS (6.11.X at this time) or newer. We find useful using [nvm](https://github.com/creationix/nvm) to install and manage multiple Node.js versions.
+* Install Node.js LTS (8.11.X at this time) or newer. We find useful using [nvm](https://github.com/creationix/nvm) to install and manage multiple Node.js versions.
+* Update npm to version 6 (recommended)
+  * ```npm i -g npm```
 * Install [angular-cli:](https://github.com/angular/angular-cli) 
   * ```npm install -g @angular/cli```
 * Install deps:
@@ -33,14 +33,13 @@ I've been trying to make this app themable (still a work in progress) using the 
 * [Angular Material typography](https://material.angular.io/guide/typography)
 
 To get started with hacking the app the following tools are very helpful:
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
+* [Visual Studio Code](https://code.visualstudio.com/). Available on [Flathub](https://flathub.org/apps/details/com.visualstudio.code)
+* [Angular Essentials extension pack for VS Code](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
 
 ## TODO
 * ~~Migrate from angular-mdl to angular-material2 using angular-flex-layout~~
 * Search apps by ~~name~~, keywords, ~~categories~~, ...
-* Search & install themes
-* Search & install runtimes
+* List available themes and runtimes
 * Pagination
 * Activity: events, ...
 

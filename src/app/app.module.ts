@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -6,7 +6,7 @@ import { DatePipe } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
-import { GalleryModule } from 'ng-gallery';
+import { GalleryModule } from '@ngx-gallery/core';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
@@ -29,6 +29,7 @@ import { AppCardListComponent } from './shared/app-card-list/app-card-list.compo
 import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
+import { PreComponent } from './shared/pre/pre.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.
     AppCardListComponent,
     TermsComponent,
     PrivacyComponent,
-    CodeOfConductComponent
+    CodeOfConductComponent,
+    PreComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +65,7 @@ import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.
     routing
   ],
   providers: [
+    Title,
     LinuxStoreApiService,
     GoogleAnalyticsEventsService
   ],
