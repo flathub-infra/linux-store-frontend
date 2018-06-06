@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /repo/
+Disallow: /repo/objects/
