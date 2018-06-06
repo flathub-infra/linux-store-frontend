@@ -227,7 +227,6 @@ https://flathub.org/apps/details/io.github.cloose.CuteMarkEd
 https://flathub.org/apps/details/io.github.Freedoom-Phase-2
 https://flathub.org/apps/details/im.srain.Srain
 https://flathub.org/apps/details/net.sourceforge.projectM
-https://flathub.org/apps/details/org.quetoo.Quetoo
 https://flathub.org/apps/details/org.seul.pingus
 https://flathub.org/apps/details/com.scoutshonour.Digital
 https://flathub.org/apps/details/com.tux4kids.tuxmath

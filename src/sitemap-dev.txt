@@ -227,7 +227,6 @@ http://45.55.104.129/apps/details/io.github.cloose.CuteMarkEd
 http://45.55.104.129/apps/details/io.github.Freedoom-Phase-2
 http://45.55.104.129/apps/details/im.srain.Srain
 http://45.55.104.129/apps/details/net.sourceforge.projectM
-http://45.55.104.129/apps/details/org.quetoo.Quetoo
 http://45.55.104.129/apps/details/org.seul.pingus
 http://45.55.104.129/apps/details/com.scoutshonour.Digital
 http://45.55.104.129/apps/details/com.tux4kids.tuxmath
