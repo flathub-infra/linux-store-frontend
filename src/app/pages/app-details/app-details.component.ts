@@ -38,19 +38,37 @@ export class AppDetailsComponent implements OnInit {
   }
 
   setPageMetadata() {
-
+  
+    var description: string;
+    
     if (this.app) {
+             
+      if(this.app.description && this.app.description.length > 0){
+
+        var descriptionWithOutMarkup: string;
+        descriptionWithOutMarkup = this.app.description.replace(/<[^>]+>/g, '');
+
+        if(descriptionWithOutMarkup.length > 297){
+          description = descriptionWithOutMarkup.substring(0, 297) + '...';
+        }
+        else{
+          description = descriptionWithOutMarkup;
+        }
+      }
+      else{
+        description = this.app.summary;
+      }
+
       this.seoService.setPageMetadata(
-        this.app.name,
-        this.app.summary,
+        this.app.name + ' - Linux Apps on Flathub',
+        description,
         this.app.iconDesktopUrl);
     }
     else {
-      this.seoService.setPageMetadata('App not found', 'App not found');
+      this.seoService.setPageMetadata('App not found - Linux Apps on Flathub', 'App not found');
     }
 
   }
-
 
   ngOnInit() {
     this.route.paramMap.subscribe(

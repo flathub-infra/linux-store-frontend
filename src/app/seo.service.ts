@@ -12,7 +12,7 @@ export class SeoService {
 
   setPageMetadata(title: string = '', description: string = '', image: string = '') {
 
-    title = title + ' | Flathub';
+    title = title;
 
     this.titleService.setTitle(title);
     this.metaService.updateTag({ name: 'description', content: description });

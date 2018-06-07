@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
 
     this.seoService.setPageMetadata(
       'Flathub - An app store and build service for Linux',
-      'Flathub is the home of hundreds of apps and games which can be easily installed on any Linux distribution. Enjoy GIMP, LibreOffice, VLC, Spotify and many more!',
+      'Find and install hundreds of apps and games for Linux. Enjoy GIMP, GNU Octave, Spotify, Steam and many more!',
       imageUrl);
   }
 

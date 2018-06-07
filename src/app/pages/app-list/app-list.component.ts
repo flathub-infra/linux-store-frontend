@@ -79,6 +79,15 @@ export class AppListComponent implements OnInit {
     return title;
   }
 
+
+  getFlathubMetaImage(): string {
+
+    const imageUrl: string = window.location.protocol + '//' + window.location.hostname + ':' +
+      window.location.port + '/assets/themes/flathub/flathub-screenshot.png'
+
+    return imageUrl;
+  }
+
   getCategories(): void {
     this.linuxStoreApiService.getCategories()
       .subscribe(categories => { this.categories = categories; });
@@ -92,6 +101,7 @@ export class AppListComponent implements OnInit {
   }
 
   showAppsByParams() {
+
     if (this.paramSearchKeyword) {
       this.showAppsSearchKeyword(this.paramSearchKeyword);
       this.showDefaultInfo = false;
@@ -103,6 +113,10 @@ export class AppListComponent implements OnInit {
       this.showDefaultInfo = false;
     } else {
       this.showDefaultInfo = true;
+      this.seoService.setPageMetadata('Applications - Linux Apps on Flathub',
+        'Browse applications for Linux on Flathub: Popular Apps and Games, Editor\'s picks, Audio & Video, ' +
+        'Developer Tools, Education, Games, Graphics & Photography, Communication & News, Productivity, Science, Settings, Utilities, ...',
+        this.getFlathubMetaImage());
     }
   }
 
@@ -115,8 +129,8 @@ export class AppListComponent implements OnInit {
 
     this.selectedCollection = searchCollection;
 
-    this.seoService.setPageMetadata('Search results',
-      'Search applications in Flathub by keyword');
+    this.seoService.setPageMetadata('Search results - Linux Apps on Flathub',
+      'Search applications published on Flathub', this.getFlathubMetaImage());
 
     this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
       .subscribe(apps => { this.apps = apps; });
@@ -128,7 +142,8 @@ export class AppListComponent implements OnInit {
       .subscribe(collection => { this.selectedCollection = collection; });
 
     if (this.selectedCollection) {
-      this.seoService.setPageMetadata(this.selectedCollection.name, this.selectedCollection.name);
+      this.seoService.setPageMetadata(this.selectedCollection.name + ' - Linux Apps on Flathub',
+        'Find ' + this.selectedCollection.name + ' for Linux on Flathub', this.getFlathubMetaImage());
     }
 
     this.linuxStoreApiService.getAppsByCollectionId(collectionId)
@@ -137,7 +152,8 @@ export class AppListComponent implements OnInit {
 
   showAllApps(): void {
 
-    this.seoService.setPageMetadata('All applications', 'All applications in Flathub');
+    this.seoService.setPageMetadata('All applications - Linux Apps on Flathub',
+      'Find all applications for Linux on Flathub', this.getFlathubMetaImage());
 
     this.linuxStoreApiService.getApps()
       .subscribe(apps => { this.apps = apps; });
@@ -149,10 +165,12 @@ export class AppListComponent implements OnInit {
       .subscribe(category => { this.selectedCategory = category; });
 
     if (this.selectedCategory) {
-      this.seoService.setPageMetadata(this.selectedCategory.name, this.selectedCategory.name);
+      this.seoService.setPageMetadata(this.selectedCategory.name + ' - Linux Apps on Flathub',
+        'Find ' + this.selectedCategory.name + ' Apps for Linux on Flathub', this.getFlathubMetaImage());
     }
     else if (categoryId = 'All') {
-      this.seoService.setPageMetadata('All applications', 'All applications in Flathub');
+      this.seoService.setPageMetadata('All applications - Linux Apps on Flathub',
+        'Find all applications for Linux on Flathub', this.getFlathubMetaImage());
     }
 
     this.linuxStoreApiService.getAppsByCategory(categoryId)
