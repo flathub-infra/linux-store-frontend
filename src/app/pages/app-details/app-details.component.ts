@@ -38,31 +38,41 @@ export class AppDetailsComponent implements OnInit {
   }
 
   setPageMetadata() {
-  
+
     var description: string;
-    
+
     if (this.app) {
-             
-      if(this.app.description && this.app.description.length > 0){
+
+      if (this.app.description && this.app.description.length > 0) {
 
         var descriptionWithOutMarkup: string;
         descriptionWithOutMarkup = this.app.description.replace(/<[^>]+>/g, '');
 
-        if(descriptionWithOutMarkup.length > 297){
+        if (descriptionWithOutMarkup.length > 297) {
           description = descriptionWithOutMarkup.substring(0, 297) + '...';
         }
-        else{
+        else {
           description = descriptionWithOutMarkup;
         }
       }
-      else{
+      else {
         description = this.app.summary;
+      }
+
+      var iconUrl: string = this.app.iconDesktopUrl;
+
+      if (this.app.iconDesktopUrl && this.app.iconDesktopUrl.startsWith('/')) {
+        iconUrl = window.location.protocol + '//' + window.location.hostname + ':' +
+          window.location.port + this.app.iconDesktopUrl;
+      }
+      else {
+        iconUrl = this.app.iconDesktopUrl;
       }
 
       this.seoService.setPageMetadata(
         this.app.name + ' - Linux Apps on Flathub',
         description,
-        this.app.iconDesktopUrl);
+        iconUrl);
     }
     else {
       this.seoService.setPageMetadata('App not found - Linux Apps on Flathub', 'App not found');
@@ -88,7 +98,7 @@ export class AppDetailsComponent implements OnInit {
 
   getApp(id: string): void {
     this.linuxStoreApiService.getApp(id)
-      .subscribe(app => { this.app = app; this.setPageMetadata();});
+      .subscribe(app => { this.app = app; this.setPageMetadata(); });
   }
 
   getReviews(id: string): void {
