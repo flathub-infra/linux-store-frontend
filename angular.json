@@ -94,7 +94,13 @@
               "src/tsconfig.spec.json"
             ],
             "exclude": [
-              "**/node_modules/**"
+              "**/node_modules/**",
+              "src/app/shared/editors-choice-*.ts",
+              "src/app/shared/featured-collections.ts",
+              "src/app/shared/popular-apps.ts",
+              "src/app/shared/recently-updated-apps.ts",
+              "src/app/shared/categories.ts",
+              "src/app/shared/mock-*.ts"
             ]
           }
         }

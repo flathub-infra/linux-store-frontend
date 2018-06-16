@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -6,15 +6,11 @@ import { Output, EventEmitter } from '@angular/core';
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss']
 })
-export class ToolbarComponent implements OnInit {
+export class ToolbarComponent {
 
   @Output('search') search: EventEmitter<string> = new EventEmitter<string>();
 
   showSearchInput = false;
-
-  constructor() { }
-
-  ngOnInit() { }
 
   onSearch(searchTerm: string): void {
     this.showSearchInput = false;

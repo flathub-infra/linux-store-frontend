@@ -25,12 +25,11 @@ export class HomeComponent implements OnInit {
     private metaService: Meta) {
 
     this.titleService.setTitle("Flathub - An app store and build service for Linux");
-    this.metaService.addTag({ name: 'description', content: 'Flathub, the home of hundreds of apps and games which can be easily installed on any Linux distribution. Browse the apps online, from your app center or the command line.' });
-    this.metaService.addTag({ name: 'keywords', content: 'install, flatpak, applications, games, linux, ubuntu, fedora, GIMP, Spotify, STEAM, VLC, Skype, Slack' });
+    this.metaService.updateTag({ name: 'description', content: 'Flathub is the home of hundreds of apps and games which can be easily installed on any Linux distribution. Enjoy GIMP, LibreOffice, VLC, Spotify and many more!' });
+    this.metaService.updateTag({ name: 'keywords', content: 'install,flatpak,applications,games,linux,ubuntu,fedora,GIMP,Spotify,STEAM,VLC,Skype,Slack' });
   }
 
   ngOnInit() {
-
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;
