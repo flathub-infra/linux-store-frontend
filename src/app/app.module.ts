@@ -31,6 +31,7 @@ import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
 import { PreComponent } from './shared/pre/pre.component';
+import { BadgesComponent } from './pages/badges/badges.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { PreComponent } from './shared/pre/pre.component';
     TermsComponent,
     PrivacyComponent,
     CodeOfConductComponent,
-    PreComponent
+    PreComponent,
+    BadgesComponent
   ],
   imports: [
     BrowserModule,
