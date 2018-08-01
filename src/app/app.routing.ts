@@ -8,6 +8,7 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent} from './pages/code-of-conduct/code-of-conduct.component';
 import { AppListComponent } from './pages/app-list/app-list.component';
 import { AppDetailsComponent } from './pages/app-details/app-details.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const appRoutes: Routes = [
   {
@@ -54,6 +55,10 @@ const appRoutes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 

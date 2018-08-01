@@ -30,6 +30,7 @@ import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
 import { PreComponent } from './shared/pre/pre.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { PreComponent } from './shared/pre/pre.component';
     TermsComponent,
     PrivacyComponent,
     CodeOfConductComponent,
-    PreComponent
+    PreComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
