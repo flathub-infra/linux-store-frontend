@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     private titleService: Title,
     private metaService: Meta) {
 
-    this.titleService.setTitle("Flathub - An app store and build service for Linux");
+    this.titleService.setTitle("Flathub—An app store and build service for Linux");
     this.metaService.updateTag({ name: 'description', content: 'Flathub is the home of hundreds of apps and games which can be easily installed on any Linux distribution. Enjoy GIMP, LibreOffice, VLC, Spotify and many more!' });
     this.metaService.updateTag({ name: 'keywords', content: 'install,flatpak,applications,games,linux,ubuntu,fedora,GIMP,Spotify,STEAM,VLC,Skype,Slack' });
   }
