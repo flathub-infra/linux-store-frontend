@@ -1,0 +1,31 @@
+<div fxLayout="column" fxLayoutAlign="start stretch">
+  
+  <!-- main content -->
+  <section fxFlex class="store-content-container-narrow">
+    <h1>Flathub official badges</h1>
+    <p>You can use this badges to promote your application on Flathub</p>
+    
+    <h3>Preferred badge</h3>
+    <img width="240" alt='Download on Flathub' src='/assets/badges/flathub-badge-en.png'/>
+    <h6 class="badge-info-svg">Also available in <a href="/assets/badges/flathub-badge-en.svg">svg format</a></h6>
+    
+    <h3>Alternative badge</h3>
+    <img width="240" alt='Download on Flathub' src='/assets/badges/flathub-badge-i-en.png'/>
+    <h6 class="badge-info-svg">Also available in <a href="/assets/badges/flathub-badge-i-en.svg">svg format</a></h6>
+    
+    <h3>Example code</h3>
+    
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+      <div class="badge-example-code" fxFlex="70">
+        <store-pre [text]="badgeExampleCode"></store-pre>
+      </div>
+      <div fxFlex="5">
+      </div>
+      <div fxFlex="15">
+        <a href='https://flathub.org/apps/details/org.gimp.GIMP'><img width='240' alt='Download on Flathub' src='/assets/badges/flathub-badge-en.png'/></a>
+      </div>
+    </div>
+    
+  </section>
+  
+</div>
