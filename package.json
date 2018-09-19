@@ -11,7 +11,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:docker": "ng build --prod && docker build -t jgarciao/linux-store-frontend:latest ."
+    "build:docker": "npm run version && ng build --prod && docker build -t jgarciao/linux-store-frontend:latest .",
+    "version": "node scripts/version.js"
   },
   "private": true,
   "dependencies": {
@@ -55,6 +56,8 @@
     "protractor": "^5.3.2",
     "ts-node": "~6.0.3",
     "tslint": "~5.10.0",
-    "typescript": "2.9.2"
+    "typescript": "2.9.2",
+    "git-describe": "4.0.3",
+    "fs-extra": "7.0.0"
   }
 }
