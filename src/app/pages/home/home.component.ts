@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
       window.location.port + '/assets/themes/flathub/flathub-screenshot.png'
 
     this.seoService.setPageMetadata(
-      'Flathub - An app store and build service for Linux',
+      'Flathub—An app store and build service for Linux',
       'Find and install hundreds of apps and games for Linux. Enjoy GIMP, GNU Octave, Spotify, Steam and many more!',
       imageUrl);
   }
