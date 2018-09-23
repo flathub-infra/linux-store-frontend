@@ -69,12 +69,12 @@ export class AppDetailsComponent implements OnInit {
       }
 
       this.seoService.setPageMetadata(
-        this.app.name + ' - Linux Apps on Flathub',
+        this.app.name + '—Linux Apps on Flathub',
         description,
         iconUrl);
     }
     else {
-      this.seoService.setPageMetadata('App not found - Linux Apps on Flathub', 'App not found');
+      this.seoService.setPageMetadata('App not found—Linux Apps on Flathub', 'App not found');
     }
 
   }
