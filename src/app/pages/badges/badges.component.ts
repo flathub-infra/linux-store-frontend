@@ -24,7 +24,7 @@ export class BadgesComponent implements OnInit {
         window.location.port + '/assets/badges/flathub-badge-en.png'
   
       this.seoService.setPageMetadata(
-        'Flathub Official Badges - Flathub',
+        'Flathub Official Badges—Flathub',
         'Official badges to promote your application on Flathub',
         imageUrl);
   
