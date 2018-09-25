@@ -8,8 +8,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
 import { GalleryModule } from '@ngx-gallery/core';
 
-import { routing } from './app.routing';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { AppListComponent } from './pages/app-list/app-list.component';
 import { AppDetailsComponent } from './pages/app-details/app-details.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -65,7 +66,7 @@ import { BadgesComponent } from './pages/badges/badges.component';
     GalleryModule.forRoot(),
     FlexLayoutModule,
     LinuxStoreAngularMaterialModule,
-    routing
+    AppRoutingModule
   ],
   providers: [
     Title,
