@@ -37,7 +37,7 @@ export class AppDetailsDescriptionComponent implements OnInit {
           this.showCurrentReleaseInfo = true;
       }
 
-      if (this.app.screenshots) {
+      if (this.app.screenshots && this.app.screenshots.length > 0) {
         this.items = this.app.screenshots.map(item => new ImageItem({src: item.imgDesktopUrl, thumb: item.thumbUrl})); 
         this.showThumbnails = (this.items && this.items.length > 1 && !this.isHandset); 
       }
