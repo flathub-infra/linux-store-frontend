@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ElementRef, ViewChild } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { ViewChild } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { SeoService } from '../../seo.service';
 
 import { App } from '../../shared/app.model';
@@ -17,6 +17,8 @@ import { Category } from '../../shared/category.model';
 export class AppListComponent implements OnInit {
 
   @ViewChild('drawer') drawer;
+
+  scrollPosition: [number, number];
 
   apps: App[];
   categories: Category[];
@@ -39,6 +41,7 @@ export class AppListComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     this.getCategories();
     this.getFeaturedCollections();
 
@@ -52,13 +55,6 @@ export class AppListComponent implements OnInit {
         }
       }
     );
-
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    });
   }
 
   isSmallScreen(): boolean {
@@ -118,6 +114,7 @@ export class AppListComponent implements OnInit {
         'Developer Tools, Education, Games, Graphics & Photography, Communication & News, Productivity, Science, Settings, Utilities, ...',
         this.getFlathubMetaImage());
     }
+
   }
 
   showAppsSearchKeyword(searchKeyword: string): void {

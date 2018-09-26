@@ -67,7 +67,7 @@ const appRoutes: Routes = [
       appRoutes,
       {
         enableTracing: false, // <-- debugging purposes only
-        scrollPositionRestoration: 'top',
+        scrollPositionRestoration: 'enabled',
         //anchorScrolling: 'enabled',
         scrollOffset: [0, 0] // [x, y]
       }
