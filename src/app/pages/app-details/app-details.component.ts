@@ -1,8 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+
 import { Location } from '@angular/common';
 import { SeoService } from '../../seo.service';
+
 
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
@@ -18,6 +21,7 @@ export class AppDetailsComponent implements OnInit {
 
   @Input() app: App;
 
+  scrollPosition: [number, number];
   paramAppId: string;
 
   reviews: Review[];
@@ -30,11 +34,12 @@ export class AppDetailsComponent implements OnInit {
     private googleAnalyticsEventsService: GoogleAnalyticsEventsService,
     private router: Router,
     private route: ActivatedRoute,
+    private viewportScroller: ViewportScroller,
     private location: Location,
     private seoService: SeoService) {
-
-
   }
+
+
 
   setPageMetadata() {
 
@@ -86,13 +91,6 @@ export class AppDetailsComponent implements OnInit {
         this.getApp(this.paramAppId);
       }
     );
-
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    });
   }
 
   getApp(id: string): void {

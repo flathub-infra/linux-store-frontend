@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
@@ -28,13 +28,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    });
-
     this.linuxStoreApiService.getFeaturedCollections()
       .subscribe(collections => {
         this.featuredCollections = collections;

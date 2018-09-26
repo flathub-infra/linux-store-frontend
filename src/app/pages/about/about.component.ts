@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
 import { SeoService } from '../../seo.service';
 
 @Component({
@@ -9,22 +8,11 @@ import { SeoService } from '../../seo.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(
-    private router: Router,
-    private seoService: SeoService) {
-
+  constructor(private seoService: SeoService) {
     this.setPageMetadata();
-
   }
 
-  ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    });
-  }
+  ngOnInit() { }
 
   setPageMetadata() {
 
