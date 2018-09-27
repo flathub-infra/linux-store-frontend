@@ -117,4 +117,9 @@ export class AppDetailsComponent implements OnInit {
     this.googleAnalyticsEventsService.emitEvent('App', 'Install', app.flatpakAppId);
   }
 
+  onDonate(app: App) {
+    // Track instal event
+    this.googleAnalyticsEventsService.emitEvent('App', 'Donate', app.flatpakAppId);
+  }
+
 }
