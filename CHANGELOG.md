@@ -1,3 +1,11 @@
+<a name="0.7.1"></a>
+# [0.7.1](https://github.com/jgarciao/linux-store-frontend/compare/0.7.0...0.7.1) (2018-09-28)
+
+### Bug fixes
+
+* Fix missing robots.txt, sitemap.txt and google search verification file
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/jgarciao/linux-store-frontend/compare/0.6.9...0.7.0) (2018-09-27)
 
@@ -25,7 +33,7 @@
 
 
 <a name="0.6.0"></a>
-# [0.6.X](https://github.com/jgarciao/linux-store-frontend/compare/0.5.0...0.6.9) (2018-09-27)
+# [0.6.X](https://github.com/jgarciao/linux-store-frontend/compare/0.5.0...0.6.9) (2018-04-06)
 
 * Version used in flathub.org since April 2018
 * TODO: document Highlights & Features

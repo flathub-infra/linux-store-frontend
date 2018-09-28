@@ -17,7 +17,11 @@
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/google1a2b17b52dfeb852.html",
+              "src/sitemap.txt",
+              "src/sitemap-dev.txt"
             ],
             "styles": [
               "src/styles.scss",
