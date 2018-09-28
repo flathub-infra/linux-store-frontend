@@ -35,7 +35,7 @@ export class AppDetailsExtraInfoComponent implements OnInit {
 
       if (this.app.projectLicense) {
 
-        if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
+        if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1 || this.app.projectLicense.indexOf('CC-BY-NC') !== -1) {
           this.license = 'Proprietary';
         } else {
           this.license = 'Free';
