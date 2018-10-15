@@ -31,9 +31,6 @@ export class AppCardListComponent implements OnInit, OnChanges {
   appsToShow: App[];
   calculatedNumCols: number;
 
-  @Output('showAppDetails')
-  showAppDetails: EventEmitter<App> = new EventEmitter<App>();
-
   ngOnInit() {
     // console.log("AppCardList onInit");
     if (!this.minCols) {
@@ -54,10 +51,6 @@ export class AppCardListComponent implements OnInit, OnChanges {
     // console.log("AppCardList onResize");
     this.updateNumCols();
     this.updateAppsToShow();
-  }
-
-  onAppDetails(app: App): void {
-    this.showAppDetails.emit(app);
   }
 
   updateNumCols() {

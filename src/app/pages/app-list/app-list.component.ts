@@ -187,14 +187,6 @@ export class AppListComponent implements OnInit {
     this.showAppsByParams();
   }
 
-  onShowAppDetails(app: App) {
-    this.router.navigate(['apps/details', app.flatpakAppId]);
-  }
-
-  onShowCollection(collectionId: string) {
-    this.router.navigate(['apps/collection', collectionId]);
-  }
-
   onDrawerLinkClick() {
     if (this.isSmallScreen()) {
       this.drawer.close();

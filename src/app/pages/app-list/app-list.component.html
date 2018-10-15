@@ -38,7 +38,7 @@
 
       <div *ngIf="showDefaultInfo && featuredCollections">
         <store-app-collection-teaser *ngFor="let collection of featuredCollections" [collectionId]="collection.id" [collectionTitle]="collection.name"
-          [collectionList]="getAppsByCollectionId(collection.id)" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)">
+          [collectionList]="getAppsByCollectionId(collection.id)">
         </store-app-collection-teaser>
       </div>
 
@@ -46,7 +46,7 @@
         <h2>{{getTitle()}}</h2>
         <p *ngIf="apps">{{(apps)?.length}} results</p>
         <div>
-          <store-app-card-list [apps]="apps" [minCols]="2" [colWidth]="200" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
+          <store-app-card-list [apps]="apps" [minCols]="2" [colWidth]="200"></store-app-card-list>
         </div>
       </div>
 

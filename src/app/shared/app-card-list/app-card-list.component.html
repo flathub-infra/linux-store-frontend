@@ -1,6 +1,5 @@
 <mat-grid-list #applist cols="{{calculatedNumCols}}" gutterSize="12" rowHeight="6:7" (window:resize)="onResize($event)">
-  <a *ngFor="let app of appsToShow" href="/apps/details/{{app.flatpakAppId}}"
-        (click)="onAppDetails(app); $event.preventDefault()">
+  <a *ngFor="let app of appsToShow" [routerLink]="['/apps','details', app.flatpakAppId]">
     <mat-grid-tile>
       <mat-icon class="badge" *ngIf="showNewBadge(app)" color="primary" matTooltip="New!" matTooltipPosition="left">
         new_releases

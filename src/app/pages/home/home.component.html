@@ -10,7 +10,7 @@
       </p>
       <div>
         <a mat-raised-button color="primary" href="https://flatpak.org/setup">Quick setup</a>
-        <button mat-raised-button color="primary" routerLink="/apps">Browse the apps</button>
+        <a mat-raised-button color="primary" routerLink="/apps">Browse the apps</a>
       </div>
     </div>
   </header>
@@ -19,7 +19,7 @@
   <section fxFlex class="store-content-container">
     <div *ngIf="featuredCollections">
       <store-app-collection-teaser *ngFor="let collection of featuredCollections" [collectionId]="collection.id" [collectionTitle]="collection.name"
-        [collectionList]="getAppsByCollectionId(collection.id)" (showAppDetails)="onShowAppDetails($event)" (showCollection)="onShowCollection($event)">
+        [collectionList]="getAppsByCollectionId(collection.id)">
       </store-app-collection-teaser>
     </div>
   </section>

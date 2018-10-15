@@ -12,19 +12,4 @@ export class AppCollectionTeaserComponent {
   @Input() collectionId: string;
   @Input() collectionTitle: string;
   @Input() collectionList: App[];
-
-  @Output('showAppDetails')
-  showAppDetails: EventEmitter<App> = new EventEmitter<App>();
-
-  @Output('showCollection')
-  showCollection: EventEmitter<string> = new EventEmitter<string>();
-
-  onShowAppDetails(app: App): void {
-    this.showAppDetails.emit(app);
-  }
-
-  onSeeMore(): void {
-    this.showCollection.emit(this.collectionId);
-  }
-
 }

@@ -43,14 +43,6 @@ export class HomeComponent implements OnInit {
     return collectionApps;
   }
 
-  onShowAppDetails(app: App) {
-    this.router.navigate(['apps/details', app.flatpakAppId]);
-  }
-
-  onShowCollection(collectionId: string) {
-    this.router.navigate(['apps/collection', collectionId]);
-  }
-
   setPageMetadata() {
     const imageUrl: string = window.location.protocol + '//' + window.location.hostname + ':' +
       window.location.port + '/assets/themes/flathub/flathub-screenshot.png'

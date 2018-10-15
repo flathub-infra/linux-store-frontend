@@ -1,8 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="start baseline">
   <h2 fxFlex>{{collectionTitle}}</h2>
-  <button mat-raised-button color="primary" (click)="onSeeMore()">See more</button>
+  <a [routerLink]="['/apps', 'collection', collectionId]" mat-raised-button color="primary" >See more</a>
 </div>
 <div>
   <store-app-card-list [apps]="collectionList" [rows]="1"
-   [minCols]="2" [colWidth]="200" (showAppDetails)="onShowAppDetails($event)"></store-app-card-list>
+   [minCols]="2" [colWidth]="200"></store-app-card-list>
 </div>
