@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   z-index: 5;
+  height: 64px;
 }
 
 .search-box-container {
@@ -111,5 +112,6 @@
     left: 0px;
     right: 0px;
     transform: none;
+    top: 1px;
   }
 }
