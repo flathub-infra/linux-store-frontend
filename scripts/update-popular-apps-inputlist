@@ -1,7 +1,7 @@
 org.octave.Octave
 org.gimp.GIMP
 com.spotify.Client
-com.visualstudio.code
+com.visualstudio.code.oss
 com.abisource.AbiWord
 com.valvesoftware.Steam
 org.videolan.VLC
