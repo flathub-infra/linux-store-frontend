@@ -1,9 +1,9 @@
-.fixed-toolbar {
+mat-toolbar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
-  height: 64px;
+  display: block;
 }
 
 .search-box-container {
@@ -12,7 +12,6 @@
   padding-left: 5px;
   padding-top: 8px;
   max-width: 520px;
-  margin: 0px auto;
 }
 
 .search-box {
@@ -22,28 +21,28 @@
   height: 100%;
   width: 100%;
   transform: translateY(-25%);
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 0 44px 2px 50px;
   border-radius: 3px;
   color: #fff;
 }
 
-.search-form{
+.search-form {
   height: 38px;
   position: absolute;
   background: #4a86cf;
   left: 15px;
   right: 15px;
   transform: translateY(-64px);
-  transition: transform .15s cubic-bezier(.4,0,.2,1) .15s;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
   z-index: 5;
 }
 
-.search-form.active{
+.search-form.active {
   transform: translateY(0px);
 }
 
-.search-box::placeholder{
+.search-box::placeholder {
   color: #fff;
 }
 
@@ -67,14 +66,6 @@
   cursor: pointer;
 }
 
-.fixed-toolbar-spacer {
-  height: 56px;
-}
-
-.fixed-toolbar-spacer-gt-sm {
-  height: 64px;
-}
-
 .toolbar-content {
   display: flex;
   flex: 1 1 auto;
@@ -86,32 +77,68 @@
   flex: 1 1 auto;
 }
 
-.mat-menu-item{
+.mat-menu-item {
   font-weight: 400;
 }
 
-.show-md{
+.show-md {
   display: block;
 }
 
-.hide-md{
+.hide-md {
   display: none;
 }
 
-@media (min-width: 1220px){
-  .show-md{
+.toolbar-nav>button{
+  margin: 14px 0;
+}
+
+@media (min-width: 1220px) {
+  .fixed-toolbar-spacer,
+  mat-toolbar {
+    height: 64px;
+  }
+
+  .store-logo-button {
+    margin: 14px 0;
+  }
+
+  .show-md {
     display: none;
   }
 
-  .hide-md{
+  .hide-md {
     display: block;
   }
 
-  .search-form{
+  .search-form {
     position: relative;
     left: 0px;
     right: 0px;
     transform: none;
     top: 1px;
+  }
+
+  .search-box-container{
+    margin: 9px auto;
+  }
+}
+
+@media (max-width: 1220px) {
+  .fixed-toolbar-spacer,
+  mat-toolbar {
+    height: 56px;
+  }
+
+  .store-logo-button {
+    margin: 10px 0;
+  }
+
+  .mat-icon-button {
+    margin: 8px 0;
+  }
+
+  .search-box-container{
+    margin: 6px auto;
   }
 }
