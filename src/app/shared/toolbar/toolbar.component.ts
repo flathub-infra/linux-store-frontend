@@ -11,7 +11,6 @@ export class ToolbarComponent {
   @Output('search') search: EventEmitter<string> = new EventEmitter<string>();
 
   showSearchInput = false;
-  searchActive = false;
 
   onSearch(searchTerm: string): void {
     this.showSearchInput = false;
