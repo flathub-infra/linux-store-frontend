@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="120"
-   height="40"
-   viewBox="0 0 120 39.999999"
+   width="112.12897"
+   height="27.213442"
+   viewBox="0 0 112.12897 27.213441"
    version="1.1"
    id="svg849"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="flathub-logo-toolbar.svg">
   <defs
      id="defs843" />
@@ -26,22 +26,28 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="8"
-     inkscape:cx="62.368119"
-     inkscape:cy="18.127991"
+     inkscape:cx="58.173797"
+     inkscape:cy="13.940991"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:showpageshadow="false"
      borderlayer="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="863"
-     inkscape:window-x="1920"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
+     inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid1472" />
+       id="grid1472"
+       originx="-4.1943225"
+       originy="-4.1869999" />
   </sodipodi:namedview>
   <metadata
      id="metadata846">
@@ -59,7 +65,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-345.94489)">
+     transform="translate(-4.1943224,-354.54445)">
     <g
        id="g4539"
        transform="translate(0,-0.99995221)">
