@@ -1,3 +1,17 @@
+<a name="0.7.2"></a>
+# [0.7.2](https://github.com/jgarciao/linux-store-frontend/compare/0.7.1...0.7.2) (2018-11-16)
+
+### Features
+
+* Updated header toolbar design
+* Updated Popular Apps and sitemap
+
+### Thank you!
+
+* Thanks to the awesome contributors that helped in this release:
+    *   @nmanumr, @nedrichards
+
+
 <a name="0.7.1"></a>
 # [0.7.1](https://github.com/jgarciao/linux-store-frontend/compare/0.7.0...0.7.1) (2018-09-28)
 
