@@ -104,8 +104,8 @@ export const POPULARAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "com.visualstudio.code",
-  "name": "Visual Studio Code",
+  "flatpakAppId": "com.visualstudio.code.oss",
+  "name": "Visual Studio Code - OSS",
   "summary": "Visual Studio Code. Code editing. Redefined.",
   "description": "",
   "developerName": "",
@@ -115,19 +115,19 @@ export const POPULARAPPS: App[] = [
   "helpUrl": "",
   "donationUrl": "",
   "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.visualstudio.code.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.visualstudio.code.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.visualstudio.code.flatpakref",
-  "currentReleaseVersion": "1.29.0",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.visualstudio.code.oss.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.visualstudio.code.oss.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/com.visualstudio.code.oss.flatpakref",
+  "currentReleaseVersion": "1.28.2",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.visualstudio.code-stable/224x126/com.visualstudio.code-cb5b7e3aa886a4170f11ea466b69b563.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.visualstudio.code-stable/624x351/com.visualstudio.code-cb5b7e3aa886a4170f11ea466b69b563.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.visualstudio.code-stable/752x423/com.visualstudio.code-cb5b7e3aa886a4170f11ea466b69b563.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.visualstudio.code.oss-stable/224x126/com.visualstudio.code.oss-cb5b7e3aa886a4170f11ea466b69b563.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.visualstudio.code.oss-stable/624x351/com.visualstudio.code.oss-cb5b7e3aa886a4170f11ea466b69b563.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.visualstudio.code.oss-stable/752x423/com.visualstudio.code.oss-cb5b7e3aa886a4170f11ea466b69b563.png"
     }
   ]
 }
