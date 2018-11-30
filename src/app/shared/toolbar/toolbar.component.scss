@@ -4,6 +4,11 @@ mat-toolbar {
   left: 0;
   z-index: 5;
   display: block;
+  transition: box-shadow 0.25s;
+}
+
+.scrolled{
+  box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .search-box-container {
@@ -128,6 +133,10 @@ mat-toolbar {
   .fixed-toolbar-spacer,
   mat-toolbar {
     height: 56px;
+  }
+  
+  mat-toolbar {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
   .store-logo-button {
