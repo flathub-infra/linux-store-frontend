@@ -8,9 +8,9 @@
 
     <div class="flex-fill-remaining-space">
       <div class="search-box-container">
-        <div [class]="'search-form '+(searchActive? 'active': '')">
-          <mat-icon class="search-box-icon show-md" (click)="searchActive=!searchActive">arrow_back</mat-icon>
-          <mat-icon class="search-box-icon hide-md">search</mat-icon>
+        <div [class]="'search-form '+(showSearchInput? 'active': '')">
+          <mat-icon class="search-box-icon show-md" (click)="onTogleSearch()">arrow_back</mat-icon>
+          <mat-icon class="search-box-icon hide-md" (click)="onSearch(searchBox.value)">search</mat-icon>
           <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)" />
         </div>
       </div>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="show-md">
-      <button mat-icon-button (click)="searchActive=!searchActive">
+      <button mat-icon-button (click)="onTogleSearch()">
         <mat-icon>search</mat-icon>
       </button>
       <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -31,7 +31,7 @@
       </button>
       <mat-menu #menu="matMenu" overlapTrigger="false">
         <button mat-menu-item routerLink="apps">APPLICATIONS</button>
-        <button mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission">PUBLISH</button>
+        <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission">PUBLISH</a>
         <button mat-menu-item routerLink="about">ABOUT</button>
       </mat-menu>
     </div>
