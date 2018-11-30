@@ -30,6 +30,7 @@ export class AppListComponent implements OnInit {
   paramCategoryId: string;
   paramCollectionId: string;
   paramSearchKeyword: string;
+  sidebarHeight: number;
 
 
   constructor(
@@ -41,7 +42,7 @@ export class AppListComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+
     this.getCategories();
     this.getFeaturedCollections();
 
@@ -55,6 +56,20 @@ export class AppListComponent implements OnInit {
         }
       }
     );
+
+    document.onscroll = () => {
+      var footerHeight = document.querySelector('footer').offsetHeight;
+      var totalHeight = document.documentElement.scrollHeight;
+      
+      if (scrollY > (totalHeight - footerHeight - window.innerHeight)&&
+          !this.isSmallScreen()
+      ) {
+        this.sidebarHeight = (totalHeight - footerHeight) - scrollY;
+      }
+      else{
+        this.sidebarHeight = window.innerHeight;
+      }
+    }
   }
 
   isSmallScreen(): boolean {

@@ -3,7 +3,6 @@ $sidenav-width: 180px;
 .drawer-container {
   width: 100%;
   min-height: 750px;
-  padding-left:  2%;
   padding-right: 5%;
   padding-top: 25px;
   background-color: white;
@@ -16,14 +15,16 @@ $sidenav-width: 180px;
 
 
 .docs-component-viewer-nav {
-  position: sticky;
-  top: 60px;
+  position: relative;
+  height: calc(100% - 100px);
+  top: 80px;
+  bottom: 20px;
 
   .docs-component-viewer-nav-content {
     padding-left: 15px;
     padding-right: 15px;
     width: $sidenav-width;
-    //max-height: 75vh;
+    height: 100%;
     overflow: auto;
 
     &::-webkit-scrollbar {
@@ -61,4 +62,7 @@ $sidenav-width: 180px;
   font-weight: bold;
 }
 
-
+.mat-drawer{
+  position: fixed;
+  padding-left: 2%;
+}

@@ -2,7 +2,8 @@
   <mat-drawer #drawer [opened]="!isSmallScreen()"
   [mode]="isSmallScreen() ? 'over' : 'side'"
   [disableClose]="!isSmallScreen()"
-  (openedChange)="onOpenedChange($event)">
+  (openedChange)="onOpenedChange($event)"
+  [style.height.px]="sidebarHeight">
     <div class="docs-component-viewer-nav">
       <div class="docs-component-viewer-nav-content">
         <nav>
