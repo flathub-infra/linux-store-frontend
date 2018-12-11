@@ -57,18 +57,23 @@ export class AppListComponent implements OnInit {
       }
     );
 
-    document.onscroll = () => {
-      var footerHeight = document.querySelector('footer').offsetHeight;
-      var totalHeight = document.documentElement.scrollHeight;
-      
-      if (scrollY > (totalHeight - footerHeight - window.innerHeight)&&
-          !this.isSmallScreen()
-      ) {
-        this.sidebarHeight = (totalHeight - footerHeight) - scrollY;
-      }
-      else{
-        this.sidebarHeight = window.innerHeight;
-      }
+    // Adjust the height of sidebar once document is loaded
+    this.adjustHeight()
+    window.addEventListener('scroll', this.adjustHeight.bind(this))
+    window.addEventListener('resize', this.adjustHeight.bind(this))
+  }
+
+  adjustHeight() {
+    var footerHeight = document.querySelector('footer').offsetHeight;
+    var totalHeight = document.documentElement.scrollHeight;
+
+    if (scrollY > (totalHeight - footerHeight - window.innerHeight) &&
+      !this.isSmallScreen()
+    ) {
+      this.sidebarHeight = (totalHeight - footerHeight) - scrollY;
+    }
+    else {
+      this.sidebarHeight = window.innerHeight;
     }
   }
 
