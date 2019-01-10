@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Output, EventEmitter } from '@angular/core';
+import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/core';
 
-import { App } from '../../shared/app.model';
-import { Category } from '../category.model';
-import { LinuxStoreApiService } from '../../linux-store-api.service';
+import {App} from '../../shared/app.model';
+import {Category} from '../category.model';
+import {LinuxStoreApiService} from '../../linux-store-api.service';
+import {MAT_DIALOG_DATA, MatDialog} from '@angular/material';
 
 @Component({
   selector: 'store-app-details-extra-info',
@@ -19,11 +19,14 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   buildRepoUrl: string;
   buildRepoContributorsUrl: string;
   categoriesList: string;
+  hasLicense: boolean;
   license: string;
+  isProprietary: boolean;
   mainCategory: Category;
 
   constructor(
-    private linuxStoreApiService: LinuxStoreApiService
+    private linuxStoreApiService: LinuxStoreApiService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit() {
@@ -34,12 +37,15 @@ export class AppDetailsExtraInfoComponent implements OnInit {
       this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
 
       if (this.app.projectLicense) {
-
+        this.hasLicense = true;
         if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
-          this.license = 'Proprietary';
+          this.isProprietary = true;
         } else {
+          this.isProprietary = false;
           this.license = this.app.projectLicense;
         }
+      } else {
+        this.hasLicense = false;
       }
 
       if (this.app.categories) {
@@ -63,6 +69,34 @@ export class AppDetailsExtraInfoComponent implements OnInit {
 
   onDonate() {
     this.donate.emit(this.app);
+  }
+
+  onShowMoreLicenseInformationClick() {
+    this.dialog.open(AppDetailsExtraInfoLicenseModalComponent, {
+      width: '250px',
+      data: this.license
+    });
+  }
+
+}
+
+// @ts-ignore
+@Component({
+  selector: 'store-app-details-extra-info-license-modal',
+  templateUrl: 'app-details-extra-info-license-modal.component.html',
+})
+export class AppDetailsExtraInfoLicenseModalComponent {
+
+  licenses: string[];
+
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: string) {
+    data = data.toUpperCase();
+
+    const fields = data.split('AND');
+
+    this.licenses = fields;
+
   }
 
 }
