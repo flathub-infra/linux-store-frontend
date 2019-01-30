@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 import { App } from '../../shared/app.model';
 import { Category } from '../category.model';
@@ -12,6 +13,7 @@ import { LinuxStoreApiService } from '../../linux-store-api.service';
 export class AppDetailsExtraInfoComponent implements OnInit {
 
   @Input() app: App;
+  @Output('donate') donate: EventEmitter<App> = new EventEmitter<App>();
 
   flathubGithubUrl = 'https://github.com/flathub';
   buildRepoUrl: string;
@@ -57,6 +59,10 @@ export class AppDetailsExtraInfoComponent implements OnInit {
     if (tempCategory) {
       this.mainCategory = tempCategory;
     }
+  }
+
+  onDonate() {
+    this.donate.emit(this.app);
   }
 
 }

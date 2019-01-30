@@ -4,7 +4,7 @@
             <store-app-details-main [app]="app" (install)="onInstall(app)"></store-app-details-main>
             <store-app-details-description [app]="app"></store-app-details-description>
             <hr class="app-details-hr">
-            <store-app-details-extra-info [app]="app"></store-app-details-extra-info>
+            <store-app-details-extra-info [app]="app" (donate)="onDonate(app)"></store-app-details-extra-info>
             <hr class="app-details-hr">
             <store-app-details-install-instructions [app]="app"></store-app-details-install-instructions>
             <store-app-details-reviews></store-app-details-reviews>

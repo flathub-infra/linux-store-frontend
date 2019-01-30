@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ElementRef, ViewChild } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, NavigationEnd } from '@angular/router';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Title, Meta } from '@angular/platform-browser';
+import { ViewChild } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { BreakpointObserver } from '@angular/cdk/layout';
+import { SeoService } from '../../seo.service';
 
 import { App } from '../../shared/app.model';
 import { Collection } from '../../shared/collection.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
 import { Category } from '../../shared/category.model';
-import { debug } from 'util';
 
 @Component({
   selector: 'linux-store-app-list',
@@ -18,6 +17,8 @@ import { debug } from 'util';
 export class AppListComponent implements OnInit {
 
   @ViewChild('drawer') drawer;
+
+  scrollPosition: [number, number];
 
   apps: App[];
   categories: Category[];
@@ -36,16 +37,11 @@ export class AppListComponent implements OnInit {
     private route: ActivatedRoute,
     private breakpointObserver: BreakpointObserver,
     private linuxStoreApiService: LinuxStoreApiService,
-    private titleService: Title,
-    private metaService: Meta) {
-
-    this.titleService.setTitle("Applications | Flathub");
-    this.metaService.updateTag({ name: 'description', content: 'Browse and install popular linux applications and games with just one click' });
-    this.metaService.updateTag({ name: 'keywords', content: 'popular,linux,apps,games,audio,video,developer tools,graphics,photography,communication,news,productivity,science,settings,utilities' });
-
+    private seoService: SeoService) {
   }
 
   ngOnInit() {
+    
     this.getCategories();
     this.getFeaturedCollections();
 
@@ -59,13 +55,6 @@ export class AppListComponent implements OnInit {
         }
       }
     );
-
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 0);
-    });
   }
 
   isSmallScreen(): boolean {
@@ -86,6 +75,15 @@ export class AppListComponent implements OnInit {
     return title;
   }
 
+
+  getFlathubMetaImage(): string {
+
+    const imageUrl: string = window.location.protocol + '//' + window.location.hostname + ':' +
+      window.location.port + '/assets/themes/flathub/flathub-screenshot.png'
+
+    return imageUrl;
+  }
+
   getCategories(): void {
     this.linuxStoreApiService.getCategories()
       .subscribe(categories => { this.categories = categories; });
@@ -99,6 +97,7 @@ export class AppListComponent implements OnInit {
   }
 
   showAppsByParams() {
+
     if (this.paramSearchKeyword) {
       this.showAppsSearchKeyword(this.paramSearchKeyword);
       this.showDefaultInfo = false;
@@ -110,7 +109,12 @@ export class AppListComponent implements OnInit {
       this.showDefaultInfo = false;
     } else {
       this.showDefaultInfo = true;
+      this.seoService.setPageMetadata('Applications—Linux Apps on Flathub',
+        'Browse applications for Linux on Flathub: Popular Apps and Games, Editor\'s picks, Audio & Video, ' +
+        'Developer Tools, Education, Games, Graphics & Photography, Communication & News, Productivity, Science, Settings, Utilities, ...',
+        this.getFlathubMetaImage());
     }
+
   }
 
   showAppsSearchKeyword(searchKeyword: string): void {
@@ -118,30 +122,53 @@ export class AppListComponent implements OnInit {
     searchCollection.id = 'search';
     searchCollection.name = 'Search';
     searchCollection.shortname = 'Search';
-    searchCollection.summary = `Search apps with keyword ${searchKeyword}`;
+    searchCollection.summary = 'Search apps by keyword';
 
     this.selectedCollection = searchCollection;
+
+    this.seoService.setPageMetadata('Search results—Linux Apps on Flathub',
+      'Search applications published on Flathub', this.getFlathubMetaImage());
 
     this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
       .subscribe(apps => { this.apps = apps; });
   }
 
   showAppsByCollectionId(collectionId: string): void {
+
     this.linuxStoreApiService.getCollection(collectionId)
       .subscribe(collection => { this.selectedCollection = collection; });
+
+    if (this.selectedCollection) {
+      this.seoService.setPageMetadata(this.selectedCollection.name + '—Linux Apps on Flathub',
+        'Find ' + this.selectedCollection.name + ' for Linux on Flathub', this.getFlathubMetaImage());
+    }
 
     this.linuxStoreApiService.getAppsByCollectionId(collectionId)
       .subscribe(apps => { this.apps = apps; });
   }
 
   showAllApps(): void {
+
+    this.seoService.setPageMetadata('All applications—Linux Apps on Flathub',
+      'Find all applications for Linux on Flathub', this.getFlathubMetaImage());
+
     this.linuxStoreApiService.getApps()
       .subscribe(apps => { this.apps = apps; });
   }
 
   showAppsByCategoryId(categoryId: string): void {
+
     this.linuxStoreApiService.getCategory(categoryId)
       .subscribe(category => { this.selectedCategory = category; });
+
+    if (this.selectedCategory) {
+      this.seoService.setPageMetadata(this.selectedCategory.name + '—Linux Apps on Flathub',
+        'Find ' + this.selectedCategory.name + ' Apps for Linux on Flathub', this.getFlathubMetaImage());
+    }
+    else if (categoryId = 'All') {
+      this.seoService.setPageMetadata('All applications—Linux Apps on Flathub',
+        'Find all applications for Linux on Flathub', this.getFlathubMetaImage());
+    }
 
     this.linuxStoreApiService.getAppsByCategory(categoryId)
       .subscribe(apps => { this.apps = apps; });

@@ -3,11 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Flathub - An app store and build service for Linux</title>
-  <meta name="description" content="Flathub is the home of hundreds of apps and games which can be easily installed on any Linux distribution. Enjoy GIMP, LibreOffice, VLC, Spotify and many more!">
-  <meta name="keywords" content="install, flatpak, applications, games, linux, ubuntu, fedora, GIMP, Spotify, STEAM, VLC, Skype, Slack">
+  <title>Flathub—An app store and build service for Linux</title>
+  <meta name="description" content="Find and install hundreds of apps and games for Linux. Enjoy GIMP, GNU Octave, Spotify, Steam and many more!">
   <base href="/">
-  <meta name="google-site-verification" content="tInyFCbcAPs2Ad9olBkmUCTWLYNaZSnPnEz4L-YEzII" />
+  <meta name="google-site-verification" content="WwoGytTDYr6N8_bgtW5H2I7J5--AVpSIAnKDEQSTL98" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   <link rel="icon" type="image/png" href="/assets/themes/flathub/favicon-32x32.png">
@@ -23,16 +22,20 @@
 
     app-root>.loading {
       margin: 0 auto;
-      text-align: center;
       display: block;
       position: relative;
       top: 20vh;
-      left: calc(50% - 70px);
+      text-align: center;
+    }
+
+    app-root>.loading>* {
+      margin: auto;
     }
 
     app-root>.loading .mat-progress-spinner {
       display: block;
       position: relative;
+      animation: mat-progress-spinner-linear-rotate 2s linear infinite;
     }
 
     app-root>.loading .mat-progress-spinner svg {
@@ -54,13 +57,22 @@
     app-root>.loading .mat-progress-spinner circle,
     .mat-spinner circle {
       stroke: #4a86cf;
-      ;
     }
 
     app-root>.loading .mat-progress-spinner circle {
       fill: transparent;
       transform-origin: center;
       transition: stroke-dashoffset 225ms linear
+    }
+
+    @keyframes mat-progress-spinner-linear-rotate {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
     }
 
     @keyframes mat-progress-spinner-stroke-rotate-100 {
@@ -100,6 +112,7 @@
         stroke-dashoffset: 268.60617px;
         transform: rotate(180deg)
       }
+
       62.5% {
         stroke-dashoffset: 56.54867px;
         transform: rotate(180deg)
@@ -132,9 +145,6 @@
 
     app-root .text-container {
       display: block;
-      position: relative;
-      width: 100px;
-      height: 100px;
       color: #4a86cf;
       font-family: "Source Sans Pro", "Source Sans", "Roboto", "Helvetica", "Arial", sans-serif;
       font-size: 14px;
@@ -189,14 +199,14 @@
     <div class="topnav" id="myTopnav">
       <a href="/" class="store-button" aria-label="Flathub">
         <span class="store-button-wrapper">
-          <img src="/assets/themes/flathub/flathub-logo-toolbar-beta.svg">
+          <img src="/assets/themes/flathub/flathub-logo-toolbar.svg">
         </span>
       </a>
     </div>
     <div class="loading">
-      <mat-spinner class="mat-spinner mat-progress-spinner mat-primary mat-progress-spinner-indeterminate-animation" role="progressbar"
-        style="width: 100px; height: 100px;">
-        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="width: 100px; height: 100px;" viewBox="0 0 100 100">
+      <mat-spinner class="mat-spinner mat-progress-spinner mat-primary mat-progress-spinner-indeterminate-animation"
+        role="progressbar" style="width: 50px; height: 50px;">
+        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="width: 50px; height: 50px;" viewBox="0 0 100 100">
           <circle cx="50%" cy="50%" r="45" style="animation-name: mat-progress-spinner-stroke-rotate-100; stroke-dasharray: 282.743px; stroke-width: 10%;"></circle>
         </svg>
       </mat-spinner>
@@ -208,7 +218,7 @@
   <app-root></app-root>
 
   <!-- Notify users with outdated browsers -->
-  <script> 
+  <script>
     var $buoop = { required: { e: -4, f: -3, o: -3, s: -1, c: -3 }, insecure: true, api: 2018.05 };
     function $buo_f() {
       var e = document.createElement("script");

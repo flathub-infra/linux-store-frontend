@@ -1,7 +1,7 @@
 <div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start"
   fxLayoutGap="15px">
   <a fxFlex="nogrow" *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">Website</a>
-  <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}">Donate</a>
+  <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}" (click)="onDonate()">Donate</a>
   <a fxFlex="nogrow" *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">Help</a>
   <a fxFlex="nogrow" *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">Issues</a>
   <a fxFlex="nogrow" *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">Translations</a>

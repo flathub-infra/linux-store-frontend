@@ -1,7 +1,7 @@
 <div>
-  <gallery [items]="items"
+  <gallery *ngIf="items" class="gallery-mobile mat-elevation-z1" ngClass.gt-sm="gallery-desktop" [items]="items"
     [counter]="false"
-    [disableThumb]="items.length < 2"
+    [thumb]="this.showThumbnails"
     [thumbWidth]="90"
     [thumbHeight]="70"></gallery>
   <div *ngIf="app" class="app-details-description" [innerHTML]="app.description"></div>

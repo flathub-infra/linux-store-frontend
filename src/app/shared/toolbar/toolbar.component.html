@@ -1,73 +1,40 @@
-<mat-toolbar class="fixed-toolbar" color="primary">
-
-
-
-  <div fxHide fxShow.gt-sm class="toolbar-content">
-
-    <a class="store-logo-button" routerLink="/" aria-label="Flathub">
-      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.svg" alt="flathub">
-    </a>
-
-    <div><a mat-button routerLink="apps">APPLICATIONS</a></div>
-
-
-    <span class="flex-fill-remaining-space"></span>
-
-
-    <div class="search-box-container">
-      <mat-icon class="search-box-icon">search</mat-icon>
-      <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
-      />
-    </div>
-
+<mat-toolbar color="primary">
+  <div class="toolbar-content">
     <div>
-    <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish an app in Flathub">
-      PUBLISH
-    </a>
-    <a mat-button routerLink="about">ABOUT</a>
-  </div>
-  </div>
-
-  <div fxShow fxHide.gt-sm class="toolbar-content">
-
-    <button *ngIf="!showSearchInput" mat-icon-button [matMenuTriggerFor]="menu" xPosition="after">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-
-    <mat-menu #menu="matMenu">
-
-      <button mat-menu-item routerLink="apps">
-        <span>APPLICATIONS</span>
-      </button>
-      <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission" aria-label="Publish your app in flathub">PUBLISH
+      <a class="store-logo-button" routerLink="/" aria-label="Flathub" mat-button>
+        <img src="../../../assets/themes/flathub/flathub-logo-toolbar.svg" alt="flathub">
       </a>
-      <button mat-menu-item routerLink="about">
-        <span>ABOUT</span>
-      </button>
-
-    </mat-menu>
-
-    <a *ngIf="!showSearchInput" mat-button class="store-logo-button flex-fill-remaining-space" routerLink="/" aria-label="Flathub">
-      <img class="store-logo" src="../../../assets/themes/flathub/flathub-logo-toolbar-beta.svg" alt="flathub">
-    </a>
-
-    <div *ngIf="showSearchInput" class="search-box-container flex-fill-remaining-space">
-      <mat-icon class="search-box-icon">search</mat-icon>
-
-      <input #searchBox id="search-box" class="search-box-mobile" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)"
-      />
     </div>
 
-    <button *ngIf="showSearchInput" mat-icon-button (click)="onCloseSearch()">
-      <mat-icon>close</mat-icon>
-    </button>
+    <div class="flex-fill-remaining-space">
+      <div class="search-box-container">
+        <div [class]="'search-form '+(showSearchInput? 'active': '')">
+          <mat-icon class="search-box-icon show-md" (click)="onTogleSearch()">arrow_back</mat-icon>
+          <mat-icon class="search-box-icon hide-md" (click)="onSearch(searchBox.value)">search</mat-icon>
+          <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)" />
+        </div>
+      </div>
+    </div>
 
-    <button *ngIf="!showSearchInput" mat-icon-button (click)="onTogleSearch()">
-      <mat-icon>search</mat-icon>
-    </button>
+    <div class="hide-md toolbar-nav">
+      <button mat-button routerLink="apps">APPLICATIONS</button>
+      <a mat-button href="https://github.com/flathub/flathub/wiki/App-Submission">PUBLISH</a>
+      <button mat-button routerLink="about">ABOUT</button>
+    </div>
 
-
-
+    <div class="show-md">
+      <button mat-icon-button (click)="onTogleSearch()">
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" overlapTrigger="false">
+        <button mat-menu-item routerLink="apps">APPLICATIONS</button>
+        <a mat-menu-item href="https://github.com/flathub/flathub/wiki/App-Submission">PUBLISH</a>
+        <button mat-menu-item routerLink="about">ABOUT</button>
+      </mat-menu>
+    </div>
   </div>
 
 </mat-toolbar>
