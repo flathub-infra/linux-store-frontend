@@ -9,6 +9,7 @@ import { SeoService } from '../../seo.service';
 export class BadgesComponent implements OnInit {
   
   badgeExampleCode: string = "<a href='https://flathub.org/apps/details/org.gimp.GIMP'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>";
+  badgeExampleCodeMoinMoin: string = "[[https://flathub.org/apps/details/org.gimp.GIMP|{{https://flathub.org/assets/badges/flathub-badge-en.png|Download on Flathub|width=240,align=middle}}]]";
   
   constructor(
     private seoService: SeoService) {
