@@ -1,0 +1,35 @@
+<div fxLayout="column" fxLayoutAlign="start stretch">
+
+  <!-- main content -->
+  <section fxFlex class="store-content-container-narrow" ngClass.gt-sm="section-desktop">
+    <h1>Flathub RSS feeds</h1>
+    <p>You can now subscribe to our RSS feeds to get the latest Flathub goodies in your feed reader!</p>
+    <h3>New Apps</h3>
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+      <div fxFlex="70">
+        <p>Applicacions published in Flathub in the last 30 days</p>
+      </div>
+      <div fxFlex="5">
+      </div>
+      <div fxFlex="15">
+        <a mat-raised-button color="primary" href='https://flathub.org/api/v1/apps/collection/new/feed'>
+          <mat-icon>rss_feed</mat-icon> Subscribe
+        </a>
+      </div>
+    </div>
+    <h3>New & Updated Apps</h3>
+    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start stretch">
+      <div fxFlex="70">
+        <p>Applicacions published or updated in Flathub in the last 7 days</p>
+      </div>
+      <div fxFlex="5">
+      </div>
+      <div fxFlex="15">
+        <a mat-raised-button color="primary" href='https://flathub.org/api/v1/apps/collection/recently-updated/feed'>
+          <mat-icon>rss_feed</mat-icon> Subscribe
+        </a>
+      </div>
+    </div>
+    <h6 class="hint">Do you need an RSS application? We have excellent ones in Flathub. Find them <a href="https://flathub.org/apps/search/rss">here</a></h6>
+  </section>
+</div>

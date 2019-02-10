@@ -33,6 +33,7 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.component';
 import { PreComponent } from './shared/pre/pre.component';
 import { BadgesComponent } from './pages/badges/badges.component';
+import { FeedsComponent } from './pages/feeds/feeds.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { BadgesComponent } from './pages/badges/badges.component';
     PrivacyComponent,
     CodeOfConductComponent,
     PreComponent,
-    BadgesComponent
+    BadgesComponent,
+    FeedsComponent
   ],
   imports: [
     BrowserModule,
