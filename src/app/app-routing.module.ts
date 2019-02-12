@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import {FeedsComponent} from './pages/feeds/feeds.component';
+import { FeedsComponent } from './pages/feeds/feeds.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { BadgesComponent } from './pages/badges/badges.component';
