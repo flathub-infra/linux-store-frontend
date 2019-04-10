@@ -36,8 +36,14 @@
 <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">License</div>
-    <div>
-      <span class="app-info-item-value app-info-item-value-text">{{(this.license || '-')}}</span>
+    <div *ngIf="hasLicense">
+      <button mat-flat-button color="warn" *ngIf="isProprietary">Proprietary</button>
+      <button mat-flat-button style="background-color: #4CAF50" *ngIf="!isProprietary"
+              matTooltip="Show more information" (click)="onShowMoreLicenseInformationClick()">Free</button>
+    </div>
+
+    <div *ngIf="!hasLicense">
+      <span class="app-info-item-value app-info-item-value-text">-</span>
     </div>
   </div>
 
