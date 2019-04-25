@@ -64,12 +64,12 @@ Steps to run this app locally:
 
     # Increase the inotify watches limit to fix change detection
     # problems with Angular
-    fs.inotify.max_user_watches=16384
+    fs.inotify.max_user_watches=65536
 
   sudo sysctl -p --system
 
   cat /proc/sys/fs/inotify/max_user_watches
-    16384
+    65536
   ```
 
 
