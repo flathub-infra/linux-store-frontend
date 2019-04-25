@@ -1,7 +1,8 @@
-<div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start"
-  fxLayoutGap="15px">
+<div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row"
+  fxLayoutAlign.gt-sm="start start" fxLayoutGap="15px">
   <a fxFlex="nogrow" *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">Website</a>
-  <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}" (click)="onDonate()">Donate</a>
+  <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}"
+    (click)="onDonate()">Donate</a>
   <a fxFlex="nogrow" *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">Help</a>
   <a fxFlex="nogrow" *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">Issues</a>
   <a fxFlex="nogrow" *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">Translations</a>
@@ -13,7 +14,8 @@
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Updated</div>
     <div>
-      <span class="app-info-item-value app-info-item-value-text">{{(app.currentReleaseDate | date: 'longDate') || '-'}} </span>
+      <span class="app-info-item-value app-info-item-value-text">{{(app.currentReleaseDate | date: 'longDate') || '-'}}
+      </span>
     </div>
   </div>
 
@@ -27,7 +29,8 @@
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Category</div>
     <div>
-      <span *ngIf="this.mainCategory" class="app-info-item-value app-info-item-value-text">{{(this.mainCategory.name || '-')}}</span>
+      <span *ngIf="this.mainCategory"
+        class="app-info-item-value app-info-item-value-text">{{(this.mainCategory.name || '-')}}</span>
       <span *ngIf="!this.mainCategory" class="app-info-item-value app-info-item-value-text">-</span>
     </div>
   </div>
@@ -36,14 +39,11 @@
 <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">License</div>
-    <div *ngIf="hasLicense">
-      <button mat-flat-button color="warn" *ngIf="isProprietary">Proprietary</button>
-      <button mat-flat-button style="background-color: #4CAF50" *ngIf="!isProprietary"
-              matTooltip="Show more information" (click)="onShowMoreLicenseInformationClick()">Free</button>
+    <div *ngIf="!showLicenseDialog">
+      <span class="app-info-item-value app-info-item-value-text">{{(this.license || '-')}}</span>
     </div>
-
-    <div *ngIf="!hasLicense">
-      <span class="app-info-item-value app-info-item-value-text">-</span>
+    <div class="store-link-container" *ngIf="showLicenseDialog">
+      <a class="app-info-item-value app-info-item-value-link" matTooltip="Show list of licenses" (click)="onShowMoreLicenseInformationClick()">See details</a>
     </div>
   </div>
 
@@ -57,7 +57,8 @@
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Publisher</div>
     <div class="store-link-container">
-      <a *ngIf="this.buildRepoContributorsUrl" class="app-info-item-value" href="{{this.buildRepoContributorsUrl}}">Flathub maintainers</a>
+      <a *ngIf="this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-link"
+        href="{{this.buildRepoContributorsUrl}}">Flathub maintainers</a>
       <span *ngIf="!this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-text">-</span>
     </div>
   </div>

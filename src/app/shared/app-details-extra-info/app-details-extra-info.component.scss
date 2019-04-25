@@ -21,6 +21,21 @@
   color: black;
 }
 
+.app-info-item-value-link {
+      color: #4a86cf;
+      transition: color .35s;
+      text-decoration: none;
+      background-color: transparent; 
+}
+
+.app-info-item-value-link:active, a:visited {
+    color: #4a86cf;
+}
+
+.app-info-item-value-link:hover {
+  text-decoration: underline;
+}
+
 .button-row {
   display: flex;
   align-items: center;

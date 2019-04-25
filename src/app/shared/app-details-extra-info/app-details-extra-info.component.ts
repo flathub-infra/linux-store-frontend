@@ -19,9 +19,8 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   buildRepoUrl: string;
   buildRepoContributorsUrl: string;
   categoriesList: string;
-  hasLicense: boolean;
+  showLicenseDialog: boolean;
   license: string;
-  isProprietary: boolean;
   mainCategory: Category;
 
   constructor(
@@ -37,15 +36,17 @@ export class AppDetailsExtraInfoComponent implements OnInit {
       this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
 
       if (this.app.projectLicense) {
-        this.hasLicense = true;
+
         if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
-          this.isProprietary = true;
+          this.license = 'Proprietary';
+          this.showLicenseDialog = false;
         } else {
-          this.isProprietary = false;
           this.license = this.app.projectLicense;
+          this.showLicenseDialog = this.app.projectLicense.length > 30;
         }
+
       } else {
-        this.hasLicense = false;
+        this.license = '-'
       }
 
       if (this.app.categories) {
