@@ -43,7 +43,7 @@
       <span class="app-info-item-value app-info-item-value-text">{{(this.license || '-')}}</span>
     </div>
     <div class="store-link-container" *ngIf="showLicenseDialog">
-      <a class="app-info-item-value app-info-item-value-link" matTooltip="Show list of licenses" (click)="onShowMoreLicenseInformationClick()">See details</a>
+      <a class="app-info-item-value app-info-item-value-link" (click)="onShowMoreLicenseInformationClick()">See details</a>
     </div>
   </div>
 
