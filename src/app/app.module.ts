@@ -20,7 +20,10 @@ import { SeoService } from './seo.service';
 import { AppSidebarComponent } from './shared/app-sidebar/app-sidebar.component';
 import { AppDetailsMainComponent } from './shared/app-details-main/app-details-main.component';
 import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
-import { AppDetailsExtraInfoComponent } from './shared/app-details-extra-info/app-details-extra-info.component';
+import {
+  AppDetailsExtraInfoComponent,
+  AppDetailsExtraInfoLicenseModalComponent
+} from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AppDetailsInstallInstructionsComponent } from './shared/app-details-install-instructions/app-details-install-instructions.component';
@@ -46,6 +49,7 @@ import { FeedsComponent } from './pages/feeds/feeds.component';
     AppDetailsMainComponent,
     AppDetailsDescriptionComponent,
     AppDetailsExtraInfoComponent,
+    AppDetailsExtraInfoLicenseModalComponent,
     AppDetailsReviewsComponent,
     HomeComponent,
     AppDetailsInstallInstructionsComponent,
@@ -59,6 +63,9 @@ import { FeedsComponent } from './pages/feeds/feeds.component';
     PreComponent,
     BadgesComponent,
     FeedsComponent
+  ],
+  entryComponents: [
+    AppDetailsExtraInfoLicenseModalComponent
   ],
   imports: [
     BrowserModule,
