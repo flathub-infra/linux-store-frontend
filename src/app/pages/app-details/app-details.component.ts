@@ -10,7 +10,6 @@ import { SeoService } from '../../seo.service';
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
-import { GoogleAnalyticsEventsService } from '../../google-analytics-events.service';
 
 @Component({
   selector: 'store-app-details',
@@ -31,7 +30,6 @@ export class AppDetailsComponent implements OnInit {
 
   constructor(
     private linuxStoreApiService: LinuxStoreApiService,
-    private googleAnalyticsEventsService: GoogleAnalyticsEventsService,
     private router: Router,
     private route: ActivatedRoute,
     private viewportScroller: ViewportScroller,
@@ -111,13 +109,4 @@ export class AppDetailsComponent implements OnInit {
   isSelected(review: Review): boolean {
     return review.app_id === this.selectedReview.app_id;
   }
-
-  onInstall(app: App) {
-    this.googleAnalyticsEventsService.emitEvent('App', 'Install', app.flatpakAppId);
-  }
-
-  onDonate(app: App) {
-    this.googleAnalyticsEventsService.emitEvent('App', 'Donate', app.flatpakAppId);
-  }
-
 }

@@ -15,7 +15,6 @@ import { AppListComponent } from './pages/app-list/app-list.component';
 import { AppDetailsComponent } from './pages/app-details/app-details.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LinuxStoreApiService } from './linux-store-api.service';
-import { GoogleAnalyticsEventsService } from './google-analytics-events.service';
 import { SeoService } from './seo.service';
 import { AppSidebarComponent } from './shared/app-sidebar/app-sidebar.component';
 import { AppDetailsMainComponent } from './shared/app-details-main/app-details-main.component';
@@ -80,7 +79,6 @@ import { FeedsComponent } from './pages/feeds/feeds.component';
   providers: [
     Title,
     LinuxStoreApiService,
-    GoogleAnalyticsEventsService,
     SeoService
   ],
   bootstrap: [AppComponent]
