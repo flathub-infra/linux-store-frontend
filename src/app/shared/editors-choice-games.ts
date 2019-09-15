@@ -693,7 +693,7 @@ export const EDITORSCHOICEGAMES: App[] = [
 }
 ,
 {
-  "flatpakAppId": "org.gnome.chess",
+  "flatpakAppId": "org.gnome.Chess",
   "name": "GNOME Chess",
   "summary": "Play the classic two-player board game of chess",
   "description": "",
