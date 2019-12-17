@@ -1,4 +1,4 @@
-# Analytics report: most downloaded apps in the website from 20180701 to 20180927 
+# Analytics report: most downloaded apps in the website from 20180701 to 20180927
 org.gimp.GIMP
 org.octave.Octave
 com.spotify.Client
@@ -144,7 +144,7 @@ org.gnome.Books
 org.gnome.Photos
 com.albiononline.AlbionOnline
 com.github.z.Cumulonimbus
-org.gnome.chess
+org.gnome.Chess
 com.github.donadigo.appeditor
 org.flatpak.qtdemo
 net.sourceforge.mars-game

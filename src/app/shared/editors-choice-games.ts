@@ -706,7 +706,7 @@ export const EDITORSCHOICEGAMES: App[] = [
   "translateUrl": "",
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.chess.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.chess.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.chess.flatpakref",
+  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Chess.flatpakref",
   "currentReleaseVersion": "",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
