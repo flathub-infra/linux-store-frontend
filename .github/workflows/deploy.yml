@@ -30,6 +30,6 @@ jobs:
         ssh-keyscan webapps.flathub.org >> ~/.ssh/known_hosts
         eval "$(ssh-agent -s)"
         ssh-add - <<< "${DEPLOY_KEY}"
-        rsync -rP --delete dist/ deploy@webapps.flathub.org:flathub.org/
+        rsync -rP --delete dist/ deploy@webapps.flathub.org:
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
