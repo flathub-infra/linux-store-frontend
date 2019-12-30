@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-import { GoogleAnalyticsEventsService } from './google-analytics-events.service';
+import { AnalyticsService } from './analytics.service';
 
 declare let ga: Function;
 
@@ -11,16 +11,19 @@ declare let ga: Function;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   showShadow = false;
 
   constructor(
     public router: Router,
-    private googleAnalyticsEventsService: GoogleAnalyticsEventsService
-  ) {
+    private analyticsService: AnalyticsService) { 
+
+    //Init Analytics Service
+    analyticsService.startTracking();
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.googleAnalyticsEventsService.emitPageView(event.urlAfterRedirects);
+        this.analyticsService.emitPageView(event.urlAfterRedirects); 
       }
     });
   }
@@ -28,7 +31,7 @@ export class AppComponent {
   onSearch(searchTerm: string) {
     if (typeof searchTerm === 'string' && searchTerm && searchTerm.trim() && searchTerm.trim().length > 2) {
       // Track search event
-      this.googleAnalyticsEventsService.emitEvent('Search', 'SearchFromToolbar', searchTerm);
+      this.analyticsService.emitEvent('Search', 'SearchFromToolbar', searchTerm);
       this.router.navigate(['apps/search', searchTerm]);
     }
   }
