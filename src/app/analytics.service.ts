@@ -1,9 +1,24 @@
 import { Injectable } from '@angular/core';
+import { Angulartics2 } from 'angulartics2';
+import { Angulartics2Piwik} from 'angulartics2/piwik';
 
 declare let ga: Function;
 
+/**
+ * @description
+ *
+ * Provides tracking of pageviews and events in Google Analytics and Matomo
+ *
+ *
+ */
 @Injectable()
-export class GoogleAnalyticsEventsService {
+export class AnalyticsService {
+
+  constructor(private angulartics2: Angulartics2, private angulartics2Piwik: Angulartics2Piwik) {}
+
+  public startTracking(){
+        this.angulartics2Piwik.startTracking();
+  }
 
   public emitPageView(url: string) {
 
@@ -11,6 +26,8 @@ export class GoogleAnalyticsEventsService {
       ga('set', 'page', url);
       ga('send', 'pageview');
     }
+
+    this.angulartics2Piwik.pageTrack(url);
 
   }
 
@@ -28,6 +45,14 @@ export class GoogleAnalyticsEventsService {
         eventValue: eventValue
       });
     }
+
+    this.angulartics2.eventTrack.next({ 
+      action: eventAction,
+      properties: { 
+        category: eventCategory, 
+        label: eventLabel,
+      },
+    });
 
   }
 
