@@ -12,6 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:docker": "npm run version && ng build --prod && sudo docker build -t jgarciao/linux-store-frontend:latest .",
+    "build:podman": "npm run version && ng build --prod && podman build -t jgarciao/linux-store-frontend:latest .",
     "version": "node scripts/version.js"
   },
   "private": true,
