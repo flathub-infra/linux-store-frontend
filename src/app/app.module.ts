@@ -41,6 +41,7 @@ import { CodeOfConductComponent } from './pages/code-of-conduct/code-of-conduct.
 import { PreComponent } from './shared/pre/pre.component';
 import { BadgesComponent } from './pages/badges/badges.component';
 import { FeedsComponent } from './pages/feeds/feeds.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { FeedsComponent } from './pages/feeds/feeds.component';
     CodeOfConductComponent,
     PreComponent,
     BadgesComponent,
-    FeedsComponent
+    FeedsComponent,
+    NotFoundComponent,
   ],
   entryComponents: [
     AppDetailsExtraInfoLicenseModalComponent
