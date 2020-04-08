@@ -1,0 +1,35 @@
+name: "Build and deploy"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - run: npm ci
+    - run: npm run build:prod
+
+    - name: Deploy
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan webapps.flathub.org >> ~/.ssh/known_hosts
+        eval "$(ssh-agent -s)"
+        ssh-add - <<< "${DEPLOY_KEY}"
+        rsync -rP --delete dist/ deploy@webapps.flathub.org:
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
