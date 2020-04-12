@@ -2,6 +2,9 @@
 DESTFILENAME=../src/sitemap.txt
 BASEURL=https://flathub.org
 
+command -v curl >/dev/null 2>&1 || { echo >&2 "This script requires curl but it's not installed.  Aborting."; exit 1; }
+command -v jq >/dev/null 2>&1 || { echo >&2 "This script requires jq but it's not installed.  Aborting."; exit 1; }
+
 echo Updating $DESTFILENAME
 
 echo $BASEURL > $DESTFILENAME
