@@ -32,6 +32,8 @@ export class LinuxStoreApiService {
   private appDetailsCache: HashTable<App> = {};
   private performingRequest: HashTable<boolean> = {};
 
+  private editorPicksAreShuffled: boolean = false;
+
   constructor(private http: HttpClient) { }
 
   getApp(flatpakAppId: string): Observable<App> {
@@ -114,7 +116,26 @@ export class LinuxStoreApiService {
     }
   }
 
+
+  /* Randomize array in-place using Durstenfeld shuffle algorithm */
+  /* Source: https://stackoverflow.com/a/12646864 */
+  shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+  }
+
   getAppsByCollectionId(collectionId: string): Observable<App[]> {
+
+    if(!this.editorPicksAreShuffled){
+      this.shuffleArray(EDITORSCHOICEAPPS);
+      this.shuffleArray(EDITORSCHOICEGAMES);
+      this.editorPicksAreShuffled = true;
+    }
+    
     if (collectionId === 'recently-updated') {
       return this.getRecentlyUpdatedApps();
     } else if (collectionId === 'popular') {
