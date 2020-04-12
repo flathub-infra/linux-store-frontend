@@ -24,40 +24,53 @@ Steps to run this app locally:
   * Install nvm & node requirements for Debian/Ubuntu:
     ```
     apt-get install curl build-essential libssl-dev libsass-dev
-    apt-get install libsass-dev
+    ```
+  * Install nvm & node requirements for Fedora:
+    ```
+    dnf install make automake gcc gcc-c++ openssl-devel libsass libsass-devel
     ```
   * Install nvm & node requirements for Fedora Silverblue:
     ```
-    rpm-ostree install make automake gcc gcc-c++ openssl-devel
-    rpm-ostree install libsass libsass-devel
+    rpm-ostree install make automake gcc gcc-c++ openssl-devel libsass libsass-devel
     ```
   * Install nvm:
     ```
-    # Install nvm
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-    source .bashrc
-
-    # I've run the following commands to fix this error message in Fedora Silverblue ...
-	#    nvm is not compatible with the npm config "prefix" option: currently set to "/var/home/jorge/.nvm/versions/node/v10.13.0"
-	#    Run `nvm use --delete-prefix v10.13.0` to unset it.
-    nvm use --delete-prefix v10.13.0
-	npm config delete prefix
-	npm config set prefix $NVM_DIR/versions/node/v10.13.0
-
-    # Set default node version
-	nvm use v10.13.0
-	nvm alias default v10.13.0
-
-	# Check installation
-	nvm ls
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+    source "$HOME"/.bashrc
     ```
-* Update npm to version 6 (recommended)
-  * ```npm i -g npm```
-* Install [angular-cli:](https://github.com/angular/angular-cli) 
+  * Install Node.js LTS (12.16.X 'Erbium' at this time)
+    ```
+    nvm install --lts=erbium   
+
+    # In Fedora Silverblue I found this error and had to run the suggested commands:
+    #    nvm is not compatible with the npm config "prefix" option: currently set to "/var/home/jorge/.nvm/versions/node/v12.16.2"
+    #    Run `nvm use --delete-prefix v12.16.2` to unset it.
+    nvm use --delete-prefix v12.16.2
+    npm config delete prefix
+    npm config set prefix $NVM_DIR/versions/node/v12.16.2
+
+    # Check installation
+    nvm ls
+      ->     v12.16.2
+      default -> lts/erbium (-> v12.16.2)
+      node -> stable (-> v12.16.2) (default)
+      stable -> 12.16 (-> v12.16.2) (default)
+      iojs -> N/A (default)
+      unstable -> N/A (default)
+      lts/* -> lts/erbium (-> v12.16.2)
+      lts/argon -> v4.9.1 (-> N/A)
+      lts/boron -> v6.17.1 (-> N/A)
+      lts/carbon -> v8.17.0 (-> N/A)
+      lts/dubnium -> v10.20.0 (-> N/A)
+      lts/erbium -> v12.16.2
+    ```
+
+* Install [angular-cli:](https://cli.angular.io/) 
   * ```npm install -g @angular/cli```
-* Install deps:
+* Go to the root of this project and install the javascript dependencies:
   * ```npm install ```
-* Run `npm start` for a dev server calling the remote linux-store-backend. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Start the webapp running the command `npm start`. This will compile the code and start a local dev server. Navigate to `http://localhost:4200/` to see the webapp running! 
+* The app will automatically reload if you change any of the source files.
 * If the app doesn't update automatically on every change in the code it might be because of [this issue related to the inotify limits](https://github.com/angular/angular-cli/issues/2356#issuecomment-278298550). I've done this to fix it in Fedora Silverblue:
   ```
   sudo vi /etc/sysctl.d/99-sysctl.conf
