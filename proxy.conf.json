@@ -5,8 +5,8 @@
     "secure": false
   },
   "/repo/appstream": {
-    "target": "http://45.55.104.129",
-    "_target": "https://flathub.org",
+    "_target": "http://45.55.104.129",
+    "target": "https://flathub.org",
     "_target": "http://localhost",
     "secure": false
   }
