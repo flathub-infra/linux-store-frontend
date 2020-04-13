@@ -1,3 +1,51 @@
+<a name="0.7.5"></a>
+# [0.7.5](https://github.com/jgarciao/linux-store-frontend/compare/0.7.4...0.7.5) (2020-04-13)
+
+### Features
+
+* Add Discourse link
+* Add Not Found page
+* Update build instructions at README
+* Add some apps to editor's choice apps
+* Randomize editor's choice lists (apps and games) when loading the webpage
+* Add quick hack to fix broken Publishers link for Firefox
+* Improve scripts
+* Updated Popular Apps and sitemap
+
+### Thank you!
+
+* Thanks to the awesome contributors that helped in this release:
+    *  @Eonfge, @IAmJahoo, @barthalion, @bilelmoussaoui
+
+<a name="0.7.4"></a>
+# [0.7.4](https://github.com/jgarciao/linux-store-frontend/compare/0.7.3...0.7.4) (2019-12-31)
+
+### Features
+
+* Track pageviews and events in GNOME's Matomo instance (in addition to Google Analytics)
+* Show the license when is not proprietary. If the value is too long show a modal
+* Optimize images losslessly using `oxipng -o6 --strip --zopfli`
+* Add System category
+* Replace org.gnome.chess for org.gnome.Chess is editor's choice games
+* Configure GitHub Actions
+* Set Publisher as "See details" instead of "Flathub maintainers"
+* Updated Popular Apps and sitemap
+
+### Thank you!
+
+* Thanks to the awesome contributors that helped in this release:
+    *   @barthalion, @Calinou, @Dafnik
+
+<a name="0.7.3"></a>
+# [0.7.3](https://github.com/jgarciao/linux-store-frontend/compare/0.7.2...0.7.3) (2019-02-12)
+
+### Features
+
+* CSS and typo fixes
+* Add instructions about how to publish flathub badge in MoinMoin wiki
+* Updated Popular Apps and sitemap
+
+
 <a name="0.7.2"></a>
 # [0.7.2](https://github.com/jgarciao/linux-store-frontend/compare/0.7.1...0.7.2) (2018-11-16)
 
