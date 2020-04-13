@@ -56,7 +56,10 @@
 
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Publisher</div>
-    <div class="store-link-container">
+    <div *ngIf="this.appIsPublishedByUpstream" class="store-link-container">
+      <span class="app-info-item-value app-info-item-value-text">{{this.publisherName}}</span>
+    </div>
+    <div *ngIf="!this.appIsPublishedByUpstream" class="store-link-container">
       <a *ngIf="this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-link"
         href="{{this.buildRepoContributorsUrl}}">See details</a>
       <span *ngIf="!this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-text">-</span>

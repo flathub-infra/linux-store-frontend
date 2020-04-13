@@ -22,6 +22,8 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   showLicenseDialog: boolean;
   license: string;
   mainCategory: Category;
+  appIsPublishedByUpstream: boolean = false;
+  publisherName: String = '';
 
   constructor(
     private linuxStoreApiService: LinuxStoreApiService,
@@ -31,6 +33,13 @@ export class AppDetailsExtraInfoComponent implements OnInit {
   ngOnInit() {
 
     if (this.app) {
+
+      //FIXME: quick hack until a better solution is developed for https://github.com/flathub/linux-store-frontend/issues/213
+      if (this.app.flatpakAppId === 'org.mozilla.firefox'){
+        this.appIsPublishedByUpstream = true;
+        this.app.developerName = 'Mozilla';
+        this.publisherName = 'Mozilla';
+      }
 
       this.buildRepoUrl = `${this.flathubGithubUrl}/${this.app.flatpakAppId}`;
       this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
