@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -78,8 +78,9 @@ const appRoutes: Routes = [
       {
         enableTracing: false, // <-- debugging purposes only
         scrollPositionRestoration: 'enabled',
-        //anchorScrolling: 'enabled',
-        scrollOffset: [0, 0] // [x, y]
+        // anchorScrolling: 'enabled',
+        scrollOffset: [0, 0], // [x, y],
+        preloadingStrategy: PreloadAllModules
       }
     )
   ],
