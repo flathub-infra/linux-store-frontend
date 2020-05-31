@@ -994,7 +994,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "downloadFlatpakRefUrl": "/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
   "currentReleaseVersion": "0.2.8",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Redesigned help panel homepage, LaTeX package documentation links, ...</p>\n",
+  "currentReleaseDescription": "<p>Redesigned help panel homepage, LaTeX package documentation links…</p>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
