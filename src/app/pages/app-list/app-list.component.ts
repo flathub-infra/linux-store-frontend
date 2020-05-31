@@ -111,7 +111,7 @@ export class AppListComponent implements OnInit {
       this.showDefaultInfo = true;
       this.seoService.setPageMetadata('Applications—Linux Apps on Flathub',
         'Browse applications for Linux on Flathub: Popular Apps and Games, Editor\'s picks, Audio & Video, ' +
-        'Developer Tools, Education, Games, Graphics & Photography, Communication & News, Productivity, Science, Settings, Utilities, ...',
+        'Developer Tools, Education, Games, Graphics & Photography, Communication & News, Productivity, Science, Settings, Utilities…',
         this.getFlathubMetaImage());
     }
 

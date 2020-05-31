@@ -53,7 +53,7 @@ export class AppDetailsComponent implements OnInit {
         descriptionWithOutMarkup = this.app.description.replace(/<[^>]+>/g, '');
 
         if (descriptionWithOutMarkup.length > 297) {
-          description = descriptionWithOutMarkup.substring(0, 297) + '...';
+          description = descriptionWithOutMarkup.substring(0, 297) + '…';
         }
         else {
           description = descriptionWithOutMarkup;
