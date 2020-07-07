@@ -2,45 +2,6 @@ import { App } from './app.model';
 
 export const EDITORSCHOICEAPPS: App[] = [
 {
-  "flatpakAppId": "org.mozilla.firefox",
-  "name": "Firefox",
-  "summary": "Firefox Web Browser",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugzilla.mozilla.org/",
-  "helpUrl": "https://support.mozilla.org/",
-  "donationUrl": "https://donate.mozilla.org/",
-  "translateUrl": "https://wiki.mozilla.org/L10n:Starting_a_localization",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.mozilla.firefox.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.mozilla.firefox.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.mozilla.firefox.flatpakref",
-  "currentReleaseVersion": "76.0.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/224x126/org.mozilla.firefox-06613e5f5d5bc06b6324ad6840d97372.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/624x351/org.mozilla.firefox-06613e5f5d5bc06b6324ad6840d97372.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/752x423/org.mozilla.firefox-06613e5f5d5bc06b6324ad6840d97372.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/224x126/org.mozilla.firefox-30e248b38e4cb047338b89f0476c0fb2.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/624x351/org.mozilla.firefox-30e248b38e4cb047338b89f0476c0fb2.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/752x423/org.mozilla.firefox-30e248b38e4cb047338b89f0476c0fb2.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/224x126/org.mozilla.firefox-9bfb5432bfb634afd864a38264967f17.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/624x351/org.mozilla.firefox-9bfb5432bfb634afd864a38264967f17.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/752x423/org.mozilla.firefox-9bfb5432bfb634afd864a38264967f17.png"
-    }
-  ]
-}
-,
-{
   "flatpakAppId": "org.gnome.Builder",
   "name": "Builder",
   "summary": "An IDE for GNOME",
@@ -55,9 +16,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Builder.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Builder.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Builder.flatpakref",
-  "currentReleaseVersion": "3.36.0",
+  "currentReleaseVersion": "3.36.1",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Builder 3.36 provies a number of performance fixes, UI improvements, and bug fixes. It also improves support for Vala, Rust, Python, and C/C++ languages.</p>\n",
+  "currentReleaseDescription": "<p>Builder 3.36.1 includes a number of performance, bug, and UI improvements.</p>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
@@ -109,9 +70,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.Foliate.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.github.johnfactotum.Foliate.png",
   "downloadFlatpakRefUrl": "/repo/appstream/com.github.johnfactotum.Foliate.flatpakref",
-  "currentReleaseVersion": "2.1.1",
+  "currentReleaseVersion": "2.4.2",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Fixed wrong version number</li>\n<li>Fixed dictionary, translation, and Wikipedia not working in the Snap package</li>\n</ul>\n",
+  "currentReleaseDescription": "<p>Fixed unable to open some EPUB files</p>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
@@ -163,7 +124,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.kdenlive.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.kdenlive.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.kde.kdenlive.flatpakref",
-  "currentReleaseVersion": "20.04.1",
+  "currentReleaseVersion": "20.04.2",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
@@ -202,9 +163,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.slack.Slack.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.slack.Slack.png",
   "downloadFlatpakRefUrl": "/repo/appstream/com.slack.Slack.flatpakref",
-  "currentReleaseVersion": "4.4.3",
+  "currentReleaseVersion": "4.7.0",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Bug Fixes:</p>\n<ul>\n<li>We’ve tinkered with the internal workings and polished some rough edges. The app is now better than it was.</li>\n</ul>\n",
+  "currentReleaseDescription": "<p>What’s New:</p>\n<ul>\n<li>A preference that allows you to choose a unique save location per download, instead of choosing a folder for all of them. For the choosy types.</li>\n<li>We’ve upgraded all the backend stuff that the apps run on, resulting in better performance and fewer bugs.</li>\n</ul>\n<p>Bug Fixes:</p>\n<ul>\n<li>After restoring the app window, some parts of it could lose their clickiness. Those parts have found their clickiness anew. Click away. Clickety clickety click.</li>\n<li>If you found yourself, in some distant past, trying to start a song on Spotify with your keyboard’s play button, and it did not respond to your command while Slack was front and center, pesky hardware media keys were the problem. And this version is the cure.</li>\n<li>The app should be less spicy to your CPU when you’re viewing certain network error pages.</li>\n<li>When a download completes, we’ll show an in-app prompt rather than a bothersome system notification.</li>\n</ul>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
@@ -260,80 +221,31 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.blender.Blender.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.blender.Blender.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.blender.Blender.flatpakref",
-  "currentReleaseVersion": "2.82a",
+  "currentReleaseVersion": "2.83",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>New features:</p>\n<ul>\n<li>New Mantaflow fluid and smoke simulation system</li>\n<li>UDIM textures for rendering and painting</li>\n<li>USD scene export</li>\n<li>Bevel custom profiles</li>\n<li>Cycles custom shader AOVs</li>\n<li>Cloth air pressure simulation</li>\n<li>Weld modifier for meshes</li>\n</ul>\n<p>Enhancements:</p>\n<ul>\n<li>New and improved sculpt tools</li>\n<li>New grease pencil tools and modifiers</li>\n<li>New bone and constraint settings for rigging</li>\n</ul>\n",
+  "currentReleaseDescription": "<p>New features:</p>\n<ul>\n<li>Volume object to import OpenVDB files</li>\n<li>VR support for scene inspection through OpenXR</li>\n<li>Cycles adaptive sampling and OptiX viewport denoising</li>\n<li>Sculpt face sets and cloth brush</li>\n<li>Video sequencer disk cache</li>\n</ul>\n<p>Enhancements:</p>\n<ul>\n<li>Grease Pencil closer integration and improved performance</li>\n<li>Eevee improved render passes, light cache and hair transparency</li>\n<li>Faster undo system</li>\n<li>Rewritten multiresolution modifier</li>\n<li>Improved hair physics collisions</li>\n</ul>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-79e247889c049cc582336e7763faea40.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-79e247889c049cc582336e7763faea40.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-79e247889c049cc582336e7763faea40.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-79e247889c049cc582336e7763faea40.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-79e247889c049cc582336e7763faea40.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-79e247889c049cc582336e7763faea40.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.darktable.Darktable",
-  "name": "darktable",
-  "summary": "Organize and develop images from digital cameras",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://redmine.darktable.org/projects/darktable/issues",
-  "helpUrl": "https://www.darktable.org/usermanual/",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.darktable.Darktable.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.darktable.Darktable.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.darktable.Darktable.flatpakref",
-  "currentReleaseVersion": "3.0.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/224x126/org.darktable.Darktable-142464022ae19287b51995eb279d3a25.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/624x351/org.darktable.Darktable-142464022ae19287b51995eb279d3a25.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/752x423/org.darktable.Darktable-142464022ae19287b51995eb279d3a25.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/224x126/org.darktable.Darktable-243e0fa97a76f4e3c57d0f7da021aab2.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/624x351/org.darktable.Darktable-243e0fa97a76f4e3c57d0f7da021aab2.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/752x423/org.darktable.Darktable-243e0fa97a76f4e3c57d0f7da021aab2.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/224x126/org.darktable.Darktable-3b85c1428501418cba95f87e5166e7da.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/624x351/org.darktable.Darktable-3b85c1428501418cba95f87e5166e7da.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/752x423/org.darktable.Darktable-3b85c1428501418cba95f87e5166e7da.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/224x126/org.darktable.Darktable-1972b97ba98691ce5f70af47a2a73912.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/624x351/org.darktable.Darktable-1972b97ba98691ce5f70af47a2a73912.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/752x423/org.darktable.Darktable-1972b97ba98691ce5f70af47a2a73912.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/224x126/org.darktable.Darktable-a8ea37351e607da00303df2dc9f2ed70.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/624x351/org.darktable.Darktable-a8ea37351e607da00303df2dc9f2ed70.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.darktable.Darktable-stable/752x423/org.darktable.Darktable-a8ea37351e607da00303df2dc9f2ed70.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png"
     }
   ]
 }
@@ -402,7 +314,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.krita.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.krita.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.kde.krita.flatpakref",
-  "currentReleaseVersion": "4.2.9.0",
+  "currentReleaseVersion": "4.3.0",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
@@ -442,118 +354,6 @@ export const EDITORSCHOICEAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "org.audacityteam.Audacity",
-  "name": "Audacity",
-  "summary": "Record and edit audio files",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugzilla.audacityteam.org/",
-  "helpUrl": "https://manual.audacityteam.org/",
-  "donationUrl": "https://www.audacityteam.org/donate/",
-  "translateUrl": "https://www.audacityteam.org/community/translators/",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.audacityteam.Audacity.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.audacityteam.Audacity.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.audacityteam.Audacity.flatpakref",
-  "currentReleaseVersion": "2.4.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.audacityteam.Audacity-stable/224x126/org.audacityteam.Audacity-42be5cb7ad2706291b1869e1cb120d70.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.audacityteam.Audacity-stable/624x351/org.audacityteam.Audacity-42be5cb7ad2706291b1869e1cb120d70.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.audacityteam.Audacity-stable/752x423/org.audacityteam.Audacity-42be5cb7ad2706291b1869e1cb120d70.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.audacityteam.Audacity-stable/224x126/org.audacityteam.Audacity-55c9f7fda09172ec24311b675e110a9c.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.audacityteam.Audacity-stable/624x351/org.audacityteam.Audacity-55c9f7fda09172ec24311b675e110a9c.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.audacityteam.Audacity-stable/752x423/org.audacityteam.Audacity-55c9f7fda09172ec24311b675e110a9c.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.eclipse.Java",
-  "name": "Eclipse IDE for Java Developers",
-  "summary": "The essential tools for any Java developer, including a Java IDE, a Git client, XML Editor, Mylyn, Maven and Gradle integration",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugs.eclipse.org/bugs/",
-  "helpUrl": "https://help.eclipse.org/",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.eclipse.Java.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.eclipse.Java.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.eclipse.Java.flatpakref",
-  "currentReleaseVersion": "4.15",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.eclipse.Java-stable/224x126/org.eclipse.Java-aceaf761d79230502a77a5ca6ea06dea.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.eclipse.Java-stable/624x351/org.eclipse.Java-aceaf761d79230502a77a5ca6ea06dea.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.eclipse.Java-stable/752x423/org.eclipse.Java-aceaf761d79230502a77a5ca6ea06dea.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.eclipse.Java-stable/224x126/org.eclipse.Java-b1285fb75c85ae405130bc52965a3ca0.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.eclipse.Java-stable/624x351/org.eclipse.Java-b1285fb75c85ae405130bc52965a3ca0.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.eclipse.Java-stable/752x423/org.eclipse.Java-b1285fb75c85ae405130bc52965a3ca0.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "io.dbeaver.DBeaverCommunity",
-  "name": "DBeaver Community",
-  "summary": "Universal Database Manager.",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/io.dbeaver.DBeaverCommunity.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/io.dbeaver.DBeaverCommunity.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/io.dbeaver.DBeaverCommunity.flatpakref",
-  "currentReleaseVersion": "7.0.5",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Data viewer:</li>\n<li>Pin (aka \"freeze\") column feature was added</li>\n<li>Float (32bit) data type render was fixed (MySQL)</li>\n<li>Plaintext renderer was fixed (binary values representation)</li>\n<li>Filter value auto-complete was fixed (clipboard paste support)</li>\n<li>Issue with \"order by table column + column alias\" was fixed</li>\n<li>SQL editor:</li>\n<li>Script close prompt was fixed</li>\n<li>Hyperlinks now contain procedure parameters</li>\n<li>Script selector panel positioning was fixed</li>\n<li>Execute in new tab: new tabs opening was fixed</li>\n<li>SQL format preferences page was improved</li>\n<li>SQL formatting was fixed (line feeds after brackets)</li>\n<li>SQL console title was fixed (source object name was added)</li>\n<li>Non-https Maven repositories and driver links were removed</li>\n<li>PostgreSQL:</li>\n<li>Added parameters to the SQL execution plan explain (ANALYSE is optional)</li>\n<li>Database backup  was fixed on Linux/MacOS (proper table names quoting)</li>\n<li>Table DDL was fixed (show table comment)</li>\n<li>Sequence DDL was fixed (START parameter)</li>\n<li>Object dependencies now contain links on dependent/depending object</li>\n<li>Permission/role editors were fixed (roles are sorted by name now)</li>\n<li>SQL auto-completion fixed for older PG (<= 8.4)</li>\n<li>Oracle: unique key detection was fixed</li>\n<li>DB2:</li>\n<li>FOR BIT DATA columns support was fixed (show value as binary)</li>\n<li>Native SQL dialect support was improved (BEGIN/END)</li>\n<li>SQLite: ROWID pseudo-column support was added (as unique key)</li>\n<li>Many other minor bug fixes and improvements</li>\n</ul>\n",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/224x126/io.dbeaver.DBeaverCommunity-fba6dbc56ca3b9f6637a937d8cd4f4e8.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/624x351/io.dbeaver.DBeaverCommunity-fba6dbc56ca3b9f6637a937d8cd4f4e8.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/752x423/io.dbeaver.DBeaverCommunity-fba6dbc56ca3b9f6637a937d8cd4f4e8.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/224x126/io.dbeaver.DBeaverCommunity-c8d9a1045f8e151ff3e787a7585586fb.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/624x351/io.dbeaver.DBeaverCommunity-c8d9a1045f8e151ff3e787a7585586fb.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/752x423/io.dbeaver.DBeaverCommunity-c8d9a1045f8e151ff3e787a7585586fb.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/224x126/io.dbeaver.DBeaverCommunity-ddbde7320f294bded36294d17df63cd4.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/624x351/io.dbeaver.DBeaverCommunity-ddbde7320f294bded36294d17df63cd4.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/752x423/io.dbeaver.DBeaverCommunity-ddbde7320f294bded36294d17df63cd4.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/224x126/io.dbeaver.DBeaverCommunity-81fec140ee3b76af6e2c39ca13197365.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/624x351/io.dbeaver.DBeaverCommunity-81fec140ee3b76af6e2c39ca13197365.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.dbeaver.DBeaverCommunity-stable/752x423/io.dbeaver.DBeaverCommunity-81fec140ee3b76af6e2c39ca13197365.png"
-    }
-  ]
-}
-,
-{
   "flatpakAppId": "com.github.bilelmoussaoui.Authenticator",
   "name": "Authenticator",
   "summary": "A Two-Factor Authentication application",
@@ -575,58 +375,24 @@ export const EDITORSCHOICEAPPS: App[] = [
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.openshot.OpenShot",
-  "name": "OpenShot Video Editor",
-  "summary": "An easy to use, quick to learn, and surprisingly powerful video editor",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/OpenShot/openshot-qt/issues",
-  "helpUrl": "https://www.openshot.org/user-guide",
-  "donationUrl": "https://www.openshot.org/donate",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.openshot.OpenShot.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.openshot.OpenShot.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.openshot.OpenShot.flatpakref",
-  "currentReleaseVersion": "2.5.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.openshot.OpenShot-stable/224x126/org.openshot.OpenShot-68e30bf00d81c0d1b6960f8a03552dca.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.openshot.OpenShot-stable/624x351/org.openshot.OpenShot-68e30bf00d81c0d1b6960f8a03552dca.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.openshot.OpenShot-stable/752x423/org.openshot.OpenShot-68e30bf00d81c0d1b6960f8a03552dca.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.openshot.OpenShot-stable/224x126/org.openshot.OpenShot-1397c2327406a5e1739790c5668df86d.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.openshot.OpenShot-stable/624x351/org.openshot.OpenShot-1397c2327406a5e1739790c5668df86d.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.openshot.OpenShot-stable/752x423/org.openshot.OpenShot-1397c2327406a5e1739790c5668df86d.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png"
     }
   ]
 }
@@ -646,7 +412,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.okular.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.okular.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.kde.okular.flatpakref",
-  "currentReleaseVersion": "1.10.1",
+  "currentReleaseVersion": "1.10.2",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
@@ -675,7 +441,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/im.riot.Riot.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/im.riot.Riot.png",
   "downloadFlatpakRefUrl": "/repo/appstream/im.riot.Riot.flatpakref",
-  "currentReleaseVersion": "1.6.2",
+  "currentReleaseVersion": "1.6.8",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
@@ -760,34 +526,34 @@ export const EDITORSCHOICEAPPS: App[] = [
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-b1d1305f26b0a78a7f3ac3b0cfe1fc4c.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-b1d1305f26b0a78a7f3ac3b0cfe1fc4c.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-b1d1305f26b0a78a7f3ac3b0cfe1fc4c.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-b1d1305f26b0a78a7f3ac3b0cfe1fc4c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-b1d1305f26b0a78a7f3ac3b0cfe1fc4c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-b1d1305f26b0a78a7f3ac3b0cfe1fc4c.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-b758b77e4f7333e034e0af6b51a875a4.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-b758b77e4f7333e034e0af6b51a875a4.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-b758b77e4f7333e034e0af6b51a875a4.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-b758b77e4f7333e034e0af6b51a875a4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-b758b77e4f7333e034e0af6b51a875a4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-b758b77e4f7333e034e0af6b51a875a4.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-0cadef2c0e295eb1a66220842eed0818.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-0cadef2c0e295eb1a66220842eed0818.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-0cadef2c0e295eb1a66220842eed0818.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-0cadef2c0e295eb1a66220842eed0818.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-0cadef2c0e295eb1a66220842eed0818.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-0cadef2c0e295eb1a66220842eed0818.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-37b1ea4e1ed81124bc20caa2f129cb2c.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-37b1ea4e1ed81124bc20caa2f129cb2c.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-37b1ea4e1ed81124bc20caa2f129cb2c.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-37b1ea4e1ed81124bc20caa2f129cb2c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-37b1ea4e1ed81124bc20caa2f129cb2c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-37b1ea4e1ed81124bc20caa2f129cb2c.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png"
     }
   ]
 }
@@ -882,9 +648,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/224x126/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/624x351/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/752x423/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/224x126/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/624x351/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/752x423/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png"
     }
   ]
 }
@@ -953,26 +719,26 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.github.tchx84.Flatseal.png",
   "downloadFlatpakRefUrl": "/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
-  "currentReleaseVersion": "1.5.3",
+  "currentReleaseVersion": "1.6.0",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-22dda6ecea5efa56238dc73c1907f76b.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-22dda6ecea5efa56238dc73c1907f76b.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-22dda6ecea5efa56238dc73c1907f76b.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-8210389f059d40e6c1a648dbdfb92e26.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-8210389f059d40e6c1a648dbdfb92e26.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-8210389f059d40e6c1a648dbdfb92e26.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-8500fa99c232f9515eebbe8d8b3be572.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-8500fa99c232f9515eebbe8d8b3be572.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-8500fa99c232f9515eebbe8d8b3be572.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-d2dfa19bc8d006c3c25eb68e64eaaf10.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-d2dfa19bc8d006c3c25eb68e64eaaf10.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-d2dfa19bc8d006c3c25eb68e64eaaf10.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-b0f321d8d64440de896b9b7331b30857.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-b0f321d8d64440de896b9b7331b30857.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-b0f321d8d64440de896b9b7331b30857.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-fa9cec35ceb16549c9861a72ea6ba666.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-fa9cec35ceb16549c9861a72ea6ba666.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-fa9cec35ceb16549c9861a72ea6ba666.png"
     }
   ]
 }
@@ -994,7 +760,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "downloadFlatpakRefUrl": "/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
   "currentReleaseVersion": "0.2.8",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Redesigned help panel homepage, LaTeX package documentation links…</p>\n",
+  "currentReleaseDescription": "<p>Redesigned help panel homepage, LaTeX package documentation links, ...</p>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
@@ -1046,6 +812,147 @@ export const EDITORSCHOICEAPPS: App[] = [
       "thumbUrl": "https://flathub.org/repo/screenshots/org.pitivi.Pitivi-stable/224x126/org.pitivi-d7fdc07d156cfe3ea428db30c9ebfb68.png",
       "imgMobileUrl": "https://flathub.org/repo/screenshots/org.pitivi.Pitivi-stable/624x351/org.pitivi-d7fdc07d156cfe3ea428db30c9ebfb68.png",
       "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.pitivi.Pitivi-stable/752x423/org.pitivi-d7fdc07d156cfe3ea428db30c9ebfb68.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "org.gnome.gitlab.YaLTeR.VideoTrimmer",
+  "name": "Video Trimmer",
+  "summary": "Trim videos quickly",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "",
+  "helpUrl": "",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.gitlab.YaLTeR.VideoTrimmer.flatpakref",
+  "currentReleaseVersion": "0.2.0",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<p>This release adds a video preview and a timeline where the target region can be adjusted using the mouse.</p>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.VideoTrimmer-stable/224x126/org.gnome.gitlab.YaLTeR.VideoTrimmer-e0a4fcb2ff7baf2d5e4f3477b4a2f69b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.VideoTrimmer-stable/624x351/org.gnome.gitlab.YaLTeR.VideoTrimmer-e0a4fcb2ff7baf2d5e4f3477b4a2f69b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.VideoTrimmer-stable/752x423/org.gnome.gitlab.YaLTeR.VideoTrimmer-e0a4fcb2ff7baf2d5e4f3477b4a2f69b.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "org.gabmus.whatip",
+  "name": "What IP",
+  "summary": "Info on your IP",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/whatip/issues",
+  "helpUrl": "",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gabmus.whatip.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gabmus.whatip.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/org.gabmus.whatip.flatpakref",
+  "currentReleaseVersion": "0.1.2",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<ul>\n<li>Various bug fixes</li>\n<li>UI improvements</li>\n</ul>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/224x126/org.gabmus.whatip-b3ca79ad397e8e381d533e114ab71146.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/624x351/org.gabmus.whatip-b3ca79ad397e8e381d533e114ab71146.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/752x423/org.gabmus.whatip-b3ca79ad397e8e381d533e114ab71146.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/224x126/org.gabmus.whatip-73bd9ccbc2ddd7c5342f3b08cac5b375.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/624x351/org.gabmus.whatip-73bd9ccbc2ddd7c5342f3b08cac5b375.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/752x423/org.gabmus.whatip-73bd9ccbc2ddd7c5342f3b08cac5b375.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/224x126/org.gabmus.whatip-d496dbbaa2cfbe4b2c6d0fc0ca0407a5.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/624x351/org.gabmus.whatip-d496dbbaa2cfbe4b2c6d0fc0ca0407a5.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/752x423/org.gabmus.whatip-d496dbbaa2cfbe4b2c6d0fc0ca0407a5.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "org.mypaint.MyPaint",
+  "name": "MyPaint",
+  "summary": "Painting program for digital artists",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "",
+  "helpUrl": "",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.mypaint.MyPaint.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.mypaint.MyPaint.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/org.mypaint.MyPaint.flatpakref",
+  "currentReleaseVersion": "2.0.1",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<p>For those who primarily use the 2.x mode (the default mode), this is an important upgrade. A color conversion function in the v2.0.0 release has an error that can (and usually will) cause image degradation over multiple save/load cycles. Big thanks to gwojcik for noticing and fixing this. The 1.x mode has not been affected by this.</p>\n<ul>\n<li>HSV/HCY brush dynamics in 2.x mode fixed.</li>\n<li>Undo/Redo stack size made configurable and more efficient.</li>\n<li>Undo/Redo stack default size increased to 40.</li>\n<li>Rounding error when saving files in 2.x mode fixed.</li>\n<li>Invalid l11n strings fixed.</li>\n<li>Translated strings added/updated for several languages.</li>\n<li>Dependency on intltool removed (still required for libmypaint).</li>\n<li>Variables in l11n strings validated on build (xml tags are not validated yet, however).</li>\n<li>libmypaint translations are now bound, making them work properly in the appimages.</li>\n<li>OARS rating added to appdata (relevant for app-distribution software, but not much else).</li>\n<li>A number of Py3 compatibility issues were fixed.</li>\n<li>Svg icons fixed - some were previously considered invalid by librsvg >= 2.48.</li>\n<li>Svg icon sizes reduced across the board.</li>\n<li>Typos in documentation fixed (not user-facing typos).</li>\n</ul>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.mypaint.MyPaint-stable/224x126/org.mypaint.MyPaint-f7dc195b98c76055e84aa0e5fd462786.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.mypaint.MyPaint-stable/624x351/org.mypaint.MyPaint-f7dc195b98c76055e84aa0e5fd462786.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.mypaint.MyPaint-stable/752x423/org.mypaint.MyPaint-f7dc195b98c76055e84aa0e5fd462786.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "com.rafaelmardojai.WebfontKitGenerator",
+  "name": "Webfont Kit Generator",
+  "summary": "Create @font-face kits easily",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://github.com/rafaelmardojai/WebfontKitGenerator/issues",
+  "helpUrl": "",
+  "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.WebfontKitGenerator.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.rafaelmardojai.WebfontKitGenerator.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/com.rafaelmardojai.WebfontKitGenerator.flatpakref",
+  "currentReleaseVersion": "0.3.0",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<ul>\n<li>UI tweaks</li>\n<li>Code improvements</li>\n</ul>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/224x126/com.rafaelmardojai.WebfontKitGenerator-1852a6f10df3d175f7c2d5fd06d16917.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/624x351/com.rafaelmardojai.WebfontKitGenerator-1852a6f10df3d175f7c2d5fd06d16917.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/752x423/com.rafaelmardojai.WebfontKitGenerator-1852a6f10df3d175f7c2d5fd06d16917.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/224x126/com.rafaelmardojai.WebfontKitGenerator-24e8dab972dbecdc9a361a61234618bc.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/624x351/com.rafaelmardojai.WebfontKitGenerator-24e8dab972dbecdc9a361a61234618bc.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/752x423/com.rafaelmardojai.WebfontKitGenerator-24e8dab972dbecdc9a361a61234618bc.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/224x126/com.rafaelmardojai.WebfontKitGenerator-485db0a02bb911e5e717006ab0324336.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/624x351/com.rafaelmardojai.WebfontKitGenerator-485db0a02bb911e5e717006ab0324336.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/752x423/com.rafaelmardojai.WebfontKitGenerator-485db0a02bb911e5e717006ab0324336.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/224x126/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/624x351/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/752x423/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png"
     }
   ]
 }

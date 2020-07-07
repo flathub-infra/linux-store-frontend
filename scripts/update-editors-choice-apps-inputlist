@@ -1,18 +1,12 @@
-org.mozilla.firefox
 org.gnome.Builder
 com.github.johnfactotum.Foliate
 org.kde.kdenlive
 com.slack.Slack
 org.inkscape.Inkscape
 org.blender.Blender
-org.darktable.Darktable
 org.gabmus.hydrapaper
 org.kde.krita
-org.audacityteam.Audacity
-org.eclipse.Java
-io.dbeaver.DBeaverCommunity
 com.github.bilelmoussaoui.Authenticator
-org.openshot.OpenShot
 org.kde.okular
 im.riot.Riot
 net.scribus.Scribus
@@ -24,3 +18,7 @@ org.gnome.gitlab.somas.Apostrophe
 com.github.tchx84.Flatseal
 org.cvfosammmm.Setzer
 org.pitivi.Pitivi
+org.gnome.gitlab.YaLTeR.VideoTrimmer
+org.gabmus.whatip
+org.mypaint.MyPaint
+com.rafaelmardojai.WebfontKitGenerator
