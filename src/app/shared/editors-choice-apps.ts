@@ -110,45 +110,6 @@ export const EDITORSCHOICEAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "org.kde.kdenlive",
-  "name": "Kdenlive",
-  "summary": "Video Editor",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugs.kde.org",
-  "helpUrl": "https://userbase.kde.org/Kdenlive/Manual",
-  "donationUrl": "https://www.kde.org/community/donations/?app=kdenlive&source=appdata",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.kdenlive.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.kdenlive.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.kde.kdenlive.flatpakref",
-  "currentReleaseVersion": "20.04.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/224x126/org.kde.kdenlive-3da9b7c41ddee7c72d456b59b24147c6.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/624x351/org.kde.kdenlive-3da9b7c41ddee7c72d456b59b24147c6.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/752x423/org.kde.kdenlive-3da9b7c41ddee7c72d456b59b24147c6.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/224x126/org.kde.kdenlive-c4d85e51d29ad370df241f8638d8116d.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/624x351/org.kde.kdenlive-c4d85e51d29ad370df241f8638d8116d.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/752x423/org.kde.kdenlive-c4d85e51d29ad370df241f8638d8116d.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/224x126/org.kde.kdenlive-13d7c2686c2c3614c568b83c985f9f09.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/624x351/org.kde.kdenlive-13d7c2686c2c3614c568b83c985f9f09.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.kde.kdenlive-stable/752x423/org.kde.kdenlive-13d7c2686c2c3614c568b83c985f9f09.png"
-    }
-  ]
-}
-,
-{
   "flatpakAppId": "com.slack.Slack",
   "name": "Slack",
   "summary": "Chat with your team",
@@ -178,35 +139,6 @@ export const EDITORSCHOICEAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "org.inkscape.Inkscape",
-  "name": "Inkscape",
-  "summary": "Vector Graphics Editor",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://inkscape.org/contribute/report-bugs",
-  "helpUrl": "https://inkscape.org/learn",
-  "donationUrl": "https://inkscape.org/support-us/donate",
-  "translateUrl": "https://inkscape.org/contribute/translations",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.inkscape.Inkscape.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.inkscape.Inkscape.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.inkscape.Inkscape.flatpakref",
-  "currentReleaseVersion": "1.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Inkscape 1.0</p>\n<ul>\n<li>Theming support and more new customization options</li>\n<li>Better HiDPI (high resolution) screen support</li>\n<li>Native support for macOS with a signed and notarized .dmg file</li>\n<li>Coordinate origin in top left corner by default</li>\n<li>Canvas rotation and mirroring</li>\n<li>On-Canvas alignment of objects</li>\n<li>Split view and X-Ray modes</li>\n<li>PowerPencil for drawing editable, variable width strokes with a pressure sensitive graphics tablet</li>\n<li>New PNG export options</li>\n<li>Integrated centerline tracing for vectorizing line drawings</li>\n<li>Searchable Symbols dialog</li>\n<li>New Live Path Effect (LPE) selection dialog</li>\n<li>New Corners (Fillet/chamfer) LPE, (lossless) Boolean Operation LPE (experimental), Offset LPE and Measure Segments LPE (and more!)</li>\n<li>Path operations, deselection of a large number of paths as well as grouping/ungrouping are much faster now</li>\n<li>Much improved text line-height settings</li>\n<li>Variable fonts support (only if compiled with pango library version >= 1.41.1)</li>\n<li>Browser-compatible flowed text</li>\n<li>Extensions programming interface updated, with many new options - Note: this introduces breaking changes, some third-party extensions will have to be updated to work with Inkscape 1.0</li>\n<li>Python 3 support for extensions</li>\n</ul>\n",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.inkscape.Inkscape-stable/224x126/org.inkscape.Inkscape-987885ecf70d5021caf22bff5505adc1.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.inkscape.Inkscape-stable/624x351/org.inkscape.Inkscape-987885ecf70d5021caf22bff5505adc1.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.inkscape.Inkscape-stable/752x423/org.inkscape.Inkscape-987885ecf70d5021caf22bff5505adc1.png"
-    }
-  ]
-}
-,
-{
   "flatpakAppId": "org.blender.Blender",
   "name": "Blender",
   "summary": "Free and open source 3D creation suite",
@@ -221,9 +153,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.blender.Blender.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.blender.Blender.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.blender.Blender.flatpakref",
-  "currentReleaseVersion": "2.83",
+  "currentReleaseVersion": "2.83.2",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>New features:</p>\n<ul>\n<li>Volume object to import OpenVDB files</li>\n<li>VR support for scene inspection through OpenXR</li>\n<li>Cycles adaptive sampling and OptiX viewport denoising</li>\n<li>Sculpt face sets and cloth brush</li>\n<li>Video sequencer disk cache</li>\n</ul>\n<p>Enhancements:</p>\n<ul>\n<li>Grease Pencil closer integration and improved performance</li>\n<li>Eevee improved render passes, light cache and hair transparency</li>\n<li>Faster undo system</li>\n<li>Rewritten multiresolution modifier</li>\n<li>Improved hair physics collisions</li>\n</ul>\n",
+  "currentReleaseDescription": "",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
@@ -265,9 +197,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gabmus.hydrapaper.png",
   "downloadFlatpakRefUrl": "/repo/appstream/org.gabmus.hydrapaper.flatpakref",
-  "currentReleaseVersion": "1.11",
+  "currentReleaseVersion": "1.12",
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>New icon courtesy of Tobias Bernard</li>\n<li>New minimal favorite wallpaper badge</li>\n<li>Various improvements and bug fixes</li>\n</ul>\n",
+  "currentReleaseDescription": "<ul>\n<li>Added Brazilian Portuguese translation</li>\n<li>Updated to support the latest version of libhandy</li>\n<li>Added more keyboard shortcuts</li>\n</ul>\n",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
@@ -398,37 +330,8 @@ export const EDITORSCHOICEAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "org.kde.okular",
-  "name": "Okular",
-  "summary": "Document Viewer",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugs.kde.org/enter_bug.cgi?format=guided&product=okular",
-  "helpUrl": "",
-  "donationUrl": "https://www.kde.org/community/donations/?app=okular&source=appdata",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.okular.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.okular.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.kde.okular.flatpakref",
-  "currentReleaseVersion": "1.10.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.kde.okular-stable/224x126/org.kde.okular-c07e2610b1ab56958154151990789d99.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.kde.okular-stable/624x351/org.kde.okular-c07e2610b1ab56958154151990789d99.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.kde.okular-stable/752x423/org.kde.okular-c07e2610b1ab56958154151990789d99.png"
-    }
-  ]
-}
-,
-{
   "flatpakAppId": "im.riot.Riot",
-  "name": "Riot",
+  "name": "Element",
   "summary": "Create, share, communicate, chat and call securely, and bridge to other apps",
   "description": "",
   "developerName": "",
@@ -441,65 +344,16 @@ export const EDITORSCHOICEAPPS: App[] = [
   "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/im.riot.Riot.png",
   "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/im.riot.Riot.png",
   "downloadFlatpakRefUrl": "/repo/appstream/im.riot.Riot.flatpakref",
-  "currentReleaseVersion": "1.6.8",
+  "currentReleaseVersion": "1.7.2",
   "currentReleaseDate": null,
   "currentReleaseDescription": "",
   "inStoreSinceDate": null,
   "categories": null,
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/224x126/im.riot.Riot-4dfc30511d7d25c9e74c3e290bfd631d.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/624x351/im.riot.Riot-4dfc30511d7d25c9e74c3e290bfd631d.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/752x423/im.riot.Riot-4dfc30511d7d25c9e74c3e290bfd631d.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/224x126/im.riot.Riot-36fc1ec6d30d9596f8ba0ee7d75519b9.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/624x351/im.riot.Riot-36fc1ec6d30d9596f8ba0ee7d75519b9.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/752x423/im.riot.Riot-36fc1ec6d30d9596f8ba0ee7d75519b9.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/224x126/im.riot.Riot-ee08f3191bf9c806d17f2cb2a57707ed.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/624x351/im.riot.Riot-ee08f3191bf9c806d17f2cb2a57707ed.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/752x423/im.riot.Riot-ee08f3191bf9c806d17f2cb2a57707ed.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "net.scribus.Scribus",
-  "name": "Scribus",
-  "summary": "Open Source Page Layout and Desktop Publishing (DTP)",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.scribus.Scribus.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.scribus.Scribus.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.scribus.Scribus.flatpakref",
-  "currentReleaseVersion": "1.5.6.svn",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/224x126/net.scribus.Scribus-b2eab65ee93a342e7395066ffb99237a.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/624x351/net.scribus.Scribus-b2eab65ee93a342e7395066ffb99237a.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/752x423/net.scribus.Scribus-b2eab65ee93a342e7395066ffb99237a.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/224x126/net.scribus.Scribus-14fcc6e419eede97b32721ddb527566f.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/624x351/net.scribus.Scribus-14fcc6e419eede97b32721ddb527566f.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/752x423/net.scribus.Scribus-14fcc6e419eede97b32721ddb527566f.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/224x126/net.scribus.Scribus-d2cf714c510d5426e6d37d1a9641c9ec.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/624x351/net.scribus.Scribus-d2cf714c510d5426e6d37d1a9641c9ec.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.scribus.Scribus-stable/752x423/net.scribus.Scribus-d2cf714c510d5426e6d37d1a9641c9ec.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/224x126/im.riot.Riot-5661b5c701952499607f36e1b95b727d.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/624x351/im.riot.Riot-5661b5c701952499607f36e1b95b727d.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/im.riot.Riot-stable/752x423/im.riot.Riot-5661b5c701952499607f36e1b95b727d.png"
     }
   ]
 }
@@ -788,35 +642,6 @@ export const EDITORSCHOICEAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "org.pitivi.Pitivi",
-  "name": "Pitivi",
-  "summary": "Create and edit your own movies",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/pitivi/",
-  "helpUrl": "http://www.pitivi.org/manual/",
-  "donationUrl": "http://www.pitivi.org/?go=donators",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.pitivi.Pitivi.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.pitivi.Pitivi.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.pitivi.Pitivi.flatpakref",
-  "currentReleaseVersion": "0.999",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>This release includes bug fixes, small important features, and a feature removal.</p>\n<ul>\n<li>Rendering non-square pixels was broken and has been disabled.</li>\n<li>Selecting a range of clips can be done by clicking followed by Shift+click.</li>\n<li>The advanced settings of the h264 encoder allow specifying a Profile.</li>\n<li>The xges files have an icon associated.</li>\n<li>The Save and Render buttons in the headerbar have been moved on the right side.</li>\n</ul>\n",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.pitivi.Pitivi-stable/224x126/org.pitivi-d7fdc07d156cfe3ea428db30c9ebfb68.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.pitivi.Pitivi-stable/624x351/org.pitivi-d7fdc07d156cfe3ea428db30c9ebfb68.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.pitivi.Pitivi-stable/752x423/org.pitivi-d7fdc07d156cfe3ea428db30c9ebfb68.png"
-    }
-  ]
-}
-,
-{
   "flatpakAppId": "org.gnome.gitlab.YaLTeR.VideoTrimmer",
   "name": "Video Trimmer",
   "summary": "Trim videos quickly",
@@ -953,6 +778,230 @@ export const EDITORSCHOICEAPPS: App[] = [
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/224x126/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/624x351/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/752x423/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "de.haeckerfelix.Fragments",
+  "name": "Fragments",
+  "summary": "A BitTorrent Client",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/Fragments/issues",
+  "helpUrl": "",
+  "donationUrl": "https://de.liberapay.com/haecker-felix",
+  "translateUrl": "https://hosted.weblate.org/engage/fragments/",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/de.haeckerfelix.Fragments.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/de.haeckerfelix.Fragments.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/de.haeckerfelix.Fragments.flatpakref",
+  "currentReleaseVersion": "1.4",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<p>New features / changes:</p>\n<ul>\n<li>New application icon + theme</li>\n<li>New 'Open' button to open downloaded torrents faster</li>\n<li>Updated translations</li>\n<li>Several bug fixes</li>\n</ul>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/224x126/de.haeckerfelix.Fragments-053821cedd1806df9b598fee9ccd09fa.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/624x351/de.haeckerfelix.Fragments-053821cedd1806df9b598fee9ccd09fa.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/752x423/de.haeckerfelix.Fragments-053821cedd1806df9b598fee9ccd09fa.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/224x126/de.haeckerfelix.Fragments-76b8bba4fc6348a9be7923fde1cd7e5e.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/624x351/de.haeckerfelix.Fragments-76b8bba4fc6348a9be7923fde1cd7e5e.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/752x423/de.haeckerfelix.Fragments-76b8bba4fc6348a9be7923fde1cd7e5e.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/224x126/de.haeckerfelix.Fragments-6ab4a8e9937c4bc5f5662ba147c557cf.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/624x351/de.haeckerfelix.Fragments-6ab4a8e9937c4bc5f5662ba147c557cf.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/752x423/de.haeckerfelix.Fragments-6ab4a8e9937c4bc5f5662ba147c557cf.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "re.sonny.Tangram",
+  "name": "Tangram",
+  "summary": "Run web apps on your desktop",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://github.com/sonnyp/Tangram/issues",
+  "helpUrl": "",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/re.sonny.Tangram.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/re.sonny.Tangram.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/re.sonny.Tangram.flatpakref",
+  "currentReleaseVersion": "1.2.0",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<ul>\n<li>Add support for downloading files</li>\n<li>Better desktop integration</li>\n<li>Fix the main window becoming tiny when unmaximizing</li>\n<li>Enable touchpad/touchscreen swipe navigation gestures</li>\n</ul>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/re.sonny.Tangram-stable/224x126/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/re.sonny.Tangram-stable/624x351/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/re.sonny.Tangram-stable/752x423/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "com.jvieira.tpt.Metronome",
+  "name": "Metronome",
+  "summary": "A simple Metronome application for the GNOME desktop",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://gitlab.gnome.org/jvieira.tpt/metronome/issues",
+  "helpUrl": "",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.jvieira.tpt.Metronome.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.jvieira.tpt.Metronome.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/com.jvieira.tpt.Metronome.flatpakref",
+  "currentReleaseVersion": "0.1.1",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<p>Metronome release 0.1.1. Added shortcuts support.</p>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.jvieira.tpt.Metronome-stable/224x126/com.jvieira.tpt.Metronome-17a6691fdd4540cfd29c4bdca9a23d33.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.jvieira.tpt.Metronome-stable/624x351/com.jvieira.tpt.Metronome-17a6691fdd4540cfd29c4bdca9a23d33.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.jvieira.tpt.Metronome-stable/752x423/com.jvieira.tpt.Metronome-17a6691fdd4540cfd29c4bdca9a23d33.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "org.gnome.Lollypop",
+  "name": "Lollypop",
+  "summary": "Play and organize your music collection",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://gitlab.gnome.org/gnumdk/lollypop/issues",
+  "helpUrl": "",
+  "donationUrl": "https://www.paypal.me/lollypopgnome",
+  "translateUrl": "https://hosted.weblate.org/projects/gnumdk/",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Lollypop.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Lollypop.flatpakref",
+  "currentReleaseVersion": "1.3.2",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/224x126/org.gnome.Lollypop-d7ecf8983137e4c21d17f89022dc19db.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/624x351/org.gnome.Lollypop-d7ecf8983137e4c21d17f89022dc19db.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/752x423/org.gnome.Lollypop-d7ecf8983137e4c21d17f89022dc19db.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/224x126/org.gnome.Lollypop-8e062a72de99cda59622bac2ecf0d98b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/624x351/org.gnome.Lollypop-8e062a72de99cda59622bac2ecf0d98b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/752x423/org.gnome.Lollypop-8e062a72de99cda59622bac2ecf0d98b.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/224x126/org.gnome.Lollypop-bc99070df2534bb541261ebd80a797d6.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/624x351/org.gnome.Lollypop-bc99070df2534bb541261ebd80a797d6.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/752x423/org.gnome.Lollypop-bc99070df2534bb541261ebd80a797d6.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "org.freedesktop.Tuhi",
+  "name": "Tuhi",
+  "summary": "Utility to download drawings from the Wacom Ink range of devices",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://github.com/tuhiproject/tuhi/issues",
+  "helpUrl": "https://github.com/tuhiproject/tuhi/wiki",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.freedesktop.Tuhi.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.freedesktop.Tuhi.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/org.freedesktop.Tuhi.flatpakref",
+  "currentReleaseVersion": "0.4",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/224x126/org.freedesktop.Tuhi-0c4ec49f1831933b7eb084c85fb7be1f.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/624x351/org.freedesktop.Tuhi-0c4ec49f1831933b7eb084c85fb7be1f.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/752x423/org.freedesktop.Tuhi-0c4ec49f1831933b7eb084c85fb7be1f.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/224x126/org.freedesktop.Tuhi-eb72c87a6f96363040b736eacc3dd844.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/624x351/org.freedesktop.Tuhi-eb72c87a6f96363040b736eacc3dd844.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/752x423/org.freedesktop.Tuhi-eb72c87a6f96363040b736eacc3dd844.png"
+    }
+  ]
+}
+,
+{
+  "flatpakAppId": "com.gitlab.newsflash",
+  "name": "NewsFlash",
+  "summary": "A modern feed reader designed for the GNOME desktop",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "bugtrackerUrl": "https://gitlab.com/news-flash/news_flash_gtk/issues",
+  "helpUrl": "",
+  "donationUrl": "",
+  "translateUrl": "",
+  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.gitlab.newsflash.png",
+  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.gitlab.newsflash.png",
+  "downloadFlatpakRefUrl": "/repo/appstream/com.gitlab.newsflash.flatpakref",
+  "currentReleaseVersion": "1.0.3",
+  "currentReleaseDate": null,
+  "currentReleaseDescription": "<p>Bugfixes:</p>\n<ul>\n<li>web login page invisible</li>\n<li>OPML import containing feeds without category</li>\n</ul>\n",
+  "inStoreSinceDate": null,
+  "categories": null,
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-6a8bb2ce5e164afc8af71d049cb1d7bc.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-6a8bb2ce5e164afc8af71d049cb1d7bc.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-6a8bb2ce5e164afc8af71d049cb1d7bc.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-0c5a22a0f378ed775cce1173f2f4d911.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-0c5a22a0f378ed775cce1173f2f4d911.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-0c5a22a0f378ed775cce1173f2f4d911.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-9e3b759b1c65554c1f5c194da92f0012.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-9e3b759b1c65554c1f5c194da92f0012.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-9e3b759b1c65554c1f5c194da92f0012.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-50035ce452fad6a3208c7b2bd903b75d.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-50035ce452fad6a3208c7b2bd903b75d.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-50035ce452fad6a3208c7b2bd903b75d.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-9b00ec3e8474b154781f13c23da8752e.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-9b00ec3e8474b154781f13c23da8752e.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-9b00ec3e8474b154781f13c23da8752e.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-35d9a1a6715530f9b8fddb5728b4d00a.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-35d9a1a6715530f9b8fddb5728b4d00a.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-35d9a1a6715530f9b8fddb5728b4d00a.png"
     }
   ]
 }
