@@ -1,11 +1,8 @@
 org.gnome.Builder
 com.github.johnfactotum.Foliate
-com.slack.Slack
 org.blender.Blender
 org.gabmus.hydrapaper
-org.kde.krita
 com.github.bilelmoussaoui.Authenticator
-im.riot.Riot
 org.gnome.PasswordSafe
 org.gnome.design.Contrast
 com.uploadedlobster.peek
@@ -23,3 +20,6 @@ com.jvieira.tpt.Metronome
 org.gnome.Lollypop
 org.freedesktop.Tuhi
 com.gitlab.newsflash
+nl.hjdskes.gcolor3
+com.rafaelmardojai.Blanket
+net.daase.journable
