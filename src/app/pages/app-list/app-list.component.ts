@@ -129,7 +129,7 @@ export class AppListComponent implements OnInit {
     this.seoService.setPageMetadata('Search results—Linux Apps on Flathub',
       'Search applications published on Flathub', this.getFlathubMetaImage());
 
-    this.linuxStoreApiService.getAppsByKeyword(searchKeyword)
+    this.linuxStoreApiService.getAppsBySearchQuery(searchKeyword)
       .subscribe(apps => { this.apps = apps; });
   }
 

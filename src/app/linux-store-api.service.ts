@@ -102,17 +102,21 @@ export class LinuxStoreApiService {
     }
   }
 
-  getAppsByKeyword(keyword: string): Observable<App[]> {
-    if (keyword.trim() == null || keyword.trim().length < 2) {
-      return of([]);
-    } else {
-      return this.getApps()
+  getAppsBySearchQuery(searchQuery: string): Observable<App[]> {
+    const request = `/apps/search/${searchQuery}`;
+
+    if (this.appListCache[request] == null && !this.performingRequest[request]) {
+      this.performingRequest[request] = true;
+      return this.http.get<App[]>(`${this.baseUrl}${request}`)
         .pipe(
-          map(apps => apps.filter(app => (app.name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1)
-            || (app.summary.toLowerCase().indexOf(keyword.toLowerCase()) !== -1)
-            || (app.flatpakAppId.toLowerCase().indexOf(keyword.toLowerCase()) !== -1)
-          ))
+          tap(apps => {
+            this.appListCache[request] = apps;
+            this.performingRequest[request] = false;
+          }),
+          catchError(this.handleError('getApps', []))
         );
+    } else {
+      return of(this.appListCache[request]);
     }
   }
 
