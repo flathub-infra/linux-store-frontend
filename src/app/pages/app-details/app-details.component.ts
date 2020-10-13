@@ -27,6 +27,8 @@ export class AppDetailsComponent implements OnInit {
   reviews: Review[];
   selectedReview: Review;
 
+  notFound: boolean = false;
+
   public pending = false;
 
   constructor(
@@ -80,6 +82,7 @@ export class AppDetailsComponent implements OnInit {
     }
     else {
       this.seoService.setPageMetadata('App not found—Linux Apps on Flathub', 'App not found');
+      this.notFound = true;
     }
 
   }
@@ -97,11 +100,7 @@ export class AppDetailsComponent implements OnInit {
     this.linuxStoreApiService.getApp(id)
       .subscribe(app => {
         this.app = app;
-        if (!app) {
-          this.router.navigate(['/not-found'])
-        } else {
-          this.setPageMetadata();
-        }
+        this.setPageMetadata();
       });
   }
 

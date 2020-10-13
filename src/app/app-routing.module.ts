@@ -62,13 +62,13 @@ const appRoutes: Routes = [
     component: AppDetailsComponent
   },
   {
-    path: 'not-found',
-    component: NotFoundComponent
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 @NgModule({

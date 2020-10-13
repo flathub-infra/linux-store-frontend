@@ -8,6 +8,11 @@
             <hr class="app-details-hr">
             <store-app-details-install-instructions [app]="app"></store-app-details-install-instructions>
             <store-app-details-reviews></store-app-details-reviews>
-          </div>
+        </div>
+        <div *ngIf="notFound">
+          <h1>App Not Found</h1>
+          <p>No app with the ID {{paramAppId}} was found on Flathub. Try
+            searching for the app using the search bar above.</p>
+        </div>
     </section>
   </div>
