@@ -9,18 +9,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-builder/issues",
-  "helpUrl": "https://builder.readthedocs.io",
   "donationUrl": "http://www.gnome.org/friends/",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Builder.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Builder.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Builder.flatpakref",
-  "currentReleaseVersion": "3.36.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Builder 3.36.1 includes a number of performance, bug, and UI improvements.</p>\n",
-  "inStoreSinceDate": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-builder/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Builder.flatpakref",
+  "currentReleaseVersion": "3.38.0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Builder.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Builder.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Builder-stable/224x126/org.gnome.Builder-e7540adb393bb840bdd7c13e5171d5d1.png",
@@ -52,7 +49,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Builder-stable/624x351/org.gnome.Builder-5a269a77cadd6103d4575ebece415157.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Builder-stable/752x423/org.gnome.Builder-5a269a77cadd6103d4575ebece415157.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -63,18 +62,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://github.com/johnfactotum/foliate/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.Foliate.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.github.johnfactotum.Foliate.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.github.johnfactotum.Foliate.flatpakref",
-  "currentReleaseVersion": "2.4.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Fixed unable to open some EPUB files</p>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.johnfactotum.Foliate.flatpakref",
+  "currentReleaseVersion": "2.4.2",
+  "currentReleaseDescription": "<p>Fixed unable to open some EPUB files</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.Foliate.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.Foliate.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/224x126/com.github.johnfactotum.Foliate-b25885ac237bccb60d4cb53eb708a7d3.png",
@@ -106,51 +102,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/624x351/com.github.johnfactotum.Foliate-27fc5ae9cd35aa239ce5515ef4e07cb6.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.Foliate-stable/752x423/com.github.johnfactotum.Foliate-27fc5ae9cd35aa239ce5515ef4e07cb6.png"
     }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.blender.Blender",
-  "name": "Blender",
-  "summary": "Free and open source 3D creation suite",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://developer.blender.org",
-  "helpUrl": "https://www.blender.org/support/",
-  "donationUrl": "https://www.blender.org/foundation/donation-payment/",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.blender.Blender.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.blender.Blender.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.blender.Blender.flatpakref",
-  "currentReleaseVersion": "2.83.5",
+  ],
   "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-5c6a26750e218e07e01c91b2896986c8.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-63e43cd9a08c033c6a2ca36f4bcfbdb3.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-79e247889c049cc582336e7763faea40.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-79e247889c049cc582336e7763faea40.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-79e247889c049cc582336e7763faea40.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/224x126/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/624x351/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.blender.Blender-stable/752x423/org.blender.Blender-8e79c51721e7d4d9e91c8b6bf6e05c6b.png"
-    }
-  ]
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -161,18 +115,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/hydrapaper/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gabmus.hydrapaper.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gabmus.hydrapaper.flatpakref",
-  "currentReleaseVersion": "2.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Updated to the latest version of libhandy</li>\n<li>New option to set a single wallpaper as spanned across all the monitors</li>\n<li>Added Cinnamon support</li>\n<li>New wallpaper modes: set your wallpapers as zoomed, centered or fitted, with the choice of either a black or a blurred background</li>\n<li>Various improvements and bug fixes</li>\n</ul>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.hydrapaper.flatpakref",
+  "currentReleaseVersion": "2.0.1",
+  "currentReleaseDescription": "<ul><li>Fixed random wallpaper</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.hydrapaper-stable/224x126/org.gabmus.hydrapaper-4e9bb7d883b7da75dfb48979aebb285b.png",
@@ -204,7 +155,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.hydrapaper-stable/624x351/org.gabmus.hydrapaper-8297e25345871cfb7efe666fa326f0a2.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.hydrapaper-stable/752x423/org.gabmus.hydrapaper-8297e25345871cfb7efe666fa326f0a2.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -215,18 +168,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/Authenticator/issues",
-  "helpUrl": "",
   "donationUrl": "https://liberapay.com/bielmoussaoui",
   "translateUrl": "https://l10n.gnome.org/module/authenticator/",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.github.bilelmoussaoui.Authenticator.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.github.bilelmoussaoui.Authenticator.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.github.bilelmoussaoui.Authenticator.flatpakref",
-  "currentReleaseVersion": "3.32.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Use the new libhandy Settings widget</li>\n<li>Settings: add an auto lock timeout</li>\n<li>Various fixes</li>\n<li>Translations updates</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/Authenticator/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.bilelmoussaoui.Authenticator.flatpakref",
+  "currentReleaseVersion": "3.32.2",
+  "currentReleaseDescription": "<ul><li>Use the new libhandy Settings widget</li><li>Settings: add an auto lock timeout</li><li>Various fixes</li><li>Translations updates</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.bilelmoussaoui.Authenticator.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.bilelmoussaoui.Authenticator.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
@@ -248,7 +198,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -259,18 +211,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.PasswordSafe.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.PasswordSafe.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.PasswordSafe.flatpakref",
-  "currentReleaseVersion": "3.99.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Password Safe 3.99.2 is a maintenance release.</p>\n<ul>\n<li>Fix a crash if certain attributes are empty</li>\n<li>Fix search not returning results issue</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.PasswordSafe.flatpakref",
+  "currentReleaseVersion": "3.99.2",
+  "currentReleaseDescription": "<p>Password Safe 3.99.2 is a maintenance release.</p><ul><li>Fix a crash if certain attributes are empty</li><li>Fix search not returning results issue</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.PasswordSafe.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.PasswordSafe.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/224x126/org.gnome.PasswordSafe-886847605cc7176c96d9141706c24c9c.png",
@@ -302,7 +251,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/624x351/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.PasswordSafe-stable/752x423/org.gnome.PasswordSafe-7ce9ec931e7c985b7758ed383d7f0c49.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -313,25 +264,24 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/design/contrast/issues",
-  "helpUrl": "",
   "donationUrl": "https://liberapay.com/bielmoussaoui",
   "translateUrl": "https://l10n.gnome.org/module/contrast/",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.design.Contrast.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.design.Contrast.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.design.Contrast.flatpakref",
-  "currentReleaseVersion": "0.0.3",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Stylesheet fixes</p>\n<p>Translations updates</p>\n",
-  "inStoreSinceDate": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/design/contrast/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.design.Contrast.flatpakref",
+  "currentReleaseVersion": "0.0.3",
+  "currentReleaseDescription": "<p>Stylesheet fixes</p><p>Translations updates</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.design.Contrast.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.design.Contrast.png",
   "screenshots": [
     {
       "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.design.Contrast-stable/224x126/org.gnome.design.Contrast-ba707a21207a348d15171063edf9790a.png",
       "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.design.Contrast-stable/624x351/org.gnome.design.Contrast-ba707a21207a348d15171063edf9790a.png",
       "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.design.Contrast-stable/752x423/org.gnome.design.Contrast-ba707a21207a348d15171063edf9790a.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -342,35 +292,34 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://github.com/phw/peek/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.uploadedlobster.peek.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.uploadedlobster.peek.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.uploadedlobster.peek.flatpakref",
-  "currentReleaseVersion": "1.5.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.uploadedlobster.peek.flatpakref",
+  "currentReleaseVersion": "1.5.1",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.uploadedlobster.peek.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.uploadedlobster.peek.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/224x126/com.uploadedlobster.peek-0bc7b518b5ccfe04ee898d9beadb880d.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/624x351/com.uploadedlobster.peek-0bc7b518b5ccfe04ee898d9beadb880d.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/752x423/com.uploadedlobster.peek-0bc7b518b5ccfe04ee898d9beadb880d.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/224x126/com.uploadedlobster.peek-0bc7b518b5ccfe04ee898d9beadb880d.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/624x351/com.uploadedlobster.peek-0bc7b518b5ccfe04ee898d9beadb880d.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/752x423/com.uploadedlobster.peek-0bc7b518b5ccfe04ee898d9beadb880d.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/224x126/com.uploadedlobster.peek-b814acd983d21332d7996fc9fe4fbf95.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/624x351/com.uploadedlobster.peek-b814acd983d21332d7996fc9fe4fbf95.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/752x423/com.uploadedlobster.peek-b814acd983d21332d7996fc9fe4fbf95.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/224x126/com.uploadedlobster.peek-b814acd983d21332d7996fc9fe4fbf95.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/624x351/com.uploadedlobster.peek-b814acd983d21332d7996fc9fe4fbf95.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/752x423/com.uploadedlobster.peek-b814acd983d21332d7996fc9fe4fbf95.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/224x126/com.uploadedlobster.peek-d638844b46be4a56d06930b0203a54d0.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/624x351/com.uploadedlobster.peek-d638844b46be4a56d06930b0203a54d0.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/752x423/com.uploadedlobster.peek-d638844b46be4a56d06930b0203a54d0.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/224x126/com.uploadedlobster.peek-d638844b46be4a56d06930b0203a54d0.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/624x351/com.uploadedlobster.peek-d638844b46be4a56d06930b0203a54d0.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.uploadedlobster.peek-stable/752x423/com.uploadedlobster.peek-d638844b46be4a56d06930b0203a54d0.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -381,25 +330,24 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/obfuscate/issues",
-  "helpUrl": "",
   "donationUrl": "https://liberapay.com/bielmoussaoui",
   "translateUrl": "https://l10n.gnome.org/module/obfuscate/",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Obfuscate.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.belmoussaoui.Obfuscate.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.belmoussaoui.Obfuscate.flatpakref",
-  "currentReleaseVersion": "0.0.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Bug fixes release</p>\n<ul>\n<li>Fix filter toggle</li>\n<li>Fix dropping in an image crashing the app</li>\n<li>Translations updates</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/obfuscate/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.belmoussaoui.Obfuscate.flatpakref",
+  "currentReleaseVersion": "0.0.2",
+  "currentReleaseDescription": "<p>Bug fixes release</p><ul><li>Fix filter toggle</li><li>Fix dropping in an image crashing the app</li><li>Translations updates</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Obfuscate.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Obfuscate.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/224x126/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/624x351/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Obfuscate-stable/752x423/com.belmoussaoui.Obfuscate-4a22523bf88231ef47d1fa27dc38e9f1.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -410,18 +358,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/somas/apostrophe/-/issues",
-  "helpUrl": "https://gitlab.gnome.org/somas/apostrophe/",
   "donationUrl": "https://www.paypal.me/manuelgenoves",
   "translateUrl": "https://poeditor.com/join/project/gxVzFyXb2x",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.somas.Apostrophe.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.gitlab.somas.Apostrophe.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.gitlab.somas.Apostrophe.flatpakref",
-  "currentReleaseVersion": "2.2.0.3",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Bugfixes and improvements:</p>\n<ul>\n<li>Better wording for some areas</li>\n<li>Fixed some issues where Apostrophe couldn't open files from CLI/context menu</li>\n<li>Now Apostrophe checks if there is unsaved work before exiting via CTRL + Q/W</li>\n<li>Better parsing of weblinks and links to files</li>\n<li>Fixed a bug where the bottom portion of the screen was insensitive to mouse input</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/somas/apostrophe/-/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.somas.Apostrophe.flatpakref",
+  "currentReleaseVersion": "2.2.0.3",
+  "currentReleaseDescription": "<p>Bugfixes and improvements:</p><ul><li>Better wording for some areas</li><li>Fixed some issues where Apostrophe couldn't open files from CLI/context menu</li><li>Now Apostrophe checks if there is unsaved work before exiting via CTRL + Q/W</li><li>Better parsing of weblinks and links to files</li><li>Fixed a bug where the bottom portion of the screen was insensitive to mouse input</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.somas.Apostrophe.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.somas.Apostrophe.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.somas.Apostrophe-stable/224x126/org.gnome.gitlab.somas.Apostrophe-f0c5f79b1313bdb374a2e2a214bd2aef.png",
@@ -448,7 +393,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.somas.Apostrophe-stable/624x351/org.gnome.gitlab.somas.Apostrophe-fc2fac7d029853cc053e9d33bcf874ed.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.somas.Apostrophe-stable/752x423/org.gnome.gitlab.somas.Apostrophe-fc2fac7d029853cc053e9d33bcf874ed.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -459,18 +406,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://github.com/tchx84/flatseal/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.github.tchx84.Flatseal.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
-  "currentReleaseVersion": "1.6.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
+  "currentReleaseVersion": "1.6.3",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/224x126/com.github.tchx84.Flatseal-29c68a18b07e167cd4efb1cb11d25edd.png",
@@ -487,7 +431,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/624x351/com.github.tchx84.Flatseal-30e368a9b737fb8157f9acd642af8142.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.tchx84.Flatseal-stable/752x423/com.github.tchx84.Flatseal-30e368a9b737fb8157f9acd642af8142.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -498,18 +444,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/cvfosammmm/Setzer/issues",
-  "helpUrl": "",
   "donationUrl": "https://www.patreon.com/cvfosammmm",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.cvfosammmm.Setzer.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
-  "currentReleaseVersion": "0.3.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Tab autocomplete, dynamic citations autocomplete, more autocomplete improvements, ...</p>\n",
-  "inStoreSinceDate": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/cvfosammmm/Setzer/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
+  "currentReleaseVersion": "0.3.3",
+  "currentReleaseDescription": "<p>New syntax highlighting theme, full line indentation, ...</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.cvfosammmm.Setzer-stable/224x126/org.cvfosammmm.Setzer-97c4caa5062fedff9ee990a7f0d90897.png",
@@ -531,7 +474,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.cvfosammmm.Setzer-stable/624x351/org.cvfosammmm.Setzer-7691b37720cc978499be2cf50ac3a6ab.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.cvfosammmm.Setzer-stable/752x423/org.cvfosammmm.Setzer-7691b37720cc978499be2cf50ac3a6ab.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -542,25 +487,24 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/video-trimmer/-/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.gitlab.YaLTeR.VideoTrimmer.flatpakref",
-  "currentReleaseVersion": "0.3.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>This release fixes crashes related to video preview errors, adds a Ctrl+Q exit shortcut and a Dutch translation.</p>\n<ul>\n<li>Added a Ctrl+Q shortcut to quit Video Trimmer.</li>\n<li>Added a Dutch translation.</li>\n<li>Made video preview display an error message when it fails to load.</li>\n<li>Fixed a crash when the GL runtime is not installed (e.g. when installing the Flathub package on clean Ubuntu 18.04 through Ubuntu Software).</li>\n<li>Fixed a crash when required GStreamer plugins are not installed.</li>\n<li>Fixed a crash on failing to change the playback position.</li>\n</ul>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.YaLTeR.VideoTrimmer.flatpakref",
+  "currentReleaseVersion": "0.3.1",
+  "currentReleaseDescription": "<p>This release fixes file filter not working on Flatpak and possibly a related file chooser crash.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.VideoTrimmer-stable/224x126/org.gnome.gitlab.YaLTeR.VideoTrimmer-e0a4fcb2ff7baf2d5e4f3477b4a2f69b.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.VideoTrimmer-stable/624x351/org.gnome.gitlab.YaLTeR.VideoTrimmer-e0a4fcb2ff7baf2d5e4f3477b4a2f69b.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.VideoTrimmer-stable/752x423/org.gnome.gitlab.YaLTeR.VideoTrimmer-e0a4fcb2ff7baf2d5e4f3477b4a2f69b.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -571,18 +515,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/whatip/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gabmus.whatip.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gabmus.whatip.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gabmus.whatip.flatpakref",
-  "currentReleaseVersion": "0.1.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Various bug fixes</li>\n<li>UI improvements</li>\n</ul>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.whatip.flatpakref",
+  "currentReleaseVersion": "0.2",
+  "currentReleaseDescription": "<ul><li>Upgraded to libhandy 1</li><li>Added hostname resolution for devices in the LAN</li><li>Detect HTTP and FTP protocols for devices in the LAN</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.whatip.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.whatip.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/224x126/org.gabmus.whatip-b3ca79ad397e8e381d533e114ab71146.png",
@@ -599,36 +540,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/624x351/org.gabmus.whatip-d496dbbaa2cfbe4b2c6d0fc0ca0407a5.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.whatip-stable/752x423/org.gabmus.whatip-d496dbbaa2cfbe4b2c6d0fc0ca0407a5.png"
     }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.mypaint.MyPaint",
-  "name": "MyPaint",
-  "summary": "Painting program for digital artists",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.mypaint.MyPaint.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.mypaint.MyPaint.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.mypaint.MyPaint.flatpakref",
-  "currentReleaseVersion": "2.0.1",
+  ],
   "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>For those who primarily use the 2.x mode (the default mode), this is an important upgrade. A color conversion function in the v2.0.0 release has an error that can (and usually will) cause image degradation over multiple save/load cycles. Big thanks to gwojcik for noticing and fixing this. The 1.x mode has not been affected by this.</p>\n<ul>\n<li>HSV/HCY brush dynamics in 2.x mode fixed.</li>\n<li>Undo/Redo stack size made configurable and more efficient.</li>\n<li>Undo/Redo stack default size increased to 40.</li>\n<li>Rounding error when saving files in 2.x mode fixed.</li>\n<li>Invalid l11n strings fixed.</li>\n<li>Translated strings added/updated for several languages.</li>\n<li>Dependency on intltool removed (still required for libmypaint).</li>\n<li>Variables in l11n strings validated on build (xml tags are not validated yet, however).</li>\n<li>libmypaint translations are now bound, making them work properly in the appimages.</li>\n<li>OARS rating added to appdata (relevant for app-distribution software, but not much else).</li>\n<li>A number of Py3 compatibility issues were fixed.</li>\n<li>Svg icons fixed - some were previously considered invalid by librsvg >= 2.48.</li>\n<li>Svg icon sizes reduced across the board.</li>\n<li>Typos in documentation fixed (not user-facing typos).</li>\n</ul>\n",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.mypaint.MyPaint-stable/224x126/org.mypaint.MyPaint-f7dc195b98c76055e84aa0e5fd462786.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.mypaint.MyPaint-stable/624x351/org.mypaint.MyPaint-f7dc195b98c76055e84aa0e5fd462786.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.mypaint.MyPaint-stable/752x423/org.mypaint.MyPaint-f7dc195b98c76055e84aa0e5fd462786.png"
-    }
-  ]
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -639,18 +553,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/rafaelmardojai/WebfontKitGenerator/issues",
-  "helpUrl": "",
   "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.WebfontKitGenerator.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.rafaelmardojai.WebfontKitGenerator.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.rafaelmardojai.WebfontKitGenerator.flatpakref",
-  "currentReleaseVersion": "0.3.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>UI tweaks</li>\n<li>Code improvements</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/rafaelmardojai/WebfontKitGenerator/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.rafaelmardojai.WebfontKitGenerator.flatpakref",
+  "currentReleaseVersion": "0.3.0",
+  "currentReleaseDescription": "<ul><li>UI tweaks</li><li>Code improvements</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.WebfontKitGenerator.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.WebfontKitGenerator.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/224x126/com.rafaelmardojai.WebfontKitGenerator-1852a6f10df3d175f7c2d5fd06d16917.png",
@@ -672,7 +583,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/624x351/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.WebfontKitGenerator-stable/752x423/com.rafaelmardojai.WebfontKitGenerator-bce5ec41bf85f948ea5e99f989cdc899.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -683,18 +596,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/Fragments/issues",
-  "helpUrl": "",
   "donationUrl": "https://de.liberapay.com/haecker-felix",
-  "translateUrl": "https://hosted.weblate.org/engage/fragments/",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/de.haeckerfelix.Fragments.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/de.haeckerfelix.Fragments.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/de.haeckerfelix.Fragments.flatpakref",
-  "currentReleaseVersion": "1.4",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>New features / changes:</p>\n<ul>\n<li>New application icon + theme</li>\n<li>New 'Open' button to open downloaded torrents faster</li>\n<li>Updated translations</li>\n<li>Several bug fixes</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "translateUrl": "https://l10n.gnome.org/module/Fragments/",
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/Fragments/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/de.haeckerfelix.Fragments.flatpakref",
+  "currentReleaseVersion": "1.5",
+  "currentReleaseDescription": "<p>New features / changes:</p><ul><li>Show notifications when a new torrent is added, or when a download is complete</li><li>The encryption mode can now be configured (Forced, Optional, Disabled)</li><li>New menu entry to remove all downloaded torrents</li><li>Refreshed user interface / Updated application icon</li><li>Updated translations</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/de.haeckerfelix.Fragments.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/de.haeckerfelix.Fragments.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/224x126/de.haeckerfelix.Fragments-053821cedd1806df9b598fee9ccd09fa.png",
@@ -711,7 +621,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/624x351/de.haeckerfelix.Fragments-6ab4a8e9937c4bc5f5662ba147c557cf.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/de.haeckerfelix.Fragments-stable/752x423/de.haeckerfelix.Fragments-6ab4a8e9937c4bc5f5662ba147c557cf.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -722,25 +634,24 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://github.com/sonnyp/Tangram/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/re.sonny.Tangram.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/re.sonny.Tangram.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/re.sonny.Tangram.flatpakref",
-  "currentReleaseVersion": "1.2.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Add support for downloading files</li>\n<li>Better desktop integration</li>\n<li>Fix the main window becoming tiny when unmaximizing</li>\n<li>Enable touchpad/touchscreen swipe navigation gestures</li>\n</ul>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/re.sonny.Tangram.flatpakref",
+  "currentReleaseVersion": "1.3.0",
+  "currentReleaseDescription": "<ul><li>Enable spell checking</li><li>Customizable user-agent per instance</li><li>New project icon/logo</li><li>New tab background color respects dark mode</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/re.sonny.Tangram.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/re.sonny.Tangram.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/re.sonny.Tangram-stable/224x126/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/re.sonny.Tangram-stable/624x351/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/re.sonny.Tangram-stable/752x423/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/re.sonny.Tangram-stable/224x126/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/re.sonny.Tangram-stable/624x351/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/re.sonny.Tangram-stable/752x423/re.sonny.Tangram-00d699a3116e2a6dd2395975d1acfcda.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -751,25 +662,24 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.gnome.org/jvieira.tpt/metronome/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.jvieira.tpt.Metronome.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.jvieira.tpt.Metronome.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.jvieira.tpt.Metronome.flatpakref",
-  "currentReleaseVersion": "0.1.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Metronome release 0.1.1. Added shortcuts support.</p>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.jvieira.tpt.Metronome.flatpakref",
+  "currentReleaseVersion": "0.1.1",
+  "currentReleaseDescription": "<p>Metronome release 0.1.1. Added shortcuts support.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.jvieira.tpt.Metronome.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.jvieira.tpt.Metronome.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.jvieira.tpt.Metronome-stable/224x126/com.jvieira.tpt.Metronome-17a6691fdd4540cfd29c4bdca9a23d33.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.jvieira.tpt.Metronome-stable/624x351/com.jvieira.tpt.Metronome-17a6691fdd4540cfd29c4bdca9a23d33.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.jvieira.tpt.Metronome-stable/752x423/com.jvieira.tpt.Metronome-17a6691fdd4540cfd29c4bdca9a23d33.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -780,18 +690,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/lollypop/-/issues",
-  "helpUrl": "",
   "donationUrl": "https://www.paypal.me/lollypopgnome",
   "translateUrl": "https://hosted.weblate.org/projects/gnumdk/",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Lollypop.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Lollypop.flatpakref",
-  "currentReleaseVersion": "1.3.5",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/lollypop/-/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Lollypop.flatpakref",
+  "currentReleaseVersion": "1.4.1",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/224x126/org.gnome.Lollypop-d7ecf8983137e4c21d17f89022dc19db.png",
@@ -808,41 +715,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/624x351/org.gnome.Lollypop-bc99070df2534bb541261ebd80a797d6.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Lollypop-stable/752x423/org.gnome.Lollypop-bc99070df2534bb541261ebd80a797d6.png"
     }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.freedesktop.Tuhi",
-  "name": "Tuhi",
-  "summary": "Utility to download drawings from the Wacom Ink range of devices",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/tuhiproject/tuhi/issues",
-  "helpUrl": "https://github.com/tuhiproject/tuhi/wiki",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.freedesktop.Tuhi.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.freedesktop.Tuhi.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.freedesktop.Tuhi.flatpakref",
-  "currentReleaseVersion": "0.5",
+  ],
   "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/224x126/org.freedesktop.Tuhi-0c4ec49f1831933b7eb084c85fb7be1f.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/624x351/org.freedesktop.Tuhi-0c4ec49f1831933b7eb084c85fb7be1f.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/752x423/org.freedesktop.Tuhi-0c4ec49f1831933b7eb084c85fb7be1f.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/224x126/org.freedesktop.Tuhi-eb72c87a6f96363040b736eacc3dd844.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/624x351/org.freedesktop.Tuhi-eb72c87a6f96363040b736eacc3dd844.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Tuhi-stable/752x423/org.freedesktop.Tuhi-eb72c87a6f96363040b736eacc3dd844.png"
-    }
-  ]
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -853,18 +728,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.com/news-flash/news_flash_gtk/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.gitlab.newsflash.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.gitlab.newsflash.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.gitlab.newsflash.flatpakref",
-  "currentReleaseVersion": "1.0.5",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Bugfixes:</p>\n<ul>\n<li>local RSS: enconding support</li>\n<li>local RSS: support content:encoded for RSS 1.0</li>\n<li>database: issue when deleting feed-mappings</li>\n<li>feedly: ignore negative published timestamps</li>\n</ul>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.gitlab.newsflash.flatpakref",
+  "currentReleaseVersion": "1.0.5",
+  "currentReleaseDescription": "<p>Bugfixes:</p><ul><li>local RSS: enconding support</li><li>local RSS: support content:encoded for RSS 1.0</li><li>database: issue when deleting feed-mappings</li><li>feedly: ignore negative published timestamps</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.gitlab.newsflash.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.gitlab.newsflash.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/224x126/com.gitlab.newsflash-6a8bb2ce5e164afc8af71d049cb1d7bc.png",
@@ -896,7 +768,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/624x351/com.gitlab.newsflash-35d9a1a6715530f9b8fddb5728b4d00a.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.newsflash-stable/752x423/com.gitlab.newsflash-35d9a1a6715530f9b8fddb5728b4d00a.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -907,18 +781,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.gnome.org/World/gcolor3/issues",
-  "helpUrl": "https://gitlab.gnome.org/World/gcolor3/issues",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/nl.hjdskes.gcolor3.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/nl.hjdskes.gcolor3.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/nl.hjdskes.gcolor3.flatpakref",
-  "currentReleaseVersion": "2.4.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Gcolor3 is now \"Color Picker\"! With the rename comes a new maintiner, a new icon, lots of new improvements, and many translation updates.</p>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/nl.hjdskes.gcolor3.flatpakref",
+  "currentReleaseVersion": "2.4.0",
+  "currentReleaseDescription": "<p>Gcolor3 is now \"Color Picker\"! With the rename comes a new maintiner, a new icon, lots of new improvements, and many translation updates.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/nl.hjdskes.gcolor3.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/nl.hjdskes.gcolor3.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/nl.hjdskes.gcolor3-stable/224x126/nl.hjdskes.gcolor3-68787b0dc9ee5c122f714b9ac8bc5a38.png",
@@ -930,7 +801,9 @@ export const EDITORSCHOICEAPPS: App[] = [
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/nl.hjdskes.gcolor3-stable/624x351/nl.hjdskes.gcolor3-04f1f8828cf8b46ac4e5c65f23e75205.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/nl.hjdskes.gcolor3-stable/752x423/nl.hjdskes.gcolor3-04f1f8828cf8b46ac4e5c65f23e75205.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -941,25 +814,29 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/rafaelmardojai/blanket/issues",
-  "helpUrl": "",
   "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.Blanket.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.rafaelmardojai.Blanket.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.rafaelmardojai.Blanket.flatpakref",
-  "currentReleaseVersion": "0.1.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>Initial release.</p>\n",
-  "inStoreSinceDate": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/rafaelmardojai/blanket/issues",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.rafaelmardojai.Blanket.flatpakref",
+  "currentReleaseVersion": "0.3.1",
+  "currentReleaseDescription": "<ul><li>Added Brazilian Portuguese translation</li><li>Bug fixes</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.Blanket.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.rafaelmardojai.Blanket.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/224x126/com.rafaelmardojai.Blanket-f7948115c1941331c269175a727ce9d1.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/624x351/com.rafaelmardojai.Blanket-f7948115c1941331c269175a727ce9d1.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/752x423/com.rafaelmardojai.Blanket-f7948115c1941331c269175a727ce9d1.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/224x126/com.rafaelmardojai.Blanket-0dff2c879c0e617a891f6698eac19e51.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/624x351/com.rafaelmardojai.Blanket-0dff2c879c0e617a891f6698eac19e51.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/752x423/com.rafaelmardojai.Blanket-0dff2c879c0e617a891f6698eac19e51.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/224x126/com.rafaelmardojai.Blanket-a866da6d1358b06830e82a8d430ddb33.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/624x351/com.rafaelmardojai.Blanket-a866da6d1358b06830e82a8d430ddb33.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.rafaelmardojai.Blanket-stable/752x423/com.rafaelmardojai.Blanket-a866da6d1358b06830e82a8d430ddb33.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -970,25 +847,151 @@ export const EDITORSCHOICEAPPS: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
   "bugtrackerUrl": "https://gitlab.gnome.org/BjoernDaase/journable/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.daase.journable.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.daase.journable.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.daase.journable.flatpakref",
-  "currentReleaseVersion": "0.1.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<ul>\n<li>Correct 0.1.0 release notes</li>\n<li>Fix warnings when starting Journable</li>\n<li>Add shortcuts to close Journable</li>\n<li>Update docs and build instructions</li>\n</ul>\n",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.daase.journable.flatpakref",
+  "currentReleaseVersion": "0.1.1",
+  "currentReleaseDescription": "<ul><li>Correct 0.1.0 release notes</li><li>Fix warnings when starting Journable</li><li>Add shortcuts to close Journable</li><li>Update docs and build instructions</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.daase.journable.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.daase.journable.png",
   "screenshots": [
     {
       "thumbUrl": "https://flathub.org/repo/screenshots/net.daase.journable-stable/224x126/net.daase.journable-9057dc1108254deb04c7dd84cc57f16a.png",
       "imgMobileUrl": "https://flathub.org/repo/screenshots/net.daase.journable-stable/624x351/net.daase.journable-9057dc1108254deb04c7dd84cc57f16a.png",
       "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.daase.journable-stable/752x423/net.daase.journable-9057dc1108254deb04c7dd84cc57f16a.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.gnome.gitlab.YaLTeR.Identity",
+  "name": "Identity",
+  "summary": "Compare images and videos",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/identity/issues",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.YaLTeR.Identity.flatpakref",
+  "currentReleaseVersion": "0.1.1",
+  "currentReleaseDescription": "<p>This release fixes minor UI issues.</p><ul><li>When closing a file, the next “tab” is now selected, or, if closing the last file, the previous one is selected.</li><li>Fixed the application title not showing up upon closing all files.</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.Identity.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.Identity.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.Identity-stable/224x126/org.gnome.gitlab.YaLTeR.Identity-7689ce11a8838e9742902c262c5d4e9c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.Identity-stable/624x351/org.gnome.gitlab.YaLTeR.Identity-7689ce11a8838e9742902c262c5d4e9c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.gitlab.YaLTeR.Identity-stable/752x423/org.gnome.gitlab.YaLTeR.Identity-7689ce11a8838e9742902c262c5d4e9c.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.gnome.Solanum",
+  "name": "Solanum",
+  "summary": "Balance working time and break time",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "https://patreon.com/chrisgnome",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/BrainBlasted/Solanum/-/issues",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Solanum.flatpakref",
+  "currentReleaseVersion": "1.1.0",
+  "currentReleaseDescription": "<p>The second stable release of Solanum brings UI tweaks, usability improvements, and new features:</p><ul><li>A skip button has been added, so you can use other time tracking methods in addition to Solanum.</li><li>The start button now plays a small chime, so you know that Solanum will give auditory cues as you work.</li><li>Keywords have been added so Solanum can be found more easily on your desktop.</li><li>The entire window is now draggable instead of just the top.</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Solanum.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Solanum.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Solanum-stable/224x126/org.gnome.Solanum-6cbdf04803525a216773e6fad2ec2b62.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Solanum-stable/624x351/org.gnome.Solanum-6cbdf04803525a216773e6fad2ec2b62.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Solanum-stable/752x423/org.gnome.Solanum-6cbdf04803525a216773e6fad2ec2b62.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Solanum-stable/224x126/org.gnome.Solanum-4b26981c4e8500687d276576644183b9.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Solanum-stable/624x351/org.gnome.Solanum-4b26981c4e8500687d276576644183b9.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Solanum-stable/752x423/org.gnome.Solanum-4b26981c4e8500687d276576644183b9.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.gnome.World.PikaBackup",
+  "name": "Pika Backup",
+  "summary": "Simple backups based on borg",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/pika-backup/-/issues",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.World.PikaBackup.flatpakref",
+  "currentReleaseVersion": "0.1.3",
+  "currentReleaseDescription": "<ul><li>Shorten long error message and make info popover scrollable</li></ul><ul><li>Update to polished app icon by Jakub Steiner</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.World.PikaBackup.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.World.PikaBackup.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/224x126/org.gnome.World.PikaBackup-60f6ae4c642f3ca449e07858a2b6b255.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/624x351/org.gnome.World.PikaBackup-60f6ae4c642f3ca449e07858a2b6b255.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/752x423/org.gnome.World.PikaBackup-60f6ae4c642f3ca449e07858a2b6b255.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/224x126/org.gnome.World.PikaBackup-8d30404e8b90676b0e290572d57364bc.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/624x351/org.gnome.World.PikaBackup-8d30404e8b90676b0e290572d57364bc.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/752x423/org.gnome.World.PikaBackup-8d30404e8b90676b0e290572d57364bc.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/224x126/org.gnome.World.PikaBackup-9a92a489e2e4a1974c24cc7999a426e4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/624x351/org.gnome.World.PikaBackup-9a92a489e2e4a1974c24cc7999a426e4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.World.PikaBackup-stable/752x423/org.gnome.World.PikaBackup-9a92a489e2e4a1974c24cc7999a426e4.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.gnome.Connections",
+  "name": "Connections",
+  "summary": "A remote desktop client for the GNOME desktop environment",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "http://www.gnome.org/friends/",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/gnome/connections/issues",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Connections.flatpakref",
+  "currentReleaseVersion": "3.38.0",
+  "currentReleaseDescription": "<p>Connections 3.38.0 is the latest stable version of Connections, and it contains all the features and bugfixes introduced since our 3.38 release.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Connections.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Connections.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Connections-stable/224x126/org.gnome.Connections-d30894f1447bdbef7997d95459b505e8.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Connections-stable/624x351/org.gnome.Connections-d30894f1447bdbef7997d95459b505e8.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Connections-stable/752x423/org.gnome.Connections-d30894f1447bdbef7997d95459b505e8.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 ];
