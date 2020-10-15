@@ -51,6 +51,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -67,8 +68,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "bugtrackerUrl": "https://github.com/johnfactotum/foliate/issues",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.johnfactotum.Foliate.flatpakref",
-  "currentReleaseVersion": "2.4.2",
-  "currentReleaseDescription": "<p>Fixed unable to open some EPUB files</p>",
+  "currentReleaseVersion": "2.5.0",
+  "currentReleaseDescription": "<p>Changes:</p><ul><li>Improved support for touch screens</li><li>OPDS credentials can now be remembered</li><li>Various fixes for GNOME 3.38</li><li>Fixed Wiktionary internal links</li><li>Added Basque, Korean, and Norwegian translations</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.Foliate.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.Foliate.png",
   "screenshots": [
@@ -104,6 +105,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -120,8 +122,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/hydrapaper/issues",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.hydrapaper.flatpakref",
-  "currentReleaseVersion": "2.0.1",
-  "currentReleaseDescription": "<ul><li>Fixed random wallpaper</li></ul>",
+  "currentReleaseVersion": "2.0.2",
+  "currentReleaseDescription": "<ul><li>Fix for different wallpaper modes not working on single display setups</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
   "screenshots": [
@@ -157,6 +159,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -200,6 +203,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -253,6 +257,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -281,6 +286,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -319,6 +325,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -347,6 +354,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -395,6 +403,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -433,6 +442,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -476,6 +486,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -504,6 +515,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -542,6 +554,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -585,6 +598,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -623,6 +637,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -651,6 +666,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -679,6 +695,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -717,6 +734,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -770,6 +788,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -803,6 +822,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -836,6 +856,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -864,6 +885,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -892,6 +914,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -925,6 +948,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -963,6 +987,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
@@ -991,6 +1016,7 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
+  "helpUrl": "",
   "inStoreSinceDate": null
 }
 ,
