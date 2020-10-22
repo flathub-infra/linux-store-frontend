@@ -24,7 +24,7 @@ interface HashTable<T> {
 
 }
 
-const RECENLY_UPDATED_LIMIT = 5;
+const RECENTLY_UPDATED_LIMIT = 20;
 
 @Injectable()
 export class LinuxStoreApiService {
@@ -141,9 +141,9 @@ export class LinuxStoreApiService {
       this.shuffleArray(EDITORSCHOICEGAMES);
       this.editorPicksAreShuffled = true;
     }
-    
+
     if (collectionId === 'recently-updated') {
-      return this.getRecentlyUpdatedApps(RECENLY_UPDATED_LIMIT);
+      return this.getRecentlyUpdatedApps(RECENTLY_UPDATED_LIMIT);
     } else if (collectionId === 'popular') {
       return of(POPULARAPPS);
     } else if (collectionId === 'editors-choice-apps') {
