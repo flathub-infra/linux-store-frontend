@@ -16,7 +16,7 @@ import { Category } from '../../shared/category.model';
 })
 export class AppListComponent implements OnInit {
 
-  @ViewChild('drawer') drawer;
+  @ViewChild('drawer', { static: true }) drawer;
 
   scrollPosition: [number, number];
 

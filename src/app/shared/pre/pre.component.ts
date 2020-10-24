@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
-import { MatTooltip } from '@angular/material';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
   selector: 'store-pre',
@@ -12,8 +12,8 @@ export class PreComponent {
   @Input() text: string = '';
   @Input() enableCopyToClipboard: boolean = true;
 
-  @ViewChild('textElement', { read: ElementRef }) private textElementView: ElementRef;
-  @ViewChild('textElement') tooltip: MatTooltip;
+  @ViewChild('textElement', { read: ElementRef, static: true }) private textElementView: ElementRef;
+  @ViewChild('textElement', { static: true }) tooltip: MatTooltip;
 
   onCopy() {
 

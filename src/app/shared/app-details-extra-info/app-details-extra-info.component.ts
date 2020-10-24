@@ -3,7 +3,7 @@ import {Component, EventEmitter, Inject, Input, OnInit, Output} from '@angular/c
 import {App} from '../../shared/app.model';
 import {Category} from '../category.model';
 import {LinuxStoreApiService} from '../../linux-store-api.service';
-import {MAT_DIALOG_DATA, MatDialog} from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'store-app-details-extra-info',
