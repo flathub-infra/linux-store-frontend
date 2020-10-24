@@ -28,9 +28,6 @@
               "src/styles.scss",
               "src/themes/flathub/flathub-theme.scss",
               "src/themes/flathub/flathub-fonts.scss"
-            ],
-            "scripts": [
-              "node_modules/hammerjs/hammer.min.js"
             ]
           },
           "configurations": {
@@ -84,9 +81,6 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [
-              "node_modules/hammerjs/hammer.min.js"
-            ],
             "styles": [
               "src/styles.scss",
               "src/themes/flathub/flathub-theme.scss",
