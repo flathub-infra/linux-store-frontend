@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ImageItem, GalleryItem } from '@ngx-gallery/core';
+import { ImageItem, GalleryItem } from 'ng-gallery';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 import { App } from '../../shared/app.model';
