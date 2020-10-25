@@ -70,9 +70,6 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FeedsComponent,
     NotFoundComponent,
   ],
-  entryComponents: [
-    AppDetailsExtraInfoLicenseModalComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
