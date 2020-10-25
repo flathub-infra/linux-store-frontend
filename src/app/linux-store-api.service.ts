@@ -21,36 +21,36 @@ import { REVIEWS } from './shared/mock-reviews';
 
 interface HashTable<T> {
   [key: string]: T;
-
 }
 
 const RECENTLY_UPDATED_LIMIT = 20;
 
 @Injectable()
 export class LinuxStoreApiService {
-
-  private baseUrl = environment.apiUrl;  // URL to web api
+  private baseUrl = environment.apiUrl; // URL to web api
   private appListCache: HashTable<App[]> = {};
   private appDetailsCache: HashTable<App> = {};
   private performingRequest: HashTable<boolean> = {};
 
-  private editorPicksAreShuffled: boolean = false;
+  private editorPicksAreShuffled = false;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getApp(flatpakAppId: string): Observable<App> {
     const request = `/apps/${flatpakAppId}`;
 
-    if (this.appDetailsCache[request] == null && !this.performingRequest[request]) {
+    if (
+      this.appDetailsCache[request] == null &&
+      !this.performingRequest[request]
+    ) {
       this.performingRequest[request] = true;
-      return this.http.get<App>(`${this.baseUrl}${request}`)
-        .pipe(
-          tap(app => {
-            this.appDetailsCache[request] = app;
-            this.performingRequest[request] = false;
-          }),
-          catchError(this.handleError('getApp', null))
-        );
+      return this.http.get<App>(`${this.baseUrl}${request}`).pipe(
+        tap((app) => {
+          this.appDetailsCache[request] = app;
+          this.performingRequest[request] = false;
+        }),
+        catchError(this.handleError('getApp', null))
+      );
     } else {
       return of(this.appDetailsCache[request]);
     }
@@ -67,16 +67,18 @@ export class LinuxStoreApiService {
   getApps(): Observable<App[]> {
     const request = '/apps';
 
-    if (this.appListCache[request] == null && !this.performingRequest[request]) {
+    if (
+      this.appListCache[request] == null &&
+      !this.performingRequest[request]
+    ) {
       this.performingRequest[request] = true;
-      return this.http.get<App[]>(`${this.baseUrl}${request}`)
-        .pipe(
-          tap(apps => {
-            this.appListCache[request] = apps;
-            this.performingRequest[request] = false;
-          }),
-          catchError(this.handleError('getApps', []))
-        );
+      return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+        tap((apps) => {
+          this.appListCache[request] = apps;
+          this.performingRequest[request] = false;
+        }),
+        catchError(this.handleError('getApps', []))
+      );
     } else {
       return of(this.appListCache[request]);
     }
@@ -88,16 +90,18 @@ export class LinuxStoreApiService {
     } else {
       const request = `/apps/category/${categoryId}`;
 
-      if (this.appListCache[request] == null && !this.performingRequest[request]) {
+      if (
+        this.appListCache[request] == null &&
+        !this.performingRequest[request]
+      ) {
         this.performingRequest[request] = true;
-        return this.http.get<App[]>(`${this.baseUrl}${request}`)
-          .pipe(
-            tap(apps => {
-              this.appListCache[request] = apps;
-              this.performingRequest[request] = false;
-            }),
-            catchError(this.handleError('getApps', []))
-          );
+        return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+          tap((apps) => {
+            this.appListCache[request] = apps;
+            this.performingRequest[request] = false;
+          }),
+          catchError(this.handleError('getApps', []))
+        );
       } else {
         return of(this.appListCache[request]);
       }
@@ -107,36 +111,36 @@ export class LinuxStoreApiService {
   getAppsBySearchQuery(searchQuery: string): Observable<App[]> {
     const request = `/apps/search/${searchQuery}`;
 
-    if (this.appListCache[request] == null && !this.performingRequest[request]) {
+    if (
+      this.appListCache[request] == null &&
+      !this.performingRequest[request]
+    ) {
       this.performingRequest[request] = true;
-      return this.http.get<App[]>(`${this.baseUrl}${request}`)
-        .pipe(
-          tap(apps => {
-            this.appListCache[request] = apps;
-            this.performingRequest[request] = false;
-          }),
-          catchError(this.handleError('getApps', []))
-        );
+      return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+        tap((apps) => {
+          this.appListCache[request] = apps;
+          this.performingRequest[request] = false;
+        }),
+        catchError(this.handleError('getApps', []))
+      );
     } else {
       return of(this.appListCache[request]);
     }
   }
 
-
   /* Randomize array in-place using Durstenfeld shuffle algorithm */
   /* Source: https://stackoverflow.com/a/12646864 */
   shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
     }
   }
 
   getAppsByCollectionId(collectionId: string): Observable<App[]> {
-
-    if(!this.editorPicksAreShuffled){
+    if (!this.editorPicksAreShuffled) {
       this.shuffleArray(EDITORSCHOICEAPPS);
       this.shuffleArray(EDITORSCHOICEGAMES);
       this.editorPicksAreShuffled = true;
@@ -156,30 +160,34 @@ export class LinuxStoreApiService {
   }
 
   getRecentlyUpdatedApps(limit?: number): Observable<App[]> {
-    const request = limit > 0 ?
-      `/apps/collection/recently-updated/${limit}` :
-      '/apps/collection/recently-updated/';
+    const request =
+      limit > 0
+        ? `/apps/collection/recently-updated/${limit}`
+        : '/apps/collection/recently-updated/';
 
-    if (this.appListCache[request] == null && !this.performingRequest[request]) {
+    if (
+      this.appListCache[request] == null &&
+      !this.performingRequest[request]
+    ) {
       this.performingRequest[request] = true;
-      return this.http.get<App[]>(`${this.baseUrl}${request}`)
-        .pipe(
-          tap(apps => {
-            this.appListCache[request] = apps;
-            this.performingRequest[request] = false;
-          }),
-          catchError(this.handleError('getApps', []))
-        );
+      return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+        tap((apps) => {
+          this.appListCache[request] = apps;
+          this.performingRequest[request] = false;
+        }),
+        catchError(this.handleError('getApps', []))
+      );
     } else {
       return of(this.appListCache[request]);
     }
   }
 
   getCategory(categoryId: string): Observable<Category> {
-    return this.getCategories()
-      .pipe(
-        map(category => category.find(category => category.id === categoryId))
-      );
+    return this.getCategories().pipe(
+      map((category) =>
+        category.find((_category) => _category.id === categoryId)
+      )
+    );
   }
 
   getCategories(): Observable<Category[]> {
@@ -187,10 +195,11 @@ export class LinuxStoreApiService {
   }
 
   getCollection(collectionId: string): Observable<Collection> {
-    return this.getFeaturedCollections()
-      .pipe(
-        map(collection => collection.find(collection => collection.id === collectionId))
-      );
+    return this.getFeaturedCollections().pipe(
+      map((collection) =>
+        collection.find((_collection) => _collection.id === collectionId)
+      )
+    );
   }
 
   getFeaturedCollections(): Observable<Collection[]> {
@@ -202,21 +211,19 @@ export class LinuxStoreApiService {
   }
 
   getReviews(app_id: string): Observable<Review[]> {
-    return this.getAllReviews()
-      .pipe(
-        map(reviews => reviews.filter(review => review.app_id === app_id))
-      );
+    return this.getAllReviews().pipe(
+      map((reviews) => reviews.filter((review) => review.app_id === app_id))
+    );
   }
 
   /**
-  * Handle Http operation that failed.
-  * Let the app continue.
-  * @param operation - name of the operation that failed
-  * @param result - optional value to return as the observable result
-  */
+   * Handle Http operation that failed.
+   * Let the app continue.
+   * @param operation - name of the operation that failed
+   * @param result - optional value to return as the observable result
+   */
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-
       // TODO: send the error to remote logging infrastructure
       console.error(error); // log to console instead
 
@@ -227,5 +234,4 @@ export class LinuxStoreApiService {
       return of(result as T);
     };
   }
-
 }

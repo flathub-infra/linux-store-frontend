@@ -19,7 +19,7 @@ export class FeedsComponent implements OnInit {
   setPageMetadata() {
 
     const imageUrl: string = window.location.protocol + '//' + window.location.hostname + ':' +
-      window.location.port + '/assets/badges/flathub-badge-en.png'
+      window.location.port + '/assets/badges/flathub-badge-en.png';
 
     this.seoService.setPageMetadata(
       'RSS—Flathub',

@@ -31,7 +31,7 @@ export class AppCardListComponent implements OnInit, OnChanges {
   appsToShow: App[];
   calculatedNumCols: number;
 
-  @Output('showAppDetails')
+  @Output()
   showAppDetails: EventEmitter<App> = new EventEmitter<App>();
 
   ngOnInit() {

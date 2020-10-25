@@ -8,7 +8,7 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class ToolbarComponent {
 
-  @Output('search') search: EventEmitter<string> = new EventEmitter<string>();
+  @Output() search: EventEmitter<string> = new EventEmitter<string>();
 
   showSearchInput = false;
 
