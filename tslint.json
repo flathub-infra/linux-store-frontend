@@ -1,6 +1,7 @@
 {
+  "extends": "tslint:recommended",
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    "codelyzer"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -123,6 +124,7 @@
     "component-selector": [
       true,
       "element",
+      "store",
       "app",
       "kebab-case"
     ],
