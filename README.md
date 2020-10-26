@@ -4,7 +4,7 @@ This is a web application to browse and install applications present in Flatpak 
 
 The web app obtains data calling a remote REST API implemented in [linux-store-backend](https://github.com/jgarciao/linux-store-backend) 
 
-There is a [development server](http://45.55.104.129) were we test new stuff.
+There is a [development server](http://45.55.104.129) where we test new stuff.
 
 
 ## Code contribution
