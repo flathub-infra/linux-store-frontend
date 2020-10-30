@@ -13,10 +13,10 @@ export class AppCollectionTeaserComponent {
   @Input() collectionTitle: string;
   @Input() collectionList: App[];
 
-  @Output('showAppDetails')
+  @Output()
   showAppDetails: EventEmitter<App> = new EventEmitter<App>();
 
-  @Output('showCollection')
+  @Output()
   showCollection: EventEmitter<string> = new EventEmitter<string>();
 
   onShowAppDetails(app: App): void {

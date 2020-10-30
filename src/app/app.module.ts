@@ -6,7 +6,7 @@ import { DatePipe } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
-import { GalleryModule } from '@ngx-gallery/core';
+import { GalleryModule } from 'ng-gallery';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -70,15 +70,12 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FeedsComponent,
     NotFoundComponent,
   ],
-  entryComponents: [
-    AppDetailsExtraInfoLicenseModalComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    GalleryModule.forRoot(),
+    GalleryModule,
     FlexLayoutModule,
     LinuxStoreAngularMaterialModule,
     AppRoutingModule,

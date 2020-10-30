@@ -1,22 +1,21 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
-import { MatTooltip } from '@angular/material';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
   selector: 'store-pre',
   templateUrl: './pre.component.html',
-  styleUrls: ['./pre.component.scss']
+  styleUrls: ['./pre.component.scss'],
 })
 export class PreComponent {
+  @Input() text = '';
+  @Input() enableCopyToClipboard = true;
 
-  @Input() text: string = '';
-  @Input() enableCopyToClipboard: boolean = true;
-
-  @ViewChild('textElement', { read: ElementRef }) private textElementView: ElementRef;
-  @ViewChild('textElement') tooltip: MatTooltip;
+  @ViewChild('textElement', { read: ElementRef, static: true })
+  private textElementView: ElementRef;
+  @ViewChild('textElement', { static: true }) tooltip: MatTooltip;
 
   onCopy() {
-
     const element: HTMLElement = this.textElementView.nativeElement;
 
     try {
@@ -28,7 +27,9 @@ export class PreComponent {
       selection.removeAllRanges();
       selection.addRange(range);
     } catch (error) {
-      console.warn('Could not select range. Your browser may not be supported.');
+      console.warn(
+        'Could not select range. Your browser may not be supported.'
+      );
     }
     try {
       const status = document.execCommand('Copy');
@@ -42,8 +43,10 @@ export class PreComponent {
         throw new Error();
       }
     } catch (error) {
-      console.warn('Could not copy text. Your browser may not be supported.', error);
+      console.warn(
+        'Could not copy text. Your browser may not be supported.',
+        error
+      );
     }
   }
-
 }

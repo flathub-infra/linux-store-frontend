@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
 
   setPageMetadata() {
     const imageUrl: string = window.location.protocol + '//' + window.location.hostname + ':' +
-      window.location.port + '/assets/themes/flathub/flathub-screenshot.png'
+      window.location.port + '/assets/themes/flathub/flathub-screenshot.png';
 
     this.seoService.setPageMetadata(
       'Flathub—An app store and build service for Linux',

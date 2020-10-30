@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
   setPageMetadata() {
 
     const imageUrl: string = window.location.protocol + '//' + window.location.hostname + ':' +
-      window.location.port + '/assets/themes/flathub/flathub-logo.png'
+      window.location.port + '/assets/themes/flathub/flathub-logo.png';
 
     this.seoService.setPageMetadata(
       'About Flathub—Flathub',

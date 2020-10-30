@@ -1,6 +1,7 @@
 {
+  "extends": "tslint:recommended",
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    "codelyzer"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -13,6 +14,9 @@
     "curly": true,
     "eofline": true,
     "forin": true,
+    "deprecation": {
+      "severity": "warning"
+    },
     "import-blacklist": [
       true
     ],
@@ -68,7 +72,6 @@
     "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [
@@ -121,15 +124,16 @@
     "component-selector": [
       true,
       "element",
+      "store",
       "app",
       "kebab-case"
     ],
-    "use-input-property-decorator": true,
-    "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
+    "no-inputs-metadata-property": true,
+    "no-outputs-metadata-property": true,
+    "no-host-metadata-property": true,
     "no-input-rename": true,
     "no-output-rename": true,
-    "use-life-cycle-interface": true,
+    "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true
