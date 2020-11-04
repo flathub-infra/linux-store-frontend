@@ -11,7 +11,7 @@ import { App } from '../../shared/app.model';
 })
 export class AppCardListComponent implements OnInit, OnChanges {
 
-  @ViewChild('applist', { read: ElementRef }) private elementView: ElementRef;
+  @ViewChild('applist', { read: ElementRef, static: true }) private elementView: ElementRef;
 
   @Input()
   apps: App[];
@@ -31,7 +31,7 @@ export class AppCardListComponent implements OnInit, OnChanges {
   appsToShow: App[];
   calculatedNumCols: number;
 
-  @Output('showAppDetails')
+  @Output()
   showAppDetails: EventEmitter<App> = new EventEmitter<App>();
 
   ngOnInit() {

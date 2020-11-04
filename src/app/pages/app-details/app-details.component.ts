@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { SeoService } from '../../seo.service';
 
-
 import { App } from '../../shared/app.model';
 import { Review } from '../../shared/review.model';
 import { LinuxStoreApiService } from '../../linux-store-api.service';
@@ -15,10 +14,9 @@ import { AnalyticsService } from '../../analytics.service';
 @Component({
   selector: 'store-app-details',
   templateUrl: './app-details.component.html',
-  styleUrls: ['./app-details.component.scss']
+  styleUrls: ['./app-details.component.scss'],
 })
 export class AppDetailsComponent implements OnInit {
-
   @Input() app: App;
 
   scrollPosition: [number, number];
@@ -38,62 +36,59 @@ export class AppDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private viewportScroller: ViewportScroller,
     private location: Location,
-    private seoService: SeoService) {
-  }
-
-
+    private seoService: SeoService
+  ) {}
 
   setPageMetadata() {
-
-    var description: string;
+    let description: string;
 
     if (this.app) {
-
       if (this.app.description && this.app.description.length > 0) {
-
-        var descriptionWithOutMarkup: string;
+        let descriptionWithOutMarkup: string;
         descriptionWithOutMarkup = this.app.description.replace(/<[^>]+>/g, '');
 
         if (descriptionWithOutMarkup.length > 297) {
           description = descriptionWithOutMarkup.substring(0, 297) + '…';
-        }
-        else {
+        } else {
           description = descriptionWithOutMarkup;
         }
-      }
-      else {
+      } else {
         description = this.app.summary;
       }
 
-      var iconUrl: string = this.app.iconDesktopUrl;
+      let iconUrl: string = this.app.iconDesktopUrl;
 
       if (this.app.iconDesktopUrl && this.app.iconDesktopUrl.startsWith('/')) {
-        iconUrl = window.location.protocol + '//' + window.location.hostname + ':' +
-          window.location.port + this.app.iconDesktopUrl;
-      }
-      else {
+        iconUrl =
+          window.location.protocol +
+          '//' +
+          window.location.hostname +
+          ':' +
+          window.location.port +
+          this.app.iconDesktopUrl;
+      } else {
         iconUrl = this.app.iconDesktopUrl;
       }
 
       this.seoService.setPageMetadata(
         this.app.name + '—Linux Apps on Flathub',
         description,
-        iconUrl);
-    }
-    else {
-      this.seoService.setPageMetadata('App not found—Linux Apps on Flathub', 'App not found');
+        iconUrl
+      );
+    } else {
+      this.seoService.setPageMetadata(
+        'App not found—Linux Apps on Flathub',
+        'App not found'
+      );
       this.notFound = true;
     }
-
   }
 
   ngOnInit() {
-    this.route.paramMap.subscribe(
-      params => {
-        this.paramAppId = params.get('appId');
-        this.getApp(this.paramAppId);
-      }
-    );
+    this.route.paramMap.subscribe((params) => {
+      this.paramAppId = params.get('appId');
+      this.getApp(this.paramAppId);
+    });
   }
 
   getApp(id: string): void {
@@ -106,8 +101,9 @@ export class AppDetailsComponent implements OnInit {
 
   getReviews(id: string): void {
     const app_id: string = id.concat('.desktop');
-    this.linuxStoreApiService.getReviews(app_id)
-      .subscribe(reviews => { this.reviews = reviews; });
+    this.linuxStoreApiService.getReviews(app_id).subscribe((reviews) => {
+      this.reviews = reviews;
+    });
   }
 
   onSelect(review: Review): void {
@@ -125,5 +121,4 @@ export class AppDetailsComponent implements OnInit {
   onDonate(app: App) {
     this.analyticsService.emitEvent('App', 'Donate', app.flatpakAppId);
   }
-
 }

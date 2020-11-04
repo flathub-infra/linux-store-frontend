@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 @Injectable()
 export class SeoService {
 
   constructor(
-    private router: Router,
     private titleService: Title,
     private metaService: Meta) { }
 
