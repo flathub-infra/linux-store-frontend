@@ -76,12 +76,13 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       {
-        enableTracing: false, // <-- debugging purposes only
-        scrollPositionRestoration: 'enabled',
-        // anchorScrolling: 'enabled',
-        scrollOffset: [0, 0], // [x, y],
-        preloadingStrategy: PreloadAllModules
-      }
+    enableTracing: false, // <-- debugging purposes only
+    scrollPositionRestoration: 'enabled',
+    // anchorScrolling: 'enabled',
+    scrollOffset: [0, 0], // [x, y],
+    preloadingStrategy: PreloadAllModules,
+    relativeLinkResolution: 'legacy'
+}
     )
   ],
   exports: [
