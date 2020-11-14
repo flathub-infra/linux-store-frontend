@@ -2,120 +2,91 @@ import { App } from './app.model';
 
 export const EDITORSCHOICEGAMES: App[] = [
 {
-  "flatpakAppId": "com.moonlight_stream.Moonlight",
-  "name": "Moonlight",
-  "summary": "Stream games from your NVIDIA GameStream-enabled PC",
+  "flatpakAppId": "com.gitlab.coringao.cavestory-nx",
+  "name": "Cave Story NX",
+  "summary": "A nostalgic side-action adventure game",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/moonlight-stream/moonlight-qt/issues",
-  "helpUrl": "https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.moonlight_stream.Moonlight.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.moonlight_stream.Moonlight.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.moonlight_stream.Moonlight.flatpakref",
-  "currentReleaseVersion": "0.5.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "<p>New features:</p>\n<ul>\n<li>Added option to enable mouse acceleration for remote desktop usage</li>\n<li>Added option to disable automatic PC discovery</li>\n<li>Added gamepad mappings from gabomdq's SDL_GameControllerDB</li>\n<li>Added help links to error dialogs</li>\n<li>Added quit shortcut tip to stream loading page</li>\n<li>Restored the autodetect audio configuration option</li>\n</ul>\n<p>Bugfixes:</p>\n<ul>\n<li>Fixed quit app dialog starting the wrong app</li>\n<li>Fixed very high input lag on GFE 3.14.0 and earlier</li>\n<li>Fixed sending errant mouse click when capturing the mouse</li>\n</ul>\n",
-  "inStoreSinceDate": null,
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": "",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.gitlab.coringao.cavestory-nx.flatpakref",
+  "currentReleaseVersion": "1.3.0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.gitlab.coringao.cavestory-nx.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.gitlab.coringao.cavestory-nx.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.moonlight_stream.Moonlight-stable/224x126/com.moonlight_stream-8546c0de792dad1cd869e701fa0d2465.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.moonlight_stream.Moonlight-stable/624x351/com.moonlight_stream-8546c0de792dad1cd869e701fa0d2465.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.moonlight_stream.Moonlight-stable/752x423/com.moonlight_stream-8546c0de792dad1cd869e701fa0d2465.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.coringao.cavestory-nx-stable/224x126/com.gitlab.coringao.cavestory-nx-0c09ea7e50a779e61f2dfd9e9a839adc.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.coringao.cavestory-nx-stable/624x351/com.gitlab.coringao.cavestory-nx-0c09ea7e50a779e61f2dfd9e9a839adc.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.coringao.cavestory-nx-stable/752x423/com.gitlab.coringao.cavestory-nx-0c09ea7e50a779e61f2dfd9e9a839adc.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.moonlight_stream.Moonlight-stable/224x126/com.moonlight_stream-79dbff26c558e2beb0b04c9154e0161a.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.moonlight_stream.Moonlight-stable/624x351/com.moonlight_stream-79dbff26c558e2beb0b04c9154e0161a.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.moonlight_stream.Moonlight-stable/752x423/com.moonlight_stream-79dbff26c558e2beb0b04c9154e0161a.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.coringao.cavestory-nx-stable/224x126/com.gitlab.coringao.cavestory-nx-73d1fbfeb2609c41aed9ba8c32f82f01.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.coringao.cavestory-nx-stable/624x351/com.gitlab.coringao.cavestory-nx-73d1fbfeb2609c41aed9ba8c32f82f01.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.gitlab.coringao.cavestory-nx-stable/752x423/com.gitlab.coringao.cavestory-nx-73d1fbfeb2609c41aed9ba8c32f82f01.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.gnome.Games",
-  "name": "Games",
-  "summary": "Simple game launcher for GNOME",
+  "flatpakAppId": "com.katawa_shoujo.KatawaShoujo",
+  "name": "Katawa Shoujo",
+  "summary": "A bishoujo-style visual novel",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-games",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Games.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Games.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Games.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.katawa_shoujo.KatawaShoujo.flatpakref",
+  "currentReleaseVersion": "1.3.1",
+  "currentReleaseDescription": "<p>Katawa Shoujo 1.3.1 is released! It contains several script fixes for the Japanese localization.</p><p>This is in all likelihood the final release of Katawa Shoujo ever.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.katawa_shoujo.KatawaShoujo.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.katawa_shoujo.KatawaShoujo.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/224x126/org.gnome.Games-6164e9dc5af7c987906648f5db50d04a.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/624x351/org.gnome.Games-6164e9dc5af7c987906648f5db50d04a.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/752x423/org.gnome.Games-6164e9dc5af7c987906648f5db50d04a.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/224x126/com.katawa_shoujo.KatawaShoujo-d2ba07593dc81f7198d8fe67796c883e.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/624x351/com.katawa_shoujo.KatawaShoujo-d2ba07593dc81f7198d8fe67796c883e.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/752x423/com.katawa_shoujo.KatawaShoujo-d2ba07593dc81f7198d8fe67796c883e.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/224x126/org.gnome.Games-afce0bc429d6fd27e78a8dd8a8e673cf.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/624x351/org.gnome.Games-afce0bc429d6fd27e78a8dd8a8e673cf.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/752x423/org.gnome.Games-afce0bc429d6fd27e78a8dd8a8e673cf.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/224x126/com.katawa_shoujo.KatawaShoujo-6d9608b47c22c7f5cb00239abdd85fb5.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/624x351/com.katawa_shoujo.KatawaShoujo-6d9608b47c22c7f5cb00239abdd85fb5.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/752x423/com.katawa_shoujo.KatawaShoujo-6d9608b47c22c7f5cb00239abdd85fb5.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/224x126/org.gnome.Games-72f6ebe3f48a6627141178e34993a8d2.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/624x351/org.gnome.Games-72f6ebe3f48a6627141178e34993a8d2.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/752x423/org.gnome.Games-72f6ebe3f48a6627141178e34993a8d2.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/224x126/com.katawa_shoujo.KatawaShoujo-af3ffdd2b1ea52326b1ba472c2fdeb88.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/624x351/com.katawa_shoujo.KatawaShoujo-af3ffdd2b1ea52326b1ba472c2fdeb88.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/752x423/com.katawa_shoujo.KatawaShoujo-af3ffdd2b1ea52326b1ba472c2fdeb88.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/224x126/org.gnome.Games-05fbb502fbc5c68d15d5129b643c28f3.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/624x351/org.gnome.Games-05fbb502fbc5c68d15d5129b643c28f3.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.Games-stable/752x423/org.gnome.Games-05fbb502fbc5c68d15d5129b643c28f3.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/224x126/com.katawa_shoujo.KatawaShoujo-95371268a7f152b51213c774becbcc06.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/624x351/com.katawa_shoujo.KatawaShoujo-95371268a7f152b51213c774becbcc06.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/752x423/com.katawa_shoujo.KatawaShoujo-95371268a7f152b51213c774becbcc06.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/224x126/com.katawa_shoujo.KatawaShoujo-070d831686bb0addacf4e81c141a3346.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/624x351/com.katawa_shoujo.KatawaShoujo-070d831686bb0addacf4e81c141a3346.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/752x423/com.katawa_shoujo.KatawaShoujo-070d831686bb0addacf4e81c141a3346.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/224x126/com.katawa_shoujo.KatawaShoujo-8fa0c50c354380c23752f2b7f3a4e2b6.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/624x351/com.katawa_shoujo.KatawaShoujo-8fa0c50c354380c23752f2b7f3a4e2b6.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.katawa_shoujo.KatawaShoujo-stable/752x423/com.katawa_shoujo.KatawaShoujo-8fa0c50c354380c23752f2b7f3a4e2b6.png"
     }
-  ]
-}
-,
-{
-  "flatpakAppId": "com.jagex.RuneScape",
-  "name": "RuneScape",
-  "summary": "A free-to-play fantasy MMORPG",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "https://lh3.googleusercontent.com/2J5PH-QM9n7DjmdJx4EQZq1t4o6Wc0NBkI2RyRiggAOgLf4mupfSXcrC5Jd0vh2okcc=w128",
-  "iconMobileUrl": "https://lh3.googleusercontent.com/2J5PH-QM9n7DjmdJx4EQZq1t4o6Wc0NBkI2RyRiggAOgLf4mupfSXcrC5Jd0vh2okcc=w128",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.jagex.RuneScape.flatpakref",
-  "currentReleaseVersion": "2.2.4",
+  ],
   "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/224x126/com.jagex.RuneScape-de2b8ec5e91a32e73bd8eebce589fb3c.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/624x351/com.jagex.RuneScape-de2b8ec5e91a32e73bd8eebce589fb3c.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/752x423/com.jagex.RuneScape-de2b8ec5e91a32e73bd8eebce589fb3c.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/224x126/com.jagex.RuneScape-12bdd43d036f1cd019393d8425e5cb40.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/624x351/com.jagex.RuneScape-12bdd43d036f1cd019393d8425e5cb40.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/752x423/com.jagex.RuneScape-12bdd43d036f1cd019393d8425e5cb40.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/224x126/com.jagex.RuneScape-4ff6c944e7d907e448578468f2fc7ac6.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/624x351/com.jagex.RuneScape-4ff6c944e7d907e448578468f2fc7ac6.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.jagex.RuneScape-stable/752x423/com.jagex.RuneScape-4ff6c944e7d907e448578468f2fc7ac6.png"
-    }
-  ]
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -126,1051 +97,221 @@ export const EDITORSCHOICEGAMES: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
+  "donationUrl": "https://play0ad.com/community/donate/",
+  "translateUrl": "https://trac.wildfiregames.com/wiki/Localization",
   "bugtrackerUrl": "https://trac.wildfiregames.com/",
   "helpUrl": "",
-  "donationUrl": "https://play0ad.com/community/donate/",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.play0ad.zeroad.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.play0ad.zeroad.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.play0ad.zeroad.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.play0ad.zeroad.flatpakref",
+  "currentReleaseVersion": "0.0.23",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.play0ad.zeroad.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.play0ad.zeroad.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad-f78bee1071a9541a87ba6d2153c9679f.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad-f78bee1071a9541a87ba6d2153c9679f.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad-f78bee1071a9541a87ba6d2153c9679f.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad.zeroad-f78bee1071a9541a87ba6d2153c9679f.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad-877c35adb576a57d452d016b89778b62.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad-877c35adb576a57d452d016b89778b62.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad-877c35adb576a57d452d016b89778b62.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad.zeroad-877c35adb576a57d452d016b89778b62.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad-51d2d5d18af0fe46212c34be1b0c48f4.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad-51d2d5d18af0fe46212c34be1b0c48f4.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad-51d2d5d18af0fe46212c34be1b0c48f4.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad.zeroad-51d2d5d18af0fe46212c34be1b0c48f4.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad-61104bc4b2e9b2ccf627f1ca4ed3afea.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad-61104bc4b2e9b2ccf627f1ca4ed3afea.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad-61104bc4b2e9b2ccf627f1ca4ed3afea.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/224x126/com.play0ad.zeroad-61104bc4b2e9b2ccf627f1ca4ed3afea.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/624x351/com.play0ad.zeroad-61104bc4b2e9b2ccf627f1ca4ed3afea.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.play0ad.zeroad-stable/752x423/com.play0ad.zeroad-61104bc4b2e9b2ccf627f1ca4ed3afea.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.supertuxproject.SuperTux",
-  "name": "SuperTux",
-  "summary": "A jump-and-run game starring Tux the Penguin",
+  "flatpakAppId": "com.teeworlds.Teeworlds",
+  "name": "Teeworlds",
+  "summary": "Online multiplayer shooter game",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/SuperTux/supertux/issues",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.supertuxproject.SuperTux.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.supertuxproject.SuperTux.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.supertuxproject.SuperTux.flatpakref",
-  "currentReleaseVersion": "0.5.1",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.teeworlds.Teeworlds.flatpakref",
+  "currentReleaseVersion": "0.7.5",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.teeworlds.Teeworlds.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.teeworlds.Teeworlds.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/224x126/org.supertuxproject-b879ea5c0ca013a507cb74c2f09bf75b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/624x351/org.supertuxproject-b879ea5c0ca013a507cb74c2f09bf75b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/752x423/org.supertuxproject-b879ea5c0ca013a507cb74c2f09bf75b.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/224x126/com.teeworlds.Teeworlds-c408bea9b7a2ed1e862d0b9384a677ee.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/624x351/com.teeworlds.Teeworlds-c408bea9b7a2ed1e862d0b9384a677ee.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/752x423/com.teeworlds.Teeworlds-c408bea9b7a2ed1e862d0b9384a677ee.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/224x126/org.supertuxproject-9198b5af854278aba94620b8a950f0e6.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/624x351/org.supertuxproject-9198b5af854278aba94620b8a950f0e6.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/752x423/org.supertuxproject-9198b5af854278aba94620b8a950f0e6.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/224x126/com.teeworlds.Teeworlds-e1392aaddb5f7f60b1bd3ae22f884a77.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/624x351/com.teeworlds.Teeworlds-e1392aaddb5f7f60b1bd3ae22f884a77.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/752x423/com.teeworlds.Teeworlds-e1392aaddb5f7f60b1bd3ae22f884a77.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/224x126/org.supertuxproject-c139b2b0212abed47b082583118edd95.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/624x351/org.supertuxproject-c139b2b0212abed47b082583118edd95.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/752x423/org.supertuxproject-c139b2b0212abed47b082583118edd95.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/224x126/com.teeworlds.Teeworlds-5e70d4b8a0225641d12b8f50a16404c1.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/624x351/com.teeworlds.Teeworlds-5e70d4b8a0225641d12b8f50a16404c1.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/752x423/com.teeworlds.Teeworlds-5e70d4b8a0225641d12b8f50a16404c1.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/224x126/org.supertuxproject-7c478db0cc6717c2f881fade2540ced5.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/624x351/org.supertuxproject-7c478db0cc6717c2f881fade2540ced5.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/752x423/org.supertuxproject-7c478db0cc6717c2f881fade2540ced5.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/224x126/org.supertuxproject-ef386e8862214da69c98e1443769cd6f.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/624x351/org.supertuxproject-ef386e8862214da69c98e1443769cd6f.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.supertuxproject.SuperTux-stable/752x423/org.supertuxproject-ef386e8862214da69c98e1443769cd6f.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/224x126/com.teeworlds.Teeworlds-7abec8d8698172419ae3caa2555afb33.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/624x351/com.teeworlds.Teeworlds-7abec8d8698172419ae3caa2555afb33.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.teeworlds.Teeworlds-stable/752x423/com.teeworlds.Teeworlds-7abec8d8698172419ae3caa2555afb33.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.wesnoth.Wesnoth",
-  "name": "Battle for Wesnoth",
-  "summary": "A turn-based strategy game with a high fantasy theme",
+  "flatpakAppId": "io.github.endless_sky.endless_sky",
+  "name": "Endless Sky",
+  "summary": "Space exploration and combat game",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://bugs.wesnoth.org",
-  "helpUrl": "https://wiki.wesnoth.org/WesnothManual",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.wesnoth.Wesnoth.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.wesnoth.Wesnoth.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.wesnoth.Wesnoth.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth-80bda7fa2792c078f578694e9ba86bb3.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth-80bda7fa2792c078f578694e9ba86bb3.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth-80bda7fa2792c078f578694e9ba86bb3.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth-fd21ceb1882cdc7b874e0b15471cf699.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth-fd21ceb1882cdc7b874e0b15471cf699.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth-fd21ceb1882cdc7b874e0b15471cf699.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth-6e280d6e8155d226416d959d34cc4c94.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth-6e280d6e8155d226416d959d34cc4c94.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth-6e280d6e8155d226416d959d34cc4c94.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth-2c1237766d13502b428d9650298d1610.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth-2c1237766d13502b428d9650298d1610.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth-2c1237766d13502b428d9650298d1610.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth-96184eea4d8aeff58d2740d39acc3505.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth-96184eea4d8aeff58d2740d39acc3505.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth-96184eea4d8aeff58d2740d39acc3505.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.DolphinEmu.dolphin-emu",
-  "name": "Dolphin Emulator",
-  "summary": "GameCube / Wii / Triforce Emulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugs.dolphin-emu.org/projects/emulator/issues",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/endless-sky/endless-sky/issues",
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.DolphinEmu.dolphin-emu.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.DolphinEmu.dolphin-emu.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.DolphinEmu.dolphin-emu.flatpakref",
-  "currentReleaseVersion": "5.0-8715",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/io.github.endless_sky.endless_sky.flatpakref",
+  "currentReleaseVersion": "0.9.12",
+  "currentReleaseDescription": "<p>This is a stable release focusing on bug fixes and polishing the recent v0.9.11 release.</p><p>Changes include:</p><ul><li>Buying and selling items at maximum depreciation now accounts for the 7-day grace period.</li><li>Missions will no longer complete if a required passenger isn’t landed with you.</li><li>Several new star images have been added, as well as additional jobs for players with many bunks.</li><li>Tweaks to the balance of solar panels and some Coalition outfits, and to the fleets found in Hai space.</li></ul><p>Plugin authors and content creators have some small engine updates to consider:</p><ul><li>Automatic condition variables now update daily, and not just upon landing.</li><li>The flagship’s system and planet are available as condition variables.</li><li>Heat can be added to a ship based on the system’s solar power output with the “solar heat” outfit attribute.</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.github.endless_sky.endless_sky.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.github.endless_sky.endless_sky.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/224x126/org.DolphinEmu-0504c49d3dcadcbb48fd6e0b3692af1b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/624x351/org.DolphinEmu-0504c49d3dcadcbb48fd6e0b3692af1b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/752x423/org.DolphinEmu-0504c49d3dcadcbb48fd6e0b3692af1b.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/224x126/io.github.endless_sky.endless_sky-2ca7d6cda78e65af38138d55ca864340.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/624x351/io.github.endless_sky.endless_sky-2ca7d6cda78e65af38138d55ca864340.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/752x423/io.github.endless_sky.endless_sky-2ca7d6cda78e65af38138d55ca864340.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/224x126/org.DolphinEmu-1d3cda7a9f78aa41d391014adade7da9.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/624x351/org.DolphinEmu-1d3cda7a9f78aa41d391014adade7da9.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/752x423/org.DolphinEmu-1d3cda7a9f78aa41d391014adade7da9.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/224x126/io.github.endless_sky.endless_sky-798f2bf403bbe8cb542296e3cfd67c64.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/624x351/io.github.endless_sky.endless_sky-798f2bf403bbe8cb542296e3cfd67c64.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/752x423/io.github.endless_sky.endless_sky-798f2bf403bbe8cb542296e3cfd67c64.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/224x126/org.DolphinEmu-6582cb4bcf82629d96c3126938e8236f.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/624x351/org.DolphinEmu-6582cb4bcf82629d96c3126938e8236f.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/752x423/org.DolphinEmu-6582cb4bcf82629d96c3126938e8236f.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/224x126/io.github.endless_sky.endless_sky-3490e01a69625a684bf30a73cd547ed2.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/624x351/io.github.endless_sky.endless_sky-3490e01a69625a684bf30a73cd547ed2.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/752x423/io.github.endless_sky.endless_sky-3490e01a69625a684bf30a73cd547ed2.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/224x126/org.DolphinEmu-177b66b6822f4eadd6132531516dfc00.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/624x351/org.DolphinEmu-177b66b6822f4eadd6132531516dfc00.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.DolphinEmu.dolphin-emu-stable/752x423/org.DolphinEmu-177b66b6822f4eadd6132531516dfc00.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/224x126/io.github.endless_sky.endless_sky-62840d7fc040fad170da3cb805334383.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/624x351/io.github.endless_sky.endless_sky-62840d7fc040fad170da3cb805334383.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/752x423/io.github.endless_sky.endless_sky-62840d7fc040fad170da3cb805334383.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/224x126/io.github.endless_sky.endless_sky-96408449295028b4f255e938b57f7afc.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/624x351/io.github.endless_sky.endless_sky-96408449295028b4f255e938b57f7afc.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.github.endless_sky.endless_sky-stable/752x423/io.github.endless_sky.endless_sky-96408449295028b4f255e938b57f7afc.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.ppsspp.PPSSPP",
-  "name": "PPSSPP",
-  "summary": "A PlayStation Portable emulator",
+  "flatpakAppId": "io.thp.numptyphysics",
+  "name": "Numpty Physics",
+  "summary": "A crayon-drawing based physics puzzle game",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.ppsspp.PPSSPP.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.ppsspp.PPSSPP.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.ppsspp.PPSSPP.flatpakref",
-  "currentReleaseVersion": "1.6.3",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/io.thp.numptyphysics.flatpakref",
+  "currentReleaseVersion": "0.3.4",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.thp.numptyphysics.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.thp.numptyphysics.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/224x126/org.ppsspp-284c46b3e97131bbbc06d9eef5d52cb6.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/624x351/org.ppsspp-284c46b3e97131bbbc06d9eef5d52cb6.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/752x423/org.ppsspp-284c46b3e97131bbbc06d9eef5d52cb6.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/io.thp.numptyphysics-stable/224x126/io.thp.numptyphysics-e22a473bad35588402d1b3c42cd76eed.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.thp.numptyphysics-stable/624x351/io.thp.numptyphysics-e22a473bad35588402d1b3c42cd76eed.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.thp.numptyphysics-stable/752x423/io.thp.numptyphysics-e22a473bad35588402d1b3c42cd76eed.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/224x126/org.ppsspp-fe364bc159b4032a9bb620b3cb7eb5b9.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/624x351/org.ppsspp-fe364bc159b4032a9bb620b3cb7eb5b9.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/752x423/org.ppsspp-fe364bc159b4032a9bb620b3cb7eb5b9.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/224x126/org.ppsspp-425585968ed2dab5cf68a26ba0a94863.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/624x351/org.ppsspp-425585968ed2dab5cf68a26ba0a94863.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/752x423/org.ppsspp-425585968ed2dab5cf68a26ba0a94863.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/224x126/org.ppsspp-c5a4f64ea454df4c10e5c88d8b6ba83e.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/624x351/org.ppsspp-c5a4f64ea454df4c10e5c88d8b6ba83e.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.ppsspp.PPSSPP-stable/752x423/org.ppsspp-c5a4f64ea454df4c10e5c88d8b6ba83e.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/io.thp.numptyphysics-stable/224x126/io.thp.numptyphysics-f0e60bf20604a871320fcce14edd9d09.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.thp.numptyphysics-stable/624x351/io.thp.numptyphysics-f0e60bf20604a871320fcce14edd9d09.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.thp.numptyphysics-stable/752x423/io.thp.numptyphysics-f0e60bf20604a871320fcce14edd9d09.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.gnome.Aisleriot",
-  "name": "Aisleriot Solitaire",
-  "summary": "Play many different solitaire games",
+  "flatpakAppId": "jp.yvt.OpenSpades",
+  "name": "OpenSpades",
+  "summary": "Open Source voxel shooter",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "",
+  "donationUrl": null,
+  "translateUrl": "https://crowdin.com/project/openspades",
+  "bugtrackerUrl": "https://github.com/yvt/openspades/issues",
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.Aisleriot.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.Aisleriot.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.Aisleriot.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/jp.yvt.OpenSpades.flatpakref",
+  "currentReleaseVersion": "0.1.3",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/jp.yvt.OpenSpades.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/jp.yvt.OpenSpades.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.Aisleriot-stable/224x126/org.gnome.Aisleriot-24ee195b537ca2a893fce233facd2076.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.Aisleriot-stable/624x351/org.gnome.Aisleriot-24ee195b537ca2a893fce233facd2076.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.Aisleriot-stable/752x423/org.gnome.Aisleriot-24ee195b537ca2a893fce233facd2076.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/224x126/jp.yvt.OpenSpades-3298c2db54c033f44cee6463cb429740.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/624x351/jp.yvt.OpenSpades-3298c2db54c033f44cee6463cb429740.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/752x423/jp.yvt.OpenSpades-3298c2db54c033f44cee6463cb429740.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/224x126/jp.yvt.OpenSpades-afd88ebc361434e72e650b2be4299d43.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/624x351/jp.yvt.OpenSpades-afd88ebc361434e72e650b2be4299d43.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/752x423/jp.yvt.OpenSpades-afd88ebc361434e72e650b2be4299d43.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/224x126/jp.yvt.OpenSpades-a48a47de55467842a71302cbb34b5555.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/624x351/jp.yvt.OpenSpades-a48a47de55467842a71302cbb34b5555.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/752x423/jp.yvt.OpenSpades-a48a47de55467842a71302cbb34b5555.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/224x126/jp.yvt.OpenSpades-d8ba3a144578afd1dd4b8746196a5f96.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/624x351/jp.yvt.OpenSpades-d8ba3a144578afd1dd4b8746196a5f96.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/752x423/jp.yvt.OpenSpades-d8ba3a144578afd1dd4b8746196a5f96.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/224x126/jp.yvt.OpenSpades-08a1daaa5bfa49f60b08e013e71580d2.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/624x351/jp.yvt.OpenSpades-08a1daaa5bfa49f60b08e013e71580d2.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/752x423/jp.yvt.OpenSpades-08a1daaa5bfa49f60b08e013e71580d2.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/224x126/jp.yvt.OpenSpades-79dfefb7d7bb5d4f1831a7a6e5ab2b0d.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/624x351/jp.yvt.OpenSpades-79dfefb7d7bb5d4f1831a7a6e5ab2b0d.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/jp.yvt.OpenSpades-stable/752x423/jp.yvt.OpenSpades-79dfefb7d7bb5d4f1831a7a6e5ab2b0d.png"
     }
-  ]
-}
-,
-{
-  "flatpakAppId": "net.pcsx2.PCSX2",
-  "name": "PCSX2",
-  "summary": "A Playstation 2 emulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/64x64/net.pcsx2.PCSX2.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.pcsx2.PCSX2.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.pcsx2.PCSX2.flatpakref",
-  "currentReleaseVersion": "1.4.0",
+  ],
   "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": []
-}
-,
-{
-  "flatpakAppId": "ws.openarena.OpenArena",
-  "name": "OpenArena",
-  "summary": "Free and open source first-person shooter",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/ws.openarena.OpenArena.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/ws.openarena.OpenArena.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/ws.openarena.OpenArena.flatpakref",
-  "currentReleaseVersion": "0.8.8",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/224x126/ws.openarena.OpenArena-5115d5371305e3b4e92d9bf7075b518c.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/624x351/ws.openarena.OpenArena-5115d5371305e3b4e92d9bf7075b518c.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/752x423/ws.openarena.OpenArena-5115d5371305e3b4e92d9bf7075b518c.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/224x126/ws.openarena.OpenArena-8c742d1e6d1f606fb19814e4624fbcc9.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/624x351/ws.openarena.OpenArena-8c742d1e6d1f606fb19814e4624fbcc9.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/752x423/ws.openarena.OpenArena-8c742d1e6d1f606fb19814e4624fbcc9.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/224x126/ws.openarena.OpenArena-5a1da8e4b73d634d384d29c2f063673a.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/624x351/ws.openarena.OpenArena-5a1da8e4b73d634d384d29c2f063673a.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/752x423/ws.openarena.OpenArena-5a1da8e4b73d634d384d29c2f063673a.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "ca._0ldsk00l.Nestopia",
-  "name": "Nestopia",
-  "summary": "A Nintendo Entertainment System emulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/ca._0ldsk00l.Nestopia.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/ca._0ldsk00l.Nestopia.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/ca._0ldsk00l.Nestopia.flatpakref",
-  "currentReleaseVersion": "1.48.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": []
-}
-,
-{
-  "flatpakAppId": "net.sf.fuse_emulator",
-  "name": "Fuse",
-  "summary": "Sinclair ZX Spectrum Emulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://sourceforge.net/p/fuse-emulator/bugs/",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.sf.fuse_emulator.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.sf.fuse_emulator.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.sf.fuse_emulator.flatpakref",
-  "currentReleaseVersion": "1.5.6",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/224x126/net.sf.fuse_emulator-f9271f0446147f64e34a2eeb2c1af17a.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/624x351/net.sf.fuse_emulator-f9271f0446147f64e34a2eeb2c1af17a.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/752x423/net.sf.fuse_emulator-f9271f0446147f64e34a2eeb2c1af17a.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/224x126/net.sf.fuse_emulator-c34c2aaac62aeab29c73f70f95517a30.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/624x351/net.sf.fuse_emulator-c34c2aaac62aeab29c73f70f95517a30.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/752x423/net.sf.fuse_emulator-c34c2aaac62aeab29c73f70f95517a30.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/224x126/net.sf.fuse_emulator-a594dc0929c5f23cbde8d99710a7ae53.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/624x351/net.sf.fuse_emulator-a594dc0929c5f23cbde8d99710a7ae53.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/752x423/net.sf.fuse_emulator-a594dc0929c5f23cbde8d99710a7ae53.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/224x126/net.sf.fuse_emulator-8755f9a9a217e77e388cf38014895be5.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/624x351/net.sf.fuse_emulator-8755f9a9a217e77e388cf38014895be5.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sf.fuse_emulator-stable/752x423/net.sf.fuse_emulator-8755f9a9a217e77e388cf38014895be5.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "com.realm667.WolfenDoom_Blade_of_Agony",
-  "name": "WolfenDoom: Blade of Agony",
-  "summary": "Story-driven FPS inspired by WWII shooters from the 90's and early 2000's",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/Realm667/WolfenDoom/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.realm667.WolfenDoom_Blade_of_Agony.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.realm667.WolfenDoom_Blade_of_Agony.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.realm667.WolfenDoom_Blade_of_Agony.flatpakref",
-  "currentReleaseVersion": "2.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-52a92b8ff8868e68e0ef33a78022fdc6.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-52a92b8ff8868e68e0ef33a78022fdc6.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-52a92b8ff8868e68e0ef33a78022fdc6.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-7ac72a256f70cbd410d9aaddd1faf69c.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-7ac72a256f70cbd410d9aaddd1faf69c.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-7ac72a256f70cbd410d9aaddd1faf69c.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-9fcc0b79fa7772f3de49735f5b4aa7c0.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-9fcc0b79fa7772f3de49735f5b4aa7c0.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-9fcc0b79fa7772f3de49735f5b4aa7c0.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-1426d5fc32e75c7e551af52fa0abf757.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-1426d5fc32e75c7e551af52fa0abf757.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-1426d5fc32e75c7e551af52fa0abf757.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-4ee8423785b1697ce35365ad995a13f1.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-4ee8423785b1697ce35365ad995a13f1.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-4ee8423785b1697ce35365ad995a13f1.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-a7223f03df4a4724c7319f0944fbaa29.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-a7223f03df4a4724c7319f0944fbaa29.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-a7223f03df4a4724c7319f0944fbaa29.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-d0904ffda5ddb54eddd23e40e7ed7199.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-d0904ffda5ddb54eddd23e40e7ed7199.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-d0904ffda5ddb54eddd23e40e7ed7199.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/224x126/com.realm667.WolfenDoom_Blade_of_Agony-6a0ead40e535612eb4650d73bef52b84.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/624x351/com.realm667.WolfenDoom_Blade_of_Agony-6a0ead40e535612eb4650d73bef52b84.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.realm667.WolfenDoom_Blade_of_Agony-stable/752x423/com.realm667.WolfenDoom_Blade_of_Agony-6a0ead40e535612eb4650d73bef52b84.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "net.openra.OpenRA",
-  "name": "OpenRA",
-  "summary": "Reimagining of early Westwood real-time strategy games",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.openra.OpenRA.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.openra.OpenRA.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.openra.OpenRA.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/224x126/net.openra-6d2b13bf8301aeb215da90d98e9de1e4.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/624x351/net.openra-6d2b13bf8301aeb215da90d98e9de1e4.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/752x423/net.openra-6d2b13bf8301aeb215da90d98e9de1e4.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/224x126/net.openra-6fe5fb3520b38e87a168af37d3da6352.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/624x351/net.openra-6fe5fb3520b38e87a168af37d3da6352.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/752x423/net.openra-6fe5fb3520b38e87a168af37d3da6352.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/224x126/net.openra-62b7236450845d2eda1301eb84f0b0bc.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/624x351/net.openra-62b7236450845d2eda1301eb84f0b0bc.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/752x423/net.openra-62b7236450845d2eda1301eb84f0b0bc.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/224x126/net.openra-ad9c9087ee88e667b01ff2244f68493b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/624x351/net.openra-ad9c9087ee88e667b01ff2244f68493b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.openra.OpenRA-stable/752x423/net.openra-ad9c9087ee88e667b01ff2244f68493b.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "com.snes9x.Snes9x",
-  "name": "Snes9x",
-  "summary": "A Super Nintendo emulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.snes9x.Snes9x.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.snes9x.Snes9x.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.snes9x.Snes9x.flatpakref",
-  "currentReleaseVersion": "1.56.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/224x126/com.snes9x.Snes9x-62cd4c4bad00ab97a770a48a2f83abfe.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/624x351/com.snes9x.Snes9x-62cd4c4bad00ab97a770a48a2f83abfe.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/752x423/com.snes9x.Snes9x-62cd4c4bad00ab97a770a48a2f83abfe.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/224x126/com.snes9x.Snes9x-ebde7b4ff30b15566dcd3642e78886e1.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/624x351/com.snes9x.Snes9x-ebde7b4ff30b15566dcd3642e78886e1.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/752x423/com.snes9x.Snes9x-ebde7b4ff30b15566dcd3642e78886e1.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/224x126/com.snes9x.Snes9x-988d5709114f172afb26f2c184089f09.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/624x351/com.snes9x.Snes9x-988d5709114f172afb26f2c184089f09.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.snes9x.Snes9x-stable/752x423/com.snes9x.Snes9x-988d5709114f172afb26f2c184089f09.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "com.albiononline.AlbionOnline",
-  "name": "Albion Online",
-  "summary": "MMORPG open medieval fantasy game",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.albiononline.AlbionOnline.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.albiononline.AlbionOnline.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.albiononline.AlbionOnline.flatpakref",
-  "currentReleaseVersion": "1.0.34.184",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/224x126/com.albiononline.AlbionOnline-f57087efec24ed451515f4f690d9b1ba.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/624x351/com.albiononline.AlbionOnline-f57087efec24ed451515f4f690d9b1ba.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/752x423/com.albiononline.AlbionOnline-f57087efec24ed451515f4f690d9b1ba.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/224x126/com.albiononline.AlbionOnline-e549dc08e4ee86297bc13c7fdf015099.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/624x351/com.albiononline.AlbionOnline-e549dc08e4ee86297bc13c7fdf015099.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/752x423/com.albiononline.AlbionOnline-e549dc08e4ee86297bc13c7fdf015099.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/224x126/com.albiononline.AlbionOnline-4443e8a906ef66c74a70664264542c67.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/624x351/com.albiononline.AlbionOnline-4443e8a906ef66c74a70664264542c67.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.albiononline.AlbionOnline-stable/752x423/com.albiononline.AlbionOnline-4443e8a906ef66c74a70664264542c67.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.gnome.Chess",
-  "name": "GNOME Chess",
-  "summary": "Play the classic two-player board game of chess",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-chess",
-  "helpUrl": "https://help.gnome.org/users/gnome-chess/stable/",
-  "donationUrl": "http://www.gnome.org/friends/",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.gnome.chess.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.gnome.chess.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.gnome.chess.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.gnome.chess-stable/224x126/org.gnome-1afc553b4a781262ec5ad8cf9fdd2030.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.gnome.chess-stable/624x351/org.gnome-1afc553b4a781262ec5ad8cf9fdd2030.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.gnome.chess-stable/752x423/org.gnome-1afc553b4a781262ec5ad8cf9fdd2030.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "net.sourceforge.mars-game",
-  "name": "M.A.R.S. - A ridiculous shooter",
-  "summary": "2D space shooter with awesome visual effects",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.sourceforge.mars-game.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.sourceforge.mars-game.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.sourceforge.mars-game.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/224x126/net.sourceforge.mars-game-4c2596c5062f282a728304a4c675d1b1.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/624x351/net.sourceforge.mars-game-4c2596c5062f282a728304a4c675d1b1.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/752x423/net.sourceforge.mars-game-4c2596c5062f282a728304a4c675d1b1.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/224x126/net.sourceforge.mars-game-42c309c7cefe2faed067a3e68ba96b0e.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/624x351/net.sourceforge.mars-game-42c309c7cefe2faed067a3e68ba96b0e.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/752x423/net.sourceforge.mars-game-42c309c7cefe2faed067a3e68ba96b0e.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/224x126/net.sourceforge.mars-game-7ebfd067e111aadd94515c4599a8b366.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/624x351/net.sourceforge.mars-game-7ebfd067e111aadd94515c4599a8b366.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sourceforge.mars-game-stable/752x423/net.sourceforge.mars-game-7ebfd067e111aadd94515c4599a8b366.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.godotengine.Godot",
-  "name": "Godot",
-  "summary": "Godot game engine editor",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.godotengine.Godot.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.godotengine.Godot.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.godotengine.Godot.flatpakref",
-  "currentReleaseVersion": "3.0.6",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/224x126/org.godotengine.Godot-d0f775d5b3df4b5e29c6c5d9d91b0c96.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/624x351/org.godotengine.Godot-d0f775d5b3df4b5e29c6c5d9d91b0c96.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/752x423/org.godotengine.Godot-d0f775d5b3df4b5e29c6c5d9d91b0c96.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/224x126/org.godotengine.Godot-2def960fac6837f2d6875541a03ae6da.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/624x351/org.godotengine.Godot-2def960fac6837f2d6875541a03ae6da.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/752x423/org.godotengine.Godot-2def960fac6837f2d6875541a03ae6da.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/224x126/org.godotengine.Godot-71a0cf9f6effbdb8a5c738d3ef1e1fee.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/624x351/org.godotengine.Godot-71a0cf9f6effbdb8a5c738d3ef1e1fee.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.godotengine.Godot-stable/752x423/org.godotengine.Godot-71a0cf9f6effbdb8a5c738d3ef1e1fee.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "io.mgba.mGBA",
-  "name": "mGBA",
-  "summary": "Nintendo Game Boy Advance Emulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/io.mgba.mGBA.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/io.mgba.mGBA.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/io.mgba.mGBA.flatpakref",
-  "currentReleaseVersion": "0.6.3",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/224x126/io.mgba-93d2a35caa75604b35d41b42c5f1d5d0.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/624x351/io.mgba-93d2a35caa75604b35d41b42c5f1d5d0.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/752x423/io.mgba-93d2a35caa75604b35d41b42c5f1d5d0.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/224x126/io.mgba-8e95738e11d63d3ae13dc95f06e0947a.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/624x351/io.mgba-8e95738e11d63d3ae13dc95f06e0947a.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/752x423/io.mgba-8e95738e11d63d3ae13dc95f06e0947a.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/224x126/io.mgba-7a223ce921dc4f252f5ea18c6d6b12d8.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/624x351/io.mgba-7a223ce921dc4f252f5ea18c6d6b12d8.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.mgba.mGBA-stable/752x423/io.mgba-7a223ce921dc4f252f5ea18c6d6b12d8.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.tuxfamily.StuntRally",
-  "name": "Stunt Rally",
-  "summary": "Racing game with rally style of driving",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/64x64/org.tuxfamily.StuntRally.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.tuxfamily.StuntRally.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.tuxfamily.StuntRally.flatpakref",
-  "currentReleaseVersion": "2.6",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.tuxfamily.StuntRally-stable/224x126/org.tuxfamily-91fc06b88a31533e5aa32d338b1dc2b3.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.tuxfamily.StuntRally-stable/624x351/org.tuxfamily-91fc06b88a31533e5aa32d338b1dc2b3.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.tuxfamily.StuntRally-stable/752x423/org.tuxfamily-91fc06b88a31533e5aa32d338b1dc2b3.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "net.supertuxkart.SuperTuxKart",
-  "name": "SuperTuxKart",
-  "summary": "A racing game",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/supertuxkart/stk-code/issues",
-  "helpUrl": "https://supertuxkart.net/Community",
-  "donationUrl": "https://supertuxkart.net/Donate",
-  "translateUrl": "https://supertuxkart.net/Translating_STK",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.supertuxkart.SuperTuxKart.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.supertuxkart.SuperTuxKart.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.supertuxkart.SuperTuxKart.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/224x126/net.supertuxkart.SuperTuxKart-c05ebfbd6c8b722c331cf9537d4cd80b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/624x351/net.supertuxkart.SuperTuxKart-c05ebfbd6c8b722c331cf9537d4cd80b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/752x423/net.supertuxkart.SuperTuxKart-c05ebfbd6c8b722c331cf9537d4cd80b.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/224x126/net.supertuxkart.SuperTuxKart-831f64e085b69417fcaab670deac0559.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/624x351/net.supertuxkart.SuperTuxKart-831f64e085b69417fcaab670deac0559.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/752x423/net.supertuxkart.SuperTuxKart-831f64e085b69417fcaab670deac0559.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/224x126/net.supertuxkart.SuperTuxKart-91078cc3c8e300b76f1c1c0244987139.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/624x351/net.supertuxkart.SuperTuxKart-91078cc3c8e300b76f1c1c0244987139.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/752x423/net.supertuxkart.SuperTuxKart-91078cc3c8e300b76f1c1c0244987139.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.kde.gcompris",
-  "name": "GCompris Educational Game",
-  "summary": "Multi-Activity Educational game for children 2 to 10",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://bugs.kde.org/enter_bug.cgi?format=guided&product=gcompris",
-  "helpUrl": "http://gcompris.net/wiki/Manual",
-  "donationUrl": "https://gcompris.net/buy-en.html",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.kde.gcompris.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.kde.gcompris.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.kde.gcompris.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": []
-}
-,
-{
-  "flatpakAppId": "net.sourceforge.chromium-bsu",
-  "name": "Chromium B.S.U.",
-  "summary": "Fast paced, arcade-style, top-scrolling space shooter",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "http://chromium-bsu.sourceforge.net/info.htm",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/64x64/net.sourceforge.chromium-bsu.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.sourceforge.chromium-bsu.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.sourceforge.chromium-bsu.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/224x126/net.sourceforge.chromium-bsu-a2e7b35eb7014feeab92338100ca5203.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/624x351/net.sourceforge.chromium-bsu-a2e7b35eb7014feeab92338100ca5203.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/752x423/net.sourceforge.chromium-bsu-a2e7b35eb7014feeab92338100ca5203.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/224x126/net.sourceforge.chromium-bsu-3260950fc8af739044e584d769df44ab.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/624x351/net.sourceforge.chromium-bsu-3260950fc8af739044e584d769df44ab.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/752x423/net.sourceforge.chromium-bsu-3260950fc8af739044e584d769df44ab.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/224x126/net.sourceforge.chromium-bsu-7ca59bcce6431bc8c9580be4d1de38a1.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/624x351/net.sourceforge.chromium-bsu-7ca59bcce6431bc8c9580be4d1de38a1.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.sourceforge.chromium-bsu-stable/752x423/net.sourceforge.chromium-bsu-7ca59bcce6431bc8c9580be4d1de38a1.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "net.runelite.RuneLite",
-  "name": "RuneLite",
-  "summary": "RuneLite OSRS Client",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.runelite.RuneLite.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.runelite.RuneLite.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.runelite.RuneLite.flatpakref",
-  "currentReleaseVersion": "1.6.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.runelite.RuneLite-stable/224x126/net.runelite.RuneLite-1c47a3a979b500f6dee5d34a49212a1a.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.runelite.RuneLite-stable/624x351/net.runelite.RuneLite-1c47a3a979b500f6dee5d34a49212a1a.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.runelite.RuneLite-stable/752x423/net.runelite.RuneLite-1c47a3a979b500f6dee5d34a49212a1a.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.xonotic.Xonotic",
-  "name": "Xonotic",
-  "summary": "Multiplayer, deathmatch oriented first person shooter",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.xonotic.Xonotic.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.xonotic.Xonotic.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.xonotic.Xonotic.flatpakref",
-  "currentReleaseVersion": "0.8.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-e6ab0d36795dbde176d7b75a5fbe5dae.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-e6ab0d36795dbde176d7b75a5fbe5dae.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-e6ab0d36795dbde176d7b75a5fbe5dae.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-3fc659ba1664b70955ab3cb3911d54d4.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-3fc659ba1664b70955ab3cb3911d54d4.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-3fc659ba1664b70955ab3cb3911d54d4.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-a1d15bdbf65cfc479a7f8a7f3b5ad861.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-a1d15bdbf65cfc479a7f8a7f3b5ad861.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-a1d15bdbf65cfc479a7f8a7f3b5ad861.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-da2a299828a436733a5494c0a0264a99.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-da2a299828a436733a5494c0a0264a99.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-da2a299828a436733a5494c0a0264a99.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-e61173fc91b12ff27be32b31e52689cd.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-e61173fc91b12ff27be32b31e52689cd.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-e61173fc91b12ff27be32b31e52689cd.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "io.github.Freedoom-Phase-1",
-  "name": "Freedoom: Phase 1",
-  "summary": "First-person shooter based on the Doom engine",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/freedoom/freedoom/issues",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/io.github.Freedoom-Phase-1.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/io.github.Freedoom-Phase-1.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/io.github.Freedoom-Phase-1.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/224x126/io.github-e6ebde75ddd76d32dddda15d954ed261.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/624x351/io.github-e6ebde75ddd76d32dddda15d954ed261.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/752x423/io.github-e6ebde75ddd76d32dddda15d954ed261.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/224x126/io.github-7f7580f7b25adc914f5ff64f553251a6.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/624x351/io.github-7f7580f7b25adc914f5ff64f553251a6.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/752x423/io.github-7f7580f7b25adc914f5ff64f553251a6.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/224x126/io.github-6f9bd5ce13ec6b9c6e5c9a026d2687f8.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/624x351/io.github-6f9bd5ce13ec6b9c6e5c9a026d2687f8.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/752x423/io.github-6f9bd5ce13ec6b9c6e5c9a026d2687f8.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/224x126/io.github-02bc48ba9f8d0754b3efafc70ceb9265.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/624x351/io.github-02bc48ba9f8d0754b3efafc70ceb9265.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/io.github.Freedoom-Phase-1-stable/752x423/io.github-02bc48ba9f8d0754b3efafc70ceb9265.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "com.viewizard.AstroMenace",
-  "name": "AstroMenace",
-  "summary": "Hardcore 3D space shooter with spaceship upgrade possibilities",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "",
-  "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/com.viewizard.AstroMenace.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.viewizard.AstroMenace.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.viewizard.AstroMenace.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/224x126/com.viewizard.AstroMenace-5cee4a773c80cdb1a632caa6bb1009f7.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/624x351/com.viewizard.AstroMenace-5cee4a773c80cdb1a632caa6bb1009f7.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/752x423/com.viewizard.AstroMenace-5cee4a773c80cdb1a632caa6bb1009f7.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/224x126/com.viewizard.AstroMenace-c33f0af562582d11af51ed8c6a43c540.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/624x351/com.viewizard.AstroMenace-c33f0af562582d11af51ed8c6a43c540.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/752x423/com.viewizard.AstroMenace-c33f0af562582d11af51ed8c6a43c540.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/224x126/com.viewizard.AstroMenace-2761abb4891cf6e58993931f4143d543.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/624x351/com.viewizard.AstroMenace-2761abb4891cf6e58993931f4143d543.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/752x423/com.viewizard.AstroMenace-2761abb4891cf6e58993931f4143d543.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/224x126/com.viewizard.AstroMenace-02e57481fbaca903ffb4cb0ac624467f.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/624x351/com.viewizard.AstroMenace-02e57481fbaca903ffb4cb0ac624467f.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.viewizard.AstroMenace-stable/752x423/com.viewizard.AstroMenace-02e57481fbaca903ffb4cb0ac624467f.png"
-    }
-  ]
-}
-,
-{
-  "flatpakAppId": "org.flightgear.FlightGear",
-  "name": "FlightGear",
-  "summary": "A free and highly sophisticated flight simulator",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "bugtrackerUrl": "https://sourceforge.net/p/flightgear/codetickets/",
-  "helpUrl": "http://flightgear.sourceforge.net/getstart-en/getstart-en.html",
-  "donationUrl": "http://store.flightgear.org/",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.flightgear.FlightGear.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.flightgear.FlightGear.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.flightgear.FlightGear.flatpakref",
-  "currentReleaseVersion": "2018.2.2",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
-  "categories": null,
-  "screenshots": [
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/224x126/org.flightgear-f6f2bb5d475a4f057580fb82c0542843.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/624x351/org.flightgear-f6f2bb5d475a4f057580fb82c0542843.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/752x423/org.flightgear-f6f2bb5d475a4f057580fb82c0542843.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/224x126/org.flightgear-9022176d1ec55e87d1e8db3a99ddc8e6.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/624x351/org.flightgear-9022176d1ec55e87d1e8db3a99ddc8e6.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/752x423/org.flightgear-9022176d1ec55e87d1e8db3a99ddc8e6.png"
-    },
-    {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/224x126/org.flightgear-252b4ebe7f3127d62a6413d06987513d.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/624x351/org.flightgear-252b4ebe7f3127d62a6413d06987513d.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.flightgear.FlightGear-stable/752x423/org.flightgear-252b4ebe7f3127d62a6413d06987513d.png"
-    }
-  ]
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -1181,74 +322,196 @@ export const EDITORSCHOICEGAMES: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "http://www.minetest.net/development/#reporting-issues",
-  "helpUrl": "http://wiki.minetest.net",
   "donationUrl": "http://www.minetest.net/development/#donate",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/net.minetest.Minetest.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/net.minetest.Minetest.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/net.minetest.Minetest.flatpakref",
-  "currentReleaseVersion": "",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
+  "translateUrl": "http://dev.minetest.net/Translation",
+  "bugtrackerUrl": "http://www.minetest.net/development/#reporting-issues",
+  "helpUrl": "",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.minetest.Minetest.flatpakref",
+  "currentReleaseVersion": "5.3.0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.minetest.Minetest.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.minetest.Minetest.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/224x126/net.minetest-21dc3a736b92e3fe1e8c558e49193292.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/624x351/net.minetest-21dc3a736b92e3fe1e8c558e49193292.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/752x423/net.minetest-21dc3a736b92e3fe1e8c558e49193292.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/224x126/net.minetest.Minetest-9ff92cd340028f6f19e3365d5fa1f195.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/624x351/net.minetest.Minetest-9ff92cd340028f6f19e3365d5fa1f195.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/752x423/net.minetest.Minetest-9ff92cd340028f6f19e3365d5fa1f195.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/224x126/net.minetest-bc1b76ce2d67eb96f068e9dc86461283.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/624x351/net.minetest-bc1b76ce2d67eb96f068e9dc86461283.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/752x423/net.minetest-bc1b76ce2d67eb96f068e9dc86461283.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/224x126/net.minetest.Minetest-c5367a5a47b27e4a12fe34ae29545087.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/624x351/net.minetest.Minetest-c5367a5a47b27e4a12fe34ae29545087.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/752x423/net.minetest.Minetest-c5367a5a47b27e4a12fe34ae29545087.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/224x126/net.minetest-d0cb52e5278e6a0f38304f195140c0d5.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/624x351/net.minetest-d0cb52e5278e6a0f38304f195140c0d5.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.minetest.Minetest-stable/752x423/net.minetest-d0cb52e5278e6a0f38304f195140c0d5.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/224x126/net.minetest.Minetest-339464d5d193390d1bc24d10f86bf991.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/624x351/net.minetest.Minetest-339464d5d193390d1bc24d10f86bf991.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.minetest.Minetest-stable/752x423/net.minetest.Minetest-339464d5d193390d1bc24d10f86bf991.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "com.shatteredpixel.shatteredpixeldungeon",
-  "name": "Shattered Pixel Dungeon",
-  "summary": "Traditional roguelike game with pixel-art graphics and simple interface",
+  "flatpakAppId": "net.pioneerspacesim.Pioneer",
+  "name": "Pioneer",
+  "summary": "A game of lonely space adventure",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/00-Evan/shattered-pixel-dungeon-gdx/issues",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/64x64/com.shatteredpixel.shatteredpixeldungeon.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/com.shatteredpixel.shatteredpixeldungeon.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/com.shatteredpixel.shatteredpixeldungeon.flatpakref",
-  "currentReleaseVersion": "0.6.5",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.pioneerspacesim.Pioneer.flatpakref",
+  "currentReleaseVersion": "20200203",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.pioneerspacesim.Pioneer.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.pioneerspacesim.Pioneer.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/224x126/com.shatteredpixel-298925ca84160216baec259b7ef63a1e.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/624x351/com.shatteredpixel-298925ca84160216baec259b7ef63a1e.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/752x423/com.shatteredpixel-298925ca84160216baec259b7ef63a1e.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/224x126/net.pioneerspacesim.Pioneer-52abaf0c2df46d4a821d49d28e8ff3a4.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/624x351/net.pioneerspacesim.Pioneer-52abaf0c2df46d4a821d49d28e8ff3a4.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/752x423/net.pioneerspacesim.Pioneer-52abaf0c2df46d4a821d49d28e8ff3a4.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/224x126/com.shatteredpixel-e9168b4b946e4d2bf57ad914eeab123b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/624x351/com.shatteredpixel-e9168b4b946e4d2bf57ad914eeab123b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/752x423/com.shatteredpixel-e9168b4b946e4d2bf57ad914eeab123b.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/224x126/net.pioneerspacesim.Pioneer-7a822fa565334a4f9e053fc36b2afc16.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/624x351/net.pioneerspacesim.Pioneer-7a822fa565334a4f9e053fc36b2afc16.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/752x423/net.pioneerspacesim.Pioneer-7a822fa565334a4f9e053fc36b2afc16.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/224x126/com.shatteredpixel-0c0bbaaa141d0336ddc621c56c51dff3.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/624x351/com.shatteredpixel-0c0bbaaa141d0336ddc621c56c51dff3.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/com.shatteredpixel.shatteredpixeldungeon-stable/752x423/com.shatteredpixel-0c0bbaaa141d0336ddc621c56c51dff3.png"
+      "thumbUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/224x126/net.pioneerspacesim.Pioneer-4ec2a6b631b82f6535b99d022394c01e.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/624x351/net.pioneerspacesim.Pioneer-4ec2a6b631b82f6535b99d022394c01e.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/752x423/net.pioneerspacesim.Pioneer-4ec2a6b631b82f6535b99d022394c01e.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/224x126/net.pioneerspacesim.Pioneer-39f055baee77057cba1d443a0a0cd93a.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/624x351/net.pioneerspacesim.Pioneer-39f055baee77057cba1d443a0a0cd93a.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/net.pioneerspacesim.Pioneer-stable/752x423/net.pioneerspacesim.Pioneer-39f055baee77057cba1d443a0a0cd93a.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "net.supertuxkart.SuperTuxKart",
+  "name": "SuperTuxKart",
+  "summary": "A 3D arcade racer with a variety of characters, tracks, and modes to play.",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "https://supertuxkart.net/Donate",
+  "translateUrl": "https://supertuxkart.net/Translating_STK",
+  "bugtrackerUrl": "https://github.com/supertuxkart/stk-code/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.supertuxkart.SuperTuxKart.flatpakref",
+  "currentReleaseVersion": "1.2",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.supertuxkart.SuperTuxKart.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.supertuxkart.SuperTuxKart.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/224x126/net.supertuxkart.SuperTuxKart-831f64e085b69417fcaab670deac0559.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/624x351/net.supertuxkart.SuperTuxKart-831f64e085b69417fcaab670deac0559.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/752x423/net.supertuxkart.SuperTuxKart-831f64e085b69417fcaab670deac0559.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/224x126/net.supertuxkart.SuperTuxKart-c05ebfbd6c8b722c331cf9537d4cd80b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/624x351/net.supertuxkart.SuperTuxKart-c05ebfbd6c8b722c331cf9537d4cd80b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/752x423/net.supertuxkart.SuperTuxKart-c05ebfbd6c8b722c331cf9537d4cd80b.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/224x126/net.supertuxkart.SuperTuxKart-91078cc3c8e300b76f1c1c0244987139.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/624x351/net.supertuxkart.SuperTuxKart-91078cc3c8e300b76f1c1c0244987139.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.supertuxkart.SuperTuxKart-stable/752x423/net.supertuxkart.SuperTuxKart-91078cc3c8e300b76f1c1c0244987139.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "net.veloren.veloren",
+  "name": "Veloren",
+  "summary": "Veloren is a multiplayer voxel RPG written in Rust. It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft.",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.com/veloren/veloren/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.veloren.veloren.flatpakref",
+  "currentReleaseVersion": "0.7.0-5a37bc0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.veloren.veloren.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.veloren.veloren.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/224x126/net.veloren.veloren-bd53e013a2531d0f03783298b98c1eb1.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/624x351/net.veloren.veloren-bd53e013a2531d0f03783298b98c1eb1.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/752x423/net.veloren.veloren-bd53e013a2531d0f03783298b98c1eb1.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/224x126/net.veloren.veloren-0481a4e84ed8aa798ddd0356a6291ca6.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/624x351/net.veloren.veloren-0481a4e84ed8aa798ddd0356a6291ca6.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/752x423/net.veloren.veloren-0481a4e84ed8aa798ddd0356a6291ca6.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/224x126/net.veloren.veloren-2138bb60f021e3374f70aff735ce338d.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/624x351/net.veloren.veloren-2138bb60f021e3374f70aff735ce338d.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/752x423/net.veloren.veloren-2138bb60f021e3374f70aff735ce338d.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/224x126/net.veloren.veloren-f57befa80433c266322e0fe4e62d2c45.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/624x351/net.veloren.veloren-f57befa80433c266322e0fe4e62d2c45.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/net.veloren.veloren-stable/752x423/net.veloren.veloren-f57befa80433c266322e0fe4e62d2c45.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.armagetronad.ArmagetronAdvanced",
+  "name": "Armagetron Advanced",
+  "summary": "3D motorcycle battle",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.armagetronad.ArmagetronAdvanced.flatpakref",
+  "currentReleaseVersion": "0.2.8.3.4",
+  "currentReleaseDescription": "<p>This release is a compiler compatibility release only; we noticed 0.2.8.3.3 had severe problems with gcc 6.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.armagetronad.ArmagetronAdvanced.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.armagetronad.ArmagetronAdvanced.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.armagetronad.ArmagetronAdvanced-stable/224x126/org.armagetronad.ArmagetronAdvanced-d2bf6b90fb1fb06225532da6b2b0a217.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.armagetronad.ArmagetronAdvanced-stable/624x351/org.armagetronad.ArmagetronAdvanced-d2bf6b90fb1fb06225532da6b2b0a217.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.armagetronad.ArmagetronAdvanced-stable/752x423/org.armagetronad.ArmagetronAdvanced-d2bf6b90fb1fb06225532da6b2b0a217.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.armagetronad.ArmagetronAdvanced-stable/224x126/org.armagetronad.ArmagetronAdvanced-de3ea9f864aabfb46e4b9c7aa0637909.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.armagetronad.ArmagetronAdvanced-stable/624x351/org.armagetronad.ArmagetronAdvanced-de3ea9f864aabfb46e4b9c7aa0637909.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.armagetronad.ArmagetronAdvanced-stable/752x423/org.armagetronad.ArmagetronAdvanced-de3ea9f864aabfb46e4b9c7aa0637909.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
@@ -1259,18 +522,16 @@ export const EDITORSCHOICEGAMES: App[] = [
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "https://github.com/clintbellanger/flare-game/issues",
-  "helpUrl": "https://opengameart.org/forums/flare",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.flarerpg.Flare.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.flarerpg.Flare.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.flarerpg.Flare.flatpakref",
-  "currentReleaseVersion": "1.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/flareteam/flare-game/issues",
+  "helpUrl": "",
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.flarerpg.Flare.flatpakref",
+  "currentReleaseVersion": "1.0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.flarerpg.Flare.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.flarerpg.Flare.png",
   "screenshots": [
     {
       "thumbUrl": "https://flathub.org/repo/screenshots/org.flarerpg.Flare-stable/224x126/org.flarerpg.Flare-0a99941672f0ea83adb877806649321b.png",
@@ -1312,70 +573,405 @@ export const EDITORSCHOICEGAMES: App[] = [
       "imgMobileUrl": "https://flathub.org/repo/screenshots/org.flarerpg.Flare-stable/624x351/org.flarerpg.Flare-e7bee00a019c989a9b50b80cd4fdaaab.png",
       "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.flarerpg.Flare-stable/752x423/org.flarerpg.Flare-e7bee00a019c989a9b50b80cd4fdaaab.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.frozen_bubble.frozen-bubble",
-  "name": "Frozen Bubble",
-  "summary": "An addictive game about frozen bubbles",
+  "flatpakAppId": "org.freeorion.FreeOrion",
+  "name": "FreeOrion",
+  "summary": "Turn-based space empire and galactic conquest (4X) computer game",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "",
+  "donationUrl": "http://www.freeorion.org/index.php/Donations",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/freeorion/freeorion/issues",
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/64x64/org.frozen_bubble.frozen-bubble.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.frozen_bubble.frozen-bubble.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.frozen_bubble.frozen-bubble.flatpakref",
-  "currentReleaseVersion": "2.213",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.freeorion.FreeOrion.flatpakref",
+  "currentReleaseVersion": "0.4.10",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.freeorion.FreeOrion.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.freeorion.FreeOrion.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.frozen_bubble.frozen-bubble-stable/224x126/org.frozen_bubble-55fd11d2205325b03dc402b1f06dbb53.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.frozen_bubble.frozen-bubble-stable/624x351/org.frozen_bubble-55fd11d2205325b03dc402b1f06dbb53.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.frozen_bubble.frozen-bubble-stable/752x423/org.frozen_bubble-55fd11d2205325b03dc402b1f06dbb53.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/224x126/org.freeorion.FreeOrion-c52915686f3c38260506d5fc4881a557.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/624x351/org.freeorion.FreeOrion-c52915686f3c38260506d5fc4881a557.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/752x423/org.freeorion.FreeOrion-c52915686f3c38260506d5fc4881a557.png"
     },
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.frozen_bubble.frozen-bubble-stable/224x126/org.frozen_bubble-e1bda615bec05357a39dbd3485354707.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.frozen_bubble.frozen-bubble-stable/624x351/org.frozen_bubble-e1bda615bec05357a39dbd3485354707.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.frozen_bubble.frozen-bubble-stable/752x423/org.frozen_bubble-e1bda615bec05357a39dbd3485354707.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/224x126/org.freeorion.FreeOrion-332957f99f2613d18ec4a83d91d67885.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/624x351/org.freeorion.FreeOrion-332957f99f2613d18ec4a83d91d67885.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/752x423/org.freeorion.FreeOrion-332957f99f2613d18ec4a83d91d67885.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/224x126/org.freeorion.FreeOrion-e080df3c048c4a23072cc3132ec26744.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/624x351/org.freeorion.FreeOrion-e080df3c048c4a23072cc3132ec26744.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/752x423/org.freeorion.FreeOrion-e080df3c048c4a23072cc3132ec26744.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/224x126/org.freeorion.FreeOrion-576f9d213ad2bba19004d05dc5eb4ad5.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/624x351/org.freeorion.FreeOrion-576f9d213ad2bba19004d05dc5eb4ad5.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freeorion.FreeOrion-stable/752x423/org.freeorion.FreeOrion-576f9d213ad2bba19004d05dc5eb4ad5.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 {
-  "flatpakAppId": "org.openttd.OpenTTD",
-  "name": "OpenTTD",
-  "summary": "Opensource reimplementation of Transport Tycoon Deluxe.",
+  "flatpakAppId": "org.gnome.Aisleriot",
+  "name": "Aisleriot Solitaire",
+  "summary": "Play many different solitaire games",
   "description": "",
   "developerName": "",
   "projectLicense": "",
   "homepageUrl": "",
-  "bugtrackerUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
   "helpUrl": "",
-  "donationUrl": "",
-  "translateUrl": "",
-  "iconDesktopUrl": "/repo/appstream/x86_64/icons/128x128/org.openttd.OpenTTD.png",
-  "iconMobileUrl": "/repo/appstream/x86_64/icons/64x64/org.openttd.OpenTTD.png",
-  "downloadFlatpakRefUrl": "/repo/appstream/org.openttd.OpenTTD.flatpakref",
-  "currentReleaseVersion": "1.8.0",
-  "currentReleaseDate": null,
-  "currentReleaseDescription": "",
-  "inStoreSinceDate": null,
   "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Aisleriot.flatpakref",
+  "currentReleaseVersion": "3.22.13",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Aisleriot.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Aisleriot.png",
   "screenshots": [
     {
-      "thumbUrl": "https://flathub.org/repo/screenshots/org.openttd.OpenTTD-stable/224x126/org.openttd.OpenTTD-2f7208748fdf80b8713c6f2f5f50ef3b.png",
-      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.openttd.OpenTTD-stable/624x351/org.openttd.OpenTTD-2f7208748fdf80b8713c6f2f5f50ef3b.png",
-      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.openttd.OpenTTD-stable/752x423/org.openttd.OpenTTD-2f7208748fdf80b8713c6f2f5f50ef3b.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Aisleriot-stable/224x126/org.gnome.Aisleriot-bc6a99b5372201d5a68d5ee39eecb5fb.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Aisleriot-stable/624x351/org.gnome.Aisleriot-bc6a99b5372201d5a68d5ee39eecb5fb.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Aisleriot-stable/752x423/org.gnome.Aisleriot-bc6a99b5372201d5a68d5ee39eecb5fb.png"
     }
-  ]
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.gnome.Chess",
+  "name": "GNOME Chess",
+  "summary": "Play the classic two-player board game of chess",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "http://www.gnome.org/friends/",
+  "translateUrl": "https://wiki.gnome.org/TranslationProject",
+  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-chess/issues/",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Chess.flatpakref",
+  "currentReleaseVersion": "3.38.0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Chess.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Chess.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Chess-stable/224x126/org.gnome.Chess-1afc553b4a781262ec5ad8cf9fdd2030.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Chess-stable/624x351/org.gnome.Chess-1afc553b4a781262ec5ad8cf9fdd2030.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gnome.Chess-stable/752x423/org.gnome.Chess-1afc553b4a781262ec5ad8cf9fdd2030.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.hedgewars.Hedgewars",
+  "name": "Hedgewars",
+  "summary": "Funny turn-based artillery game, featuring fighting Hedgehogs!",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://hedgewars.org/bugs",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.hedgewars.Hedgewars.flatpakref",
+  "currentReleaseVersion": "1.0.0",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.hedgewars.Hedgewars.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.hedgewars.Hedgewars.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-b5fcd4402c85675bdb50728d15d27ce4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-b5fcd4402c85675bdb50728d15d27ce4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-b5fcd4402c85675bdb50728d15d27ce4.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-c65e31f792d9e067ea241b253d56ad67.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-c65e31f792d9e067ea241b253d56ad67.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-c65e31f792d9e067ea241b253d56ad67.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-b242ee5c3b85f0f8e9a6787998d7cbd1.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-b242ee5c3b85f0f8e9a6787998d7cbd1.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-b242ee5c3b85f0f8e9a6787998d7cbd1.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-ab003ba3c5c43b612dc536e88e4c1c7a.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-ab003ba3c5c43b612dc536e88e4c1c7a.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-ab003ba3c5c43b612dc536e88e4c1c7a.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-2814c2ab5877126caddc964ba0d462af.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-2814c2ab5877126caddc964ba0d462af.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-2814c2ab5877126caddc964ba0d462af.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-9610a45c8b0d5e767fcefc5546778f56.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-9610a45c8b0d5e767fcefc5546778f56.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-9610a45c8b0d5e767fcefc5546778f56.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/224x126/org.hedgewars.Hedgewars-c106ddc8c1bb3a3b9ee385702e95835e.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/624x351/org.hedgewars.Hedgewars-c106ddc8c1bb3a3b9ee385702e95835e.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.hedgewars.Hedgewars-stable/752x423/org.hedgewars.Hedgewars-c106ddc8c1bb3a3b9ee385702e95835e.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.opensurge2d.OpenSurge",
+  "name": "Open Surge",
+  "summary": "A fun 2D retro platformer inspired by Sonic games and a game creation system",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "http://opensurge2d.org/contribute",
+  "translateUrl": "http://opensurge2d.org/appdata/translate.html",
+  "bugtrackerUrl": "http://opensurge2d.org/appdata/bugtracker.html",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.opensurge2d.OpenSurge.flatpakref",
+  "currentReleaseVersion": "0.5.1.2",
+  "currentReleaseDescription": "<ul><li>New translations: Serbian, Bosnian, Dutch</li><li>Updated the language selection screen</li><li>Included AppStream metadata for Linux and for the free software ecosystem</li><li>Physics engine: using a fixed timestep at 60 fps for improved precision</li><li>Bugfixes and general improvements</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.opensurge2d.OpenSurge.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.opensurge2d.OpenSurge.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-6602c7e4de7545919da83181f99abd89.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-6602c7e4de7545919da83181f99abd89.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-6602c7e4de7545919da83181f99abd89.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-4935fd6c3485343a02737233147f5b76.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-4935fd6c3485343a02737233147f5b76.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-4935fd6c3485343a02737233147f5b76.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-71b2f39a470e53b0eb45e8f628354045.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-71b2f39a470e53b0eb45e8f628354045.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-71b2f39a470e53b0eb45e8f628354045.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-0f142feb2fb96d0abbce1243e2b70035.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-0f142feb2fb96d0abbce1243e2b70035.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-0f142feb2fb96d0abbce1243e2b70035.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-9bb8d4ed52dd2683d2ae58a2ef2c5742.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-9bb8d4ed52dd2683d2ae58a2ef2c5742.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-9bb8d4ed52dd2683d2ae58a2ef2c5742.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-435b3fb7eb75612fddc531e436b594a7.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-435b3fb7eb75612fddc531e436b594a7.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-435b3fb7eb75612fddc531e436b594a7.png"
+    },
+    {
+      "thumbUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/224x126/org.opensurge2d.OpenSurge-bac5c5eca547712dbe67213dd76281ad.png",
+      "imgMobileUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/624x351/org.opensurge2d.OpenSurge-bac5c5eca547712dbe67213dd76281ad.png",
+      "imgDesktopUrl": "https://flathub.org/repo/screenshots/org.opensurge2d.OpenSurge-stable/752x423/org.opensurge2d.OpenSurge-bac5c5eca547712dbe67213dd76281ad.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.wesnoth.Wesnoth",
+  "name": "Battle for Wesnoth",
+  "summary": "A turn-based strategy game with a high fantasy theme",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": "https://wiki.wesnoth.org/WesnothTranslations",
+  "bugtrackerUrl": "https://bugs.wesnoth.org",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.wesnoth.Wesnoth.flatpakref",
+  "currentReleaseVersion": "1.14.14",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.wesnoth.Wesnoth.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.wesnoth.Wesnoth.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth.Wesnoth-80bda7fa2792c078f578694e9ba86bb3.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth.Wesnoth-80bda7fa2792c078f578694e9ba86bb3.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth.Wesnoth-80bda7fa2792c078f578694e9ba86bb3.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth.Wesnoth-fd21ceb1882cdc7b874e0b15471cf699.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth.Wesnoth-fd21ceb1882cdc7b874e0b15471cf699.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth.Wesnoth-fd21ceb1882cdc7b874e0b15471cf699.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth.Wesnoth-6e280d6e8155d226416d959d34cc4c94.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth.Wesnoth-6e280d6e8155d226416d959d34cc4c94.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth.Wesnoth-6e280d6e8155d226416d959d34cc4c94.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth.Wesnoth-2c1237766d13502b428d9650298d1610.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth.Wesnoth-2c1237766d13502b428d9650298d1610.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth.Wesnoth-2c1237766d13502b428d9650298d1610.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/224x126/org.wesnoth.Wesnoth-96184eea4d8aeff58d2740d39acc3505.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/624x351/org.wesnoth.Wesnoth-96184eea4d8aeff58d2740d39acc3505.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.wesnoth.Wesnoth-stable/752x423/org.wesnoth.Wesnoth-96184eea4d8aeff58d2740d39acc3505.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.xonotic.Xonotic",
+  "name": "Xonotic",
+  "summary": "Multiplayer, deathmatch oriented first person shooter",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.xonotic.Xonotic.flatpakref",
+  "currentReleaseVersion": "0.8.2",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.xonotic.Xonotic.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.xonotic.Xonotic.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-e6ab0d36795dbde176d7b75a5fbe5dae.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-e6ab0d36795dbde176d7b75a5fbe5dae.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-e6ab0d36795dbde176d7b75a5fbe5dae.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-3fc659ba1664b70955ab3cb3911d54d4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-3fc659ba1664b70955ab3cb3911d54d4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-3fc659ba1664b70955ab3cb3911d54d4.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-a1d15bdbf65cfc479a7f8a7f3b5ad861.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-a1d15bdbf65cfc479a7f8a7f3b5ad861.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-a1d15bdbf65cfc479a7f8a7f3b5ad861.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-da2a299828a436733a5494c0a0264a99.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-da2a299828a436733a5494c0a0264a99.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-da2a299828a436733a5494c0a0264a99.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/224x126/org.xonotic.Xonotic-e61173fc91b12ff27be32b31e52689cd.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/624x351/org.xonotic.Xonotic-e61173fc91b12ff27be32b31e52689cd.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.xonotic.Xonotic-stable/752x423/org.xonotic.Xonotic-e61173fc91b12ff27be32b31e52689cd.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "tw.ddnet.ddnet",
+  "name": "DDNet",
+  "summary": "DDraceNetwork, a cooperative racing mod of Teeworlds",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "https://www.paypal.me/ddnet",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/ddnet/ddnet/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/tw.ddnet.ddnet.flatpakref",
+  "currentReleaseVersion": "15.1.3",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/tw.ddnet.ddnet.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/tw.ddnet.ddnet.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/224x126/tw.ddnet.ddnet-05f9f374499061c715a770ceeb347d48.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/624x351/tw.ddnet.ddnet-05f9f374499061c715a770ceeb347d48.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/752x423/tw.ddnet.ddnet-05f9f374499061c715a770ceeb347d48.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/224x126/tw.ddnet.ddnet-72461abc7121b5d9a06b65bad57756af.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/624x351/tw.ddnet.ddnet-72461abc7121b5d9a06b65bad57756af.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/752x423/tw.ddnet.ddnet-72461abc7121b5d9a06b65bad57756af.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/224x126/tw.ddnet.ddnet-6ca0e8461c02843940e48d0f4e953a9e.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/624x351/tw.ddnet.ddnet-6ca0e8461c02843940e48d0f4e953a9e.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/tw.ddnet.ddnet-stable/752x423/tw.ddnet.ddnet-6ca0e8461c02843940e48d0f4e953a9e.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "ws.openarena.OpenArena",
+  "name": "OpenArena",
+  "summary": "Free and open source first-person shooter",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/ws.openarena.OpenArena.flatpakref",
+  "currentReleaseVersion": "0.8.8",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/ws.openarena.OpenArena.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/ws.openarena.OpenArena.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/224x126/ws.openarena.OpenArena-5115d5371305e3b4e92d9bf7075b518c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/624x351/ws.openarena.OpenArena-5115d5371305e3b4e92d9bf7075b518c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/752x423/ws.openarena.OpenArena-5115d5371305e3b4e92d9bf7075b518c.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/224x126/ws.openarena.OpenArena-8c742d1e6d1f606fb19814e4624fbcc9.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/624x351/ws.openarena.OpenArena-8c742d1e6d1f606fb19814e4624fbcc9.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/752x423/ws.openarena.OpenArena-8c742d1e6d1f606fb19814e4624fbcc9.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/224x126/ws.openarena.OpenArena-5a1da8e4b73d634d384d29c2f063673a.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/624x351/ws.openarena.OpenArena-5a1da8e4b73d634d384d29c2f063673a.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/ws.openarena.OpenArena-stable/752x423/ws.openarena.OpenArena-5a1da8e4b73d634d384d29c2f063673a.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
 }
 ,
 ];
