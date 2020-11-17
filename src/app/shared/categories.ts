@@ -34,10 +34,6 @@ export const CATEGORIES: Category[] = [
     "name": "Science"
   },
   {
-    "id": "Settings",
-    "name": "Settings"
-  },
-  {
     "id": "System",
     "name": "System"
   },
