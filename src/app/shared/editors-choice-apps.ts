@@ -123,8 +123,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.hydrapaper.flatpakref",
-  "currentReleaseVersion": "2.0.2",
-  "currentReleaseDescription": "<ul><li>Fix for different wallpaper modes not working on single display setups</li></ul>",
+  "currentReleaseVersion": "2.0.3",
+  "currentReleaseDescription": "<ul><li>Minor improvements to the UI</li><li>Improved phone compatibility</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.hydrapaper.png",
   "screenshots": [
@@ -210,7 +210,7 @@ export const EDITORSCHOICEAPPS: App[] = [
 {
   "flatpakAppId": "org.gnome.PasswordSafe",
   "name": "Password Safe",
-  "summary": "A password manager for GNOME",
+  "summary": "Manage your passwords",
   "description": "",
   "developerName": "",
   "projectLicense": "",
@@ -221,8 +221,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.PasswordSafe.flatpakref",
-  "currentReleaseVersion": "3.99.2",
-  "currentReleaseDescription": "<p>Password Safe 3.99.2 is a maintenance release.</p><ul><li>Fix a crash if certain attributes are empty</li><li>Fix search not returning results issue</li></ul>",
+  "currentReleaseVersion": "4.0",
+  "currentReleaseDescription": "<p>We'd like to present you PasswordSafe with new features, many bugfixes and huge refactoring in the background.</p><p>New Features:</p><ul><li>Password Generator has it's own persistent configuration</li><li>Added new shortcut CTRL-Q which quits the application</li><li>The save dialog now allows to cancel the operation</li></ul><p>Improvements:</p><ul><li>Improved compatibility with Linux phones (Librem 5, PinePhone and others)</li><li>Many performance optimizations, especially for large databases</li><li>Search was improved and settings has been moved into global Settings dialog</li><li>Improved Preferences window</li><li>Some visual polishing has been done</li><li>Huge part of the code-base has been refactored</li></ul><p>Bugfix:</p><ul><li>Multiple crashes has been fixed</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.PasswordSafe.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.PasswordSafe.png",
   "screenshots": [
@@ -410,7 +410,7 @@ export const EDITORSCHOICEAPPS: App[] = [
 {
   "flatpakAppId": "com.github.tchx84.Flatseal",
   "name": "Flatseal",
-  "summary": "A permissions manager for Flatpak",
+  "summary": "Manage Flatpak permissions",
   "description": "",
   "developerName": "",
   "projectLicense": "",
@@ -421,7 +421,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
-  "currentReleaseVersion": "1.6.3",
+  "currentReleaseVersion": "1.6.5",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
@@ -460,8 +460,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
-  "currentReleaseVersion": "0.3.5",
-  "currentReleaseDescription": "<p>Zoom in editor view, show warning when document was deleted on disk, ...</p>",
+  "currentReleaseVersion": "0.3.7",
+  "currentReleaseDescription": "<p>Performance improvements, ...</p>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
   "screenshots": [
@@ -504,8 +504,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.YaLTeR.VideoTrimmer.flatpakref",
-  "currentReleaseVersion": "0.3.1",
-  "currentReleaseDescription": "<p>This release fixes file filter not working on Flatpak and possibly a related file chooser crash.</p>",
+  "currentReleaseVersion": "0.4.0",
+  "currentReleaseDescription": "<p>This release replaces the Done dialog with an in-app notification and adds a command-line argument to specify the output file.</p><ul><li>Added an --output or -o argument to specify the output video path. It will be pre-filled in the save dialog.</li><li>Added support for opening videos with DnD, although it doesn't work on Flatpak unless Video Trimmer is given filesystem access.</li><li>Replaced the Done dialog with an in-app notification to better follow the GNOME HIG.</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
   "screenshots": [
@@ -533,8 +533,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.whatip.flatpakref",
-  "currentReleaseVersion": "0.2",
-  "currentReleaseDescription": "<ul><li>Upgraded to libhandy 1</li><li>Added hostname resolution for devices in the LAN</li><li>Detect HTTP and FTP protocols for devices in the LAN</li></ul>",
+  "currentReleaseVersion": "0.3",
+  "currentReleaseDescription": "<ul><li>Improvements for phone compatibility</li><li>Minor UI improvements</li><li>Mobile broadband and Wireguard connection types are now properly recognized</li><li>Made use of third party services opt-in</li><li>Many improvements and bug fixes</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.whatip.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.whatip.png",
   "screenshots": [
@@ -1034,8 +1034,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.maoschanz.drawing.flatpakref",
-  "currentReleaseVersion": "0.6.2",
-  "currentReleaseDescription": "<p>Version 0.6.2 features several minor bug fixes, and various new translations.</p><p>The 'highlighter' tool now provides options to highlight light text on a dark background.</p><p>When an image has been saved without its transparency, the app now suggests to reload the image from the disk. Also, the 'reload from disk' feature is now available with every possible window layout.</p><p>An action to copy the whole image to clipboard has been added.</p>",
+  "currentReleaseVersion": "0.6.4",
+  "currentReleaseDescription": "<p>Version 0.6.4 features several minor bug fixes, and various new translations.</p><p>The value of the \"use anti-aliasing\" option is now restored when the app starts.</p>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.maoschanz.drawing.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.maoschanz.drawing.png",
   "screenshots": [
@@ -1078,8 +1078,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.gfeeds.flatpakref",
-  "currentReleaseVersion": "0.15",
-  "currentReleaseDescription": "<ul><li>Switched to the new libhandy Avatar widget</li><li>Added Dutch translation courtesy of Heimen Stoffels</li></ul>",
+  "currentReleaseVersion": "0.16.1",
+  "currentReleaseDescription": "<ul><li>Feed icons improvements for high DPI screens</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.gfeeds.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.gfeeds.png",
   "screenshots": [
@@ -1215,6 +1215,137 @@ export const EDITORSCHOICEAPPS: App[] = [
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.gi_lom.dialect-stable/224x126/com.github.gi_lom.dialect-361d479f74d08cdd6f6df2f9a05bc7d0.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.gi_lom.dialect-stable/624x351/com.github.gi_lom.dialect-361d479f74d08cdd6f6df2f9a05bc7d0.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.gi_lom.dialect-stable/752x423/com.github.gi_lom.dialect-361d479f74d08cdd6f6df2f9a05bc7d0.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "com.bitstower.Markets",
+  "name": "Markets",
+  "summary": "A stock, currency and cryptocurrency tracker",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/bitstower/markets/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.bitstower.Markets.flatpakref",
+  "currentReleaseVersion": "0.4.0",
+  "currentReleaseDescription": "<p>Markets 0.4.0 brings new features and bug fixes.</p><ul><li>Added new app icon</li><li>Added reorder support</li><li>Added i18n support</li><li>Fixed various issues</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.bitstower.Markets.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.bitstower.Markets.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/224x126/com.bitstower.Markets-4be3125c8c46eb4f7460860cfdbfca88.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/624x351/com.bitstower.Markets-4be3125c8c46eb4f7460860cfdbfca88.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/752x423/com.bitstower.Markets-4be3125c8c46eb4f7460860cfdbfca88.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "uk.co.mrbenshef.TeX-Match",
+  "name": "TeX Match",
+  "summary": "Find LaTeX symbols by sketching",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/uk.co.mrbenshef.TeX-Match.flatpakref",
+  "currentReleaseVersion": "1.1.0",
+  "currentReleaseDescription": "<ul><li>New icon (by Tobias Bernard)</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/uk.co.mrbenshef.TeX-Match.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/uk.co.mrbenshef.TeX-Match.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/uk.co.mrbenshef.TeX-Match-stable/224x126/uk.co.mrbenshef.TeX-Match-d4b4838dad25df542c12a2ab51b25e67.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/uk.co.mrbenshef.TeX-Match-stable/624x351/uk.co.mrbenshef.TeX-Match-d4b4838dad25df542c12a2ab51b25e67.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/uk.co.mrbenshef.TeX-Match-stable/752x423/uk.co.mrbenshef.TeX-Match-d4b4838dad25df542c12a2ab51b25e67.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/uk.co.mrbenshef.TeX-Match-stable/224x126/uk.co.mrbenshef.TeX-Match-eccac3040aa280d0a1203d9129d4b4a4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/uk.co.mrbenshef.TeX-Match-stable/624x351/uk.co.mrbenshef.TeX-Match-eccac3040aa280d0a1203d9129d4b4a4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/uk.co.mrbenshef.TeX-Match-stable/752x423/uk.co.mrbenshef.TeX-Match-eccac3040aa280d0a1203d9129d4b4a4.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "org.freedesktop.Bustle",
+  "name": "Bustle",
+  "summary": "Draw sequence diagrams of D-Bus activity",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.freedesktop.Bustle.flatpakref",
+  "currentReleaseVersion": "0.8.0",
+  "currentReleaseDescription": "<p>Bustle has a new icon, kindly provided by Tobias Bernard.</p><p>Closing a window without saving a recorded log no longer prompts for confirmation. Anecdotally, most users just want to record and read logs, not save them.</p><p>Bustle now uses GLib's implementation of the D-Bus wire protocol throughout. The only user-facing consequence is that message bodies are now pretty-printed in the GVariant text format.</p><p>Since Bustle no longer depends on any GPL libraries, the project license has been simplified to plain LGPL 2.1 or later.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.freedesktop.Bustle.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.freedesktop.Bustle.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/224x126/org.freedesktop.Bustle-1252718303b782aab604da0fc1537c2c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/624x351/org.freedesktop.Bustle-1252718303b782aab604da0fc1537c2c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/752x423/org.freedesktop.Bustle-1252718303b782aab604da0fc1537c2c.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/224x126/org.freedesktop.Bustle-d608bb052bef499d0ea259f96b3ddf08.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/624x351/org.freedesktop.Bustle-d608bb052bef499d0ea259f96b3ddf08.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/752x423/org.freedesktop.Bustle-d608bb052bef499d0ea259f96b3ddf08.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/224x126/org.freedesktop.Bustle-455a6ef3df65ce5465771b80892824a4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/624x351/org.freedesktop.Bustle-455a6ef3df65ce5465771b80892824a4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.freedesktop.Bustle-stable/752x423/org.freedesktop.Bustle-455a6ef3df65ce5465771b80892824a4.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "com.github.jeromerobert.pdfarranger",
+  "name": "PDF Arranger",
+  "summary": "PDF file merging, rearranging, and splitting",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/jeromerobert/pdfarranger/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.jeromerobert.pdfarranger.flatpakref",
+  "currentReleaseVersion": "1.6.2",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.jeromerobert.pdfarranger.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.jeromerobert.pdfarranger.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.jeromerobert.pdfarranger-stable/224x126/com.github.jeromerobert.pdfarranger-d0ecb951e778d7a94f2cf07f6f7761cf.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.jeromerobert.pdfarranger-stable/624x351/com.github.jeromerobert.pdfarranger-d0ecb951e778d7a94f2cf07f6f7761cf.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.jeromerobert.pdfarranger-stable/752x423/com.github.jeromerobert.pdfarranger-d0ecb951e778d7a94f2cf07f6f7761cf.png"
     }
   ],
   "currentReleaseDate": null,
