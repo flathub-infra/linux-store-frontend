@@ -38,31 +38,36 @@ Steps to run this app locally:
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
     source "$HOME"/.bashrc
     ```
-  * Install Node.js LTS (12.16.X 'Erbium' at this time)
+  * Install Node.js LTS (14.X.X 'fermium' at this time)
     ```
-    nvm install --lts=erbium   
+    nvm install --lts=fermium   
 
     # In Fedora Silverblue I found this error and had to run the suggested commands:
-    #    nvm is not compatible with the npm config "prefix" option: currently set to "/var/home/jorge/.nvm/versions/node/v12.16.2"
-    #    Run `nvm use --delete-prefix v12.16.2` to unset it.
-    nvm use --delete-prefix v12.16.2
+    #    nvm is not compatible with the npm config "prefix" option: currently set to "/var/home/jorge/.nvm/versions/node/v14.15.3"
+    #    Run `nvm use --delete-prefix v14.15.2` to unset it.
+    nvm use --delete-prefix v14.15.2
     npm config delete prefix
-    npm config set prefix $NVM_DIR/versions/node/v12.16.2
+    npm config set prefix $NVM_DIR/versions/node/v14.15.2
+
+    # Set default version
+    nvm use lts/fermium
+    nvm alias default lts/fermium
 
     # Check installation
     nvm ls
-      ->     v12.16.2
-      default -> lts/erbium (-> v12.16.2)
-      node -> stable (-> v12.16.2) (default)
-      stable -> 12.16 (-> v12.16.2) (default)
+      ->     v14.15.3
+      default -> lts/fermium (-> v14.15.3)
+      node -> stable (-> v14.15.3) (default)
+      stable -> 14.15 (-> v14.15.3) (default)
       iojs -> N/A (default)
       unstable -> N/A (default)
-      lts/* -> lts/erbium (-> v12.16.2)
+      lts/* -> lts/fermium (-> v14.15.3)
       lts/argon -> v4.9.1 (-> N/A)
       lts/boron -> v6.17.1 (-> N/A)
       lts/carbon -> v8.17.0 (-> N/A)
-      lts/dubnium -> v10.20.0 (-> N/A)
-      lts/erbium -> v12.16.2
+      lts/dubnium -> v10.23.0 (-> N/A)
+      lts/erbium -> v12.20.0 (-> N/A)
+      lts/fermium -> v14.15.3
     ```
 
 * Install [angular-cli:](https://cli.angular.io/) 
