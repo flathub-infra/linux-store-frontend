@@ -22,4 +22,4 @@ jobs:
         check-latest: true
 
     - run: npm ci
-    - run: npm run build
+    - run: npm run build:prod
