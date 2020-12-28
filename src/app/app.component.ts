@@ -3,9 +3,6 @@ import { Router, NavigationEnd } from '@angular/router';
 
 import { AnalyticsService } from './analytics.service';
 
-// tslint:disable-next-line:ban-types
-declare let ga: Function;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

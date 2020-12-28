@@ -20,15 +20,12 @@ export class AnalyticsService {
   ) {}
 
   public startTracking() {
+    
     this.angulartics2Piwik.startTracking();
   }
 
   public emitPageView(url: string) {
-    if (typeof ga !== 'undefined') {
-      ga('set', 'page', url);
-      ga('send', 'pageview');
-    }
-
+   
     this.angulartics2Piwik.pageTrack(url);
   }
 
@@ -41,15 +38,7 @@ export class AnalyticsService {
     eventLabel: string = null,
     eventValue: number = null
   ) {
-    if (typeof ga !== 'undefined') {
-      ga('send', 'event', {
-        eventCategory,
-        eventLabel,
-        eventAction,
-        eventValue,
-      });
-    }
-
+    
     this.angulartics2.eventTrack.next({
       action: eventAction,
       properties: {
