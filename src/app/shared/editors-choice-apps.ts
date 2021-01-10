@@ -670,7 +670,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "inStoreSinceDate": null
 }
 ,
-,
 {
   "flatpakAppId": "org.gnome.Lollypop",
   "name": "Lollypop",
@@ -1222,7 +1221,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "inStoreSinceDate": null
 }
 ,
-,
 {
   "flatpakAppId": "org.freedesktop.Bustle",
   "name": "Bustle",
@@ -1339,8 +1337,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.unrud.VideoDownloader.flatpakref",
-  "currentReleaseVersion": "0.6.5",
-  "currentReleaseDescription": "<ul><li>Add Swedish translation</li><li>Update Japanese translation</li></ul>",
+  "currentReleaseVersion": "0.6.6",
+  "currentReleaseDescription": "<ul><li>Implement dark mode switcher</li><li>Add Portuguese translation</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.unrud.VideoDownloader.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.unrud.VideoDownloader.png",
   "screenshots": [
