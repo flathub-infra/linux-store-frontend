@@ -26,8 +26,7 @@ echo $BASEURL/apps/category/Graphics >> $DESTFILENAME
 echo $BASEURL/apps/category/Network >> $DESTFILENAME
 echo $BASEURL/apps/category/Office >> $DESTFILENAME
 echo $BASEURL/apps/category/Science >> $DESTFILENAME
-echo $BASEURL/apps/category/Settings >> $DESTFILENAME
-echo $BASEURL/apps/system/Settings >> $DESTFILENAME
+echo $BASEURL/apps/category/System >> $DESTFILENAME
 echo $BASEURL/apps/category/Utility >> $DESTFILENAME
 
 APPIDLIST=`curl -s echo $BASEURL/api/v1/apps | jq -r  .[].flatpakAppId | sort`
