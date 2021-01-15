@@ -17,8 +17,8 @@ export const POPULARAPPS: App[] = [
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.mozilla.firefox.flatpakref",
   "currentReleaseVersion": "84.0.2",
   "currentReleaseDescription": null,
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.mozilla.firefox.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.mozilla.firefox.png",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.mozilla.firefox.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.mozilla.firefox.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.mozilla.firefox-stable/224x126/org.mozilla.firefox-86a0aafdff81b0f40fb0424c12e05227.png",
@@ -124,8 +124,8 @@ export const POPULARAPPS: App[] = [
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/io.mrarm.mcpelauncher.flatpakref",
   "currentReleaseVersion": "0.0.9",
   "currentReleaseDescription": "<p>Revert Gamepad detection, some mouse and touchpads was detected as joystick</p><p>Fix news loading</p><p>Changed middle mouse button to get the old button number again</p><p>No crash if loading a game version without working vtable patching</p><p>Ask for Google Terms of services again, otherwise only old players or who got an old version could use this version of the Launcher</p>",
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/io.mrarm.mcpelauncher.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/io.mrarm.mcpelauncher.png",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.mrarm.mcpelauncher.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.mrarm.mcpelauncher.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/224x126/io.mrarm.mcpelauncher-b5b2e5163be679ec6575944dd189f3f4.png",
@@ -412,8 +412,8 @@ export const POPULARAPPS: App[] = [
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.jamovi.jamovi.flatpakref",
   "currentReleaseVersion": "1.6.9",
   "currentReleaseDescription": "<ul><li>Added normality tests to RM ANOVA</li><li>Added min_valid argument to MEAN() and SUM() functions</li><li>Improvements to linear regression handling large data sets</li><li>Improvements to file load performance</li><li>General improvements and bug-fixes</li></ul>",
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.jamovi.jamovi.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.jamovi.jamovi.png",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.jamovi.jamovi.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.jamovi.jamovi.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.jamovi.jamovi-stable/224x126/org.jamovi.jamovi-849ec36faa89e85660373184a79c6a82.png",
@@ -738,8 +738,8 @@ export const POPULARAPPS: App[] = [
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.meijn.onvifviewer.flatpakref",
   "currentReleaseVersion": "0.12",
   "currentReleaseDescription": "<p>This is a minor release, with the following improvements:</p><ul><li>Added support for camera discovery</li><li>Fixed video viewer for Android</li><li>Improved translations</li><li>Some small improvements</li></ul>",
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/net.meijn.onvifviewer.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/net.meijn.onvifviewer.png",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.meijn.onvifviewer.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/net.meijn.onvifviewer.png",
   "screenshots": [
     {
       "thumbUrl": "https://flathub.org/repo/screenshots/net.meijn.onvifviewer-stable/224x126/net.meijn.onvifviewer-79681f1ea2f925e67f5de8a4b31a359d.png",
@@ -1424,8 +1424,8 @@ export const POPULARAPPS: App[] = [
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/tv.kodi.Kodi.flatpakref",
   "currentReleaseVersion": "18.8-Leia",
   "currentReleaseDescription": null,
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/tv.kodi.Kodi.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/tv.kodi.Kodi.png",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/tv.kodi.Kodi.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/tv.kodi.Kodi.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/tv.kodi.Kodi-stable/224x126/tv.kodi.Kodi-45f62438dfaff894175b052b3ffec7df.png",
@@ -1580,8 +1580,8 @@ export const POPULARAPPS: App[] = [
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.onlyoffice.desktopeditors.flatpakref",
   "currentReleaseVersion": "6.1.0",
   "currentReleaseDescription": null,
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.onlyoffice.desktopeditors.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.onlyoffice.desktopeditors.png",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.onlyoffice.desktopeditors.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.onlyoffice.desktopeditors.png",
   "screenshots": [
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.onlyoffice.desktopeditors-stable/224x126/org.onlyoffice-9e190c9667f7cb42d3493efa09511fe2.png",
