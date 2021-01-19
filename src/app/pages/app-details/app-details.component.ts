@@ -78,7 +78,9 @@ export class AppDetailsComponent implements OnInit {
     } else {
       this.seoService.setPageMetadata(
         'App not found—Linux Apps on Flathub',
-        'App not found'
+        'App not found',
+        '',
+        '404'
       );
       this.notFound = true;
     }
