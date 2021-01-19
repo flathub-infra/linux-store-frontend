@@ -8,7 +8,7 @@ export class SeoService {
     private titleService: Title,
     private metaService: Meta) { }
 
-  setPageMetadata(title: string = '', description: string = '', image: string = '') {
+  setPageMetadata(title: string = '', description: string = '', image: string = '', prerender_status_code: string = '200') {
 
     title = title;
 
@@ -25,6 +25,9 @@ export class SeoService {
     this.metaService.updateTag({ name: 'twitter:title', content: title });
     this.metaService.updateTag({ name: 'twitter:description', content: description });
     this.metaService.updateTag({ name: 'twitter:image', content: image });
-  }
 
+    if (prerender_status_code !== '200') {
+      this.metaService.updateTag({ name: 'prerender-status-code', content: prerender_status_code});
+    };
+  }
 }
