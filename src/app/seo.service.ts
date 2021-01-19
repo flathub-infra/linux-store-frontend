@@ -26,7 +26,7 @@ export class SeoService {
     this.metaService.updateTag({ name: 'twitter:description', content: description });
     this.metaService.updateTag({ name: 'twitter:image', content: image });
 
-    if (prerender_status_code != '200') {
+    if (prerender_status_code !== '200') {
       this.metaService.updateTag({ name: 'prerender-status-code', content: prerender_status_code});
     };
   }
