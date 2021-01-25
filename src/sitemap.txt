@@ -19,6 +19,7 @@ https://flathub.org/apps/category/Office
 https://flathub.org/apps/category/Science
 https://flathub.org/apps/category/System
 https://flathub.org/apps/category/Utility
+https://flathub.org/apps/details/app.lith.Lith
 https://flathub.org/apps/details/app.rednotebook.RedNotebook
 https://flathub.org/apps/details/ar.com.tuxguitar.TuxGuitar
 https://flathub.org/apps/details/at.priv.toastfreeware.ConfClerk
@@ -67,6 +68,7 @@ https://flathub.org/apps/details/com.calibre_ebook.calibre
 https://flathub.org/apps/details/com.chez.GrafX2
 https://flathub.org/apps/details/com.dhsdevelopments.Climaxima
 https://flathub.org/apps/details/com.discordapp.Discord
+https://flathub.org/apps/details/com.diy_fever.DIYLayoutCreator
 https://flathub.org/apps/details/com.dosbox.DOSBox
 https://flathub.org/apps/details/com.dosbox_x.DOSBox-X
 https://flathub.org/apps/details/com.dropbox.Client
@@ -92,7 +94,6 @@ https://flathub.org/apps/details/com.georgefb.quickaccess
 https://flathub.org/apps/details/com.getferdi.Ferdi
 https://flathub.org/apps/details/com.getpostman.Postman
 https://flathub.org/apps/details/com.giadamusic.Giada
-https://flathub.org/apps/details/com.gigitux.gtkwhats
 https://flathub.org/apps/details/com.gigitux.youp
 https://flathub.org/apps/details/com.github._4lex4.ScanTailor-Advanced
 https://flathub.org/apps/details/com.github.afrantzis.Bless
@@ -100,6 +101,7 @@ https://flathub.org/apps/details/com.github.alainm23.byte
 https://flathub.org/apps/details/com.github.alainm23.planner
 https://flathub.org/apps/details/com.github.Alcaro.Flips
 https://flathub.org/apps/details/com.github.alecaddd.sequeler
+https://flathub.org/apps/details/com.github.alexhuntley.Plots
 https://flathub.org/apps/details/com.github.amikha1lov.RecApp
 https://flathub.org/apps/details/com.github.Anuken.Mindustry
 https://flathub.org/apps/details/com.github.appadeia.Taigo
@@ -124,6 +126,7 @@ https://flathub.org/apps/details/com.github.carlos157oliveira.Calculus
 https://flathub.org/apps/details/com.github.coslyk.MoonPlayer
 https://flathub.org/apps/details/com.github.dahenson.agenda
 https://flathub.org/apps/details/com.github.dariasteam.cowsrevenge
+https://flathub.org/apps/details/com.github.dawidd6.checksumo
 https://flathub.org/apps/details/com.github.debauchee.barrier
 https://flathub.org/apps/details/com.github.devalien.workspaces
 https://flathub.org/apps/details/com.github.donadigo.appeditor
@@ -145,6 +148,7 @@ https://flathub.org/apps/details/com.github.huluti.Curtail
 https://flathub.org/apps/details/com.github.inercia.k3x
 https://flathub.org/apps/details/com.github.iortcw.iortcw
 https://flathub.org/apps/details/com.github.IsmaelMartinez.teams_for_linux
+https://flathub.org/apps/details/com.github.itext.i7j_rups
 https://flathub.org/apps/details/com.github.iwalton3.jellyfin-mpv-shim
 https://flathub.org/apps/details/com.github.JannikHv.Gydl
 https://flathub.org/apps/details/com.github.jeromerobert.pdfarranger
@@ -157,10 +161,7 @@ https://flathub.org/apps/details/com.github.junrrein.PDFSlicer
 https://flathub.org/apps/details/com.github.kmwallio.thiefmd
 https://flathub.org/apps/details/com.github.labyrinth_team.labyrinth
 https://flathub.org/apps/details/com.github.lachhebo.Gabtag
-https://flathub.org/apps/details/com.github.lainsce.coin
 https://flathub.org/apps/details/com.github.lainsce.notejot
-https://flathub.org/apps/details/com.github.lainsce.timetable
-https://flathub.org/apps/details/com.github.lainsce.yishu
 https://flathub.org/apps/details/com.github.libresprite.LibreSprite
 https://flathub.org/apps/details/com.github.louis77.tuner
 https://flathub.org/apps/details/com.github.maoschanz.drawing
@@ -171,6 +172,7 @@ https://flathub.org/apps/details/com.github.matfantinel.moneta
 https://flathub.org/apps/details/com.github.matfantinel.reminduck
 https://flathub.org/apps/details/com.github.mdh34.hackup
 https://flathub.org/apps/details/com.github.mdh34.quickdocs
+https://flathub.org/apps/details/com.github.mgropp.PdfJumbler
 https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher
 https://flathub.org/apps/details/com.github.miguelmota.Cointop
 https://flathub.org/apps/details/com.github.mikacousin.olc
@@ -179,6 +181,7 @@ https://flathub.org/apps/details/com.github.muriloventuroso.givemelyrics
 https://flathub.org/apps/details/com.github.muriloventuroso.pdftricks
 https://flathub.org/apps/details/com.github.naaando.lyrics
 https://flathub.org/apps/details/com.github.needleandthread.vocal
+https://flathub.org/apps/details/com.github.nrittsti.NTag
 https://flathub.org/apps/details/com.github.ojubaorg.Othman
 https://flathub.org/apps/details/com.github.optyfr.JRomManager
 https://flathub.org/apps/details/com.github.paolostivanin.OTPClient
@@ -186,6 +189,7 @@ https://flathub.org/apps/details/com.github.phase1geo.minder
 https://flathub.org/apps/details/com.github.philip_scott.notes-up
 https://flathub.org/apps/details/com.github.philip_scott.spice-up
 https://flathub.org/apps/details/com.github.PintaProject.Pinta
+https://flathub.org/apps/details/com.github.qarmin.czkawka
 https://flathub.org/apps/details/com.github.quaternion
 https://flathub.org/apps/details/com.github.Qv2ray
 https://flathub.org/apps/details/com.github.raibtoffoletto.litteris
@@ -212,8 +216,10 @@ https://flathub.org/apps/details/com.github.utsushi.Utsushi
 https://flathub.org/apps/details/com.github.vladimiry.ElectronMail
 https://flathub.org/apps/details/com.github.wwmm.pulseeffects
 https://flathub.org/apps/details/com.github.xournalpp.xournalpp
+https://flathub.org/apps/details/com.github.yucefsourani.albasheer-electronic-quran-browser
 https://flathub.org/apps/details/com.github.z.Cumulonimbus
 https://flathub.org/apps/details/com.github.ztefn.haguichi
+https://flathub.org/apps/details/com.gitlab.adnan338.Invoicer
 https://flathub.org/apps/details/com.gitlab.adnan338.Nixwriter
 https://flathub.org/apps/details/com.gitlab.azymohliad.Qwertone
 https://flathub.org/apps/details/com.gitlab.bitseater.meteo
@@ -241,6 +247,7 @@ https://flathub.org/apps/details/com.inklestudios.Inky
 https://flathub.org/apps/details/com.interversehq.qView
 https://flathub.org/apps/details/com.inventwithpython.flippy
 https://flathub.org/apps/details/com.irccloud.desktop
+https://flathub.org/apps/details/com.itextpdf.RUPS
 https://flathub.org/apps/details/com.itopia.client
 https://flathub.org/apps/details/com.jagex.RuneScape
 https://flathub.org/apps/details/com.jetbrains.CLion
@@ -354,6 +361,7 @@ https://flathub.org/apps/details/de.billardgl.Billardgl
 https://flathub.org/apps/details/de.blobbyvolley.BlobbyVolley2
 https://flathub.org/apps/details/de.bund.ausweisapp.ausweisapp2
 https://flathub.org/apps/details/de.create3000.titania
+https://flathub.org/apps/details/de.finnik.PassVault
 https://flathub.org/apps/details/de.gunibert.Hackgregator
 https://flathub.org/apps/details/de.haeckerfelix.Fragments
 https://flathub.org/apps/details/de.haeckerfelix.Remotely
@@ -366,6 +374,7 @@ https://flathub.org/apps/details/de.rwth_aachen.ient.YUView
 https://flathub.org/apps/details/de.syping.gta5view
 https://flathub.org/apps/details/de.unifreiburg.ellipticcurve
 https://flathub.org/apps/details/de.uni_heidelberg.zah.GaiaSky
+https://flathub.org/apps/details/dev.alextren.Spot
 https://flathub.org/apps/details/dev.Cogitri.Health
 https://flathub.org/apps/details/dev.tchx84.Portfolio
 https://flathub.org/apps/details/de.willuhn.Jameica
@@ -419,6 +428,7 @@ https://flathub.org/apps/details/io.github.betaflight.BetaflightConfigurator
 https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
 https://flathub.org/apps/details/io.github.cges30901.hmtimer
 https://flathub.org/apps/details/io.github.chris2511.xca
+https://flathub.org/apps/details/io.github.ciromattia.kcc
 https://flathub.org/apps/details/io.github.cloose.CuteMarkEd
 https://flathub.org/apps/details/io.github.cmus.cmus
 https://flathub.org/apps/details/io.github.Cockatrice.cockatrice
@@ -443,6 +453,8 @@ https://flathub.org/apps/details/io.github.jkozera.ZevDocs
 https://flathub.org/apps/details/io.github.jliljebl.Flowblade
 https://flathub.org/apps/details/io.github.kaschpal.timetable
 https://flathub.org/apps/details/io.github.kotatogram
+https://flathub.org/apps/details/io.github.lainsce.Notejot
+https://flathub.org/apps/details/io.github.lainsce.Quilter
 https://flathub.org/apps/details/io.github.leonardschardijn.Chirurgien
 https://flathub.org/apps/details/io.github.liberodark.OpenDrive
 https://flathub.org/apps/details/io.github.lukajankovic.ambience
@@ -456,6 +468,7 @@ https://flathub.org/apps/details/io.github.narunlifescience.AlphaPlot
 https://flathub.org/apps/details/io.github.NhekoReborn.Nheko
 https://flathub.org/apps/details/io.github.OpenToonz
 https://flathub.org/apps/details/io.github.openWMail.openWMail
+https://flathub.org/apps/details/io.github.peazip.PeaZip
 https://flathub.org/apps/details/io.github.Pithos
 https://flathub.org/apps/details/io.github.Qalculate
 https://flathub.org/apps/details/io.github.qnapi
@@ -468,9 +481,11 @@ https://flathub.org/apps/details/io.github.RodZill4.Material-Maker
 https://flathub.org/apps/details/io.github.sharkwouter.Minigalaxy
 https://flathub.org/apps/details/io.github.Soundux
 https://flathub.org/apps/details/io.github.technic.e2designer
+https://flathub.org/apps/details/io.github.tofudd.lanchat.terminal
 https://flathub.org/apps/details/io.github.torbuntu.Leikr
 https://flathub.org/apps/details/io.github.trytonvanmeer.DungeonJournal
 https://flathub.org/apps/details/io.github.wereturtle.ghostwriter
+https://flathub.org/apps/details/io.github.yairm210.unciv
 https://flathub.org/apps/details/io.gitlab.construo.construo
 https://flathub.org/apps/details/io.gitlab.evtest_qt.evtest_qt
 https://flathub.org/apps/details/io.gitlab.floodlight.Presenter
@@ -496,6 +511,7 @@ https://flathub.org/apps/details/io.otsaloma.gaupol
 https://flathub.org/apps/details/io.otsaloma.nfoview
 https://flathub.org/apps/details/io.photoflare.photoflare
 https://flathub.org/apps/details/io.poez.Poezio
+https://flathub.org/apps/details/io.sourceforge.Pixelitor
 https://flathub.org/apps/details/io.thp.numptyphysics
 https://flathub.org/apps/details/io.trustable.stpadocumentationtool
 https://flathub.org/apps/details/io.typora.Typora
@@ -517,6 +533,7 @@ https://flathub.org/apps/details/net.blockout.BlockOutII
 https://flathub.org/apps/details/net.cebix.basilisk
 https://flathub.org/apps/details/net.christianbeier.Gromit-MPX
 https://flathub.org/apps/details/net.codeindustry.MasterPDFEditor
+https://flathub.org/apps/details/net.cozic.joplin_desktop
 https://flathub.org/apps/details/net.daase.journable
 https://flathub.org/apps/details/net.danigm.timetrack
 https://flathub.org/apps/details/net.dengine.Doomsday
@@ -630,6 +647,7 @@ https://flathub.org/apps/details/org.eclipse.Java
 https://flathub.org/apps/details/org.eclipse.Javascript
 https://flathub.org/apps/details/org.electrum.electrum
 https://flathub.org/apps/details/org.emilien.Password
+https://flathub.org/apps/details/org.enjoyingfoss.FOSStriangulator
 https://flathub.org/apps/details/org.entangle_photo.Manager
 https://flathub.org/apps/details/org.equeim.Tremotesf
 https://flathub.org/apps/details/org.eu.encom.spectral
@@ -804,6 +822,7 @@ https://flathub.org/apps/details/org.guerinoni.qTsConverter
 https://flathub.org/apps/details/org.guitarix.Guitarix
 https://flathub.org/apps/details/org.gustavoperedo.FontDownloader
 https://flathub.org/apps/details/org.hedgewars.Hedgewars
+https://flathub.org/apps/details/org.hikounomizu.HikouNoMizu
 https://flathub.org/apps/details/org.homelinuxserver.vance.biblereader
 https://flathub.org/apps/details/org.horizon_eda.HorizonEDA
 https://flathub.org/apps/details/org.hydrogenmusic.Hydrogen
@@ -817,6 +836,7 @@ https://flathub.org/apps/details/org.js.nuclear.Nuclear
 https://flathub.org/apps/details/org.karapulse.Karapulse
 https://flathub.org/apps/details/org.kde.ark
 https://flathub.org/apps/details/org.kde.blinken
+https://flathub.org/apps/details/org.kde.bomber
 https://flathub.org/apps/details/org.kde.digikam
 https://flathub.org/apps/details/org.kde.dolphin
 https://flathub.org/apps/details/org.kde.elisa
@@ -833,6 +853,7 @@ https://flathub.org/apps/details/org.kde.kbruch
 https://flathub.org/apps/details/org.kde.kcachegrind
 https://flathub.org/apps/details/org.kde.kcalc
 https://flathub.org/apps/details/org.kde.kdenlive
+https://flathub.org/apps/details/org.kde.kdevelop
 https://flathub.org/apps/details/org.kde.kdiamond
 https://flathub.org/apps/details/org.kde.kgeography
 https://flathub.org/apps/details/org.kde.kgoldrunner
@@ -876,7 +897,7 @@ https://flathub.org/apps/details/org.kde.okular
 https://flathub.org/apps/details/org.kde.palapeli
 https://flathub.org/apps/details/org.kde.skrooge
 https://flathub.org/apps/details/org.keepassxc.KeePassXC
-https://flathub.org/apps/details/org.kicad_pcb.KiCad
+https://flathub.org/apps/details/org.kicad.KiCad
 https://flathub.org/apps/details/org.kiwix.desktop
 https://flathub.org/apps/details/org.kosmospredanie.Yakblt
 https://flathub.org/apps/details/org.ksnip.ksnip
@@ -906,6 +927,7 @@ https://flathub.org/apps/details/org.musicbrainz.Picard
 https://flathub.org/apps/details/org.mypaint.MyPaint
 https://flathub.org/apps/details/org.naev.Naev
 https://flathub.org/apps/details/org.netsurf_browser.NetSurf
+https://flathub.org/apps/details/org.neverball.Neverball
 https://flathub.org/apps/details/org.nicotine_plus.Nicotine
 https://flathub.org/apps/details/org.nomacs.ImageLounge
 https://flathub.org/apps/details/org.nongnu.gsequencer.gsequencer
@@ -1004,6 +1026,8 @@ https://flathub.org/apps/details/org.tuxfamily.StuntRally
 https://flathub.org/apps/details/org.tuxfamily.XMoto
 https://flathub.org/apps/details/org.tuxpaint.Tuxpaint
 https://flathub.org/apps/details/org.unitystation.StationHub
+https://flathub.org/apps/details/org.unknown_horizons.UnknownHorizons
+https://flathub.org/apps/details/org.verapdf.veraPDF
 https://flathub.org/apps/details/org.vergecurrency.verge-qt
 https://flathub.org/apps/details/org.videolan.VLC
 https://flathub.org/apps/details/org.viking.Viking
@@ -1033,6 +1057,7 @@ https://flathub.org/apps/details/tw.ddnet.ddnet
 https://flathub.org/apps/details/uk.co.ibboard.cawbird
 https://flathub.org/apps/details/uk.co.mangobrain.Infector
 https://flathub.org/apps/details/uk.co.powdertoy.tpt
+https://flathub.org/apps/details/uk.et1.big-finish-downloader
 https://flathub.org/apps/details/uk.jnthn.backgammony
 https://flathub.org/apps/details/uk.me.doof.Lander
 https://flathub.org/apps/details/us.zoom.Zoom
