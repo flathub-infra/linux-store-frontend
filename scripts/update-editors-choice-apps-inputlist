@@ -34,3 +34,7 @@ org.gnome.BreakTimer
 com.github.unrud.VideoDownloader
 com.github.huluti.Curtail
 fr.romainvigier.MetadataCleaner
+com.belmoussaoui.Decoder
+com.github.johnfactotum.QuickLookup
+dev.tchx84.Portfolio
+com.github.alexhuntley.Plots
