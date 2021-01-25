@@ -421,7 +421,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
-  "currentReleaseVersion": "1.6.6",
+  "currentReleaseVersion": "1.6.7",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
@@ -460,8 +460,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
-  "currentReleaseVersion": "0.3.9",
-  "currentReleaseDescription": "<p>Support for links in .pdf preview, new welcome screen, ...</p>",
+  "currentReleaseVersion": "0.4.1",
+  "currentReleaseDescription": "<p>Bug fix</p>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.cvfosammmm.Setzer.png",
   "screenshots": [
@@ -499,13 +499,13 @@ export const EDITORSCHOICEAPPS: App[] = [
   "projectLicense": "",
   "homepageUrl": "",
   "donationUrl": null,
-  "translateUrl": null,
+  "translateUrl": "https://poeditor.com/join/project?hash=5bXw9CXAAh",
   "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/video-trimmer/-/issues",
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.YaLTeR.VideoTrimmer.flatpakref",
-  "currentReleaseVersion": "0.4.0",
-  "currentReleaseDescription": "<p>This release replaces the Done dialog with an in-app notification and adds a command-line argument to specify the output file.</p><ul><li>Added an --output or -o argument to specify the output video path. It will be pre-filled in the save dialog.</li><li>Added support for opening videos with DnD, although it doesn't work on Flatpak unless Video Trimmer is given filesystem access.</li><li>Replaced the Done dialog with an in-app notification to better follow the GNOME HIG.</li></ul>",
+  "currentReleaseVersion": "0.4.1",
+  "currentReleaseDescription": "<p>This release fixes an issue where not all streams from the input file were copied into the output file.</p><ul><li>All input file streams are now copied to the output file rather than just a single of each type. Subtitles are now copied too rather than skipped.</li><li>Added Swedish translation (thanks Åke Engelbrektson).</li><li>Added Spanish translation (thanks Óscar Fernández Díaz).</li><li>Made the commandline argument description translatable.</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.gitlab.YaLTeR.VideoTrimmer.png",
   "screenshots": [
@@ -684,7 +684,7 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Lollypop.flatpakref",
-  "currentReleaseVersion": "1.4.8",
+  "currentReleaseVersion": "1.4.9",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
@@ -1049,8 +1049,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.gfeeds.flatpakref",
-  "currentReleaseVersion": "0.16.1",
-  "currentReleaseDescription": "<ul><li>Feed icons improvements for high DPI screens</li></ul>",
+  "currentReleaseVersion": "0.16.2",
+  "currentReleaseDescription": "<ul><li>Fixed view mode button</li><li>Option to open YouTube links with an external media player</li><li>Saved articles are no longer stored inside the cache directory, avoiding accidental deletion</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.gfeeds.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gabmus.gfeeds.png",
   "screenshots": [
@@ -1098,11 +1098,6 @@ export const EDITORSCHOICEAPPS: App[] = [
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.gfeeds-stable/224x126/org.gabmus.gfeeds-3566cf1dd1b2731a08d68eb4517e2b81.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.gfeeds-stable/624x351/org.gabmus.gfeeds-3566cf1dd1b2731a08d68eb4517e2b81.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.gfeeds-stable/752x423/org.gabmus.gfeeds-3566cf1dd1b2731a08d68eb4517e2b81.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.gfeeds-stable/224x126/org.gabmus.gfeeds-8f5cb44ad0513d7dd375b58ed8007ab6.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.gfeeds-stable/624x351/org.gabmus.gfeeds-8f5cb44ad0513d7dd375b58ed8007ab6.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/org.gabmus.gfeeds-stable/752x423/org.gabmus.gfeeds-8f5cb44ad0513d7dd375b58ed8007ab6.png"
     }
   ],
   "currentReleaseDate": null,
@@ -1206,15 +1201,15 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.bitstower.Markets.flatpakref",
-  "currentReleaseVersion": "0.4.0",
-  "currentReleaseDescription": "<p>Markets 0.4.0 brings new features and bug fixes.</p><ul><li>Added new app icon</li><li>Added reorder support</li><li>Added i18n support</li><li>Fixed various issues</li></ul>",
+  "currentReleaseVersion": "0.5.1",
+  "currentReleaseDescription": "<p>Markets 0.5.1 brings new features and bug fixes.</p><ul><li>New layout of the symbol list</li><li>Improved keyboard support</li><li>Added new languages: Spanish, Slovak</li><li>More natural drag and drop behaviour</li><li>Bug fixes</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.bitstower.Markets.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.bitstower.Markets.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/224x126/com.bitstower.Markets-4be3125c8c46eb4f7460860cfdbfca88.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/624x351/com.bitstower.Markets-4be3125c8c46eb4f7460860cfdbfca88.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/752x423/com.bitstower.Markets-4be3125c8c46eb4f7460860cfdbfca88.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/224x126/com.bitstower.Markets-b2a8745634ab519bb769b0af889d0e1f.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/624x351/com.bitstower.Markets-b2a8745634ab519bb769b0af889d0e1f.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.bitstower.Markets-stable/752x423/com.bitstower.Markets-b2a8745634ab519bb769b0af889d0e1f.png"
     }
   ],
   "currentReleaseDate": null,
@@ -1270,11 +1265,11 @@ export const EDITORSCHOICEAPPS: App[] = [
   "homepageUrl": "",
   "donationUrl": null,
   "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/jeromerobert/pdfarranger/issues",
+  "bugtrackerUrl": "https://github.com/pdfarranger/pdfarranger/issues",
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.jeromerobert.pdfarranger.flatpakref",
-  "currentReleaseVersion": "1.6.2",
+  "currentReleaseVersion": "1.7.0",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.jeromerobert.pdfarranger.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.jeromerobert.pdfarranger.png",
@@ -1337,25 +1332,25 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.unrud.VideoDownloader.flatpakref",
-  "currentReleaseVersion": "0.6.6",
-  "currentReleaseDescription": "<ul><li>Implement dark mode switcher</li><li>Add Portuguese translation</li></ul>",
+  "currentReleaseVersion": "0.6.8",
+  "currentReleaseDescription": "<ul><li>Don't save video description</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.unrud.VideoDownloader.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.unrud.VideoDownloader.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-ba2b5c259dabf65d1b68d37ed88740c8.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-ba2b5c259dabf65d1b68d37ed88740c8.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-ba2b5c259dabf65d1b68d37ed88740c8.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-a3ae7904f005e6d894cf7121d818cf91.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-a3ae7904f005e6d894cf7121d818cf91.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-a3ae7904f005e6d894cf7121d818cf91.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-8c6aefd41bf7f341a9122e0670197c60.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-8c6aefd41bf7f341a9122e0670197c60.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-8c6aefd41bf7f341a9122e0670197c60.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-3a19e2b638cc7d05e2b9aef182176dd6.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-3a19e2b638cc7d05e2b9aef182176dd6.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-3a19e2b638cc7d05e2b9aef182176dd6.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-b5fa69ce473f2fbeba670ec9024283a1.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-b5fa69ce473f2fbeba670ec9024283a1.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-b5fa69ce473f2fbeba670ec9024283a1.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-6c81998a4cb5329d690f3a5a6c1275a0.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-6c81998a4cb5329d690f3a5a6c1275a0.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-6c81998a4cb5329d690f3a5a6c1275a0.png"
     }
   ],
   "currentReleaseDate": null,
@@ -1410,8 +1405,8 @@ export const EDITORSCHOICEAPPS: App[] = [
   "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/fr.romainvigier.MetadataCleaner.flatpakref",
-  "currentReleaseVersion": "1.0.1",
-  "currentReleaseDescription": "<p>New in v1.0.1:</p><ul><li>German translation (contributed by lux)</li></ul>",
+  "currentReleaseVersion": "1.0.2",
+  "currentReleaseDescription": "<p>New in v1.0.2:</p><ul><li>Spanish translation (contributed by Óscar Fernández Díaz)</li><li>Swedish translation (contributed by Åke Engelbrektson)</li></ul><p>Bug fixes:</p><ul><li>Files with uppercase extension can now be added</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/fr.romainvigier.MetadataCleaner.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/fr.romainvigier.MetadataCleaner.png",
   "screenshots": [
@@ -1429,6 +1424,157 @@ export const EDITORSCHOICEAPPS: App[] = [
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/fr.romainvigier.MetadataCleaner-stable/224x126/fr.romainvigier.MetadataCleaner-773e84c1a4712a048897a202e3cdca34.png",
       "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/fr.romainvigier.MetadataCleaner-stable/624x351/fr.romainvigier.MetadataCleaner-773e84c1a4712a048897a202e3cdca34.png",
       "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/fr.romainvigier.MetadataCleaner-stable/752x423/fr.romainvigier.MetadataCleaner-773e84c1a4712a048897a202e3cdca34.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "com.belmoussaoui.Decoder",
+  "name": "Decoder",
+  "summary": "Scan and Generate QR Codes",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": "https://liberapay.com/bielmoussaoui",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/bilelmoussaoui/decoder//issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.belmoussaoui.Decoder.flatpakref",
+  "currentReleaseVersion": "0.1.0",
+  "currentReleaseDescription": "<ul><li>First release of Decoder!</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Decoder.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Decoder.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/224x126/com.belmoussaoui.Decoder-60b1f4096f3b97af1764899d510bfaa9.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/624x351/com.belmoussaoui.Decoder-60b1f4096f3b97af1764899d510bfaa9.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/752x423/com.belmoussaoui.Decoder-60b1f4096f3b97af1764899d510bfaa9.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/224x126/com.belmoussaoui.Decoder-476676259c8b112ea94ebe7ab39e1466.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/624x351/com.belmoussaoui.Decoder-476676259c8b112ea94ebe7ab39e1466.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/752x423/com.belmoussaoui.Decoder-476676259c8b112ea94ebe7ab39e1466.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/224x126/com.belmoussaoui.Decoder-4e913bc1337282e332755441e7f304b9.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/624x351/com.belmoussaoui.Decoder-4e913bc1337282e332755441e7f304b9.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Decoder-stable/752x423/com.belmoussaoui.Decoder-4e913bc1337282e332755441e7f304b9.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "com.github.johnfactotum.QuickLookup",
+  "name": "Quick Lookup",
+  "summary": "A simple dictionary application powered by Wiktionary",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/johnfactotum/quick-lookup/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.johnfactotum.QuickLookup.flatpakref",
+  "currentReleaseVersion": "1.2.0",
+  "currentReleaseDescription": "<p>Added new “--selection” command line option. When launched in this mode, it will look up the recently selected text when switching to the window. Binding the command to a global shortcut will allow you to look up words from any app by pressing the shortcut.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.QuickLookup.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.johnfactotum.QuickLookup.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.QuickLookup-stable/224x126/com.github.johnfactotum.QuickLookup-38e60fa75b4882f4528ec2df7438c879.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.QuickLookup-stable/624x351/com.github.johnfactotum.QuickLookup-38e60fa75b4882f4528ec2df7438c879.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.johnfactotum.QuickLookup-stable/752x423/com.github.johnfactotum.QuickLookup-38e60fa75b4882f4528ec2df7438c879.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "dev.tchx84.Portfolio",
+  "name": "Portfolio",
+  "summary": "Manage files on the go",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/tchx84/Portfolio/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/dev.tchx84.Portfolio.flatpakref",
+  "currentReleaseVersion": "0.9.5",
+  "currentReleaseDescription": null,
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/dev.tchx84.Portfolio.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/dev.tchx84.Portfolio.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-cba3dd9b28ac2c970cda896ec1ca0e7d.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-cba3dd9b28ac2c970cda896ec1ca0e7d.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-cba3dd9b28ac2c970cda896ec1ca0e7d.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-0d5eb43337c0442beb314013e484fe5a.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-0d5eb43337c0442beb314013e484fe5a.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-0d5eb43337c0442beb314013e484fe5a.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-d325c8d6e120798a1e2f2a7141ce9238.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-d325c8d6e120798a1e2f2a7141ce9238.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-d325c8d6e120798a1e2f2a7141ce9238.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null
+}
+,
+{
+  "flatpakAppId": "com.github.alexhuntley.Plots",
+  "name": "Plots",
+  "summary": "Simple graph plotting",
+  "description": "",
+  "developerName": "",
+  "projectLicense": "",
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/alexhuntley/Plots/issues",
+  "helpUrl": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.alexhuntley.Plots.flatpakref",
+  "currentReleaseVersion": "0.4.4",
+  "currentReleaseDescription": "<p>Added floor and ceiling functions. Bugfixes and refactoring.</p>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.alexhuntley.Plots.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.alexhuntley.Plots.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-1290de5ea0074cda5e7953d49f642e85.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-1290de5ea0074cda5e7953d49f642e85.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-1290de5ea0074cda5e7953d49f642e85.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-f27b9e74b057cbfe8960b2de7609591a.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-f27b9e74b057cbfe8960b2de7609591a.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-f27b9e74b057cbfe8960b2de7609591a.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-a34bcd77c667ba5d33593be96551a8cb.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-a34bcd77c667ba5d33593be96551a8cb.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-a34bcd77c667ba5d33593be96551a8cb.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-267df31308d30e2258faad782a65bd3b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-267df31308d30e2258faad782a65bd3b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-267df31308d30e2258faad782a65bd3b.png"
     }
   ],
   "currentReleaseDate": null,
