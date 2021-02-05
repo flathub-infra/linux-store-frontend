@@ -8,14 +8,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "http://www.gnome.org/friends/",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-builder/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Builder.flatpakref",
-  "currentReleaseVersion": "3.38.1",
+  "currentReleaseVersion": "3.38.2",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Builder.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Builder.png",
@@ -52,7 +47,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "http://www.gnome.org/friends/",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-builder/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -62,11 +62,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/johnfactotum/foliate/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.johnfactotum.Foliate.flatpakref",
   "currentReleaseVersion": "2.5.0",
@@ -106,7 +101,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/johnfactotum/foliate/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -116,11 +116,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/hydrapaper/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.hydrapaper.flatpakref",
   "currentReleaseVersion": "2.0.3",
@@ -160,51 +155,61 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/hydrapaper/issues",
+  "helpUrl": ""
 }
 ,
 {
-  "flatpakAppId": "com.github.bilelmoussaoui.Authenticator",
+  "flatpakAppId": "com.belmoussaoui.Authenticator",
   "name": "Authenticator",
-  "summary": "A Two-Factor Authentication application",
+  "summary": "Generate Two-Factor Codes",
   "description": "",
   "developerName": "",
   "projectLicense": "",
+  "categories": null,
+  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.belmoussaoui.Authenticator.flatpakref",
+  "currentReleaseVersion": "4.0.1",
+  "currentReleaseDescription": "<ul><li>Fix an issue with token validation</li></ul>",
+  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Authenticator.png",
+  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.belmoussaoui.Authenticator.png",
+  "screenshots": [
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/224x126/com.belmoussaoui.Authenticator-23de8ff72c5bdb07bcd764bdbef2711e.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/624x351/com.belmoussaoui.Authenticator-23de8ff72c5bdb07bcd764bdbef2711e.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/752x423/com.belmoussaoui.Authenticator-23de8ff72c5bdb07bcd764bdbef2711e.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/224x126/com.belmoussaoui.Authenticator-75a2d615ff2b2641e8ee38271a55cff1.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/624x351/com.belmoussaoui.Authenticator-75a2d615ff2b2641e8ee38271a55cff1.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/752x423/com.belmoussaoui.Authenticator-75a2d615ff2b2641e8ee38271a55cff1.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/224x126/com.belmoussaoui.Authenticator-6d1078e876c4b11073cea6c1a1045892.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/624x351/com.belmoussaoui.Authenticator-6d1078e876c4b11073cea6c1a1045892.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/752x423/com.belmoussaoui.Authenticator-6d1078e876c4b11073cea6c1a1045892.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/224x126/com.belmoussaoui.Authenticator-eab49c4aa20386c3a972a794a1168ee2.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/624x351/com.belmoussaoui.Authenticator-eab49c4aa20386c3a972a794a1168ee2.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/752x423/com.belmoussaoui.Authenticator-eab49c4aa20386c3a972a794a1168ee2.png"
+    },
+    {
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/224x126/com.belmoussaoui.Authenticator-e5aec2eee3cb9bed746d150287d45ecd.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/624x351/com.belmoussaoui.Authenticator-e5aec2eee3cb9bed746d150287d45ecd.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.belmoussaoui.Authenticator-stable/752x423/com.belmoussaoui.Authenticator-e5aec2eee3cb9bed746d150287d45ecd.png"
+    }
+  ],
+  "currentReleaseDate": null,
+  "inStoreSinceDate": null,
   "homepageUrl": "",
   "donationUrl": "https://liberapay.com/bielmoussaoui",
   "translateUrl": "https://l10n.gnome.org/module/authenticator/",
   "bugtrackerUrl": "https://gitlab.gnome.org/World/Authenticator/issues",
-  "helpUrl": "",
-  "categories": null,
-  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.bilelmoussaoui.Authenticator.flatpakref",
-  "currentReleaseVersion": "3.32.2",
-  "currentReleaseDescription": "<ul><li>Use the new libhandy Settings widget</li><li>Settings: add an auto lock timeout</li><li>Various fixes</li><li>Translations updates</li></ul>",
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.bilelmoussaoui.Authenticator.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.bilelmoussaoui.Authenticator.png",
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-6e09655da66fef3b46b21f579905688f.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-e9caff3a42c5cdd776a557d955f85815.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-7ddf28e5a9e93530abd80b1dd400fc96.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/224x126/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/624x351/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.bilelmoussaoui.Authenticator-stable/752x423/com.github.bilelmoussaoui.Authenticator-5cb466f767284bbea663d487c9f691c9.png"
-    }
-  ],
-  "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "helpUrl": ""
 }
 ,
 {
@@ -214,11 +219,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": null,
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.PasswordSafe.flatpakref",
   "currentReleaseVersion": "4.1",
@@ -258,7 +258,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": ""
 }
 ,
 {
@@ -268,11 +273,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://liberapay.com/bielmoussaoui",
-  "translateUrl": "https://l10n.gnome.org/module/contrast/",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/design/contrast/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.design.Contrast.flatpakref",
   "currentReleaseVersion": "0.0.3",
@@ -287,7 +287,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://liberapay.com/bielmoussaoui",
+  "translateUrl": "https://l10n.gnome.org/module/contrast/",
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/design/contrast/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -297,11 +302,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/phw/peek/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.uploadedlobster.peek.flatpakref",
   "currentReleaseVersion": "1.5.1",
@@ -326,7 +326,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/phw/peek/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -336,11 +341,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://liberapay.com/bielmoussaoui",
-  "translateUrl": "https://l10n.gnome.org/module/obfuscate/",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/obfuscate/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.belmoussaoui.Obfuscate.flatpakref",
   "currentReleaseVersion": "0.0.2",
@@ -355,7 +355,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://liberapay.com/bielmoussaoui",
+  "translateUrl": "https://l10n.gnome.org/module/obfuscate/",
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/obfuscate/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -365,11 +370,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://www.paypal.me/manuelgenoves",
-  "translateUrl": "https://poeditor.com/join/project/gxVzFyXb2x",
-  "bugtrackerUrl": "https://gitlab.gnome.org/somas/apostrophe/-/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.somas.Apostrophe.flatpakref",
   "currentReleaseVersion": "2.2.0.3",
@@ -404,7 +404,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://www.paypal.me/manuelgenoves",
+  "translateUrl": "https://poeditor.com/join/project/gxVzFyXb2x",
+  "bugtrackerUrl": "https://gitlab.gnome.org/somas/apostrophe/-/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -414,14 +419,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/tchx84/flatseal/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
-  "currentReleaseVersion": "1.6.7",
+  "currentReleaseVersion": "1.6.8",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png",
@@ -443,7 +443,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/tchx84/flatseal/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -453,11 +458,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://www.patreon.com/cvfosammmm",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/cvfosammmm/Setzer/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.cvfosammmm.Setzer.flatpakref",
   "currentReleaseVersion": "0.4.1",
@@ -487,7 +487,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://www.patreon.com/cvfosammmm",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/cvfosammmm/Setzer/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -497,11 +502,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": "https://poeditor.com/join/project?hash=5bXw9CXAAh",
-  "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/video-trimmer/-/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.YaLTeR.VideoTrimmer.flatpakref",
   "currentReleaseVersion": "0.4.1",
@@ -516,7 +516,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": "https://poeditor.com/join/project?hash=5bXw9CXAAh",
+  "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/video-trimmer/-/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -526,11 +531,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/whatip/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.whatip.flatpakref",
   "currentReleaseVersion": "0.3",
@@ -555,7 +555,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/gabmus/whatip/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -565,11 +570,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/rafaelmardojai/WebfontKitGenerator/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.rafaelmardojai.WebfontKitGenerator.flatpakref",
   "currentReleaseVersion": "0.3.0",
@@ -599,7 +599,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/rafaelmardojai/WebfontKitGenerator/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -609,11 +614,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://de.liberapay.com/haecker-felix",
-  "translateUrl": "https://l10n.gnome.org/module/Fragments/",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/Fragments/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/de.haeckerfelix.Fragments.flatpakref",
   "currentReleaseVersion": "1.5",
@@ -638,7 +638,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://de.liberapay.com/haecker-felix",
+  "translateUrl": "https://l10n.gnome.org/module/Fragments/",
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/Fragments/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -648,11 +653,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/sonnyp/Tangram/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/re.sonny.Tangram.flatpakref",
   "currentReleaseVersion": "1.3.1",
@@ -667,7 +667,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/sonnyp/Tangram/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -677,14 +682,9 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://www.paypal.me/lollypopgnome",
-  "translateUrl": "https://hosted.weblate.org/projects/gnumdk/",
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/lollypop/-/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Lollypop.flatpakref",
-  "currentReleaseVersion": "1.4.9",
+  "currentReleaseVersion": "1.4.15",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gnome.Lollypop.png",
@@ -706,7 +706,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://www.paypal.me/lollypopgnome",
+  "translateUrl": "https://hosted.weblate.org/projects/gnumdk/",
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/lollypop/-/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -716,15 +721,10 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.com/news-flash/news_flash_gtk/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.gitlab.newsflash.flatpakref",
-  "currentReleaseVersion": "1.1.1",
-  "currentReleaseDescription": null,
+  "currentReleaseVersion": "1.2.1",
+  "currentReleaseDescription": "<p>Hotfix for broken Database migration</p><p>Bugfixes:</p><ul><li>Database migration: copy old article data</li><li>local RSS: avoid reassigning current date when no date information is available</li><li>GUI: fix offline/online popover positioning</li><li>GUI: re-enable arrow navigation in article-list</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.gitlab.newsflash.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.gitlab.newsflash.png",
   "screenshots": [
@@ -760,7 +760,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.com/news-flash/news_flash_gtk/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -770,11 +775,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/gcolor3/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/nl.hjdskes.gcolor3.flatpakref",
   "currentReleaseVersion": "2.4.0",
@@ -794,7 +794,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/gcolor3/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -804,11 +809,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/rafaelmardojai/blanket/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.rafaelmardojai.Blanket.flatpakref",
   "currentReleaseVersion": "0.3.1",
@@ -828,7 +828,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://www.paypal.me/RafaelMardojaiCM",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/rafaelmardojai/blanket/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -838,11 +843,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/BjoernDaase/journable/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/net.daase.journable.flatpakref",
   "currentReleaseVersion": "0.1.1",
@@ -857,7 +857,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/BjoernDaase/journable/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -867,11 +872,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/identity/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.gitlab.YaLTeR.Identity.flatpakref",
   "currentReleaseVersion": "0.1.2",
@@ -886,7 +886,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/YaLTeR/identity/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -896,11 +901,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://patreon.com/chrisgnome",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/Solanum/-/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Solanum.flatpakref",
   "currentReleaseVersion": "2.0.0",
@@ -920,7 +920,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://patreon.com/chrisgnome",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/Solanum/-/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -930,11 +935,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/World/pika-backup/-/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.World.PikaBackup.flatpakref",
   "currentReleaseVersion": "0.2.1",
@@ -959,7 +959,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/World/pika-backup/-/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -969,11 +974,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "http://www.gnome.org/friends/",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/gnome/connections/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.Connections.flatpakref",
   "currentReleaseVersion": "3.38.1",
@@ -988,7 +988,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "http://www.gnome.org/friends/",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/gnome/connections/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -998,22 +1003,17 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://paypal.me/maoschannz",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/maoschanz/drawing/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.maoschanz.drawing.flatpakref",
-  "currentReleaseVersion": "0.6.4",
-  "currentReleaseDescription": "<p>Version 0.6.4 features several minor bug fixes, and various new translations.</p><p>The value of the \"use anti-aliasing\" option is now restored when the app starts.</p>",
+  "currentReleaseVersion": "0.6.5",
+  "currentReleaseDescription": "<p>Version 0.6.5 features several minor bug fixes, and various new translations.</p><p>Among the funny bugs: the bottom panes sometimes refused to adapt to the screen size, and could disappear under certain conditions.</p><p>The catastrophic \"print\" action, that no one ever used so no one ever noticed, is now somewhat usable.</p>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.maoschanz.drawing.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.maoschanz.drawing.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/224x126/com.github.maoschanz.drawing-9616ee5d8f72657b8203e8bcc3b7b25e.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/624x351/com.github.maoschanz.drawing-9616ee5d8f72657b8203e8bcc3b7b25e.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/752x423/com.github.maoschanz.drawing-9616ee5d8f72657b8203e8bcc3b7b25e.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/224x126/com.github.maoschanz.drawing-810f88b3a76feb862b6439ffaf43681f.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/624x351/com.github.maoschanz.drawing-810f88b3a76feb862b6439ffaf43681f.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/752x423/com.github.maoschanz.drawing-810f88b3a76feb862b6439ffaf43681f.png"
     },
     {
       "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.maoschanz.drawing-stable/224x126/com.github.maoschanz.drawing-9ae58c7981018a65c2008516801a922e.png",
@@ -1032,7 +1032,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://paypal.me/maoschannz",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/maoschanz/drawing/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1042,11 +1047,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.com/gabmus/gnome-feeds/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gabmus.gfeeds.flatpakref",
   "currentReleaseVersion": "0.16.2",
@@ -1101,7 +1101,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.com/gabmus/gnome-feeds/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1111,11 +1116,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.com/gunibert/hackgregator/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/de.gunibert.Hackgregator.flatpakref",
   "currentReleaseVersion": "0.2.0",
@@ -1145,7 +1145,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.com/gunibert/hackgregator/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1155,11 +1160,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/gi-lom/dialect/issues/",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.gi_lom.dialect.flatpakref",
   "currentReleaseVersion": "1.1.1",
@@ -1184,7 +1184,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/gi-lom/dialect/issues/",
+  "helpUrl": ""
 }
 ,
 {
@@ -1194,11 +1199,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/bitstower/markets/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.bitstower.Markets.flatpakref",
   "currentReleaseVersion": "0.5.1",
@@ -1213,7 +1213,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/bitstower/markets/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1223,11 +1228,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": null,
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.freedesktop.Bustle.flatpakref",
   "currentReleaseVersion": "0.8.0",
@@ -1252,7 +1252,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": null,
+  "helpUrl": ""
 }
 ,
 {
@@ -1262,11 +1267,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/pdfarranger/pdfarranger/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.jeromerobert.pdfarranger.flatpakref",
   "currentReleaseVersion": "1.7.0",
@@ -1281,7 +1281,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/pdfarranger/pdfarranger/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1291,11 +1296,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-break-timer/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/org.gnome.BreakTimer.flatpakref",
   "currentReleaseVersion": "2.0.3",
@@ -1315,7 +1315,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/GNOME/gnome-break-timer/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1325,36 +1330,36 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/Unrud/video-downloader/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.unrud.VideoDownloader.flatpakref",
-  "currentReleaseVersion": "0.6.8",
-  "currentReleaseDescription": "<ul><li>Don't save video description</li></ul>",
+  "currentReleaseVersion": "0.7.0",
+  "currentReleaseDescription": "<ul><li>Redesign finish and error page</li></ul>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.unrud.VideoDownloader.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.unrud.VideoDownloader.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-a3ae7904f005e6d894cf7121d818cf91.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-a3ae7904f005e6d894cf7121d818cf91.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-a3ae7904f005e6d894cf7121d818cf91.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-62af882f8b2f27859db322290fbf014b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-62af882f8b2f27859db322290fbf014b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-62af882f8b2f27859db322290fbf014b.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-3a19e2b638cc7d05e2b9aef182176dd6.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-3a19e2b638cc7d05e2b9aef182176dd6.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-3a19e2b638cc7d05e2b9aef182176dd6.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-231c9bcadcfa90810433a5bfb33c4131.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-231c9bcadcfa90810433a5bfb33c4131.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-231c9bcadcfa90810433a5bfb33c4131.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-6c81998a4cb5329d690f3a5a6c1275a0.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-6c81998a4cb5329d690f3a5a6c1275a0.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-6c81998a4cb5329d690f3a5a6c1275a0.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/224x126/com.github.unrud.VideoDownloader-7fcd16bdf6c532428fa51bde6e814153.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/624x351/com.github.unrud.VideoDownloader-7fcd16bdf6c532428fa51bde6e814153.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.unrud.VideoDownloader-stable/752x423/com.github.unrud.VideoDownloader-7fcd16bdf6c532428fa51bde6e814153.png"
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/Unrud/video-downloader/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1364,11 +1369,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/Huluti/Curtail/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.huluti.Curtail.flatpakref",
   "currentReleaseVersion": "1.0.0",
@@ -1388,7 +1388,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/Huluti/Curtail/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1398,11 +1403,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://liberapay.com/rmnvgr/donate",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.com/rmnvgr/metadata-cleaner/-/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/fr.romainvigier.MetadataCleaner.flatpakref",
   "currentReleaseVersion": "1.0.2",
@@ -1427,7 +1427,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://liberapay.com/rmnvgr/donate",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.com/rmnvgr/metadata-cleaner/-/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1437,11 +1442,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": "https://liberapay.com/bielmoussaoui",
-  "translateUrl": null,
-  "bugtrackerUrl": "https://gitlab.gnome.org/bilelmoussaoui/decoder//issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.belmoussaoui.Decoder.flatpakref",
   "currentReleaseVersion": "0.1.0",
@@ -1466,7 +1466,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": "https://liberapay.com/bielmoussaoui",
+  "translateUrl": null,
+  "bugtrackerUrl": "https://gitlab.gnome.org/bilelmoussaoui/decoder//issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1476,11 +1481,6 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/johnfactotum/quick-lookup/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.johnfactotum.QuickLookup.flatpakref",
   "currentReleaseVersion": "1.2.0",
@@ -1495,7 +1495,12 @@ export const EDITORSCHOICEAPPS: App[] = [
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/johnfactotum/quick-lookup/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1505,36 +1510,36 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/tchx84/Portfolio/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/dev.tchx84.Portfolio.flatpakref",
-  "currentReleaseVersion": "0.9.5",
+  "currentReleaseVersion": "0.9.8",
   "currentReleaseDescription": null,
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/dev.tchx84.Portfolio.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/dev.tchx84.Portfolio.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-cba3dd9b28ac2c970cda896ec1ca0e7d.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-cba3dd9b28ac2c970cda896ec1ca0e7d.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-cba3dd9b28ac2c970cda896ec1ca0e7d.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-9e703c577721d31c23861fb89c984ba1.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-9e703c577721d31c23861fb89c984ba1.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-9e703c577721d31c23861fb89c984ba1.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-0d5eb43337c0442beb314013e484fe5a.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-0d5eb43337c0442beb314013e484fe5a.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-0d5eb43337c0442beb314013e484fe5a.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-c70b8b033a6c5c937100372bf78a7284.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-c70b8b033a6c5c937100372bf78a7284.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-c70b8b033a6c5c937100372bf78a7284.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-d325c8d6e120798a1e2f2a7141ce9238.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-d325c8d6e120798a1e2f2a7141ce9238.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-d325c8d6e120798a1e2f2a7141ce9238.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/224x126/dev.tchx84.Portfolio-3d05bea176c9738dc49c0f5702b4152b.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/624x351/dev.tchx84.Portfolio-3d05bea176c9738dc49c0f5702b4152b.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/dev.tchx84.Portfolio-stable/752x423/dev.tchx84.Portfolio-3d05bea176c9738dc49c0f5702b4152b.png"
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/tchx84/Portfolio/issues",
+  "helpUrl": ""
 }
 ,
 {
@@ -1544,41 +1549,41 @@ export const EDITORSCHOICEAPPS: App[] = [
   "description": "",
   "developerName": "",
   "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/alexhuntley/Plots/issues",
-  "helpUrl": "",
   "categories": null,
   "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/com.github.alexhuntley.Plots.flatpakref",
-  "currentReleaseVersion": "0.4.4",
-  "currentReleaseDescription": "<p>Added floor and ceiling functions. Bugfixes and refactoring.</p>",
+  "currentReleaseVersion": "0.5.1",
+  "currentReleaseDescription": "<p>Fix help missing in Flatpak</p>",
   "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.alexhuntley.Plots.png",
   "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.github.alexhuntley.Plots.png",
   "screenshots": [
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-1290de5ea0074cda5e7953d49f642e85.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-1290de5ea0074cda5e7953d49f642e85.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-1290de5ea0074cda5e7953d49f642e85.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-accc4b1b411de9fa767e78ce4911d995.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-accc4b1b411de9fa767e78ce4911d995.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-accc4b1b411de9fa767e78ce4911d995.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-f27b9e74b057cbfe8960b2de7609591a.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-f27b9e74b057cbfe8960b2de7609591a.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-f27b9e74b057cbfe8960b2de7609591a.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-d9fd280aecf2c81df425bb63e6fc6f4c.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-d9fd280aecf2c81df425bb63e6fc6f4c.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-d9fd280aecf2c81df425bb63e6fc6f4c.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-a34bcd77c667ba5d33593be96551a8cb.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-a34bcd77c667ba5d33593be96551a8cb.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-a34bcd77c667ba5d33593be96551a8cb.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-f44684c0c83c684f0488b6c201fd36cf.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-f44684c0c83c684f0488b6c201fd36cf.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-f44684c0c83c684f0488b6c201fd36cf.png"
     },
     {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-267df31308d30e2258faad782a65bd3b.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-267df31308d30e2258faad782a65bd3b.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-267df31308d30e2258faad782a65bd3b.png"
+      "thumbUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/224x126/com.github.alexhuntley.Plots-eceb6f23243b9c251c21142ce480dcd4.png",
+      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/624x351/com.github.alexhuntley.Plots-eceb6f23243b9c251c21142ce480dcd4.png",
+      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/com.github.alexhuntley.Plots-stable/752x423/com.github.alexhuntley.Plots-eceb6f23243b9c251c21142ce480dcd4.png"
     }
   ],
   "currentReleaseDate": null,
-  "inStoreSinceDate": null
+  "inStoreSinceDate": null,
+  "homepageUrl": "",
+  "donationUrl": null,
+  "translateUrl": null,
+  "bugtrackerUrl": "https://github.com/alexhuntley/Plots/issues",
+  "helpUrl": ""
 }
 ,
 ];
