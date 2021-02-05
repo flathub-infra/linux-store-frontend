@@ -1,7 +1,7 @@
 org.gnome.Builder
 com.github.johnfactotum.Foliate
 org.gabmus.hydrapaper
-com.github.bilelmoussaoui.Authenticator
+com.belmoussaoui.Authenticator
 org.gnome.PasswordSafe
 org.gnome.design.Contrast
 com.uploadedlobster.peek
