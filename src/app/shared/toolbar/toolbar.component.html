@@ -11,7 +11,7 @@
         <div [class]="'search-form '+(showSearchInput? 'active': '')">
           <mat-icon class="search-box-icon show-md" (click)="onTogleSearch()">arrow_back</mat-icon>
           <mat-icon class="search-box-icon hide-md" (click)="onSearch(searchBox.value)">search</mat-icon>
-          <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)" autofocus />
+          <input #searchBox id="search-box" class="search-box" type="search" placeholder="Search apps" (keyup.enter)="onSearch(searchBox.value)" autofocus autocapitalize="none"/>
         </div>
       </div>
     </div>
