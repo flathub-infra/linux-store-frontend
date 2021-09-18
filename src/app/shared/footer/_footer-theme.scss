@@ -1,4 +1,5 @@
 // Define a mixin that accepts a theme and outputs the color styles for the component.
+@use '~@angular/material' as mat;
 @mixin footer-theme($theme) {
   // Extract whichever individual palettes you need from the theme.
   $primary: map-get($theme, primary);
@@ -8,10 +9,10 @@
   .store-footer {
     //background-color: mat-color($primary);
     background-color: black;
-    border-color: mat-color($accent, A400);
+    border-color: mat.get-color-from-palette($accent, A400);
   }
 
   .store-footer a {
-    color: mat-color($primary, default-contrast);
+    color: mat.get-color-from-palette($primary, default-contrast);
   }
 }
