@@ -49,7 +49,11 @@ export class AppDetailsExtraInfoComponent implements OnInit {
       this.buildRepoContributorsUrl = `${this.buildRepoUrl}/graphs/contributors/`;
 
       if (this.app.projectLicense) {
-        if (this.app.projectLicense.indexOf('LicenseRef-proprietary') !== -1) {
+        if (
+          this.app.projectLicense
+            .toLowerCase()
+            .indexOf('licenseref-proprietary') !== -1
+        ) {
           this.license = 'Proprietary';
           this.showLicenseDialog = false;
         } else {
