@@ -1,4 +1,4 @@
-@import '~@angular/material/theming';
+@use '~@angular/material' as mat;
 // Plus imports for other components in your app.
 @import '../../app/shared/toolbar/toolbar-theme.scss';
 @import '../../app/shared/footer/footer-theme.scss';
@@ -23,26 +23,26 @@
 // which requires a font-size, line-height, and font-weight
 //
 // https://material.angular.io/guide/typography
-$custom-typography: mat-typography-config(
+$custom-typography: mat.define-typography-config(
   $font-family: 'Source Sans Pro, Source Sans, sans-serif',
-  $headline: mat-typography-level(200%, 1.1, 300),
-  $title: mat-typography-level(180%, 1.1, 300),
-  $subheading-2: mat-typography-level(110%, 1.0, 300),
-  $subheading-1: mat-typography-level(120%, 1.1, 600),
-  $body-1: mat-typography-level(13pt, 1.8, 400),
-  $body-2: mat-typography-level(13pt, 1.8, 400),
-  $caption: mat-typography-level(12px, 1.8, bold),
-  $button: mat-typography-level(14px, 1.1, 500)
+  $headline: mat.define-typography-level(200%, 1.1, 300),
+  $title: mat.define-typography-level(180%, 1.1, 300),
+  $subheading-2: mat.define-typography-level(110%, 1.0, 300),
+  $subheading-1: mat.define-typography-level(120%, 1.1, 600),
+  $body-1: mat.define-typography-level(13pt, 1.8, 400),
+  $body-2: mat.define-typography-level(13pt, 1.8, 400),
+  $caption: mat.define-typography-level(12px, 1.8, bold),
+  $button: mat.define-typography-level(14px, 1.1, 500)
 );
 
 // Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
-@include mat-base-typography($custom-typography);
+@include mat.typography-hierarchy($custom-typography);
 
 // Override typography for a specific Angular Material components.
-@include mat-checkbox-typography($custom-typography);
+@include mat.checkbox-typography($custom-typography);
 
 // Override typography for all Angular Material, including mat-base-typography and all components.
-@include angular-material-typography($custom-typography);
+@include mat.all-component-typographies($custom-typography);
 
 
 
@@ -51,7 +51,7 @@ $custom-typography: mat-typography-config(
 // Be sure that you only ever include this mixin once!
 //@include mat-core();
 // Override the typography in the core CSS.
-@include mat-core($custom-typography);
+@include mat.core($custom-typography);
 
 
 
@@ -65,21 +65,21 @@ $mat-flathub: (
   500: #4a86cf,
   700: #0C64CF,
   contrast: (
-    100: $black-87-opacity,
+    100: rgba(black, 0.87),
     500: white,
     700: white,
   )
 );
 
-$linux-store-primary: mat-palette($mat-flathub);
+$linux-store-primary: mat.define-palette($mat-flathub);
 
-$linux-store-accent:  mat-palette($mat-pink, A200, A100, A400);
+$linux-store-accent:  mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$linux-store-warn:    mat-palette($mat-red);
+$linux-store-warn:    mat.define-palette(mat.$red-palette);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $linux-store-warn);
+$linux-store-theme: mat.define-light-theme($linux-store-primary, $linux-store-accent, $linux-store-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -88,7 +88,7 @@ $linux-store-theme: mat-light-theme($linux-store-primary, $linux-store-accent, $
 @include footer-theme($linux-store-theme);
 @include app-list-theme($linux-store-theme);
 
-@include angular-material-theme($linux-store-theme);
+@include mat.all-component-themes($linux-store-theme);
 
 // .store-link-container {
 //   a {
