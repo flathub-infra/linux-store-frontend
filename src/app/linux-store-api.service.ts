@@ -23,7 +23,7 @@ interface HashTable<T> {
   [key: string]: T;
 }
 
-const RECENTLY_UPDATED_LIMIT = 20;
+const RECENTLY_UPDATED_LIMIT = 50;
 
 @Injectable()
 export class LinuxStoreApiService {
