@@ -15,79 +15,74 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 const appRoutes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
   },
   {
     path: 'feeds',
-    component: FeedsComponent
+    component: FeedsComponent,
   },
   {
     path: 'terms',
-    component: TermsComponent
+    component: TermsComponent,
   },
   {
     path: 'privacy',
-    component: PrivacyComponent
+    component: PrivacyComponent,
   },
   {
     path: 'conduct',
-    component: CodeOfConductComponent
+    component: CodeOfConductComponent,
   },
   {
     path: 'badges',
-    component: BadgesComponent
+    component: BadgesComponent,
   },
   {
     path: 'apps',
-    component: AppListComponent
+    component: AppListComponent,
   },
   {
     path: 'apps/category/:categoryId',
-    component: AppListComponent
+    component: AppListComponent,
   },
   {
     path: 'apps/collection/:collectionId',
-    component: AppListComponent
+    component: AppListComponent,
   },
   {
     path: 'apps/search/:searchKeyword',
-    component: AppListComponent
+    component: AppListComponent,
   },
   {
     path: 'apps/details/:appId',
-    component: AppDetailsComponent
+    component: AppDetailsComponent,
   },
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: '**',
-    component: NotFoundComponent
-  }
+    component: NotFoundComponent,
+  },
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      {
-        enableTracing: false, // <-- debugging purposes only
-        scrollPositionRestoration: 'enabled',
-        // anchorScrolling: 'enabled',
-        scrollOffset: [0, 0], // [x, y],
-        preloadingStrategy: PreloadAllModules
-      }
-    )
+    RouterModule.forRoot(appRoutes, {
+      enableTracing: false,
+      scrollPositionRestoration: 'enabled',
+      // anchorScrolling: 'enabled',
+      scrollOffset: [0, 0],
+      preloadingStrategy: PreloadAllModules,
+      relativeLinkResolution: 'legacy',
+    }),
   ],
-  exports: [
-    RouterModule
-  ],
-  providers: []
+  exports: [RouterModule],
+  providers: [],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}
