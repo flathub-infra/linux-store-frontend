@@ -25,7 +25,7 @@ export class AppDetailsComponent implements OnInit {
   reviews: Review[];
   selectedReview: Review;
 
-  notFound: boolean = false;
+  notFound = false;
 
   public pending = false;
 
@@ -94,11 +94,10 @@ export class AppDetailsComponent implements OnInit {
   }
 
   getApp(id: string): void {
-    this.linuxStoreApiService.getApp(id)
-      .subscribe(app => {
-        this.app = app;
-        this.setPageMetadata();
-      });
+    this.linuxStoreApiService.getApp(id).subscribe((app) => {
+      this.app = app;
+      this.setPageMetadata();
+    });
   }
 
   getReviews(id: string): void {
