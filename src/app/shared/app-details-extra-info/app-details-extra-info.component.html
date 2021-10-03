@@ -1,20 +1,63 @@
-<div *ngIf="app" class="app-links-button-bar" fxLayout="column" fxLayoutAlign="start center" fxLayout.gt-sm="row"
-  fxLayoutAlign.gt-sm="start start" fxLayoutGap="15px">
-  <a fxFlex="nogrow" *ngIf="app.homepageUrl" mat-raised-button href="{{app.homepageUrl}}">Website</a>
-  <a fxFlex="nogrow" *ngIf="app.donationUrl" mat-raised-button href="{{app.donationUrl}}"
-    (click)="onDonate()">Donate</a>
-  <a fxFlex="nogrow" *ngIf="app.helpUrl" mat-raised-button href="{{app.helpUrl}}">Help</a>
-  <a fxFlex="nogrow" *ngIf="app.bugtrackerUrl" mat-raised-button href="{{app.bugtrackerUrl}}">Issues</a>
-  <a fxFlex="nogrow" *ngIf="app.translateUrl" mat-raised-button href="{{app.translateUrl}}">Translations</a>
+<div
+  *ngIf="app"
+  class="app-links-button-bar"
+  fxLayout="column"
+  fxLayoutAlign="start center"
+  fxLayout.gt-sm="row"
+  fxLayoutAlign.gt-sm="start start"
+  fxLayoutGap="15px"
+>
+  <a
+    fxFlex="nogrow"
+    *ngIf="app.homepageUrl"
+    mat-raised-button
+    href="{{ app.homepageUrl }}"
+    >Website</a
+  >
+  <a
+    fxFlex="nogrow"
+    *ngIf="app.donationUrl"
+    mat-raised-button
+    href="{{ app.donationUrl }}"
+    (click)="onDonate()"
+    >Donate</a
+  >
+  <a
+    fxFlex="nogrow"
+    *ngIf="app.helpUrl"
+    mat-raised-button
+    href="{{ app.helpUrl }}"
+    >Help</a
+  >
+  <a
+    fxFlex="nogrow"
+    *ngIf="app.bugtrackerUrl"
+    mat-raised-button
+    href="{{ app.bugtrackerUrl }}"
+    >Issues</a
+  >
+  <a
+    fxFlex="nogrow"
+    *ngIf="app.translateUrl"
+    mat-raised-button
+    href="{{ app.translateUrl }}"
+    >Translations</a
+  >
 </div>
 
 <h3>Additional information</h3>
 
-<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
+<div
+  fxLayout="column"
+  fxLayout.gt-sm="row"
+  fxLayoutAlign="start start"
+  fxLayoutGap="15px"
+>
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Updated</div>
     <div>
-      <span class="app-info-item-value app-info-item-value-text">{{(app.currentReleaseDate | date: 'longDate') || '-'}}
+      <span class="app-info-item-value app-info-item-value-text"
+        >{{ (app.currentReleaseDate | date: "longDate") || "-" }}
       </span>
     </div>
   </div>
@@ -22,47 +65,79 @@
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Version</div>
     <div>
-      <span class="app-info-item-value app-info-item-value-text">{{(app.currentReleaseVersion || '-')}}</span>
+      <span class="app-info-item-value app-info-item-value-text">{{
+        app.currentReleaseVersion || "-"
+      }}</span>
     </div>
   </div>
 
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Category</div>
     <div>
-      <span *ngIf="this.mainCategory"
-        class="app-info-item-value app-info-item-value-text">{{(this.mainCategory.name || '-')}}</span>
-      <span *ngIf="!this.mainCategory" class="app-info-item-value app-info-item-value-text">-</span>
+      <span
+        *ngIf="this.mainCategory"
+        class="app-info-item-value app-info-item-value-text"
+        >{{ this.mainCategory.name || "-" }}</span
+      >
+      <span
+        *ngIf="!this.mainCategory"
+        class="app-info-item-value app-info-item-value-text"
+        >-</span
+      >
     </div>
   </div>
 </div>
 
-<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="15px">
+<div
+  fxLayout="column"
+  fxLayout.gt-sm="row"
+  fxLayoutAlign="start start"
+  fxLayoutGap="15px"
+>
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">License</div>
     <div *ngIf="!showLicenseDialog">
-      <span class="app-info-item-value app-info-item-value-text">{{(this.license || '-')}}</span>
+      <span class="app-info-item-value app-info-item-value-text">{{
+        this.license || "-"
+      }}</span>
     </div>
     <div class="store-link-container" *ngIf="showLicenseDialog">
-      <a class="app-info-item-value app-info-item-value-link" (click)="onShowMoreLicenseInformationClick()">See details</a>
+      <a
+        class="app-info-item-value app-info-item-value-link"
+        (click)="onShowMoreLicenseInformationClick()"
+        >See details</a
+      >
     </div>
   </div>
 
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Developer</div>
     <div>
-      <span class="app-info-item-value app-info-item-value-text">{{(app.developerName || '-')}}</span>
+      <span class="app-info-item-value app-info-item-value-text">{{
+        app.developerName || "-"
+      }}</span>
     </div>
   </div>
 
   <div fxFlex class="app-info-item">
     <div class="app-info-item-title">Publisher</div>
     <div *ngIf="this.appIsPublishedByUpstream" class="store-link-container">
-      <span class="app-info-item-value app-info-item-value-text">{{this.publisherName}}</span>
+      <span class="app-info-item-value app-info-item-value-text">{{
+        this.publisherName
+      }}</span>
     </div>
     <div *ngIf="!this.appIsPublishedByUpstream" class="store-link-container">
-      <a *ngIf="this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-link"
-        href="{{this.buildRepoContributorsUrl}}">See details</a>
-      <span *ngIf="!this.buildRepoContributorsUrl" class="app-info-item-value app-info-item-value-text">-</span>
+      <a
+        *ngIf="this.buildRepoContributorsUrl"
+        class="app-info-item-value app-info-item-value-link"
+        href="{{ this.buildRepoContributorsUrl }}"
+        >See details</a
+      >
+      <span
+        *ngIf="!this.buildRepoContributorsUrl"
+        class="app-info-item-value app-info-item-value-text"
+        >-</span
+      >
     </div>
   </div>
 </div>
