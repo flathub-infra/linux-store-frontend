@@ -90,6 +90,7 @@ export class AppDetailsComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       this.paramAppId = params.get('appId');
       this.getApp(this.paramAppId);
+      this.getReviews(this.paramAppId);
     });
   }
 
