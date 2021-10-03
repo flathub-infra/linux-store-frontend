@@ -49,6 +49,17 @@ export class LinuxStoreApiService {
           this.appDetailsCache[request] = app;
           this.performingRequest[request] = false;
         }),
+        map((app) => {
+          // Get rid of faulty screenshots
+          const filteredScreenshots = app.screenshots.filter(
+            (screenshot) =>
+              !!screenshot.imgDesktopUrl ||
+              !!screenshot.imgMobileUrl ||
+              !!screenshot.thumbUrl
+          );
+          app.screenshots = filteredScreenshots;
+          return app;
+        }),
         catchError(this.handleError('getApp', null))
       );
     } else {
