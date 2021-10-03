@@ -2,20 +2,22 @@
   *ngIf="app"
   class="app-links-button-bar"
   fxLayout="column"
-  fxLayoutAlign="start center"
   fxLayout.gt-sm="row"
+  fxLayoutAlign="start"
   fxLayoutAlign.gt-sm="start start"
   fxLayoutGap="15px"
 >
   <a
-    fxFlex="nogrow"
+    fxFlex.gt-sm="nogrow"
+    fxFlex.lt-md="auto"
     *ngIf="app.homepageUrl"
     mat-raised-button
     href="{{ app.homepageUrl }}"
     >Website</a
   >
   <a
-    fxFlex="nogrow"
+    fxFlex.gt-sm="nogrow"
+    fxFlex.lt-md="auto"
     *ngIf="app.donationUrl"
     mat-raised-button
     href="{{ app.donationUrl }}"
@@ -23,21 +25,24 @@
     >Donate</a
   >
   <a
-    fxFlex="nogrow"
+    fxFlex.gt-sm="nogrow"
+    fxFlex.lt-md="auto"
     *ngIf="app.helpUrl"
     mat-raised-button
     href="{{ app.helpUrl }}"
     >Help</a
   >
   <a
-    fxFlex="nogrow"
+    fxFlex.gt-sm="nogrow"
+    fxFlex.lt-md="auto"
     *ngIf="app.bugtrackerUrl"
     mat-raised-button
     href="{{ app.bugtrackerUrl }}"
     >Issues</a
   >
   <a
-    fxFlex="nogrow"
+    fxFlex.gt-sm="nogrow"
+    fxFlex.lt-md="auto"
     *ngIf="app.translateUrl"
     mat-raised-button
     href="{{ app.translateUrl }}"
