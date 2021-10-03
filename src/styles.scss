@@ -1,5 +1,6 @@
 /* Self hosted material design fonts */
-@import '~material-design-icons/iconfont/material-icons.css';
+@import "~material-design-icons/iconfont/material-icons.css";
+@import "swiper/css/bundle";
 
 .app {
   height: 100vh; // emmet h100vh
@@ -129,8 +130,8 @@ http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoint
   padding-right: 5%;
 }
 
-  /* desktop-medium */
-  @media all and (min-width: 841px) and (max-width: 1280px) {
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) {
   .store-content-container-narrow {
     padding-left: 20%;
     padding-right: 20%;
@@ -164,4 +165,14 @@ http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoint
     padding-left: 32%;
     padding-right: 32%;
   }
+}
+
+.thumbs .swiper-slide {
+  height: 70px;
+  width: 90px;
+  opacity: 0.4;
+}
+
+.thumbs .swiper-slide-thumb-active {
+  opacity: 1;
 }

@@ -1,20 +1,5 @@
-gallery {
-  margin: 2vh 0;
-  background: transparent;
-  padding-top: 0;
-
-  ::ng-deep image-item div {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-.gallery-mobile{
-  max-height: 200px;
-}
-
-.gallery-desktop{
-  min-height: 450px;
+.gallery {
+  margin-bottom: 2vh;
 }
 
 .app-details-description {
