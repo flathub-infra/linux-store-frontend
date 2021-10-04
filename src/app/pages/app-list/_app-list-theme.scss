@@ -1,5 +1,5 @@
 // Define a mixin that accepts a theme and outputs the color styles for the component.
-@use '~@angular/material' as mat;
+@use "~@angular/material" as mat;
 @mixin app-list-theme($theme) {
   // Extract whichever individual palettes you need from the theme.
   $primary: map-get($theme, primary);
@@ -10,15 +10,14 @@
   $nav-background-opacity: if($is-dark-theme, 0.2, 0.03);
 
   .docs-component-viewer-nav-content {
-    background: rgba(0, 0, 0, $nav-background-opacity);
-
     &::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, .26);
+      background: rgba(0, 0, 0, 0.26);
     }
 
     hr {
       border: none;
-      border-top: solid 1px rgba(mat.get-color-from-palette($foreground, secondary-text), .1);
+      border-top: solid 1px
+        rgba(mat.get-color-from-palette($foreground, secondary-text), 0.1);
     }
 
     a {
