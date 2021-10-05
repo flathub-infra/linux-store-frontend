@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { AnalyticsService } from './analytics.service';
@@ -13,7 +14,8 @@ export class AppComponent {
 
   constructor(
     public router: Router,
-    private analyticsService: AnalyticsService
+    private analyticsService: AnalyticsService,
+    private meta: Meta
   ) {
     // Init Analytics Service
     analyticsService.startTracking();
@@ -23,6 +25,14 @@ export class AppComponent {
         this.analyticsService.emitPageView(event.urlAfterRedirects);
       }
     });
+
+    this.meta.addTags([
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@FlatpakApps' },
+      { name: 'og:site_name', content: 'Flathub' },
+      { name: 'og:locale', content: 'en_GB' },
+      { name: 'og:url', content: window.location.href },
+    ]);
   }
 
   onSearch(searchTerm: string) {
