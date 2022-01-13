@@ -25,4 +25,8 @@ export class ToolbarComponent {
     this.showSearchInput = false;
   }
 
+  onTypeSearch() {
+    this.showSearchInput = true;
+  }
+
 }
