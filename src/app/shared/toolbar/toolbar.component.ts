@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -9,6 +9,7 @@ import { Output, EventEmitter } from '@angular/core';
 export class ToolbarComponent {
 
   @Output() search: EventEmitter<string> = new EventEmitter<string>();
+  @ViewChild('searchBox') searchInput: ElementRef;
 
   showSearchInput = false;
 
@@ -19,6 +20,7 @@ export class ToolbarComponent {
 
   onTogleSearch() {
     this.showSearchInput = !this.showSearchInput;
+    if (this.showSearchInput) this.searchInput.nativeElement.focus();
   }
 
   onCloseSearch() {
