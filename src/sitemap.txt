@@ -504,7 +504,6 @@ https://flathub.org/apps/details/io.liri.Calculator
 https://flathub.org/apps/details/io.liri.Text
 https://flathub.org/apps/details/io.lmms.LMMS
 https://flathub.org/apps/details/io.mgba.mGBA
-https://flathub.org/apps/details/io.mrarm.mcpelauncher
 https://flathub.org/apps/details/io.neovim.nvim
 https://flathub.org/apps/details/io.openrct2.OpenRCT2
 https://flathub.org/apps/details/io.otsaloma.gaupol

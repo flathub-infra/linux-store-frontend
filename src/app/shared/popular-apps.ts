@@ -109,45 +109,6 @@ export const POPULARAPPS: App[] = [
 }
 ,
 {
-  "flatpakAppId": "io.mrarm.mcpelauncher",
-  "name": "Minecraft Bedrock Launcher",
-  "summary": "Download and play Minecraft Bedrock Edition on GNU/Linux",
-  "description": "",
-  "developerName": "",
-  "projectLicense": "",
-  "homepageUrl": "",
-  "donationUrl": null,
-  "translateUrl": null,
-  "bugtrackerUrl": "https://github.com/flathub/io.mrarm.mcpelauncher/issues",
-  "helpUrl": "",
-  "categories": null,
-  "downloadFlatpakRefUrl": "https://dl.flathub.org/repo/appstream/io.mrarm.mcpelauncher.flatpakref",
-  "currentReleaseVersion": "0.0.9",
-  "currentReleaseDescription": "<p>Revert Gamepad detection, some mouse and touchpads was detected as joystick</p><p>Fix news loading</p><p>Changed middle mouse button to get the old button number again</p><p>No crash if loading a game version without working vtable patching</p><p>Ask for Google Terms of services again, otherwise only old players or who got an old version could use this version of the Launcher</p>",
-  "iconDesktopUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.mrarm.mcpelauncher.png",
-  "iconMobileUrl": "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.mrarm.mcpelauncher.png",
-  "screenshots": [
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/224x126/io.mrarm.mcpelauncher-b5b2e5163be679ec6575944dd189f3f4.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/624x351/io.mrarm.mcpelauncher-b5b2e5163be679ec6575944dd189f3f4.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/752x423/io.mrarm.mcpelauncher-b5b2e5163be679ec6575944dd189f3f4.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/224x126/io.mrarm.mcpelauncher-c340fd8e19319f8da7973305d58361d1.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/624x351/io.mrarm.mcpelauncher-c340fd8e19319f8da7973305d58361d1.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/752x423/io.mrarm.mcpelauncher-c340fd8e19319f8da7973305d58361d1.png"
-    },
-    {
-      "thumbUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/224x126/io.mrarm.mcpelauncher-220206588417b5258f3d21fefa40fb35.png",
-      "imgMobileUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/624x351/io.mrarm.mcpelauncher-220206588417b5258f3d21fefa40fb35.png",
-      "imgDesktopUrl": "https://dl.flathub.org/repo/screenshots/io.mrarm.mcpelauncher-stable/752x423/io.mrarm.mcpelauncher-220206588417b5258f3d21fefa40fb35.png"
-    }
-  ],
-  "currentReleaseDate": null,
-  "inStoreSinceDate": null
-}
-,
-{
   "flatpakAppId": "org.gimp.GIMP",
   "name": "GNU Image Manipulation Program",
   "summary": "Create images and edit photographs",
