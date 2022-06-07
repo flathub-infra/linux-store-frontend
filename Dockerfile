@@ -1,5 +1,10 @@
-FROM nginx:latest
-COPY dist/ /usr/share/nginx/html
-COPY conf/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY conf/nginx/mime.types /etc/nginx/mime.types
-COPY conf/nginx/default.conf /etc/nginx/conf.d/default.conf
+FROM docker.io/library/node:14 AS build
+
+WORKDIR /app
+COPY . .
+RUN npm ci
+RUN npm run build:prod
+
+FROM docker.io/nginxinc/nginx-unprivileged:stable
+COPY --from=build /app/dist /srv/http/dist
+ADD nginx.conf /etc/nginx/conf.d/default.conf
