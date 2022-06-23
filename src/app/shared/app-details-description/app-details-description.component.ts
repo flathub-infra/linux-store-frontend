@@ -1,8 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ImageItem, GalleryItem } from 'ng-gallery';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import { App } from '../../shared/app.model';
+import SwiperCore, {
+  A11y,
+  Autoplay,
+  Navigation,
+  Scrollbar,
+  Thumbs,
+} from 'swiper';
+
+SwiperCore.use([Navigation, Thumbs, Autoplay, Scrollbar, A11y]);
 
 @Component({
   selector: 'store-app-details-description',
@@ -11,19 +19,27 @@ import { App } from '../../shared/app.model';
 })
 export class AppDetailsDescriptionComponent implements OnInit {
   @Input() app: App;
-  items: GalleryItem[];
   showCurrentReleaseInfo = false;
   showThumbnails = true;
+  moreThenOneImage = true;
   isHandset = false;
+
+  thumbsSwiper: SwiperCore;
+  setThumbsSwiper(swiper: SwiperCore) {
+    this.thumbsSwiper = swiper;
+  }
 
   constructor(breakpointObserver: BreakpointObserver) {
     breakpointObserver
       .observe([Breakpoints.HandsetLandscape, Breakpoints.HandsetPortrait])
       .subscribe((result) => {
-        if (result.matches) {
-          this.isHandset = true;
-        }
+        this.isHandset = result.matches;
+        this.setShowThumbnails();
       });
+  }
+
+  private setShowThumbnails() {
+    this.showThumbnails = this.moreThenOneImage && !this.isHandset;
   }
 
   ngOnInit() {
@@ -37,14 +53,9 @@ export class AppDetailsDescriptionComponent implements OnInit {
         this.showCurrentReleaseInfo = true;
       }
 
-      if (this.app.screenshots && this.app.screenshots.length > 0) {
-        this.items = this.app.screenshots.map(
-          (item) =>
-            new ImageItem({ src: item.imgDesktopUrl, thumb: item.thumbUrl })
-        );
-        this.showThumbnails =
-          this.items && this.items.length > 1 && !this.isHandset;
-      }
+      this.moreThenOneImage =
+        this.app.screenshots && this.app.screenshots.length > 1;
+      this.setShowThumbnails();
     }
   }
 }

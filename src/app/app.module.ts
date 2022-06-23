@@ -2,11 +2,10 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { DatePipe } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LinuxStoreAngularMaterialModule } from './linux-store-angular-material/linux-store-angular-material.module';
-import { GalleryModule } from 'ng-gallery';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +25,7 @@ import { AppDetailsMainComponent } from './shared/app-details-main/app-details-m
 import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
 import {
   AppDetailsExtraInfoComponent,
-  AppDetailsExtraInfoLicenseModalComponent
+  AppDetailsExtraInfoLicenseModalComponent,
 } from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -42,7 +41,6 @@ import { PreComponent } from './shared/pre/pre.component';
 import { BadgesComponent } from './pages/badges/badges.component';
 import { FeedsComponent } from './pages/feeds/feeds.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-
 
 @NgModule({
   declarations: [
@@ -75,11 +73,11 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    GalleryModule,
+    SwiperModule,
     FlexLayoutModule,
     LinuxStoreAngularMaterialModule,
     AppRoutingModule,
-    Angulartics2Module.forRoot()
+    Angulartics2Module.forRoot(),
   ],
   providers: [
     Title,
@@ -87,6 +85,6 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AnalyticsService,
     SeoService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

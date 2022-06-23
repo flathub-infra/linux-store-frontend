@@ -1,10 +1,65 @@
 <div>
-  <gallery *ngIf="items" class="gallery-mobile mat-elevation-z1" ngClass.gt-sm="gallery-desktop" [items]="items"
-    [counter]="false"
-    [thumb]="this.showThumbnails"
-    [thumbWidth]="90"
-    [thumbHeight]="70"></gallery>
-  <div *ngIf="app" class="app-details-description" [innerHTML]="app.description"></div>
-  <h3 *ngIf="this.showCurrentReleaseInfo">Changes in version {{app.currentReleaseVersion}}</h3>
-  <div *ngIf="this.showCurrentReleaseInfo" class="app-details-description" [innerHTML]="app.currentReleaseDescription"></div>
+  <div class="gallery">
+    <swiper
+      [slidesPerView]="1"
+      [spaceBetween]="50"
+      [navigation]="moreThenOneImage"
+      [loop]="true"
+      [a11y]="true"
+      [autoplay]="moreThenOneImage"
+      [thumbs]="{ swiper: thumbsSwiper }"
+    >
+      <ng-template *ngFor="let item of app.screenshots" swiperSlide>
+        <img
+          [src]="isHandset ? item.imgMobileUrl : item.imgDesktopUrl"
+          [ngStyle]="{
+            'max-width': '100%',
+            display: 'block',
+            'margin-left': 'auto',
+            'margin-right': 'auto'
+          }"
+        />
+      </ng-template>
+    </swiper>
+
+    <swiper
+      *ngIf="showThumbnails"
+      [slidesPerView]="'auto'"
+      [spaceBetween]="5"
+      (swiper)="setThumbsSwiper($event)"
+      [navigation]="{}"
+      [pagination]="{ clickable: true }"
+      [scrollbar]="{ draggable: true }"
+      [watchSlidesProgress]="true"
+      class="thumbs"
+    >
+      <ng-template *ngFor="let item of app.screenshots" swiperSlide>
+        <div
+          [ngStyle]="{
+            'background-image': 'url(' + item.thumbUrl + ')',
+            width: '100%',
+            height: '100%',
+            'background-position': '50%',
+            'background-size': 'cover',
+            'background-repeat': 'no-repeat',
+            cursor: 'pointer'
+          }"
+        ></div>
+      </ng-template>
+    </swiper>
+  </div>
+
+  <div
+    *ngIf="app"
+    class="app-details-description"
+    [innerHTML]="app.description"
+  ></div>
+  <h3 *ngIf="this.showCurrentReleaseInfo">
+    Changes in version {{ app.currentReleaseVersion }}
+  </h3>
+  <div
+    *ngIf="this.showCurrentReleaseInfo"
+    class="app-details-description"
+    [innerHTML]="app.currentReleaseDescription"
+  ></div>
 </div>
