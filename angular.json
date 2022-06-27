@@ -111,9 +111,7 @@
               "src/themes/flathub/flathub-theme.scss",
               "src/themes/flathub/flathub-fonts.scss"
             ],
-            "assets": [
-              "src/assets"
-            ],
+            "assets": ["src/assets"],
             "scripts": []
           }
         },
@@ -127,10 +125,7 @@
             ],
             "exclude": [
               "**/node_modules/**",
-              "src/app/shared/editors-choice-*.ts",
               "src/app/shared/featured-collections.ts",
-              "src/app/shared/popular-apps.ts",
-              "src/app/shared/recently-updated-apps.ts",
               "src/app/shared/categories.ts",
               "src/app/shared/mock-*.ts"
             ]
@@ -152,6 +147,7 @@
           "defaultConfiguration": "development"
         }
       }
-    }},
-    "defaultProject": "linux-store-frontend"
+    }
+  },
+  "defaultProject": "linux-store-frontend"
 }

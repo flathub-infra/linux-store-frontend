@@ -6,10 +6,6 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { environment } from './../environments/environment';
 
 import { EMPTYAPPS } from './shared/empty-apps';
-import { RECENTLYUPDATEDAPPS } from './shared/recently-updated-apps';
-import { POPULARAPPS } from './shared/popular-apps';
-import { EDITORSCHOICEAPPS } from './shared/editors-choice-apps';
-import { EDITORSCHOICEGAMES } from './shared/editors-choice-games';
 import { CATEGORIES } from './shared/categories';
 import { APPS } from './shared/mock-apps';
 import { App } from './shared/app.model';
@@ -23,7 +19,7 @@ interface HashTable<T> {
   [key: string]: T;
 }
 
-const RECENTLY_UPDATED_LIMIT = 50;
+const COLLECTION_DEFAULT_LIMIT = 50;
 
 @Injectable()
 export class LinuxStoreApiService {
@@ -32,24 +28,22 @@ export class LinuxStoreApiService {
   private appDetailsCache: HashTable<App> = {};
   private performingRequest: HashTable<boolean> = {};
 
-  private editorPicksAreShuffled = false;
-
   constructor(private http: HttpClient) {}
 
   getApp(flatpakAppId: string): Observable<App> {
-    const request = `/apps/${flatpakAppId}`;
+    const request = `${this.baseUrl}/apps/${flatpakAppId}`;
 
     if (
       this.appDetailsCache[request] == null &&
       !this.performingRequest[request]
     ) {
       this.performingRequest[request] = true;
-      return this.http.get<App>(`${this.baseUrl}${request}`).pipe(
+      return this.http.get<App>(request).pipe(
         tap((app) => {
           this.appDetailsCache[request] = app;
           this.performingRequest[request] = false;
         }),
-        catchError(this.handleError('getApp', null))
+        catchError(this.handleError(request, null))
       );
     } else {
       return of(this.appDetailsCache[request]);
@@ -65,19 +59,19 @@ export class LinuxStoreApiService {
   }
 
   getApps(): Observable<App[]> {
-    const request = '/apps';
+    const request = `${this.baseUrl}/apps`;
 
     if (
       this.appListCache[request] == null &&
       !this.performingRequest[request]
     ) {
       this.performingRequest[request] = true;
-      return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+      return this.http.get<App[]>(request).pipe(
         tap((apps) => {
           this.appListCache[request] = apps;
           this.performingRequest[request] = false;
         }),
-        catchError(this.handleError('getApps', []))
+        catchError(this.handleError(request, []))
       );
     } else {
       return of(this.appListCache[request]);
@@ -88,14 +82,14 @@ export class LinuxStoreApiService {
     if (categoryId === 'All') {
       return this.getApps();
     } else {
-      const request = `/apps/category/${categoryId}`;
+      const request = `${this.baseUrl}/apps/category/${categoryId}`;
 
       if (
         this.appListCache[request] == null &&
         !this.performingRequest[request]
       ) {
         this.performingRequest[request] = true;
-        return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+        return this.http.get<App[]>(request).pipe(
           tap((apps) => {
             this.appListCache[request] = apps;
             this.performingRequest[request] = false;
@@ -109,73 +103,67 @@ export class LinuxStoreApiService {
   }
 
   getAppsBySearchQuery(searchQuery: string): Observable<App[]> {
-    const request = `/apps/search/${searchQuery}`;
+    const request = `${this.baseUrl}/apps/search/${searchQuery}`;
 
     if (
       this.appListCache[request] == null &&
       !this.performingRequest[request]
     ) {
       this.performingRequest[request] = true;
-      return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+      return this.http.get<App[]>(request).pipe(
         tap((apps) => {
           this.appListCache[request] = apps;
           this.performingRequest[request] = false;
         }),
-        catchError(this.handleError('getApps', []))
+        catchError(this.handleError(request, []))
       );
     } else {
       return of(this.appListCache[request]);
     }
   }
 
-  /* Randomize array in-place using Durstenfeld shuffle algorithm */
-  /* Source: https://stackoverflow.com/a/12646864 */
-  shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      const temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-  }
-
   getAppsByCollectionId(collectionId: string): Observable<App[]> {
-    if (!this.editorPicksAreShuffled) {
-      this.shuffleArray(EDITORSCHOICEAPPS);
-      this.shuffleArray(EDITORSCHOICEGAMES);
-      this.editorPicksAreShuffled = true;
-    }
+    const popularAppsUrl: string = `${this.baseUrl}/apps/collection/popular`;
+    const editorPicksGamesUrl: string = `${this.baseUrl}/apps/collection/games`;
+    const editorPicksAppsUrl: string = `${this.baseUrl}/apps/collection/apps`;
+    const recentlyUpdatedUrl: string = `${this.baseUrl}/apps/collection/recently-updated`;
 
     if (collectionId === 'recently-updated') {
-      return this.getRecentlyUpdatedApps(RECENTLY_UPDATED_LIMIT);
+      return this.getCollectionApps(
+        recentlyUpdatedUrl,
+        COLLECTION_DEFAULT_LIMIT
+      );
     } else if (collectionId === 'popular') {
-      return of(POPULARAPPS);
+      return this.getCollectionApps(popularAppsUrl, COLLECTION_DEFAULT_LIMIT);
     } else if (collectionId === 'editors-choice-apps') {
-      return of(EDITORSCHOICEAPPS);
+      return this.getCollectionApps(
+        editorPicksAppsUrl,
+        COLLECTION_DEFAULT_LIMIT
+      );
     } else if (collectionId === 'editors-choice-games') {
-      return of(EDITORSCHOICEGAMES);
+      return this.getCollectionApps(
+        editorPicksGamesUrl,
+        COLLECTION_DEFAULT_LIMIT
+      );
     } else {
       return this.getApps();
     }
   }
 
-  getRecentlyUpdatedApps(limit?: number): Observable<App[]> {
-    const request =
-      limit > 0
-        ? `/apps/collection/recently-updated/${limit}`
-        : '/apps/collection/recently-updated/';
+  getCollectionApps(collectionUrl: string, limit?: number): Observable<App[]> {
+    const request = limit > 0 ? `${collectionUrl}/${limit}` : collectionUrl;
 
     if (
       this.appListCache[request] == null &&
       !this.performingRequest[request]
     ) {
       this.performingRequest[request] = true;
-      return this.http.get<App[]>(`${this.baseUrl}${request}`).pipe(
+      return this.http.get<App[]>(collectionUrl).pipe(
         tap((apps) => {
           this.appListCache[request] = apps;
           this.performingRequest[request] = false;
         }),
-        catchError(this.handleError('getApps', []))
+        catchError(this.handleError(collectionUrl, []))
       );
     } else {
       return of(this.appListCache[request]);
@@ -222,15 +210,10 @@ export class LinuxStoreApiService {
    * @param operation - name of the operation that failed
    * @param result - optional value to return as the observable result
    */
-  private handleError<T>(operation = 'operation', result?: T) {
+  private handleError<T>(operation = 'getApps', result?: T) {
     return (error: any): Observable<T> => {
-      // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
+      console.error(`Error while handling operation: ${operation}`, error);
 
-      // TODO: better job of transforming error for user consumption
-      // this.log(`${operation} failed: ${error.message}`);
-
-      // Let the app keep running by returning an empty result.
       return of(result as T);
     };
   }
