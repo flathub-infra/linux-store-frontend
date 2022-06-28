@@ -124,8 +124,8 @@ export class LinuxStoreApiService {
 
   getAppsByCollectionId(collectionId: string): Observable<App[]> {
     const popularAppsUrl: string = `${this.baseUrl}/apps/collection/popular`;
-    const editorPicksGamesUrl: string = `${this.baseUrl}/apps/collection/games`;
-    const editorPicksAppsUrl: string = `${this.baseUrl}/apps/collection/apps`;
+    const recentlyAddedUrl: string = `${this.baseUrl}/apps/collection/new`;
+    const editorPicksAppsUrl: string = `${this.baseUrl}/apps/collection/picks`;
     const recentlyUpdatedUrl: string = `${this.baseUrl}/apps/collection/recently-updated`;
 
     if (collectionId === 'recently-updated') {
@@ -140,9 +140,9 @@ export class LinuxStoreApiService {
         editorPicksAppsUrl,
         COLLECTION_DEFAULT_LIMIT
       );
-    } else if (collectionId === 'editors-choice-games') {
+    } else if (collectionId === 'new') {
       return this.getCollectionApps(
-        editorPicksGamesUrl,
+        recentlyAddedUrl,
         COLLECTION_DEFAULT_LIMIT
       );
     } else {

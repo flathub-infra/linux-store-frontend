@@ -2,9 +2,9 @@ import { Collection } from './collection.model';
 
 export const FEATUREDCOLLECTIONS: Collection[] = [
   {
-    id: "popular",
-    shortname: "Popular",
-    name: "Popular Apps",
+    id: "editors-choice-apps",
+    shortname: "Editor's Choice",
+    name: "Editor's Choice Apps",
     summary: ""
   },
   {
@@ -14,15 +14,15 @@ export const FEATUREDCOLLECTIONS: Collection[] = [
     summary: ""
   },
   {
-    id: "editors-choice-apps",
-    shortname: "Editor's Choice",
-    name: "Editor's Choice Apps",
+    id: "new",
+    shortname: "Recently Added",
+    name: "Recently Added Apps",
     summary: ""
   },
   {
-    id: "editors-choice-games",
-    shortname: "Editor's Choice Games",
-    name: "Editor's Choice Games",
+    id: "popular",
+    shortname: "Popular",
+    name: "Popular Apps",
     summary: ""
   }
 ];
