@@ -9,14 +9,14 @@ export const FEATUREDCOLLECTIONS: Collection[] = [
   },
   {
     id: "recently-updated",
-    shortname: "New & Updated",
-    name: "New & Updated Apps",
+    shortname: "Recently Updated",
+    name: "Recently Updated Apps",
     summary: ""
   },
   {
     id: "new",
-    shortname: "Recently Added",
-    name: "Recently Added Apps",
+    shortname: "New Apps",
+    name: "New Apps",
     summary: ""
   },
   {
