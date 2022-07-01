@@ -1,8 +1,8 @@
 /* Self hosted material design fonts */
-@import '~material-design-icons/iconfont/material-icons.css';
+@import "~material-design-icons/iconfont/material-icons.css";
 
 .app {
-  height: 100vh; // emmet h100vh
+  min-height: 100vh; // emmet h100vh
 }
 
 body {
@@ -63,11 +63,17 @@ pre {
   overflow: auto;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -83,7 +89,7 @@ http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoint
 */
 
 .store-content-container {
-  padding-left:  5%;
+  padding-left: 5%;
   padding-right: 5%;
 }
 
@@ -125,12 +131,12 @@ http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoint
 }
 
 .store-content-container-narrow {
-  padding-left:  5%;
+  padding-left: 5%;
   padding-right: 5%;
 }
 
-  /* desktop-medium */
-  @media all and (min-width: 841px) and (max-width: 1280px) {
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) {
   .store-content-container-narrow {
     padding-left: 20%;
     padding-right: 20%;

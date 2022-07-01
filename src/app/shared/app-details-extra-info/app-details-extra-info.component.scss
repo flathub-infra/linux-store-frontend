@@ -7,7 +7,6 @@
 }
 
 .app-info-item-title {
-  color: rgba(0, 0, 0, 0.54) !important;
   font-size: 13px;
   line-height: 16px;
 }
@@ -17,19 +16,16 @@
   line-height: 16px;
 }
 
-.app-info-item-value-text {
-  color: black;
-}
-
 .app-info-item-value-link {
-      color: #4a86cf;
-      transition: color .35s;
-      text-decoration: none;
-      background-color: transparent; 
+  color: #4a86cf;
+  transition: color 0.35s;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-.app-info-item-value-link:active, a:visited {
-    color: #4a86cf;
+.app-info-item-value-link:active,
+a:visited {
+  color: #4a86cf;
 }
 
 .app-info-item-value-link:hover {

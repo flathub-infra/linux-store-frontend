@@ -3,17 +3,14 @@ $sidenav-width: 180px;
 .drawer-container {
   width: 100%;
   min-height: 750px;
-  padding-left:  2%;
   padding-right: 5%;
   padding-top: 25px;
-  background-color: white;
 }
 
 .drawer-content {
   padding-left: 3%;
   padding-right: 16px;
 }
-
 
 .docs-component-viewer-nav {
   position: sticky;
@@ -57,8 +54,6 @@ $sidenav-width: 180px;
   }
 }
 
-.selected-item{
+.selected-item {
   font-weight: bold;
 }
-
-
