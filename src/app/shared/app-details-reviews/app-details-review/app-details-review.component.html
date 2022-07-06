@@ -1,0 +1,21 @@
+<div class="flex">
+  <b>{{ review.summary }}</b>
+
+  <div>
+    <ngx-stars
+      [readonly]="true"
+      [initialStars]="review.rating / 20"
+      [color]="'#4a86cf'"
+    ></ngx-stars>
+  </div>
+</div>
+<div class="flex subtitle">
+  <div>
+    by <i>{{ review.user_display }}</i>
+  </div>
+  <div class="date">{{ review.date_created * 1000 | date }}</div>
+</div>
+
+<div class="review-text" *ngIf="review.description.length > 0">
+  {{ review.description }}
+</div>

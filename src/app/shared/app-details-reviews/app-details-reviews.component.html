@@ -1,3 +1,10 @@
-<p>
+<div *ngIf="reviews">
+  <h3>Reviews</h3>
 
-</p>
+  <store-app-details-reviews-summary
+    [reviews]="reviews"
+  ></store-app-details-reviews-summary>
+  <div *ngFor="let review of reviews">
+    <store-app-details-review [review]="review"></store-app-details-review>
+  </div>
+</div>

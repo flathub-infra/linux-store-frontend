@@ -28,10 +28,12 @@
     "@angular/platform-browser": "12.2.6",
     "@angular/platform-browser-dynamic": "12.2.6",
     "@angular/router": "12.2.6",
+    "@swimlane/ngx-charts": "^19.0.1",
     "angulartics2": "^10.0.0",
     "core-js": "^3.6.5",
     "material-design-icons": "^3.0.1",
     "ng-gallery": "^5.0.0",
+    "ngx-stars": "^1.5.1",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

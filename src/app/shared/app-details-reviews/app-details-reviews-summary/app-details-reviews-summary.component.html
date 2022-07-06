@@ -1,0 +1,27 @@
+<div class="flex">
+  <div class="flex stack">
+    <div class="average-rating">
+      {{ averageRating() / 20 | number: "1.0-1" }}
+    </div>
+    <ngx-stars
+      [readonly]="true"
+      [initialStars]="averageRating() / 20"
+      [color]="'#4a86cf'"
+    ></ngx-stars>
+    <div class="total-ratings">
+      <mat-icon [inline]="true">person</mat-icon>
+      {{ totalReviews() | number }} total
+    </div>
+  </div>
+  <div class="chart">
+    <ngx-charts-bar-horizontal
+      [scheme]="colorScheme"
+      [results]="getChartData()"
+      [roundEdges]="false"
+      [yAxis]="true"
+      [showGridLines]="false"
+      [tooltipDisabled]="true"
+    >
+    </ngx-charts-bar-horizontal>
+  </div>
+</div>

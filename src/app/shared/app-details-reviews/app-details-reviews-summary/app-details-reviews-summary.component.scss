@@ -1,0 +1,28 @@
+$stack-width: 150px;
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.chart {
+  width: calc(100% - $stack-width);
+}
+
+.stack {
+  width: $stack-width;
+  flex-direction: column;
+
+  .average-rating {
+    font-size: 36px;
+  }
+
+  .total-ratings {
+    .mat-icon {
+      vertical-align: bottom;
+    }
+  }
+}

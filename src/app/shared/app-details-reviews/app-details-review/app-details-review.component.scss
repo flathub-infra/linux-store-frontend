@@ -1,0 +1,29 @@
+.review {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.date {
+  color: #808080;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 1vh;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 1vh;
+}

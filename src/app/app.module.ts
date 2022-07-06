@@ -26,7 +26,7 @@ import { AppDetailsMainComponent } from './shared/app-details-main/app-details-m
 import { AppDetailsDescriptionComponent } from './shared/app-details-description/app-details-description.component';
 import {
   AppDetailsExtraInfoComponent,
-  AppDetailsExtraInfoLicenseModalComponent
+  AppDetailsExtraInfoLicenseModalComponent,
 } from './shared/app-details-extra-info/app-details-extra-info.component';
 import { AppDetailsReviewsComponent } from './shared/app-details-reviews/app-details-reviews.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -42,7 +42,10 @@ import { PreComponent } from './shared/pre/pre.component';
 import { BadgesComponent } from './pages/badges/badges.component';
 import { FeedsComponent } from './pages/feeds/feeds.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-
+import { NgxStarsModule } from 'ngx-stars';
+import { AppDetailsReviewComponent } from './shared/app-details-reviews/app-details-review/app-details-review.component';
+import { AppDetailsReviewsSummaryComponent } from './shared/app-details-reviews/app-details-reviews-summary/app-details-reviews-summary.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -69,6 +72,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     BadgesComponent,
     FeedsComponent,
     NotFoundComponent,
+    AppDetailsReviewComponent,
+    AppDetailsReviewsSummaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,14 +84,11 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FlexLayoutModule,
     LinuxStoreAngularMaterialModule,
     AppRoutingModule,
-    Angulartics2Module.forRoot()
+    Angulartics2Module.forRoot(),
+    NgxStarsModule,
+    NgxChartsModule,
   ],
-  providers: [
-    Title,
-    LinuxStoreApiService,
-    AnalyticsService,
-    SeoService
-  ],
-  bootstrap: [AppComponent]
+  providers: [Title, LinuxStoreApiService, AnalyticsService, SeoService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
